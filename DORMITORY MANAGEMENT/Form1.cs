@@ -52,9 +52,13 @@ namespace DORMITORY_MANAGEMENT
             this.Close();
         }
 
-        private void bunifuLabel3_Click(object sender, EventArgs e)
+        private void leftBackgroundImage_MouseDown(object sender, MouseEventArgs e)
         {
-
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
         }
     }
 }
