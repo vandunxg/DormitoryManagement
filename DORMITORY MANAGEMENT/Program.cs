@@ -16,7 +16,7 @@ namespace DORMITORY_MANAGEMENT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new loginPage());
+            Application.Run(new loginPage ());
         }
     }
 }

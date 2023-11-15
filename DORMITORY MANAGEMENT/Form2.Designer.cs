@@ -54,7 +54,7 @@
             this.bunifuImageButton1.AllowAnimations = true;
             this.bunifuImageButton1.AllowBuffering = false;
             this.bunifuImageButton1.AllowToggling = false;
-            this.bunifuImageButton1.AllowZooming = true;
+            this.bunifuImageButton1.AllowZooming = false;
             this.bunifuImageButton1.AllowZoomingOnFocus = false;
             this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton1.DialogResult = System.Windows.Forms.DialogResult.None;
@@ -68,7 +68,7 @@
             this.bunifuImageButton1.ImageSize = new System.Drawing.Size(650, 653);
             this.bunifuImageButton1.ImageZoomSize = new System.Drawing.Size(690, 693);
             this.bunifuImageButton1.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.InitialImage")));
-            this.bunifuImageButton1.Location = new System.Drawing.Point(-16, -34);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(-13, -1);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Rotation = 0;
             this.bunifuImageButton1.ShowActiveImage = true;
@@ -81,17 +81,19 @@
             this.bunifuImageButton1.WaitOnLoad = false;
             this.bunifuImageButton1.Zoom = 40;
             this.bunifuImageButton1.ZoomSpeed = 10;
+            this.bunifuImageButton1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bunifuImageButton1_MouseDown);
             // 
             // bunifuLabel1
             // 
             this.bunifuLabel1.AllowParentOverrides = false;
             this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel1.Location = new System.Drawing.Point(703, 99);
+            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 32F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel1.Location = new System.Drawing.Point(663, 67);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(217, 108);
+            this.bunifuLabel1.Size = new System.Drawing.Size(291, 142);
             this.bunifuLabel1.TabIndex = 1;
             this.bunifuLabel1.Text = "Forgot Your\r\nPassword ?";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -124,7 +126,7 @@
             this.txtBox_emailForgot.IconRight = null;
             this.txtBox_emailForgot.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBox_emailForgot.Lines = new string[0];
-            this.txtBox_emailForgot.Location = new System.Drawing.Point(768, 254);
+            this.txtBox_emailForgot.Location = new System.Drawing.Point(775, 271);
             this.txtBox_emailForgot.MaxLength = 32767;
             this.txtBox_emailForgot.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtBox_emailForgot.Modified = false;
@@ -218,7 +220,7 @@
             this.btn_resetPassword.IdleIconLeftImage = null;
             this.btn_resetPassword.IdleIconRightImage = null;
             this.btn_resetPassword.IndicateFocus = false;
-            this.btn_resetPassword.Location = new System.Drawing.Point(768, 332);
+            this.btn_resetPassword.Location = new System.Drawing.Point(775, 349);
             this.btn_resetPassword.Name = "btn_resetPassword";
             this.btn_resetPassword.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_resetPassword.OnDisabledState.BorderRadius = 10;
@@ -264,10 +266,11 @@
             // 
             this.backtoLogin.AllowParentOverrides = false;
             this.backtoLogin.AutoEllipsis = false;
-            this.backtoLogin.CursorType = System.Windows.Forms.Cursors.Default;
+            this.backtoLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.backtoLogin.CursorType = System.Windows.Forms.Cursors.Hand;
             this.backtoLogin.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backtoLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
-            this.backtoLogin.Location = new System.Drawing.Point(870, 395);
+            this.backtoLogin.Location = new System.Drawing.Point(877, 412);
             this.backtoLogin.Name = "backtoLogin";
             this.backtoLogin.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.backtoLogin.Size = new System.Drawing.Size(136, 20);
@@ -275,13 +278,14 @@
             this.backtoLogin.Text = "Back to Sign In page";
             this.backtoLogin.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.backtoLogin.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.backtoLogin.Click += new System.EventHandler(this.backtoLogin_Click);
             // 
             // forgotPasswordPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.ClientSize = new System.Drawing.Size(1223, 647);
+            this.ClientSize = new System.Drawing.Size(1241, 694);
             this.Controls.Add(this.backtoLogin);
             this.Controls.Add(this.btn_resetPassword);
             this.Controls.Add(this.txtBox_emailForgot);
@@ -290,6 +294,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "forgotPasswordPage";
             this.Text = "Forgot Password";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.forgotPasswordPage_MouseDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -448,7 +448,8 @@
             // 
             this.bunifuLabel3.AllowParentOverrides = false;
             this.bunifuLabel3.AutoEllipsis = false;
-            this.bunifuLabel3.CursorType = null;
+            this.bunifuLabel3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuLabel3.CursorType = System.Windows.Forms.Cursors.Hand;
             this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel3.Location = new System.Drawing.Point(964, 370);
             this.bunifuLabel3.Name = "bunifuLabel3";
@@ -458,6 +459,7 @@
             this.bunifuLabel3.Text = "Forgot password?";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuLabel3.Click += new System.EventHandler(this.bunifuLabel3_Click);
             // 
             // loginPage
             // 
