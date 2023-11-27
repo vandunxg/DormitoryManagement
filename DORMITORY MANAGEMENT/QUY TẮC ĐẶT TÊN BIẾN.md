@@ -7,7 +7,7 @@ Quy tắc đặt tên biến dành cho các control của textbox nhằm giúp m
 
 * Tên biến mô tả nội dung: price, discount, tax.
 
-## Đặt tên biến cho control của textbox
+## Tên biến cho control của textbox
 
 #### Tiền tố mô tả mục đích của TextBox:
 
@@ -68,4 +68,25 @@ requiredtxtEmail - biến đại diện cho trường nhập địa chỉ email 
 autocompletetxtPhone - biến đại diện cho trường nhập số điện thoại tự động hoàn thành
 ```
 
-@updating...
+### Quy tắc đặt tên cho các control của textbox
+```
+Button: btnExample
+
+Label: lblExample
+
+TextBox: txtExample
+
+ComboBox: cboExample
+
+DataGridView: dgvExample
+
+CheckBox: chkExample
+
+RadioButton: radExample
+
+ListBox: lstExample
+
+GroupBox: grpExample
+
+Panel: pnlExample
+```
