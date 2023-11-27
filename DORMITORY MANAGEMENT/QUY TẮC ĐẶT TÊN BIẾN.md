@@ -11,13 +11,13 @@ Quy tắc đặt tên biến dành cho các control của textbox nhằm giúp m
 
 #### Tiền tố mô tả mục đích của TextBox:
 
-* txt - biến đại diện cho trường nhập dữ liệu
+* txt_ - biến đại diện cho trường nhập dữ liệu
 
-* lbl - biến đại diện cho nhãn
+* lbl_ - biến đại diện cho nhãn
 
-* cmb - biến đại diện cho hộp danh sách
+* cmb_ - biến đại diện cho hộp danh sách
 
-* rad - biến đại diện cho hộp kiểm
+* rad_ - biến đại diện cho hộp kiểm
 
 #### Tiền tố mô tả nội dung của TextBox:
 
@@ -41,52 +41,52 @@ Quy tắc đặt tên biến dành cho các control của textbox nhằm giúp m
 
 Tiền tố mô tả mục đích:
 ```
-txtCustomerName - biến đại diện cho trường nhập tên khách hàng
+txt_CustomerName - biến đại diện cho trường nhập tên khách hàng
 
-lblOrderDate - biến đại diện cho nhãn ngày đặt hàng
+lbl_OrderDate - biến đại diện cho nhãn ngày đặt hàng
 
-cmbProductTypes - biến đại diện cho hộp danh sách loại sản phẩm
+cmb_ProductTypes - biến đại diện cho hộp danh sách loại sản phẩm
 
-radMale - biến đại diện cho hộp kiểm giới tính nam
+rad_Male - biến đại diện cho hộp kiểm giới tính nam
 ```
 
 Tiền tố mô tả nội dung:
 ```
-txtEmail - biến chứa địa chỉ email
+txtEmail_ - biến chứa địa chỉ email
 
-phone - biến chứa số điện thoại
+phone_ - biến chứa số điện thoại
 
-price - biến chứa giá sản phẩm
+price_ - biến chứa giá sản phẩm
 ```
 
 Tiền tố mô tả thuộc tính:
 ```
-readonlytxtCustomerName - biến đại diện cho trường nhập tên khách hàng chỉ đọc
+readonly_txtCustomerName - biến đại diện cho trường nhập tên khách hàng chỉ đọc
 
-requiredtxtEmail - biến đại diện cho trường nhập địa chỉ email bắt buộc
+required_txtEmail - biến đại diện cho trường nhập địa chỉ email bắt buộc
 
-autocompletetxtPhone - biến đại diện cho trường nhập số điện thoại tự động hoàn thành
+autocomplete_txtPhone - biến đại diện cho trường nhập số điện thoại tự động hoàn thành
 ```
 
 ### Quy tắc đặt tên cho các control của textbox
 ```
-Button: btnExample
+Button: btn_Example
 
-Label: lblExample
+Label: lbl_Example
 
-TextBox: txtExample
+TextBox: txt_Example
 
-ComboBox: cboExample
+ComboBox: cbo_Example
 
-DataGridView: dgvExample
+DataGridView: dgv_Example
 
-CheckBox: chkExample
+CheckBox: chk_Example
 
-RadioButton: radExample
+RadioButton: rad_Example
 
-ListBox: lstExample
+ListBox: lst_Example
 
-GroupBox: grpExample
+GroupBox: grp_Example
 
-Panel: pnlExample
+Panel: pnl_Example
 ```
