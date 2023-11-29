@@ -74,7 +74,7 @@
             this.leftBackgroundImage.FadeWhenInactive = false;
             this.leftBackgroundImage.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
             this.leftBackgroundImage.Image = ((System.Drawing.Image)(resources.GetObject("leftBackgroundImage.Image")));
-            this.leftBackgroundImage.ImageActive = null;
+            //this.leftBackgroundImage.ImageActive = null;
             this.leftBackgroundImage.ImageLocation = null;
             this.leftBackgroundImage.ImageMargin = 0;
             this.leftBackgroundImage.ImageSize = new System.Drawing.Size(643, 756);
@@ -92,7 +92,7 @@
             this.leftBackgroundImage.TabIndex = 0;
             this.leftBackgroundImage.ToolTipText = "";
             this.leftBackgroundImage.WaitOnLoad = false;
-            this.leftBackgroundImage.Zoom = 0;
+            //this.leftBackgroundImage.Zoom = 0;
             this.leftBackgroundImage.ZoomSpeed = 10;
             this.leftBackgroundImage.MouseDown += new System.Windows.Forms.MouseEventHandler(this.leftBackgroundImage_MouseDown);
             // 
@@ -275,7 +275,7 @@
             this.btn_exitLoginPage.FadeWhenInactive = false;
             this.btn_exitLoginPage.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
             this.btn_exitLoginPage.Image = ((System.Drawing.Image)(resources.GetObject("btn_exitLoginPage.Image")));
-            this.btn_exitLoginPage.ImageActive = null;
+            //this.btn_exitLoginPage.ImageActive = null;
             this.btn_exitLoginPage.ImageLocation = null;
             this.btn_exitLoginPage.ImageMargin = 40;
             this.btn_exitLoginPage.ImageSize = new System.Drawing.Size(25, 22);
@@ -292,7 +292,7 @@
             this.btn_exitLoginPage.TabIndex = 4;
             this.btn_exitLoginPage.ToolTipText = "";
             this.btn_exitLoginPage.WaitOnLoad = false;
-            this.btn_exitLoginPage.Zoom = 40;
+            //this.btn_exitLoginPage.Zoom = 40;
             this.btn_exitLoginPage.ZoomSpeed = 10;
             this.btn_exitLoginPage.Click += new System.EventHandler(this.btn_exitLoginPage_Click);
             // 
