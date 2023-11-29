@@ -293,6 +293,7 @@
             this.Controls.Add(this.bunifuImageButton1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "forgotPasswordPage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Forgot Password";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.forgotPasswordPage_MouseDown);
             this.ResumeLayout(false);

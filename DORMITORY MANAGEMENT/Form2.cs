@@ -49,6 +49,9 @@ namespace DORMITORY_MANAGEMENT
 
         private void backtoLogin_Click(object sender, EventArgs e)
         {
+            
+            loginPage newLoginPage = new loginPage();
+            newLoginPage.Show();
             this.Close();
         }
     }

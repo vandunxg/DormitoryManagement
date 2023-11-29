@@ -62,3 +62,4 @@ C:\Users\vandunxg\Documents\C#\Dormitory Management\DormitoryManagement\DORMITOR
 C:\Users\vandunxg\Documents\C#\Dormitory Management\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY MANAGEMENT.exe
 C:\Users\vandunxg\Documents\C#\Dormitory Management\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY MANAGEMENT.pdb
 C:\Users\vandunxg\Documents\C#\Dormitory Management\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.forgotPasswordPage.resources
+C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.forgotPasswordPage.resources

@@ -49,7 +49,12 @@ namespace DORMITORY_MANAGEMENT
 
         private void btn_exitLoginPage_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult result = MessageBox.Show("BẠN CÓ MUỐN THOÁT ỨNG DỤNG?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         private void leftBackgroundImage_MouseDown(object sender, MouseEventArgs e)
@@ -63,8 +68,10 @@ namespace DORMITORY_MANAGEMENT
 
         private void bunifuLabel3_Click(object sender, EventArgs e)
         {
+            
             forgotPasswordPage newForm = new forgotPasswordPage();
-            newForm.ShowDialog();
+            newForm.Show();
+            this.Hide();
         }
     }
 }
