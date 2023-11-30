@@ -86,3 +86,10 @@ C:\Users\vandunxg\Documents\CODE\C#\Dormitory Management\DORMITORY MANAGEMENT\ob
 C:\Users\vandunxg\Documents\CODE\C#\Dormitory Management\DORMITORY MANAGEMENT\obj\Debug\DORMITORY MANAGEMENT.csproj.CopyComplete
 C:\Users\vandunxg\Documents\CODE\C#\Dormitory Management\DORMITORY MANAGEMENT\obj\Debug\DORMITORY MANAGEMENT.exe
 C:\Users\vandunxg\Documents\CODE\C#\Dormitory Management\DORMITORY MANAGEMENT\obj\Debug\DORMITORY MANAGEMENT.pdb
+C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Admin_Dashboard.resources
+C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
+C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.dll
+C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuPages.dll
+C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll
+C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll
+C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
