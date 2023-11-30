@@ -93,9 +93,7 @@ namespace DORMITORY_MANAGEMENT
                 }
                 if (inputEmailLogin == "vandunxg@gmail.com" && inputPasswordEmail == "vandunxg")
                 {
-                    Admin_DashBoard adminFormPage = new Admin_DashBoard();
-                    adminFormPage.Show();
-                    this.Hide();
+                    
                 }
                 else
                 {

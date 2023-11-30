@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
+using System.Data.SqlClient;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DORMITORY_MANAGEMENT
@@ -49,7 +43,7 @@ namespace DORMITORY_MANAGEMENT
 
         private void backtoLogin_Click(object sender, EventArgs e)
         {
-            
+
             loginPage newLoginPage = new loginPage();
             newLoginPage.Show();
             this.Close();
@@ -58,6 +52,9 @@ namespace DORMITORY_MANAGEMENT
         private void btn_resetPassword_Click(object sender, EventArgs e)
         {
             MessageBox.Show("LIÊN HỆ ADMIN ĐỂ CẤP LẠI MẬT KHẨU", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            
         }
+
+
     }
 }

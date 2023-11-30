@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DORMITORY_MANAGEMENT
 {
-    public partial class Admin_DashBoard : Form
+    public partial class Admin_Dashboard : Form
     {
-        public Admin_DashBoard()
+        public Admin_Dashboard()
         {
             InitializeComponent();
         }
