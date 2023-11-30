@@ -62,7 +62,7 @@
             this.bunifuImageButton1.FadeWhenInactive = false;
             this.bunifuImageButton1.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            //this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.ImageActive = null;
             this.bunifuImageButton1.ImageLocation = null;
             this.bunifuImageButton1.ImageMargin = 40;
             this.bunifuImageButton1.ImageSize = new System.Drawing.Size(650, 653);
@@ -79,7 +79,7 @@
             this.bunifuImageButton1.TabIndex = 0;
             this.bunifuImageButton1.ToolTipText = "";
             this.bunifuImageButton1.WaitOnLoad = false;
-            //this.bunifuImageButton1.Zoom = 40;
+            this.bunifuImageButton1.Zoom = 40;
             this.bunifuImageButton1.ZoomSpeed = 10;
             this.bunifuImageButton1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bunifuImageButton1_MouseDown);
             // 
@@ -198,7 +198,7 @@
             borderEdges1.TopRight = true;
             this.btn_resetPassword.CustomizableEdges = borderEdges1;
             this.btn_resetPassword.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_resetPassword.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btn_resetPassword.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(230)))));
             this.btn_resetPassword.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btn_resetPassword.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btn_resetPassword.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
@@ -222,7 +222,7 @@
             this.btn_resetPassword.IndicateFocus = false;
             this.btn_resetPassword.Location = new System.Drawing.Point(775, 349);
             this.btn_resetPassword.Name = "btn_resetPassword";
-            this.btn_resetPassword.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btn_resetPassword.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(230)))));
             this.btn_resetPassword.OnDisabledState.BorderRadius = 10;
             this.btn_resetPassword.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_resetPassword.OnDisabledState.BorderThickness = 1;
@@ -261,6 +261,7 @@
             this.btn_resetPassword.TextMarginLeft = 0;
             this.btn_resetPassword.TextPadding = new System.Windows.Forms.Padding(0);
             this.btn_resetPassword.UseDefaultRadiusAndThickness = true;
+            this.btn_resetPassword.Click += new System.EventHandler(this.btn_resetPassword_Click);
             // 
             // backtoLogin
             // 

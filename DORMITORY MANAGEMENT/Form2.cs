@@ -54,5 +54,10 @@ namespace DORMITORY_MANAGEMENT
             newLoginPage.Show();
             this.Close();
         }
+
+        private void btn_resetPassword_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("LIÊN HỆ ADMIN ĐỂ CẤP LẠI MẬT KHẨU", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
     }
 }

@@ -63,3 +63,26 @@ C:\Users\vandunxg\Documents\C#\Dormitory Management\DormitoryManagement\DORMITOR
 C:\Users\vandunxg\Documents\C#\Dormitory Management\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY MANAGEMENT.pdb
 C:\Users\vandunxg\Documents\C#\Dormitory Management\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.forgotPasswordPage.resources
 C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.forgotPasswordPage.resources
+C:\Users\vandunxg\Documents\CODE\C#\Dormitory Management\DORMITORY MANAGEMENT\bin\Debug\DORMITORY MANAGEMENT.exe.config
+C:\Users\vandunxg\Documents\CODE\C#\Dormitory Management\DORMITORY MANAGEMENT\bin\Debug\DORMITORY MANAGEMENT.exe
+C:\Users\vandunxg\Documents\CODE\C#\Dormitory Management\DORMITORY MANAGEMENT\bin\Debug\DORMITORY MANAGEMENT.pdb
+C:\Users\vandunxg\Documents\CODE\C#\Dormitory Management\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\Users\vandunxg\Documents\CODE\C#\Dormitory Management\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+C:\Users\vandunxg\Documents\CODE\C#\Dormitory Management\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.dll
+C:\Users\vandunxg\Documents\CODE\C#\Dormitory Management\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.dll
+C:\Users\vandunxg\Documents\CODE\C#\Dormitory Management\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll
+C:\Users\vandunxg\Documents\CODE\C#\Dormitory Management\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+C:\Users\vandunxg\Documents\CODE\C#\Dormitory Management\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+C:\Users\vandunxg\Documents\CODE\C#\Dormitory Management\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuTextBox.dll
+C:\Users\vandunxg\Documents\CODE\C#\Dormitory Management\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.dll
+C:\Users\vandunxg\Documents\CODE\C#\Dormitory Management\DORMITORY MANAGEMENT\obj\Debug\DORMITORY MANAGEMENT.csproj.AssemblyReference.cache
+C:\Users\vandunxg\Documents\CODE\C#\Dormitory Management\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Admin_DashBoard.resources
+C:\Users\vandunxg\Documents\CODE\C#\Dormitory Management\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.loginPage.resources
+C:\Users\vandunxg\Documents\CODE\C#\Dormitory Management\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.forgotPasswordPage.resources
+C:\Users\vandunxg\Documents\CODE\C#\Dormitory Management\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Properties.Resources.resources
+C:\Users\vandunxg\Documents\CODE\C#\Dormitory Management\DORMITORY MANAGEMENT\obj\Debug\DORMITORY MANAGEMENT.csproj.GenerateResource.cache
+C:\Users\vandunxg\Documents\CODE\C#\Dormitory Management\DORMITORY MANAGEMENT\obj\Debug\DORMITORY MANAGEMENT.exe.licenses
+C:\Users\vandunxg\Documents\CODE\C#\Dormitory Management\DORMITORY MANAGEMENT\obj\Debug\DORMITORY MANAGEMENT.csproj.CoreCompileInputs.cache
+C:\Users\vandunxg\Documents\CODE\C#\Dormitory Management\DORMITORY MANAGEMENT\obj\Debug\DORMITORY MANAGEMENT.csproj.CopyComplete
+C:\Users\vandunxg\Documents\CODE\C#\Dormitory Management\DORMITORY MANAGEMENT\obj\Debug\DORMITORY MANAGEMENT.exe
+C:\Users\vandunxg\Documents\CODE\C#\Dormitory Management\DORMITORY MANAGEMENT\obj\Debug\DORMITORY MANAGEMENT.pdb
