@@ -120,7 +120,7 @@
             this.txtBox_emailForgot.DefaultText = "";
             this.txtBox_emailForgot.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(240)))), ((int)(((byte)(247)))));
             this.txtBox_emailForgot.HideSelection = true;
-            this.txtBox_emailForgot.IconLeft = null;
+            this.txtBox_emailForgot.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtBox_emailForgot.IconLeft")));
             this.txtBox_emailForgot.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBox_emailForgot.IconPadding = 10;
             this.txtBox_emailForgot.IconRight = null;
@@ -167,7 +167,7 @@
             this.txtBox_emailForgot.TabIndex = 2;
             this.txtBox_emailForgot.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtBox_emailForgot.TextMarginBottom = 0;
-            this.txtBox_emailForgot.TextMarginLeft = 3;
+            this.txtBox_emailForgot.TextMarginLeft = 20;
             this.txtBox_emailForgot.TextMarginTop = 0;
             this.txtBox_emailForgot.TextPlaceholder = "Enter your email";
             this.txtBox_emailForgot.UseSystemPasswordChar = false;

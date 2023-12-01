@@ -162,6 +162,30 @@
         AABJRU5ErkJggg==
 </value>
   </data>
+  <data name="txtBox_emailForgot.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAs
+        SgAALEoBd3p0TQAABFJJREFUeF7tnO+R0zAQxVMCHXAdcB1wQxKOuS/QAcpRACVcCVdCSkgJKSElUIJj
+        wwwfYZ9uwxyHiB3LK8mr/c28gYHEknetp7/OwjAMwzAMwzAMo1TWm+9vV659WLnjbu2O36DVpv3l5Y4N
+        6YD/w2fwWf6aEcONa175gD4P9kAtfZLar+++/HzNlzOGgKAjcPQ070OBHSW61nLTfca1uRjjJWwxj95O
+        QkGcQnTtpWu3ZlHMyWJEg/4fwaJQdnUWJWIxsarBopJYTKy0WVROi4nVrC1qtek+FmUxsWKL4tsrFzRd
+        /+SEbkKBcG/FtgjfsQYqrVJkTXzbZeB9PlRRzSolCfDGYAUrUPZ+gUY5V5o9f4CarH0CxsyBStUlGiFx
+        ONKCpz9YoQqVZeJmT/8z0Qyfw5KOyr3/pRoOSxrIfq4Dlahaa4oJh0cev9QQqETNSjokpWy7UCXSqNtj
+        1o0nDgMB/Ll0zSf6t+1602azRdSJwyNPjgT44LrmhqsQ5ANGZljyDnxfXClnxhkScMDSNhffS5Z1Ka0J
+        wJN/N2K2iYCEricmrQl4H9G5Jd2T0JgAPP1c5Cj8NmjguiJS2QIibwr9Bl0nzXaoxgTc0nyDixwN2dAh
+        dO3JpbMFnB92DiFZP2AtIIwlIEJTzC7pOtYHjFbkZkfSRUOVCSDFbPkl3bPQmoCxrQALdcHrSUltAqAL
+        bw7BT75hpDoBkGsfhyzIZTudpz4BJAQWGx+hfsEvO+AdscD3kqiGBPwlnLim/sG/P1bC6evqElCaLAGZ
+        ZQnILEtAZlkCMquSBBzoRh9RPo6iYLn6JL8R709EdHlejVKcABputg9DJmEncDwFe8lJzwmpTMCFgQ+B
+        awSvPbU0JQBP7u39jzdcXDRoEeKtQVMCpgz+CX9qTnJzRk0CBG9E1I60JGDMKbihoD+hMmRagY4EdOLv
+        W2EBL1x2nJKejhZ7P8Add1yEGBQokW3KKU5wDIY7tGBFYkQjlQMXIYZUC5jiDNNFUKESXtrEjvvPwX1A
+        qNxocRHpkGrK8xwFyfdd/yB48ljk7XN6+q+kds5ijtBHQYWL3BD2fqdMAoIvtVGPGbakbZ5FdGJDyZ3i
+        zcOnVVK5PWNYMReVHu7UxG4OOp2E4CIHgXpx4EWXpvH0S04cBwH/C1Vucj2dgtghsOh/sF4Em4Lwd8xN
+        /gQ90SkJlMdhyIv0k1aoxOcsg/FNPuXmR2YVYT0vSbLmXoYaieXySdCeBNxbscE/wSMQhb8l1O2zjffH
+        4EckwRuZn4oZ7VzK3C3J1z31KufUzNeSZmY5fczJkmZrOX2UbkmzGOXEgma9yvWjSufkjjtVltMHW1KS
+        NZs+qbWcPnJbUhWW00c2S6rNcvpIaUnVWk4f0pZkljMQCUuip35rlnMBE75g0ZjlRDA2Ef47Lv4FD4NZ
+        u+bad9T3HX6OAL8D97zDbhDw5X239Z+Z+wKaYRiGYRiGYRiKWSx+A0uaw3plJi2mAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semibold'; font-size: 32pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>

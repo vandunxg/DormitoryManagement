@@ -133,7 +133,7 @@
             this.txt_InputEmailLogin.DefaultText = "";
             this.txt_InputEmailLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(240)))), ((int)(((byte)(247)))));
             this.txt_InputEmailLogin.HideSelection = true;
-            this.txt_InputEmailLogin.IconLeft = null;
+            this.txt_InputEmailLogin.IconLeft = ((System.Drawing.Image)(resources.GetObject("txt_InputEmailLogin.IconLeft")));
             this.txt_InputEmailLogin.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_InputEmailLogin.IconPadding = 10;
             this.txt_InputEmailLogin.IconRight = null;
@@ -180,7 +180,7 @@
             this.txt_InputEmailLogin.TabIndex = 2;
             this.txt_InputEmailLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_InputEmailLogin.TextMarginBottom = 0;
-            this.txt_InputEmailLogin.TextMarginLeft = 3;
+            this.txt_InputEmailLogin.TextMarginLeft = 20;
             this.txt_InputEmailLogin.TextMarginTop = 0;
             this.txt_InputEmailLogin.TextPlaceholder = "Email";
             this.txt_InputEmailLogin.UseSystemPasswordChar = false;
@@ -209,7 +209,7 @@
             this.txt_inputPasswordLogin.DefaultText = "";
             this.txt_inputPasswordLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(240)))), ((int)(((byte)(247)))));
             this.txt_inputPasswordLogin.HideSelection = true;
-            this.txt_inputPasswordLogin.IconLeft = null;
+            this.txt_inputPasswordLogin.IconLeft = ((System.Drawing.Image)(resources.GetObject("txt_inputPasswordLogin.IconLeft")));
             this.txt_inputPasswordLogin.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_inputPasswordLogin.IconPadding = 10;
             this.txt_inputPasswordLogin.IconRight = null;
@@ -256,11 +256,12 @@
             this.txt_inputPasswordLogin.TabIndex = 3;
             this.txt_inputPasswordLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_inputPasswordLogin.TextMarginBottom = 0;
-            this.txt_inputPasswordLogin.TextMarginLeft = 3;
+            this.txt_inputPasswordLogin.TextMarginLeft = 20;
             this.txt_inputPasswordLogin.TextMarginTop = 0;
             this.txt_inputPasswordLogin.TextPlaceholder = "Password";
             this.txt_inputPasswordLogin.UseSystemPasswordChar = true;
             this.txt_inputPasswordLogin.WordWrap = true;
+            this.txt_inputPasswordLogin.TextChanged += new System.EventHandler(this.txt_inputPasswordLogin_TextChanged);
             this.txt_inputPasswordLogin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_inputPasswordLogin_KeyPress);
             // 
             // btn_exitLoginPage

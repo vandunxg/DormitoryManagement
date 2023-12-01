@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bunifu.Framework.Lib;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,7 +15,7 @@ namespace DORMITORY_MANAGEMENT
     public partial class Admin_Dashboard : Form
     {
 
-
+        // DI CHUYỂN WINDOW BẰNG CHUỘT
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
 
@@ -22,6 +23,7 @@ namespace DORMITORY_MANAGEMENT
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
+        //
 
 
         public Admin_Dashboard()
@@ -29,20 +31,7 @@ namespace DORMITORY_MANAGEMENT
             InitializeComponent();
         }
 
-        private void bunifuButton2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuPictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Admin_Dashboard_MouseDown(object sender, MouseEventArgs e)
-        {
-            
-        }
+        
 
         private void topPanelDashboard_MouseDown(object sender, MouseEventArgs e)
         {
@@ -52,5 +41,58 @@ namespace DORMITORY_MANAGEMENT
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
         }
+
+
+
+        private void btn_addStudents_Click(object sender, EventArgs e)
+        {
+            text_showNameofPage.Text = btn_addStudents.Text.ToString();
+            txt_showMainNameofPage.Text = "Add Students Informations";
+
+            // Turn off Page
+            overviewPage.Visible = false;
+            manageRoomPage.Visible = false;
+
+
+            // Show page of button
+            addStudentsPage.Visible = true;
+            
+            
+        }
+
+        private void btn_Overview_Click(object sender, EventArgs e)
+        {
+            text_showNameofPage.Text = btn_Overview.Text.ToString();
+            txt_showMainNameofPage.Text = "Main Dashboard";
+
+
+
+            // Turn off Page
+            addStudentsPage.Visible = false;
+            manageRoomPage.Visible = false;
+
+
+            // Show page of button
+            overviewPage.Visible = true;
+
+        }
+
+        private void btn_ManageRooms_Click(object sender, EventArgs e)
+        {
+            text_showNameofPage.Text = btn_ManageRooms.Text.ToString();
+            txt_showMainNameofPage.Text = "Manage Rooms";
+
+
+
+            // Turn off Page
+            addStudentsPage.Visible = false;
+            overviewPage.Visible = false;
+
+
+            // Show page of button
+            manageRoomPage.Visible = true;
+        }
+
+        
     }
 }

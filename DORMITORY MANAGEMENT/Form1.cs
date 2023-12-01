@@ -119,5 +119,10 @@ namespace DORMITORY_MANAGEMENT
                 btn_login_Click(sender, e);
             }
         }
+
+        private void txt_inputPasswordLogin_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
