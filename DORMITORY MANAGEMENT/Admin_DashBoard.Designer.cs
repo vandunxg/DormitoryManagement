@@ -456,7 +456,7 @@
             // 
             this.btn_ManageRooms.AllowAnimations = true;
             this.btn_ManageRooms.AllowMouseEffects = true;
-            this.btn_ManageRooms.AllowToggling = false;
+            this.btn_ManageRooms.AllowToggling = true;
             this.btn_ManageRooms.AnimationSpeed = 200;
             this.btn_ManageRooms.AutoGenerateColors = false;
             this.btn_ManageRooms.AutoRoundBorders = false;
@@ -547,9 +547,9 @@
             // 
             this.btn_addStudents.AllowAnimations = true;
             this.btn_addStudents.AllowMouseEffects = true;
-            this.btn_addStudents.AllowToggling = false;
+            this.btn_addStudents.AllowToggling = true;
             this.btn_addStudents.AnimationSpeed = 200;
-            this.btn_addStudents.AutoGenerateColors = false;
+            this.btn_addStudents.AutoGenerateColors = true;
             this.btn_addStudents.AutoRoundBorders = false;
             this.btn_addStudents.AutoSizeLeftIcon = true;
             this.btn_addStudents.AutoSizeRightIcon = true;
@@ -601,11 +601,11 @@
             this.btn_addStudents.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btn_addStudents.OnDisabledState.IconLeftImage = null;
             this.btn_addStudents.OnDisabledState.IconRightImage = null;
-            this.btn_addStudents.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
+            this.btn_addStudents.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_addStudents.onHoverState.BorderRadius = 27;
             this.btn_addStudents.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_addStudents.onHoverState.BorderThickness = 1;
-            this.btn_addStudents.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
+            this.btn_addStudents.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_addStudents.onHoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(241)))));
             this.btn_addStudents.onHoverState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage10")));
             this.btn_addStudents.onHoverState.IconRightImage = null;
@@ -617,11 +617,11 @@
             this.btn_addStudents.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(167)))));
             this.btn_addStudents.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_addStudents.OnIdleState.IconLeftImage")));
             this.btn_addStudents.OnIdleState.IconRightImage = null;
-            this.btn_addStudents.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
+            this.btn_addStudents.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.btn_addStudents.OnPressedState.BorderRadius = 27;
             this.btn_addStudents.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_addStudents.OnPressedState.BorderThickness = 1;
-            this.btn_addStudents.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
+            this.btn_addStudents.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.btn_addStudents.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(241)))));
             this.btn_addStudents.OnPressedState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage11")));
             this.btn_addStudents.OnPressedState.IconRightImage = null;
@@ -669,9 +669,9 @@
             // 
             this.btn_Overview.AllowAnimations = true;
             this.btn_Overview.AllowMouseEffects = true;
-            this.btn_Overview.AllowToggling = false;
+            this.btn_Overview.AllowToggling = true;
             this.btn_Overview.AnimationSpeed = 200;
-            this.btn_Overview.AutoGenerateColors = false;
+            this.btn_Overview.AutoGenerateColors = true;
             this.btn_Overview.AutoRoundBorders = false;
             this.btn_Overview.AutoSizeLeftIcon = true;
             this.btn_Overview.AutoSizeRightIcon = true;
@@ -723,11 +723,11 @@
             this.btn_Overview.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btn_Overview.OnDisabledState.IconLeftImage = null;
             this.btn_Overview.OnDisabledState.IconRightImage = null;
-            this.btn_Overview.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
+            this.btn_Overview.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_Overview.onHoverState.BorderRadius = 27;
             this.btn_Overview.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_Overview.onHoverState.BorderThickness = 1;
-            this.btn_Overview.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
+            this.btn_Overview.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_Overview.onHoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(241)))));
             this.btn_Overview.onHoverState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage12")));
             this.btn_Overview.onHoverState.IconRightImage = null;
@@ -739,11 +739,11 @@
             this.btn_Overview.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(167)))));
             this.btn_Overview.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Overview.OnIdleState.IconLeftImage")));
             this.btn_Overview.OnIdleState.IconRightImage = null;
-            this.btn_Overview.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
+            this.btn_Overview.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.btn_Overview.OnPressedState.BorderRadius = 27;
             this.btn_Overview.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_Overview.OnPressedState.BorderThickness = 1;
-            this.btn_Overview.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
+            this.btn_Overview.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.btn_Overview.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(241)))));
             this.btn_Overview.OnPressedState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage13")));
             this.btn_Overview.OnPressedState.IconRightImage = null;
@@ -871,7 +871,6 @@
             this.manageRoomPage.Size = new System.Drawing.Size(1138, 800);
             this.manageRoomPage.TabIndex = 2;
             this.manageRoomPage.Visible = false;
-            
             // 
             // addStudentsPage
             // 
