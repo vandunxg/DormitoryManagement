@@ -49,15 +49,9 @@ namespace DORMITORY_MANAGEMENT
             text_showNameofPage.Text = btn_addStudents.Text.ToString();
             txt_showMainNameofPage.Text = "Add Students Informations";
 
-            // Turn off Page
-            overviewPage.Visible = false;
-            manageRoomPage.Visible = false;
+            pages.SetPage(((Control)sender).Text);
 
 
-            // Show page of button
-            addStudentsPage.Visible = true;
-            
-            
         }
 
         private void btn_Overview_Click(object sender, EventArgs e)
@@ -65,15 +59,9 @@ namespace DORMITORY_MANAGEMENT
             text_showNameofPage.Text = btn_Overview.Text.ToString();
             txt_showMainNameofPage.Text = "Main Dashboard";
 
+            pages.SetPage(((Control)sender).Text);
 
 
-            // Turn off Page
-            addStudentsPage.Visible = false;
-            manageRoomPage.Visible = false;
-
-
-            // Show page of button
-            overviewPage.Visible = true;
 
         }
 
@@ -81,16 +69,10 @@ namespace DORMITORY_MANAGEMENT
         {
             text_showNameofPage.Text = btn_ManageRooms.Text.ToString();
             txt_showMainNameofPage.Text = "Manage Rooms";
+            pages.SetPage(((Control)sender).Text);
 
 
 
-            // Turn off Page
-            addStudentsPage.Visible = false;
-            overviewPage.Visible = false;
-
-
-            // Show page of button
-            manageRoomPage.Visible = true;
         }
 
         

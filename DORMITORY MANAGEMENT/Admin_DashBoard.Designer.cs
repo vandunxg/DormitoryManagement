@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin_Dashboard));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
@@ -37,6 +36,7 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuButton7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -53,18 +53,23 @@
             this.text_showNameofPage = new Bunifu.UI.WinForms.BunifuLabel();
             this.txt_showMainNameofPage = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.elipseAdmin_Dashboard = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.manageRoomPage = new DORMITORY_MANAGEMENT.ManageRoomControl();
-            this.addStudentsPage = new DORMITORY_MANAGEMENT.addStudents();
-            this.overviewPage = new DORMITORY_MANAGEMENT.OverviewPage();
-            this.elipseOverview = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.elipseAddStudentsPage = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.elipseManageRoom = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
+            this.pages = new Bunifu.UI.WinForms.BunifuPages();
+            this.addStudents = new System.Windows.Forms.TabPage();
+            this.Overview = new System.Windows.Forms.TabPage();
+            this.overviewPage1 = new DORMITORY_MANAGEMENT.OverviewPage();
+            this.addStudents1 = new DORMITORY_MANAGEMENT.addStudents();
+            this.Rooms = new System.Windows.Forms.TabPage();
+            this.manageRoomControl1 = new DORMITORY_MANAGEMENT.ManageRoomControl();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.bunifuPanel3.SuspendLayout();
             this.bunifuPanel5.SuspendLayout();
             this.topPanelDashboard.SuspendLayout();
+            this.pages.SuspendLayout();
+            this.addStudents.SuspendLayout();
+            this.Overview.SuspendLayout();
+            this.Rooms.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuPanel1
@@ -549,7 +554,7 @@
             this.btn_addStudents.AllowMouseEffects = true;
             this.btn_addStudents.AllowToggling = true;
             this.btn_addStudents.AnimationSpeed = 200;
-            this.btn_addStudents.AutoGenerateColors = true;
+            this.btn_addStudents.AutoGenerateColors = false;
             this.btn_addStudents.AutoRoundBorders = false;
             this.btn_addStudents.AutoSizeLeftIcon = true;
             this.btn_addStudents.AutoSizeRightIcon = true;
@@ -568,8 +573,8 @@
             borderEdges6.TopRight = true;
             this.btn_addStudents.CustomizableEdges = borderEdges6;
             this.btn_addStudents.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_addStudents.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btn_addStudents.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btn_addStudents.DisabledBorderColor = System.Drawing.Color.White;
+            this.btn_addStudents.DisabledFillColor = System.Drawing.Color.White;
             this.btn_addStudents.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btn_addStudents.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
             this.btn_addStudents.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -593,11 +598,11 @@
             this.btn_addStudents.Location = new System.Drawing.Point(25, 240);
             this.btn_addStudents.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
             this.btn_addStudents.Name = "btn_addStudents";
-            this.btn_addStudents.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btn_addStudents.OnDisabledState.BorderColor = System.Drawing.Color.White;
             this.btn_addStudents.OnDisabledState.BorderRadius = 27;
             this.btn_addStudents.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_addStudents.OnDisabledState.BorderThickness = 1;
-            this.btn_addStudents.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btn_addStudents.OnDisabledState.FillColor = System.Drawing.Color.White;
             this.btn_addStudents.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btn_addStudents.OnDisabledState.IconLeftImage = null;
             this.btn_addStudents.OnDisabledState.IconRightImage = null;
@@ -671,7 +676,7 @@
             this.btn_Overview.AllowMouseEffects = true;
             this.btn_Overview.AllowToggling = true;
             this.btn_Overview.AnimationSpeed = 200;
-            this.btn_Overview.AutoGenerateColors = true;
+            this.btn_Overview.AutoGenerateColors = false;
             this.btn_Overview.AutoRoundBorders = false;
             this.btn_Overview.AutoSizeLeftIcon = true;
             this.btn_Overview.AutoSizeRightIcon = true;
@@ -690,9 +695,9 @@
             borderEdges7.TopRight = true;
             this.btn_Overview.CustomizableEdges = borderEdges7;
             this.btn_Overview.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_Overview.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btn_Overview.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btn_Overview.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btn_Overview.DisabledBorderColor = System.Drawing.Color.White;
+            this.btn_Overview.DisabledFillColor = System.Drawing.Color.White;
+            this.btn_Overview.DisabledForecolor = System.Drawing.Color.White;
             this.btn_Overview.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
             this.btn_Overview.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Overview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(167)))));
@@ -715,12 +720,12 @@
             this.btn_Overview.Location = new System.Drawing.Point(25, 180);
             this.btn_Overview.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
             this.btn_Overview.Name = "btn_Overview";
-            this.btn_Overview.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btn_Overview.OnDisabledState.BorderColor = System.Drawing.Color.White;
             this.btn_Overview.OnDisabledState.BorderRadius = 27;
             this.btn_Overview.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_Overview.OnDisabledState.BorderThickness = 1;
-            this.btn_Overview.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btn_Overview.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btn_Overview.OnDisabledState.FillColor = System.Drawing.Color.White;
+            this.btn_Overview.OnDisabledState.ForeColor = System.Drawing.Color.White;
             this.btn_Overview.OnDisabledState.IconLeftImage = null;
             this.btn_Overview.OnDisabledState.IconRightImage = null;
             this.btn_Overview.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -781,9 +786,7 @@
             this.bunifuPanel5.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel5.BorderRadius = 3;
             this.bunifuPanel5.BorderThickness = 1;
-            this.bunifuPanel5.Controls.Add(this.manageRoomPage);
-            this.bunifuPanel5.Controls.Add(this.addStudentsPage);
-            this.bunifuPanel5.Controls.Add(this.overviewPage);
+            this.bunifuPanel5.Controls.Add(this.pages);
             this.bunifuPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bunifuPanel5.Location = new System.Drawing.Point(0, 100);
             this.bunifuPanel5.Name = "bunifuPanel5";
@@ -858,51 +861,97 @@
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // elipseAdmin_Dashboard
+            // pages
             // 
-            this.elipseAdmin_Dashboard.ElipseRadius = 10;
-            this.elipseAdmin_Dashboard.TargetControl = this;
+            this.pages.Alignment = System.Windows.Forms.TabAlignment.Bottom;
+            this.pages.AllowTransitions = false;
+            this.pages.Controls.Add(this.Overview);
+            this.pages.Controls.Add(this.addStudents);
+            this.pages.Controls.Add(this.Rooms);
+            this.pages.Location = new System.Drawing.Point(0, 0);
+            this.pages.Multiline = true;
+            this.pages.Name = "pages";
+            this.pages.Page = this.Rooms;
+            this.pages.PageIndex = 2;
+            this.pages.PageName = "Rooms";
+            this.pages.PageTitle = "Rooms";
+            this.pages.SelectedIndex = 0;
+            this.pages.Size = new System.Drawing.Size(1138, 809);
+            this.pages.TabIndex = 0;
+            animation1.AnimateOnlyDifferences = false;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.pages.Transition = animation1;
+            this.pages.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
             // 
-            // manageRoomPage
+            // addStudents
             // 
-            this.manageRoomPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
-            this.manageRoomPage.Location = new System.Drawing.Point(0, 0);
-            this.manageRoomPage.Name = "manageRoomPage";
-            this.manageRoomPage.Size = new System.Drawing.Size(1138, 800);
-            this.manageRoomPage.TabIndex = 2;
-            this.manageRoomPage.Visible = false;
+            this.addStudents.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.addStudents.Controls.Add(this.addStudents1);
+            this.addStudents.Location = new System.Drawing.Point(4, 4);
+            this.addStudents.Name = "addStudents";
+            this.addStudents.Padding = new System.Windows.Forms.Padding(3);
+            this.addStudents.Size = new System.Drawing.Size(1130, 780);
+            this.addStudents.TabIndex = 1;
+            this.addStudents.Text = "Add Students";
             // 
-            // addStudentsPage
+            // Overview
             // 
-            this.addStudentsPage.BackColor = System.Drawing.Color.White;
-            this.addStudentsPage.Location = new System.Drawing.Point(3, 3);
-            this.addStudentsPage.Name = "addStudentsPage";
-            this.addStudentsPage.Size = new System.Drawing.Size(1138, 800);
-            this.addStudentsPage.TabIndex = 1;
-            this.addStudentsPage.Visible = false;
+            this.Overview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.Overview.Controls.Add(this.overviewPage1);
+            this.Overview.Location = new System.Drawing.Point(4, 4);
+            this.Overview.Name = "Overview";
+            this.Overview.Padding = new System.Windows.Forms.Padding(3);
+            this.Overview.Size = new System.Drawing.Size(1130, 780);
+            this.Overview.TabIndex = 0;
+            this.Overview.Text = "Overview";
             // 
-            // overviewPage
+            // overviewPage1
             // 
-            this.overviewPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
-            this.overviewPage.Location = new System.Drawing.Point(3, 0);
-            this.overviewPage.Name = "overviewPage";
-            this.overviewPage.Size = new System.Drawing.Size(1138, 800);
-            this.overviewPage.TabIndex = 0;
+            this.overviewPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.overviewPage1.Location = new System.Drawing.Point(-4, 0);
+            this.overviewPage1.Name = "overviewPage1";
+            this.overviewPage1.Size = new System.Drawing.Size(1138, 800);
+            this.overviewPage1.TabIndex = 0;
             // 
-            // elipseOverview
+            // addStudents1
             // 
-            this.elipseOverview.ElipseRadius = 10;
-            this.elipseOverview.TargetControl = this.overviewPage;
+            this.addStudents1.BackColor = System.Drawing.Color.White;
+            this.addStudents1.Location = new System.Drawing.Point(-1, 2);
+            this.addStudents1.Name = "addStudents1";
+            this.addStudents1.Size = new System.Drawing.Size(1138, 800);
+            this.addStudents1.TabIndex = 0;
             // 
-            // elipseAddStudentsPage
+            // Rooms
             // 
-            this.elipseAddStudentsPage.ElipseRadius = 10;
-            this.elipseAddStudentsPage.TargetControl = this.addStudentsPage;
+            this.Rooms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.Rooms.Controls.Add(this.manageRoomControl1);
+            this.Rooms.Location = new System.Drawing.Point(4, 4);
+            this.Rooms.Name = "Rooms";
+            this.Rooms.Padding = new System.Windows.Forms.Padding(3);
+            this.Rooms.Size = new System.Drawing.Size(1130, 780);
+            this.Rooms.TabIndex = 2;
+            this.Rooms.Text = "Rooms";
             // 
-            // elipseManageRoom
+            // manageRoomControl1
             // 
-            this.elipseManageRoom.ElipseRadius = 10;
-            this.elipseManageRoom.TargetControl = this.manageRoomPage;
+            this.manageRoomControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.manageRoomControl1.Location = new System.Drawing.Point(-4, -3);
+            this.manageRoomControl1.Name = "manageRoomControl1";
+            this.manageRoomControl1.Size = new System.Drawing.Size(1138, 800);
+            this.manageRoomControl1.TabIndex = 0;
             // 
             // Admin_Dashboard
             // 
@@ -922,13 +971,15 @@
             this.bunifuPanel5.ResumeLayout(false);
             this.topPanelDashboard.ResumeLayout(false);
             this.topPanelDashboard.PerformLayout();
+            this.pages.ResumeLayout(false);
+            this.addStudents.ResumeLayout(false);
+            this.Overview.ResumeLayout(false);
+            this.Rooms.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Bunifu.Framework.UI.BunifuElipse elipseOverview;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_Overview;
@@ -939,17 +990,19 @@
         private Bunifu.UI.WinForms.BunifuLabel txt_showMainNameofPage;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private Bunifu.UI.WinForms.BunifuLabel text_showNameofPage;
-        private OverviewPage overviewPage;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton7;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton6;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton5;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton4;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_ManageRooms;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_addStudents;
-        private Bunifu.Framework.UI.BunifuElipse elipseAddStudentsPage;
-        private addStudents addStudentsPage;
-        private Bunifu.Framework.UI.BunifuElipse elipseAdmin_Dashboard;
-        private Bunifu.Framework.UI.BunifuElipse elipseManageRoom;
-        private ManageRoomControl manageRoomPage;
+        private Bunifu.UI.WinForms.BunifuPages pages;
+        private System.Windows.Forms.TabPage addStudents;
+        private System.Windows.Forms.PageSetupDialog pageSetupDialog1;
+        private System.Windows.Forms.TabPage Overview;
+        private OverviewPage overviewPage1;
+        private addStudents addStudents1;
+        private System.Windows.Forms.TabPage Rooms;
+        private ManageRoomControl manageRoomControl1;
     }
 }
