@@ -123,6 +123,8 @@
     <Compile Include="Admin_Dashboard.Designer.cs">
       <DependentUpon>Admin_Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="DAO\Account.cs" />
+    <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +191,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DTO\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -74,7 +74,7 @@
             this.leftBackgroundImage.FadeWhenInactive = false;
             this.leftBackgroundImage.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
             this.leftBackgroundImage.Image = ((System.Drawing.Image)(resources.GetObject("leftBackgroundImage.Image")));
-            this.leftBackgroundImage.ImageActive = null;
+            //this.leftBackgroundImage.ImageActive = null;
             this.leftBackgroundImage.ImageLocation = null;
             this.leftBackgroundImage.ImageMargin = 0;
             this.leftBackgroundImage.ImageSize = new System.Drawing.Size(643, 756);
@@ -92,7 +92,7 @@
             this.leftBackgroundImage.TabIndex = 0;
             this.leftBackgroundImage.ToolTipText = "";
             this.leftBackgroundImage.WaitOnLoad = false;
-            this.leftBackgroundImage.Zoom = 0;
+            //this.leftBackgroundImage.Zoom = 0;
             this.leftBackgroundImage.ZoomSpeed = 10;
             this.leftBackgroundImage.MouseDown += new System.Windows.Forms.MouseEventHandler(this.leftBackgroundImage_MouseDown);
             // 

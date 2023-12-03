@@ -16,5 +16,10 @@ namespace DORMITORY_MANAGEMENT
         {
             InitializeComponent();
         }
+
+        private void OverviewPage_Load(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

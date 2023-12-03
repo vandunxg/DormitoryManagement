@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DORMITORY_MANAGEMENT.DAO;
+using System;
 using System.Runtime.InteropServices;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
@@ -91,13 +92,16 @@ namespace DORMITORY_MANAGEMENT
                     MessageBox.Show("Email không đúng định dạng!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                if (inputEmailLogin == "vandunxg@gmail.com" && inputPasswordEmail == "vandunxg")
+                
+                if(Account.Instance.checkValidAccount(inputEmailLogin, inputPasswordEmail))
                 {
-                    
+                    Admin_Dashboard adminPage = new Admin_Dashboard();
+                    adminPage.Visible = true;
+                    this.Visible = false;
                 }
                 else
                 {
-                    MessageBox.Show("Email hoặc Password không đúng, vui lòng nhật lại!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Email hoặc Mật khẩu không chính xác!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
 

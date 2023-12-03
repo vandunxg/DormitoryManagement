@@ -751,6 +751,7 @@
             this.Controls.Add(this.bunifuImageButton2);
             this.Name = "OverviewPage";
             this.Size = new System.Drawing.Size(1138, 800);
+            this.Load += new System.EventHandler(this.OverviewPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox3)).EndInit();

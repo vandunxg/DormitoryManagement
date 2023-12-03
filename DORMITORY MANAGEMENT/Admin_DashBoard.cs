@@ -44,16 +44,6 @@ namespace DORMITORY_MANAGEMENT
 
 
 
-        private void btn_addStudents_Click(object sender, EventArgs e)
-        {
-            text_showNameofPage.Text = btn_addStudents.Text.ToString();
-            txt_showMainNameofPage.Text = "Add Students Informations";
-
-            pages.SetPage(((Control)sender).Text);
-
-
-        }
-
         private void btn_Overview_Click(object sender, EventArgs e)
         {
             text_showNameofPage.Text = btn_Overview.Text.ToString();
@@ -65,16 +55,19 @@ namespace DORMITORY_MANAGEMENT
 
         }
 
+        private void btn_addStudents_Click(object sender, EventArgs e)
+        {
+            text_showNameofPage.Text = btn_addStudents.Text.ToString();
+            txt_showMainNameofPage.Text = "Add Students Informations";
+
+            pages.SetPage(((Control)sender).Text);
+        }
+
         private void btn_ManageRooms_Click(object sender, EventArgs e)
         {
             text_showNameofPage.Text = btn_ManageRooms.Text.ToString();
             txt_showMainNameofPage.Text = "Manage Rooms";
             pages.SetPage(((Control)sender).Text);
-
-
-
         }
-
-        
     }
 }
