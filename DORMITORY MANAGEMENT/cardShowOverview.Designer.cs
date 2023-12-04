@@ -217,6 +217,7 @@
             this.Controls.Add(this.lbl_nameCard);
             this.Name = "cardShowOverview";
             this.Size = new System.Drawing.Size(466, 425);
+            this.Load += new System.EventHandler(this.cardShowOverview_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.ResumeLayout(false);

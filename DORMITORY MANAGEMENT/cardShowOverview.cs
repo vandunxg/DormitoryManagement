@@ -84,6 +84,11 @@ namespace DORMITORY_MANAGEMENT
         }
 
         #endregion
+
+        private void cardShowOverview_Load(object sender, System.EventArgs e)
+        {
+
+        }
     }
 
 

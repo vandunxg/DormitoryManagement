@@ -19,7 +19,7 @@ namespace DORMITORY_MANAGEMENT
             InitializeComponent();
         }
 
-        // DI CHUYỂN WINDOW BẰNG CHUỘT
+        #region mouse move
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
 
@@ -27,32 +27,24 @@ namespace DORMITORY_MANAGEMENT
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
-        //
-
         private void bunifuPanel1_MouseDown(object sender, MouseEventArgs e)
         {
-            
-                if (e.Button == MouseButtons.Left)
-                {
-                    ReleaseCapture();
-                    SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
-                }
-            
-        }
 
-        // Clear data sau khi thêm sửa xoá
-        private void clearInputData()
-        {
-            txt_inputRoomID.Clear();
-            txt_inputRoomNumber.Clear();
-            cmb_inputRoomType.SelectedIndex = -1;
-            cmb_RoomCapacity.SelectedIndex = -1;
-            cmb_RoomStatus.SelectedIndex = -1;
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+
         }
+        #endregion
+
+
+        #region Events
 
         private void btn_addRoom_Click(object sender, EventArgs e)
         {
-            if(txt_inputRoomID.Text != "" && txt_inputRoomNumber.Text != "" && cmb_RoomCapacity.SelectedIndex > -1 && cmb_inputRoomType.SelectedIndex > -1
+            if (txt_inputRoomID.Text != "" && txt_inputRoomNumber.Text != "" && cmb_RoomCapacity.SelectedIndex > -1 && cmb_inputRoomType.SelectedIndex > -1
                && cmb_RoomStatus.SelectedIndex != -1)
             {
                 string txt_RoomID = txt_inputRoomID.Text.ToString();
@@ -87,7 +79,7 @@ namespace DORMITORY_MANAGEMENT
 
 
                 string query = "INSERT INTO Rooms (RoomID , RoomNumber , RoomType , RoomCapacity , RoomStatus) VALUES ( @txt_RoomID , @txt_RoomNumber , @RoomType  , @RoomCapacity , @RoomStatus );";
-                DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { txt_RoomID, txt_RoomNumber , RoomType, RoomCapacity , RoomStatus });
+                DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { txt_RoomID, txt_RoomNumber, RoomType, RoomCapacity, RoomStatus });
 
                 // Thông báo dữ liệu được thêm thành công
                 if (data.Rows.Count > -1)
@@ -113,7 +105,29 @@ namespace DORMITORY_MANAGEMENT
             DataSet data = DataProvider.Instance.ExcuteQueryDataSet(query);
             dgv_Rooms.DataSource = data.Tables[0];
 
-            
+
+        }
+
+        #endregion
+
+
+        #region Method
+
+        // Clear data sau khi thêm sửa xoá
+        private void clearInputData()
+        {
+            txt_inputRoomID.Clear();
+            txt_inputRoomNumber.Clear();
+            cmb_inputRoomType.SelectedIndex = -1;
+            cmb_RoomCapacity.SelectedIndex = -1;
+            cmb_RoomStatus.SelectedIndex = -1;
+        }
+
+        #endregion
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -81,6 +81,9 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuProgressBar">
       <HintPath>..\..\DORMITORY MANAGEMENT\DORMITORY MANAGEMENT\Resources\Bunifu UI\Bunifu.UI.WinForms.BunifuProgressBar.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRating">
+      <HintPath>..\..\..\..\..\Downloads\Compressed\BunifuCrackV5-main\BunifuCrackV5-main\Bunifu.UI.WinForms.BunifuRating.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuSeparator">
       <HintPath>..\..\DORMITORY MANAGEMENT\DORMITORY MANAGEMENT\Resources\Bunifu UI\Bunifu.UI.WinForms.BunifuSeparator.dll</HintPath>
     </Reference>
@@ -95,6 +98,9 @@
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuToolTip">
       <HintPath>..\..\DORMITORY MANAGEMENT\DORMITORY MANAGEMENT\Resources\Bunifu UI\Bunifu.UI.WinForms.BunifuToolTip.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuUserControl">
+      <HintPath>..\..\..\..\..\Downloads\Compressed\BunifuCrackV5-main\BunifuCrackV5-main\Bunifu.UI.WinForms.BunifuUserControl.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -128,6 +134,12 @@
     </Compile>
     <Compile Include="Admin_Dashboard.Designer.cs">
       <DependentUpon>Admin_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CardRoom.Designer.cs">
+      <DependentUpon>CardRoom.cs</DependentUpon>
     </Compile>
     <Compile Include="cardShowInfo.cs">
       <SubType>UserControl</SubType>
@@ -179,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_Dashboard.resx">
       <DependentUpon>Admin_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardRoom.resx">
+      <DependentUpon>CardRoom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="cardShowInfo.resx">
       <DependentUpon>cardShowInfo.cs</DependentUpon>

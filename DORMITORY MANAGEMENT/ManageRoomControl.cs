@@ -21,10 +21,26 @@ namespace DORMITORY_MANAGEMENT
 
         }
 
+        public void loadTable()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                CardRoom newCardRoom = new CardRoom(); // Tạo một thể hiện mới của cardRooms
+                newCardRoom.setAllValue("P10" + i.ToString(), 100, 100 - i * 10);
+                
+                flowLayoutPanel2.Controls.Add(newCardRoom); // Thêm thể hiện mới vào flowLayoutPanel2
+            }
+        }
+
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
             addNewRoom addNewRoom = new addNewRoom();
             addNewRoom.ShowDialog();
+        }
+
+        private void ManageRoomControl_Load(object sender, EventArgs e)
+        {
+            loadTable();
         }
     }
 }
