@@ -111,6 +111,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addNewRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addNewRoom.Designer.cs">
+      <DependentUpon>addNewRoom.cs</DependentUpon>
+    </Compile>
     <Compile Include="addStudents.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -123,8 +129,22 @@
     <Compile Include="Admin_Dashboard.Designer.cs">
       <DependentUpon>Admin_Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="cardShowInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="cardShowInfo.Designer.cs">
+      <DependentUpon>cardShowInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cardShowOverview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="cardShowOverview.Designer.cs">
+      <DependentUpon>cardShowOverview.cs</DependentUpon>
+    </Compile>
     <Compile Include="DAO\Account.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\RoomDAO.cs" />
+    <Compile Include="DAO\studentsInformation.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,11 +171,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="addNewRoom.resx">
+      <DependentUpon>addNewRoom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="addStudents.resx">
       <DependentUpon>addStudents.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_Dashboard.resx">
       <DependentUpon>Admin_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cardShowInfo.resx">
+      <DependentUpon>cardShowInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cardShowOverview.resx">
+      <DependentUpon>cardShowOverview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

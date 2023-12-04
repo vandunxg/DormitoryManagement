@@ -92,8 +92,8 @@ namespace DORMITORY_MANAGEMENT
                     MessageBox.Show("Email không đúng định dạng!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                
-                if(Account.Instance.checkValidAccount(inputEmailLogin, inputPasswordEmail))
+
+                if (Account.Instance.checkValidAccount(inputEmailLogin, inputPasswordEmail))
                 {
                     Admin_Dashboard adminPage = new Admin_Dashboard();
                     adminPage.Visible = true;

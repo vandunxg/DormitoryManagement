@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
+﻿using System.Data;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace DORMITORY_MANAGEMENT.DAO
 {
@@ -12,7 +7,7 @@ namespace DORMITORY_MANAGEMENT.DAO
     {
         private static Account instance;
 
-        private string connectionString = @"Data Source=VANDUNXG;Initial Catalog=DormitoryManagement;Integrated Security=True";
+        //private string connectionString = @"Data Source=VANDUNXG;Initial Catalog=DormitoryManagement;Integrated Security=True";
 
         private Account() { }
 

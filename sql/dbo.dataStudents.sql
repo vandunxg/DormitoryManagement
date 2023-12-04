@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [dbo].[dataStudents] (
-    [studentID]      NVARCHAR (10) NOT NULL,
+    [studentID]      NVARCHAR (15) NOT NULL,
     [fullname]       NVARCHAR (20) NOT NULL,
     [phoneNumber]    NVARCHAR (10) NOT NULL,
     [birthday]       DATE          NOT NULL,
@@ -8,8 +8,9 @@
     [personalID]     NVARCHAR (12) NOT NULL,
     [classroom]      NVARCHAR (10) NOT NULL,
     [startContract]  DATE          NOT NULL,
-    [dateofContract] REAL          NOT NULL,
+    [dateofContract] SMALLINT      NOT NULL,
     [lived]          BIT           NULL,
-    [regStay]   BIT           NULL
+    [regStay]        BIT           NULL,
+    CONSTRAINT [PK_dataStudents] PRIMARY KEY CLUSTERED ([studentID] ASC)
 );
 

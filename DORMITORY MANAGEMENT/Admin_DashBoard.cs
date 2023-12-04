@@ -1,13 +1,5 @@
-﻿using Bunifu.Framework.Lib;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
+﻿using System;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DORMITORY_MANAGEMENT
@@ -31,7 +23,7 @@ namespace DORMITORY_MANAGEMENT
             InitializeComponent();
         }
 
-        
+
 
         private void topPanelDashboard_MouseDown(object sender, MouseEventArgs e)
         {
@@ -69,5 +61,7 @@ namespace DORMITORY_MANAGEMENT
             txt_showMainNameofPage.Text = "Manage Rooms";
             pages.SetPage(((Control)sender).Text);
         }
+
+       
     }
 }

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Data.SqlClient;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -52,7 +51,7 @@ namespace DORMITORY_MANAGEMENT
         private void btn_resetPassword_Click(object sender, EventArgs e)
         {
             MessageBox.Show("LIÊN HỆ ADMIN ĐỂ CẤP LẠI MẬT KHẨU", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            
+
         }
 
 
