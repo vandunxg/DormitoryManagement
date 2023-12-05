@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DORMITORY_MANAGEMENT.DTO;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -9,9 +10,9 @@ namespace DORMITORY_MANAGEMENT.DAO
 {
     public class RoomDAO
     {
-        private static RoomDAO instance;
+        #region Declaration 
 
-        //private string connectionString = @"Data Source=VANDUNXG;Initial Catalog=DormitoryManagement;Integrated Security=True";
+        private static RoomDAO instance;
 
         private RoomDAO() { }
 
@@ -22,9 +23,13 @@ namespace DORMITORY_MANAGEMENT.DAO
 
         }
 
+        #endregion
+
+        #region Method 
+
         public bool checkLength(string checkString)
         {
-            if(checkString.Length > 10)
+            if (checkString.Length > 10)
                 return false;
             return true;
         }
@@ -39,5 +44,25 @@ namespace DORMITORY_MANAGEMENT.DAO
 
             return false;
         }
+
+        public List<Room> LoadRoomList()
+        {
+            List<Room> list = new List<Room>();
+
+            string query = "SELECT * FROM Rooms";
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+
+            foreach (DataRow row in data.Rows)
+            {
+                Room room = new Room(row);
+                list.Add(room);
+            }
+
+            return list;
+
+        }
+
+        #endregion
+
     }
 }

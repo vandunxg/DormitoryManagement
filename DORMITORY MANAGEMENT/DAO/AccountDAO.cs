@@ -5,9 +5,9 @@ namespace DORMITORY_MANAGEMENT.DAO
 {
     public class Account
     {
-        private static Account instance;
+        #region Declaration 
 
-        //private string connectionString = @"Data Source=VANDUNXG;Initial Catalog=DormitoryManagement;Integrated Security=True";
+        private static Account instance;
 
         private Account() { }
 
@@ -17,6 +17,10 @@ namespace DORMITORY_MANAGEMENT.DAO
             private set { instance = value; }
 
         }
+
+        #endregion
+
+        #region Method
 
         public bool checkValidEmail(string email)
         {
@@ -28,13 +32,15 @@ namespace DORMITORY_MANAGEMENT.DAO
 
         public bool checkValidAccount(string email, string password)
         {
-            string query = "SELECT * FROM dbo.Account WHERE user_email = @email AND user_password = @password";
+            string query = "SELECT * FROM dbo.Account WHERE Account_Email = @email AND Account_Password = @password";
 
             DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { email, password });
 
             return data.Rows.Count > 0;
 
         }
+
+        #endregion
 
     }
 }

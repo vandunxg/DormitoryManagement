@@ -8,6 +8,8 @@ namespace DORMITORY_MANAGEMENT
     {
 
         // DI CHUYỂN WINDOW BẰNG CHUỘT
+        #region Mouse Move
+
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
 
@@ -15,15 +17,6 @@ namespace DORMITORY_MANAGEMENT
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
-        //
-
-
-        public Admin_Dashboard()
-        {
-            InitializeComponent();
-        }
-
-
 
         private void topPanelDashboard_MouseDown(object sender, MouseEventArgs e)
         {
@@ -34,8 +27,16 @@ namespace DORMITORY_MANAGEMENT
             }
         }
 
+        #endregion
 
 
+        public Admin_Dashboard()
+        {
+            InitializeComponent();
+        }
+
+
+        #region Events
         private void btn_Overview_Click(object sender, EventArgs e)
         {
             text_showNameofPage.Text = btn_Overview.Text.ToString();
@@ -62,6 +63,14 @@ namespace DORMITORY_MANAGEMENT
             pages.SetPage(((Control)sender).Text);
         }
 
-       
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            DialogResult = MessageBox.Show("Bạn có chắc chắn muốn thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if(DialogResult == DialogResult.OK)
+            {
+                Application.Exit();
+            }
+        }
+        #endregion
     }
 }

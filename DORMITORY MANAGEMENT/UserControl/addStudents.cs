@@ -13,11 +13,11 @@ namespace DORMITORY_MANAGEMENT
             InitializeComponent();
         }
 
-        
+        #region Events
 
         private void addStudents_Load(object sender, EventArgs e)
         {
-            string query = "SELECT studentID, fullname, phoneNumber, birthday, address, sex, personalID, classroom, startContract, dueTime, lived, regStay FROM dbo.dataStudents";
+            string query = "SELECT StudentID, StudentName, StudentPhone, StudentDOB, StudentAddress, StudentGender, StudentPersonalID, StudentClassroom , RoomID FROM dbo.Students";
             DataSet data = DataProvider.Instance.ExcuteQueryDataSet(query);
             dgv_studentsData.DataSource = data.Tables[0];
 
@@ -41,47 +41,43 @@ namespace DORMITORY_MANAGEMENT
                 txt_inputStudentID.Text = dgv_studentsData.Rows[e.RowIndex].Cells[0].Value.ToString();
 
                 // data to textbox
-                txt_inputFullname.Text = dgv_studentsData.Rows[e.RowIndex].Cells[1].Value.ToString();
+                txt_inputStudentName.Text = dgv_studentsData.Rows[e.RowIndex].Cells[1].Value.ToString();
 
                 // data to textbox
-                txt_inputPhone.Text = dgv_studentsData.Rows[e.RowIndex].Cells[2].Value.ToString();
+                txt_inputStudentPhone.Text = dgv_studentsData.Rows[e.RowIndex].Cells[2].Value.ToString();
 
                 // data to date
-                date_inputBirthday.Value = DateTime.Parse(dgv_studentsData.Rows[e.RowIndex].Cells[3].Value.ToString());
+                date_inputStudentDOB.Value = DateTime.Parse(dgv_studentsData.Rows[e.RowIndex].Cells[3].Value.ToString());
 
                 // data to textbox
-                txt_inputAddress.Text = dgv_studentsData.Rows[e.RowIndex].Cells[4].Value.ToString();
+                txt_inputStudentAddress.Text = dgv_studentsData.Rows[e.RowIndex].Cells[4].Value.ToString();
 
                 // data to cmb
                 selectedValue = dgv_studentsData.Rows[e.RowIndex].Cells[5].Value.ToString();
-                index = cmb_inutSex.FindString(selectedValue);
-                cmb_inutSex.SelectedIndex = index;
+                index = cmb_inutStudentGender.FindString(selectedValue);
+                cmb_inutStudentGender.SelectedIndex = index;
 
                 // data to textbox
-                txt_inputPersonalID.Text = dgv_studentsData.Rows[e.RowIndex].Cells[6].Value.ToString();
+                txt_inputStudentPersonalID.Text = dgv_studentsData.Rows[e.RowIndex].Cells[6].Value.ToString();
 
                 // data to cmb
                 selectedValue = dgv_studentsData.Rows[e.RowIndex].Cells[7].Value.ToString();
-                index = cmb_inputClassroom.FindString(selectedValue);
-                cmb_inputClassroom.SelectedIndex = index;
+                index = cmb_inputStudentClassroom.FindString(selectedValue);
+                cmb_inputStudentClassroom.SelectedIndex = index;
 
                 // data to date
-                date_inputDueTime.Value = DateTime.Parse(dgv_studentsData.Rows[e.RowIndex].Cells[8].Value.ToString());
+               // date_inputCheckOutDate.Value = DateTime.Parse(dgv_studentsData.Rows[e.RowIndex].Cells[8].Value.ToString());
 
-                // data to combo box
-                if (dgv_studentsData.Rows[e.RowIndex].Cells[9].Value.ToString() == "6")
-                    cmb_inputTermContract.SelectedIndex = 0;
-                else
-                    cmb_inputTermContract.SelectedIndex = 1;
+                
 
                 // data to check box
-                if (dgv_studentsData.Rows[e.RowIndex].Cells[10].Value.ToString() == "True")
+                if (dgv_studentsData.Rows[e.RowIndex].Cells[11].Value.ToString() == "True")
                     checkbox_inputLived.Checked = true;
                 else
                     checkbox_inputLived.Checked = false;
 
                 // data to check box
-                if (dgv_studentsData.Rows[e.RowIndex].Cells[11].Value.ToString() == "True")
+                if (dgv_studentsData.Rows[e.RowIndex].Cells[12].Value.ToString() == "True")
                     checkbox_inputRegStay.Checked = true;
                 else
                     checkbox_inputRegStay.Checked = false;
@@ -93,82 +89,70 @@ namespace DORMITORY_MANAGEMENT
         }
 
         // Clear data sau khi thêm sửa xoá
-        private void clearInputData()
-        {
-            txt_inputAddress.Clear();
-            txt_inputFullname.Clear();
-            txt_inputPersonalID.Clear();
-            txt_inputPhone.Clear();
-            txt_inputStudentID.Clear();
-            cmb_inputClassroom.SelectedIndex = -1;
-            txt_inputRoomID.Clear();
-            cmb_inutSex.SelectedIndex = -1;
-            cmb_inputTermContract.SelectedIndex = -1;
-            date_inputBirthday.Value = DateTime.Now.Date;
-            date_inputDueTime.Value = DateTime.Now.Date;
-        }
+        
 
 
         private void btn_insertInformation_Click(object sender, EventArgs e)
         {
-            if (txt_inputFullname.Text != "" && txt_inputAddress.Text != "" && txt_inputPhone.Text != "" && cmb_inputClassroom.SelectedIndex > -1 && cmb_inutSex.SelectedIndex > -1 && cmb_inputTermContract.SelectedIndex > -1 &&
-               txt_inputPersonalID.Text != "" && txt_inputRoomID.Text != "")
+            if (txt_inputStudentName.Text != "" && txt_inputStudentAddress.Text != "" && txt_inputStudentPhone.Text != "" && cmb_inputStudentClassroom.SelectedIndex > -1 && cmb_inutStudentGender.SelectedIndex > -1 &&
+               txt_inputStudentPersonalID.Text != "" && txt_inputRoomID.Text != "")
             {
                 // Lấy dữ liệu từ trường nhập vào
-                string txt_studentID = txt_inputStudentID.Text.ToString();
-                string txt_fullname = txt_inputFullname.Text.ToString();
-                string txt_birthday = date_inputBirthday.Value.GetDateTimeFormats().First().ToString();
-                string txt_address = txt_inputAddress.Text.ToString();
-                string txt_numberPhone = txt_inputPhone.Text.ToString();
-                string txt_classroom = cmb_inputClassroom.SelectedItem.ToString();
-                string txt_sex = cmb_inutSex.SelectedItem.ToString();
-                string txt_personalID = txt_inputPersonalID.Text.ToString();
-                int checklived = 0, checkregStay = 0;
+                string txt_StudentID = txt_inputStudentID.Text.ToString();
+                string txt_StudentName = txt_inputStudentName.Text.ToString();
+                string txt_StudentDOB = date_inputStudentDOB.Value.GetDateTimeFormats().First().ToString();
+                string txt_StudentAddress = txt_inputStudentAddress.Text.ToString();
+                string txt_StudentPhone = txt_inputStudentPhone.Text.ToString();
+                string txt_StudentClassroom = cmb_inputStudentClassroom.SelectedItem.ToString();
+                string txt_StudentGender = cmb_inutStudentGender.SelectedItem.ToString();
+                string txt_StudentPersonalID = txt_inputStudentPersonalID.Text.ToString();
+                string txt_RoomID = txt_inputRoomID.Text.ToString();
+                int StudentLived = 0, StudentRegResident = 0;
                 if (checkbox_inputLived.Checked)
-                    checklived = 1;
+                    StudentLived = 1;
                 if (checkbox_inputRegStay.Checked)
-                    checkregStay = 1;
-                string txt_startContract = date_inputDueTime.Value.GetDateTimeFormats().First().ToString();
-                string txt_dueTime = "6";
+                    StudentRegResident = 1;
+                string txt_CheckInDate = date_inputCheckInDate.Value.GetDateTimeFormats().First().ToString();
+                string txt_CheckOutDate = date_inputCheckOutDate.Value.GetDateTimeFormats().First().ToString();
 
                 // check định dạng số điện thoại
-                if (studentsInformation.Instance.checkValidNumberPhone(txt_numberPhone) == false)
+                if (studentsDAO.Instance.checkValidNumberPhone(txt_StudentPhone) == false)
                 {
                     MessageBox.Show("Số điện thoại không đúng định dạng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
                 // check định dạng CCCD
-                if (studentsInformation.Instance.checkValidNumber(txt_personalID) == false)
+                if (studentsDAO.Instance.checkValidNumber(txt_StudentPersonalID) == false)
                 {
                     MessageBox.Show("Số CCCD chỉ gồm 12 số!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
                 // check địng dạng Mã SV
-                if (txt_studentID.Length > 12)
+                if (txt_StudentID.Length > 12)
                 {
                     MessageBox.Show("Định dạng Mã SV chỉ gồm 10 kí tự!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
                 // check trùng CCCD trong CSDL
-                if (studentsInformation.Instance.checkRepeatInformation(txt_personalID, "SELECT * FROM dbo.dataStudents WHERE personalID = @textNeedCheck") == true)
+                if (studentsDAO.Instance.checkRepeatInformation(txt_StudentPersonalID, "SELECT * FROM dbo.Students WHERE StudentPersonalID = @textNeedCheck") == true)
                 {
                     MessageBox.Show("CCCD đã tồn tại trong hệ thống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
                 // check trùng Mã SV trùng trong CSDL
-                if (studentsInformation.Instance.checkRepeatInformation(txt_studentID, "SELECT * FROM dbo.dataStudents WHERE studentID = @textNeedCheck") == true)
+                if (studentsDAO.Instance.checkRepeatInformation(txt_StudentID, "SELECT * FROM dbo.Students WHERE StudentID = @textNeedCheck") == true)
                 {
                     MessageBox.Show("MÃ SV đã tồn tại trong hệ thống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
                 // Thêm data vào CSDL
-                string query = "INSERT INTO dataStudents (studentID , fullname , phoneNumber , birthday , address , sex , personalID , classroom , startContract , dueTime , lived , regStay) VALUES ( @txt_studentID , @txt_fullname , @txt_numberPhone , @txt_birthday , @txt_address , @txt_sex , @txt_personalID , @txt_classroom , @txt_startContract , @txt_dueTime , @checklived , @checkregStay );";
-                DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { txt_studentID, txt_fullname, txt_numberPhone, txt_birthday, txt_address, txt_sex, txt_personalID, txt_classroom, txt_startContract, txt_dueTime, checklived, checkregStay });
+                string query = "INSERT INTO Students (StudentID , StudentName , StudentPhone , StudentDOB , StudentAddress , StudentGender , StudentPersonalID , StudentClassroom , RoomID , StudentLived , StudentRegResident) VALUES ( @txt_StudentID , @txt_StudentName , @txt_StudentPhone , @txt_StudentDOB , @txt_StudentAddress , @txt_StudentGender , @txt_StudentPersonalID , @txt_StudentClassroom , @txt_RoomID , @StudentLived , @StudentRegResident );";
+                DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { txt_StudentID, txt_StudentName, txt_StudentPhone, txt_StudentDOB, txt_StudentAddress, txt_StudentGender, txt_StudentPersonalID, txt_StudentClassroom , txt_RoomID , StudentLived, StudentRegResident });
 
                 // Thông báo dữ liệu được thêm thành công
                 if (data.Rows.Count > -1)
@@ -192,42 +176,42 @@ namespace DORMITORY_MANAGEMENT
 
         private void btn_editButton_Click(object sender, EventArgs e)
         {
-            if (txt_inputFullname.Text != "" && txt_inputAddress.Text != "" && txt_inputPhone.Text != "" && cmb_inputClassroom.SelectedIndex > -1 && cmb_inutSex.SelectedIndex > -1 && cmb_inputTermContract.SelectedIndex > -1 &&
-               txt_inputPersonalID.Text != "" && txt_inputRoomID.Text != "")
+            if (txt_inputStudentName.Text != "" && txt_inputStudentAddress.Text != "" && txt_inputStudentPhone.Text != "" && cmb_inputStudentClassroom.SelectedIndex > -1 && cmb_inutStudentGender.SelectedIndex > -1 &&
+               txt_inputStudentPersonalID.Text != "" && txt_inputRoomID.Text != "")
             {
                 // Lấy dữ liệu từ trường nhập vào
-                string txt_studentID = txt_inputStudentID.Text.ToString();
-                string txt_fullname = txt_inputFullname.Text.ToString();
-                string txt_birthday = date_inputBirthday.Value.GetDateTimeFormats().First().ToString();
-                string txt_address = txt_inputAddress.Text.ToString();
-                string txt_numberPhone = txt_inputPhone.Text.ToString();
-                string txt_classroom = cmb_inputClassroom.SelectedItem.ToString();
-                string txtsex = cmb_inutSex.SelectedItem.ToString();
-                string txt_personalID = txt_inputPersonalID.Text.ToString();
-                int checklived = 0, checkregStay = 0;
+                string txt_StudentID = txt_inputStudentID.Text.ToString();
+                string txt_StudentName = txt_inputStudentName.Text.ToString();
+                string txt_StudentDOB = date_inputStudentDOB.Value.GetDateTimeFormats().First().ToString();
+                string txt_StudentAddress = txt_inputStudentAddress.Text.ToString();
+                string txt_StudentPhone = txt_inputStudentPhone.Text.ToString();
+                string txt_StudentClassroom = cmb_inputStudentClassroom.SelectedItem.ToString();
+                string txtStudentGender = cmb_inutStudentGender.SelectedItem.ToString();
+                string txt_StudentPersonalID = txt_inputStudentPersonalID.Text.ToString();
+                int StudentLived = 0, StudentRegResident = 0;
                 if (checkbox_inputLived.Checked)
-                    checklived = 1;
+                    StudentLived = 1;
                 if (checkbox_inputRegStay.Checked)
-                    checkregStay = 1;
-                string txt_startContract = date_inputDueTime.Value.GetDateTimeFormats().First().ToString();
-                string txt_dueTime = "6";
+                    StudentRegResident = 1;
+                string txt_CheckInDate = date_inputCheckOutDate.Value.GetDateTimeFormats().First().ToString();
+                string txt_CheckOutDate = "6";
 
                 // check định dạng số điện thoại
-                if (studentsInformation.Instance.checkValidNumberPhone(txt_numberPhone) == false)
+                if (studentsDAO.Instance.checkValidNumberPhone(txt_StudentPhone) == false)
                 {
                     MessageBox.Show("Số điện thoại không đúng định dạng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
                 // check định dạng CCCD
-                if (studentsInformation.Instance.checkValidNumber(txt_personalID) == false)
+                if (studentsDAO.Instance.checkValidNumber(txt_StudentPersonalID) == false)
                 {
                     MessageBox.Show("Số CCCD chỉ gồm 12 số!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
                 // check địng dạng Mã SV
-                if (txt_studentID.Length > 12)
+                if (txt_StudentID.Length > 12)
                 {
                     MessageBox.Show("Định dạng Mã SV chỉ gồm 10 kí tự!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
@@ -239,8 +223,8 @@ namespace DORMITORY_MANAGEMENT
                 if (resultNotify == DialogResult.Yes)
                 {
                     // Truy vấn sửa data trong CSDL
-                    string query = "UPDATE dataStudents SET fullname = @txt_fullname , phoneNumber = @txt_numberPhone , birthday = @txt_birthday , address = @txt_address , sex = @txtsex , personalID = @txt_personalID , classroom = @txt_classroom , startContract = @txt_startContract , dueTime = @txt_dueTime , lived = @checklived , regStay = @checkregStay WHERE studentID = @txt_studentID ;";
-                    DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { txt_fullname, txt_numberPhone, txt_birthday, txt_address, txtsex, txt_personalID, txt_classroom, txt_startContract, txt_dueTime, checklived, checkregStay, txt_studentID });
+                    string query = "UPDATE dataStudents SET StudentName = @txt_StudentName , StudentPhone = @txt_StudentPhone , StudentDOB = @txt_StudentDOB , StudentAddress = @txt_StudentAddress , StudentGender = @txtStudentGender , StudentPersonalID = @txt_StudentPersonalID , StudentClassroom = @txt_StudentClassroom , CheckInDate = @txt_CheckInDate , CheckOutDate = @txt_CheckOutDate , lived = @StudentLived , regStay = @StudentRegResident WHERE StudentID = @txt_StudentID ;";
+                    DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { txt_StudentName, txt_StudentPhone, txt_StudentDOB, txt_StudentAddress, txtStudentGender, txt_StudentPersonalID, txt_StudentClassroom, txt_CheckInDate, txt_CheckOutDate, StudentLived, StudentRegResident, txt_StudentID });
 
                     if (data.Rows.Count > -1)
                     {
@@ -277,7 +261,7 @@ namespace DORMITORY_MANAGEMENT
             if (resultNotify == DialogResult.Yes)
             {
                 // TRuy vấn xoá data trong CSDL
-                string query = "DELETE FROM dataStudents WHERE studentID = @IDstudent";
+                string query = "DELETE FROM dataStudents WHERE StudentID = @IDstudent";
                 DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { IDstudent });
 
                 if (data.Rows.Count > -1)
@@ -294,6 +278,22 @@ namespace DORMITORY_MANAGEMENT
             addStudents_Load(sender, e);
         }
 
-        
+        #endregion
+
+        #region Method
+        private void clearInputData()
+        {
+            txt_inputStudentAddress.Clear();
+            txt_inputStudentName.Clear();
+            txt_inputStudentPersonalID.Clear();
+            txt_inputStudentPhone.Clear();
+            txt_inputStudentID.Clear();
+            cmb_inputStudentClassroom.SelectedIndex = -1;
+            txt_inputRoomID.Clear();
+            cmb_inutStudentGender.SelectedIndex = -1;
+            date_inputStudentDOB.Value = DateTime.Now.Date;
+            date_inputCheckOutDate.Value = DateTime.Now.Date;
+        }
+        #endregion
     }
 }

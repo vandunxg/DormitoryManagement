@@ -8,28 +8,33 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace DORMITORY_MANAGEMENT.DAO
 {
-    public class studentsInformation
+    public class studentsDAO
     {
-        private static studentsInformation instance;
+        #region Declaration 
 
-        //private string connectionString = @"Data Source=VANDUNXG;Initial Catalog=DormitoryManagement;Integrated Security=True";
+        private static studentsDAO instance;
 
-        private studentsInformation() { }
+        private studentsDAO() { }
 
-        public static studentsInformation Instance
+        public static studentsDAO Instance
         {
-            get { if (instance == null) instance = new studentsInformation(); return studentsInformation.instance; }
+            get { if (instance == null) instance = new studentsDAO(); return studentsDAO.instance; }
             private set { instance = value; }
 
         }
+
+        #endregion
+
+        #region Method 
+
         public bool checkRepeatInformation(string textNeedCheck, string query)
         {
 
             DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { textNeedCheck });
 
-            if(data.Rows.Count == 1)
+            if (data.Rows.Count == 1)
                 return true;
-       
+
             return false;
         }
 
@@ -54,6 +59,8 @@ namespace DORMITORY_MANAGEMENT.DAO
 
             return true;
         }
+
+        #endregion
 
 
     }

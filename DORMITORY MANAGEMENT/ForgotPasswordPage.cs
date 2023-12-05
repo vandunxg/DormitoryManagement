@@ -8,6 +8,8 @@ namespace DORMITORY_MANAGEMENT
     public partial class forgotPasswordPage : Form
     {
 
+        #region Mouse Move
+
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
 
@@ -15,12 +17,6 @@ namespace DORMITORY_MANAGEMENT
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
-
-
-        public forgotPasswordPage()
-        {
-            InitializeComponent();
-        }
 
         private void forgotPasswordPage_MouseDown(object sender, MouseEventArgs e)
         {
@@ -30,6 +26,17 @@ namespace DORMITORY_MANAGEMENT
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
         }
+
+        #endregion
+
+        public forgotPasswordPage()
+        {
+            InitializeComponent();
+        }
+
+
+
+        #region Events
 
         private void bunifuImageButton1_MouseDown(object sender, MouseEventArgs e)
         {
@@ -53,6 +60,8 @@ namespace DORMITORY_MANAGEMENT
             MessageBox.Show("LIÊN HỆ ADMIN ĐỂ CẤP LẠI MẬT KHẨU", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
         }
+
+        #endregion
 
 
     }

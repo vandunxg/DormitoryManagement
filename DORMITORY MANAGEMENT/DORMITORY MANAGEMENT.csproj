@@ -117,16 +117,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="addNewRoom.cs">
+    <Compile Include="UserControl\addNewRoom.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="addNewRoom.Designer.cs">
+    <Compile Include="UserControl\addNewRoom.Designer.cs">
       <DependentUpon>addNewRoom.cs</DependentUpon>
     </Compile>
-    <Compile Include="addStudents.cs">
+    <Compile Include="UserControl\addStudents.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="addStudents.Designer.cs">
+    <Compile Include="UserControl\addStudents.Designer.cs">
       <DependentUpon>addStudents.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin_Dashboard.cs">
@@ -135,82 +135,83 @@
     <Compile Include="Admin_Dashboard.Designer.cs">
       <DependentUpon>Admin_Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="CardRoom.cs">
+    <Compile Include="UserControl\CardRoom.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CardRoom.Designer.cs">
+    <Compile Include="UserControl\CardRoom.Designer.cs">
       <DependentUpon>CardRoom.cs</DependentUpon>
     </Compile>
-    <Compile Include="cardShowInfo.cs">
+    <Compile Include="UserControl\cardShowInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="cardShowInfo.Designer.cs">
+    <Compile Include="UserControl\cardShowInfo.Designer.cs">
       <DependentUpon>cardShowInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="cardShowOverview.cs">
+    <Compile Include="UserControl\cardShowOverview.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="cardShowOverview.Designer.cs">
+    <Compile Include="UserControl\cardShowOverview.Designer.cs">
       <DependentUpon>cardShowOverview.cs</DependentUpon>
     </Compile>
-    <Compile Include="DAO\Account.cs" />
+    <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\RoomDAO.cs" />
-    <Compile Include="DAO\studentsInformation.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="DAO\studentsDAO.cs" />
+    <Compile Include="DTO\Room.cs" />
+    <Compile Include="LoginPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="ForgotPasswordPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="ForgotPasswordPage.Designer.cs">
+      <DependentUpon>ForgotPasswordPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManageRoomControl.cs">
+    <Compile Include="UserControl\ManageRoomControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ManageRoomControl.Designer.cs">
+    <Compile Include="UserControl\ManageRoomControl.Designer.cs">
       <DependentUpon>ManageRoomControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="OverviewPage.cs">
+    <Compile Include="UserControl\OverviewPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="OverviewPage.Designer.cs">
+    <Compile Include="UserControl\OverviewPage.Designer.cs">
       <DependentUpon>OverviewPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="addNewRoom.resx">
+    <EmbeddedResource Include="UserControl\addNewRoom.resx">
       <DependentUpon>addNewRoom.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="addStudents.resx">
+    <EmbeddedResource Include="UserControl\addStudents.resx">
       <DependentUpon>addStudents.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_Dashboard.resx">
       <DependentUpon>Admin_Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CardRoom.resx">
+    <EmbeddedResource Include="UserControl\CardRoom.resx">
       <DependentUpon>CardRoom.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="cardShowInfo.resx">
+    <EmbeddedResource Include="UserControl\cardShowInfo.resx">
       <DependentUpon>cardShowInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="cardShowOverview.resx">
+    <EmbeddedResource Include="UserControl\cardShowOverview.resx">
       <DependentUpon>cardShowOverview.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="ForgotPasswordPage.resx">
+      <DependentUpon>ForgotPasswordPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManageRoomControl.resx">
+    <EmbeddedResource Include="UserControl\ManageRoomControl.resx">
       <DependentUpon>ManageRoomControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OverviewPage.resx">
+    <EmbeddedResource Include="UserControl\OverviewPage.resx">
       <DependentUpon>OverviewPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
@@ -236,8 +237,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DTO\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

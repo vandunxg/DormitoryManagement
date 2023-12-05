@@ -98,15 +98,20 @@ namespace DORMITORY_MANAGEMENT
                 lbl_nameMainValue.ForeColor = Color.Black;
                 lbl_nameSubValue.ForeColor = Color.Black;
                 this.BackColor = Color.FromArgb(219, 89, 98);
+                lbl_nameMainValue.ForeColor = lbl_nameSubValue.ForeColor = lbl_RoomID.ForeColor = lbl_subValue.ForeColor = lbl_value.ForeColor = Color.White;
             }
             //this.CircleProgress_Room.Value = value;
         }
 
         #endregion
 
+        #region Events
+
         private void CardRoom_Load(object sender, EventArgs e)
         {
 
         }
+
+        #endregion
     }
 }
