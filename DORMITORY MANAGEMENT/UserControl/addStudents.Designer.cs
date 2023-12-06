@@ -30,45 +30,55 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addStudents));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties13 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties17 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties21 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties22 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties23 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties24 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties25 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties26 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties27 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties28 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties29 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties30 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties31 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties32 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties33 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties34 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties35 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties36 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties37 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties38 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties39 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties40 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
             this.dgv_studentsData = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.studentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fullname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.birthday = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sex = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.personalID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.classroom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RoomID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CheckInDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CheckOutDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StudentLived = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.StudentRegResident = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.txt_inputRoomID = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.cmb_inputRoomID = new Bunifu.UI.WinForms.BunifuDropdown();
+            this.date_inputCheckOutDate = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.bunifuLabel13 = new Bunifu.UI.WinForms.BunifuLabel();
             this.txt_inputStudentID = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuLabel12 = new Bunifu.UI.WinForms.BunifuLabel();
             this.txt_inputStudentPersonalID = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.cmb_inutStudentGender = new Bunifu.UI.WinForms.BunifuDropdown();
+            this.cmb_inputStudentGender = new Bunifu.UI.WinForms.BunifuDropdown();
             this.bunifuLabel11 = new Bunifu.UI.WinForms.BunifuLabel();
             this.cmb_inputStudentClassroom = new Bunifu.UI.WinForms.BunifuDropdown();
             this.btn_deleteButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -94,20 +104,6 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.date_inputCheckOutDate = new Bunifu.UI.WinForms.BunifuDatePicker();
-            this.studentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fullname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.birthday = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sex = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.personalID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.classroom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RoomID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.startContract = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.timeContract = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lived = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.regStay = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bunifuPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_studentsData)).BeginInit();
             this.bunifuPanel1.SuspendLayout();
@@ -138,23 +134,23 @@
             this.dgv_studentsData.AllowUserToOrderColumns = true;
             this.dgv_studentsData.AllowUserToResizeColumns = false;
             this.dgv_studentsData.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.dgv_studentsData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.dgv_studentsData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_studentsData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgv_studentsData.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgv_studentsData.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
             this.dgv_studentsData.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_studentsData.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgv_studentsData.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_studentsData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_studentsData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgv_studentsData.ColumnHeadersHeight = 40;
             this.dgv_studentsData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.studentID,
@@ -166,10 +162,10 @@
             this.personalID,
             this.classroom,
             this.RoomID,
-            this.startContract,
-            this.timeContract,
-            this.lived,
-            this.regStay});
+            this.CheckInDate,
+            this.CheckOutDate,
+            this.StudentLived,
+            this.StudentRegResident});
             this.dgv_studentsData.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.dgv_studentsData.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.dgv_studentsData.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
@@ -188,14 +184,14 @@
             this.dgv_studentsData.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.dgv_studentsData.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             this.dgv_studentsData.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_studentsData.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_studentsData.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgv_studentsData.EnableHeadersVisualStyles = false;
             this.dgv_studentsData.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.dgv_studentsData.HeaderBackColor = System.Drawing.Color.DodgerBlue;
@@ -212,7 +208,127 @@
             this.dgv_studentsData.Size = new System.Drawing.Size(1055, 345);
             this.dgv_studentsData.TabIndex = 0;
             this.dgv_studentsData.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
-            this.dgv_studentsData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_studentsData_CellContentClick);
+            this.dgv_studentsData.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_studentsData_CellClick);
+            // 
+            // studentID
+            // 
+            this.studentID.DataPropertyName = "StudentID";
+            this.studentID.HeaderText = "Mã SV";
+            this.studentID.MinimumWidth = 6;
+            this.studentID.Name = "studentID";
+            this.studentID.ReadOnly = true;
+            this.studentID.Width = 97;
+            // 
+            // fullname
+            // 
+            this.fullname.DataPropertyName = "StudentName";
+            this.fullname.HeaderText = "Họ Tên";
+            this.fullname.MinimumWidth = 6;
+            this.fullname.Name = "fullname";
+            this.fullname.ReadOnly = true;
+            this.fullname.Width = 104;
+            // 
+            // phoneNumber
+            // 
+            this.phoneNumber.DataPropertyName = "StudentPhone";
+            this.phoneNumber.HeaderText = "SĐT";
+            this.phoneNumber.MinimumWidth = 6;
+            this.phoneNumber.Name = "phoneNumber";
+            this.phoneNumber.ReadOnly = true;
+            this.phoneNumber.Width = 75;
+            // 
+            // birthday
+            // 
+            this.birthday.DataPropertyName = "StudentDOB";
+            this.birthday.HeaderText = "Ngày sinh";
+            this.birthday.MinimumWidth = 6;
+            this.birthday.Name = "birthday";
+            this.birthday.ReadOnly = true;
+            this.birthday.Width = 130;
+            // 
+            // address
+            // 
+            this.address.DataPropertyName = "StudentAddress";
+            this.address.HeaderText = "Địa chỉ";
+            this.address.MinimumWidth = 6;
+            this.address.Name = "address";
+            this.address.ReadOnly = true;
+            // 
+            // sex
+            // 
+            this.sex.DataPropertyName = "StudentGender";
+            this.sex.HeaderText = "Giới tính";
+            this.sex.MinimumWidth = 6;
+            this.sex.Name = "sex";
+            this.sex.ReadOnly = true;
+            this.sex.Width = 117;
+            // 
+            // personalID
+            // 
+            this.personalID.DataPropertyName = "StudentPersonalID";
+            this.personalID.HeaderText = "CCCD";
+            this.personalID.MinimumWidth = 6;
+            this.personalID.Name = "personalID";
+            this.personalID.ReadOnly = true;
+            this.personalID.Width = 87;
+            // 
+            // classroom
+            // 
+            this.classroom.DataPropertyName = "StudentClassroom";
+            this.classroom.HeaderText = "Lớp";
+            this.classroom.MinimumWidth = 6;
+            this.classroom.Name = "classroom";
+            this.classroom.ReadOnly = true;
+            this.classroom.Width = 73;
+            // 
+            // RoomID
+            // 
+            this.RoomID.DataPropertyName = "RoomID";
+            this.RoomID.HeaderText = "Mã phòng";
+            this.RoomID.MinimumWidth = 6;
+            this.RoomID.Name = "RoomID";
+            this.RoomID.ReadOnly = true;
+            this.RoomID.Width = 133;
+            // 
+            // CheckInDate
+            // 
+            this.CheckInDate.DataPropertyName = "CheckInDate";
+            this.CheckInDate.HeaderText = "Checkin";
+            this.CheckInDate.MinimumWidth = 6;
+            this.CheckInDate.Name = "CheckInDate";
+            this.CheckInDate.ReadOnly = true;
+            this.CheckInDate.Width = 111;
+            // 
+            // CheckOutDate
+            // 
+            this.CheckOutDate.DataPropertyName = "CheckOutDate";
+            this.CheckOutDate.HeaderText = "Checkout";
+            this.CheckOutDate.MinimumWidth = 6;
+            this.CheckOutDate.Name = "CheckOutDate";
+            this.CheckOutDate.ReadOnly = true;
+            this.CheckOutDate.Width = 125;
+            // 
+            // StudentLived
+            // 
+            this.StudentLived.DataPropertyName = "StudentLived";
+            this.StudentLived.HeaderText = "Từng ở";
+            this.StudentLived.MinimumWidth = 6;
+            this.StudentLived.Name = "StudentLived";
+            this.StudentLived.ReadOnly = true;
+            this.StudentLived.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.StudentLived.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.StudentLived.Width = 104;
+            // 
+            // StudentRegResident
+            // 
+            this.StudentRegResident.DataPropertyName = "StudentRegResident";
+            this.StudentRegResident.HeaderText = "Tạm trú";
+            this.StudentRegResident.MinimumWidth = 6;
+            this.StudentRegResident.Name = "StudentRegResident";
+            this.StudentRegResident.ReadOnly = true;
+            this.StudentRegResident.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.StudentRegResident.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.StudentRegResident.Width = 110;
             // 
             // bunifuPanel1
             // 
@@ -222,13 +338,13 @@
             this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel1.BorderRadius = 3;
             this.bunifuPanel1.BorderThickness = 1;
+            this.bunifuPanel1.Controls.Add(this.cmb_inputRoomID);
             this.bunifuPanel1.Controls.Add(this.date_inputCheckOutDate);
-            this.bunifuPanel1.Controls.Add(this.txt_inputRoomID);
             this.bunifuPanel1.Controls.Add(this.bunifuLabel13);
             this.bunifuPanel1.Controls.Add(this.txt_inputStudentID);
             this.bunifuPanel1.Controls.Add(this.bunifuLabel12);
             this.bunifuPanel1.Controls.Add(this.txt_inputStudentPersonalID);
-            this.bunifuPanel1.Controls.Add(this.cmb_inutStudentGender);
+            this.bunifuPanel1.Controls.Add(this.cmb_inputStudentGender);
             this.bunifuPanel1.Controls.Add(this.bunifuLabel11);
             this.bunifuPanel1.Controls.Add(this.cmb_inputStudentClassroom);
             this.bunifuPanel1.Controls.Add(this.btn_deleteButton);
@@ -259,79 +375,75 @@
             this.bunifuPanel1.Size = new System.Drawing.Size(1138, 435);
             this.bunifuPanel1.TabIndex = 2;
             // 
-            // txt_inputRoomID
+            // cmb_inputRoomID
             // 
-            this.txt_inputRoomID.AcceptsReturn = false;
-            this.txt_inputRoomID.AcceptsTab = false;
-            this.txt_inputRoomID.AnimationSpeed = 200;
-            this.txt_inputRoomID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txt_inputRoomID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txt_inputRoomID.BackColor = System.Drawing.Color.Transparent;
-            this.txt_inputRoomID.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_inputRoomID.BackgroundImage")));
-            this.txt_inputRoomID.BorderColorActive = System.Drawing.Color.White;
-            this.txt_inputRoomID.BorderColorDisabled = System.Drawing.Color.White;
-            this.txt_inputRoomID.BorderColorHover = System.Drawing.Color.White;
-            this.txt_inputRoomID.BorderColorIdle = System.Drawing.Color.White;
-            this.txt_inputRoomID.BorderRadius = 10;
-            this.txt_inputRoomID.BorderThickness = 1;
-            this.txt_inputRoomID.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txt_inputRoomID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_inputRoomID.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.txt_inputRoomID.DefaultText = "";
-            this.txt_inputRoomID.FillColor = System.Drawing.Color.White;
-            this.txt_inputRoomID.HideSelection = true;
-            this.txt_inputRoomID.IconLeft = null;
-            this.txt_inputRoomID.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_inputRoomID.IconPadding = 10;
-            this.txt_inputRoomID.IconRight = null;
-            this.txt_inputRoomID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_inputRoomID.Lines = new string[0];
-            this.txt_inputRoomID.Location = new System.Drawing.Point(814, 39);
-            this.txt_inputRoomID.MaxLength = 32767;
-            this.txt_inputRoomID.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txt_inputRoomID.Modified = false;
-            this.txt_inputRoomID.Multiline = false;
-            this.txt_inputRoomID.Name = "txt_inputRoomID";
-            stateProperties1.BorderColor = System.Drawing.Color.White;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_inputRoomID.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.White;
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txt_inputRoomID.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.White;
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_inputRoomID.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.White;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_inputRoomID.OnIdleState = stateProperties4;
-            this.txt_inputRoomID.Padding = new System.Windows.Forms.Padding(3);
-            this.txt_inputRoomID.PasswordChar = '\0';
-            this.txt_inputRoomID.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(85)))), ((int)(((byte)(90)))));
-            this.txt_inputRoomID.PlaceholderText = "Mã phòng";
-            this.txt_inputRoomID.ReadOnly = false;
-            this.txt_inputRoomID.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txt_inputRoomID.SelectedText = "";
-            this.txt_inputRoomID.SelectionLength = 0;
-            this.txt_inputRoomID.SelectionStart = 0;
-            this.txt_inputRoomID.ShortcutsEnabled = true;
-            this.txt_inputRoomID.Size = new System.Drawing.Size(275, 50);
-            this.txt_inputRoomID.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txt_inputRoomID.TabIndex = 37;
-            this.txt_inputRoomID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txt_inputRoomID.TextMarginBottom = 0;
-            this.txt_inputRoomID.TextMarginLeft = 10;
-            this.txt_inputRoomID.TextMarginTop = 0;
-            this.txt_inputRoomID.TextPlaceholder = "Mã phòng";
-            this.txt_inputRoomID.UseSystemPasswordChar = false;
-            this.txt_inputRoomID.WordWrap = true;
+            this.cmb_inputRoomID.BackColor = System.Drawing.Color.Transparent;
+            this.cmb_inputRoomID.BackgroundColor = System.Drawing.Color.White;
+            this.cmb_inputRoomID.BorderColor = System.Drawing.Color.Transparent;
+            this.cmb_inputRoomID.BorderRadius = 1;
+            this.cmb_inputRoomID.Color = System.Drawing.Color.Transparent;
+            this.cmb_inputRoomID.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
+            this.cmb_inputRoomID.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.cmb_inputRoomID.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.cmb_inputRoomID.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.cmb_inputRoomID.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.cmb_inputRoomID.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
+            this.cmb_inputRoomID.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmb_inputRoomID.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
+            this.cmb_inputRoomID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_inputRoomID.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.cmb_inputRoomID.FillDropDown = true;
+            this.cmb_inputRoomID.FillIndicator = false;
+            this.cmb_inputRoomID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmb_inputRoomID.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_inputRoomID.ForeColor = System.Drawing.Color.Black;
+            this.cmb_inputRoomID.FormattingEnabled = true;
+            this.cmb_inputRoomID.Icon = null;
+            this.cmb_inputRoomID.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.cmb_inputRoomID.IndicatorColor = System.Drawing.Color.Gray;
+            this.cmb_inputRoomID.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.cmb_inputRoomID.ItemBackColor = System.Drawing.Color.White;
+            this.cmb_inputRoomID.ItemBorderColor = System.Drawing.Color.White;
+            this.cmb_inputRoomID.ItemForeColor = System.Drawing.Color.Black;
+            this.cmb_inputRoomID.ItemHeight = 40;
+            this.cmb_inputRoomID.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
+            this.cmb_inputRoomID.ItemHighLightForeColor = System.Drawing.Color.White;
+            this.cmb_inputRoomID.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ"});
+            this.cmb_inputRoomID.ItemTopMargin = 3;
+            this.cmb_inputRoomID.Location = new System.Drawing.Point(815, 39);
+            this.cmb_inputRoomID.Name = "cmb_inputRoomID";
+            this.cmb_inputRoomID.Size = new System.Drawing.Size(275, 46);
+            this.cmb_inputRoomID.TabIndex = 39;
+            this.cmb_inputRoomID.Text = "Phòng";
+            this.cmb_inputRoomID.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.cmb_inputRoomID.TextLeftMargin = 5;
+            // 
+            // date_inputCheckOutDate
+            // 
+            this.date_inputCheckOutDate.BackColor = System.Drawing.Color.White;
+            this.date_inputCheckOutDate.BorderRadius = 15;
+            this.date_inputCheckOutDate.Color = System.Drawing.Color.Transparent;
+            this.date_inputCheckOutDate.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
+            this.date_inputCheckOutDate.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
+            this.date_inputCheckOutDate.DisabledColor = System.Drawing.Color.Gray;
+            this.date_inputCheckOutDate.DisplayWeekNumbers = false;
+            this.date_inputCheckOutDate.DPHeight = 0;
+            this.date_inputCheckOutDate.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.date_inputCheckOutDate.FillDatePicker = false;
+            this.date_inputCheckOutDate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date_inputCheckOutDate.ForeColor = System.Drawing.Color.Black;
+            this.date_inputCheckOutDate.Icon = ((System.Drawing.Image)(resources.GetObject("date_inputCheckOutDate.Icon")));
+            this.date_inputCheckOutDate.IconColor = System.Drawing.Color.Black;
+            this.date_inputCheckOutDate.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
+            this.date_inputCheckOutDate.LeftTextMargin = 1;
+            this.date_inputCheckOutDate.Location = new System.Drawing.Point(814, 215);
+            this.date_inputCheckOutDate.MinimumSize = new System.Drawing.Size(4, 50);
+            this.date_inputCheckOutDate.Name = "date_inputCheckOutDate";
+            this.date_inputCheckOutDate.Size = new System.Drawing.Size(275, 50);
+            this.date_inputCheckOutDate.TabIndex = 38;
+            this.date_inputCheckOutDate.Value = new System.DateTime(2023, 12, 1, 0, 0, 0, 0);
             // 
             // bunifuLabel13
             // 
@@ -381,26 +493,26 @@
             this.txt_inputStudentID.Modified = false;
             this.txt_inputStudentID.Multiline = false;
             this.txt_inputStudentID.Name = "txt_inputStudentID";
-            stateProperties5.BorderColor = System.Drawing.Color.White;
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_inputStudentID.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.White;
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txt_inputStudentID.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.White;
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_inputStudentID.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.White;
-            stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_inputStudentID.OnIdleState = stateProperties8;
+            stateProperties21.BorderColor = System.Drawing.Color.White;
+            stateProperties21.FillColor = System.Drawing.Color.Empty;
+            stateProperties21.ForeColor = System.Drawing.Color.Empty;
+            stateProperties21.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_inputStudentID.OnActiveState = stateProperties21;
+            stateProperties22.BorderColor = System.Drawing.Color.White;
+            stateProperties22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties22.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txt_inputStudentID.OnDisabledState = stateProperties22;
+            stateProperties23.BorderColor = System.Drawing.Color.White;
+            stateProperties23.FillColor = System.Drawing.Color.Empty;
+            stateProperties23.ForeColor = System.Drawing.Color.Empty;
+            stateProperties23.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_inputStudentID.OnHoverState = stateProperties23;
+            stateProperties24.BorderColor = System.Drawing.Color.White;
+            stateProperties24.FillColor = System.Drawing.Color.White;
+            stateProperties24.ForeColor = System.Drawing.Color.Empty;
+            stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_inputStudentID.OnIdleState = stateProperties24;
             this.txt_inputStudentID.Padding = new System.Windows.Forms.Padding(3);
             this.txt_inputStudentID.PasswordChar = '\0';
             this.txt_inputStudentID.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(85)))), ((int)(((byte)(90)))));
@@ -470,26 +582,26 @@
             this.txt_inputStudentPersonalID.Modified = false;
             this.txt_inputStudentPersonalID.Multiline = false;
             this.txt_inputStudentPersonalID.Name = "txt_inputStudentPersonalID";
-            stateProperties9.BorderColor = System.Drawing.Color.White;
-            stateProperties9.FillColor = System.Drawing.Color.Empty;
-            stateProperties9.ForeColor = System.Drawing.Color.Empty;
-            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_inputStudentPersonalID.OnActiveState = stateProperties9;
-            stateProperties10.BorderColor = System.Drawing.Color.White;
-            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txt_inputStudentPersonalID.OnDisabledState = stateProperties10;
-            stateProperties11.BorderColor = System.Drawing.Color.White;
-            stateProperties11.FillColor = System.Drawing.Color.Empty;
-            stateProperties11.ForeColor = System.Drawing.Color.Empty;
-            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_inputStudentPersonalID.OnHoverState = stateProperties11;
-            stateProperties12.BorderColor = System.Drawing.Color.White;
-            stateProperties12.FillColor = System.Drawing.Color.White;
-            stateProperties12.ForeColor = System.Drawing.Color.Empty;
-            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_inputStudentPersonalID.OnIdleState = stateProperties12;
+            stateProperties25.BorderColor = System.Drawing.Color.White;
+            stateProperties25.FillColor = System.Drawing.Color.Empty;
+            stateProperties25.ForeColor = System.Drawing.Color.Empty;
+            stateProperties25.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_inputStudentPersonalID.OnActiveState = stateProperties25;
+            stateProperties26.BorderColor = System.Drawing.Color.White;
+            stateProperties26.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties26.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txt_inputStudentPersonalID.OnDisabledState = stateProperties26;
+            stateProperties27.BorderColor = System.Drawing.Color.White;
+            stateProperties27.FillColor = System.Drawing.Color.Empty;
+            stateProperties27.ForeColor = System.Drawing.Color.Empty;
+            stateProperties27.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_inputStudentPersonalID.OnHoverState = stateProperties27;
+            stateProperties28.BorderColor = System.Drawing.Color.White;
+            stateProperties28.FillColor = System.Drawing.Color.White;
+            stateProperties28.ForeColor = System.Drawing.Color.Empty;
+            stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_inputStudentPersonalID.OnIdleState = stateProperties28;
             this.txt_inputStudentPersonalID.Padding = new System.Windows.Forms.Padding(3);
             this.txt_inputStudentPersonalID.PasswordChar = '\0';
             this.txt_inputStudentPersonalID.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(85)))), ((int)(((byte)(90)))));
@@ -511,50 +623,50 @@
             this.txt_inputStudentPersonalID.UseSystemPasswordChar = false;
             this.txt_inputStudentPersonalID.WordWrap = true;
             // 
-            // cmb_inutStudentGender
+            // cmb_inputStudentGender
             // 
-            this.cmb_inutStudentGender.BackColor = System.Drawing.Color.Transparent;
-            this.cmb_inutStudentGender.BackgroundColor = System.Drawing.Color.White;
-            this.cmb_inutStudentGender.BorderColor = System.Drawing.Color.Transparent;
-            this.cmb_inutStudentGender.BorderRadius = 1;
-            this.cmb_inutStudentGender.Color = System.Drawing.Color.Transparent;
-            this.cmb_inutStudentGender.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
-            this.cmb_inutStudentGender.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.cmb_inutStudentGender.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.cmb_inutStudentGender.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.cmb_inutStudentGender.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.cmb_inutStudentGender.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
-            this.cmb_inutStudentGender.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmb_inutStudentGender.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
-            this.cmb_inutStudentGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmb_inutStudentGender.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.cmb_inutStudentGender.FillDropDown = true;
-            this.cmb_inutStudentGender.FillIndicator = false;
-            this.cmb_inutStudentGender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmb_inutStudentGender.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_inutStudentGender.ForeColor = System.Drawing.Color.Black;
-            this.cmb_inutStudentGender.FormattingEnabled = true;
-            this.cmb_inutStudentGender.Icon = null;
-            this.cmb_inutStudentGender.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.cmb_inutStudentGender.IndicatorColor = System.Drawing.Color.Gray;
-            this.cmb_inutStudentGender.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.cmb_inutStudentGender.ItemBackColor = System.Drawing.Color.White;
-            this.cmb_inutStudentGender.ItemBorderColor = System.Drawing.Color.White;
-            this.cmb_inutStudentGender.ItemForeColor = System.Drawing.Color.Black;
-            this.cmb_inutStudentGender.ItemHeight = 40;
-            this.cmb_inutStudentGender.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
-            this.cmb_inutStudentGender.ItemHighLightForeColor = System.Drawing.Color.White;
-            this.cmb_inutStudentGender.Items.AddRange(new object[] {
+            this.cmb_inputStudentGender.BackColor = System.Drawing.Color.Transparent;
+            this.cmb_inputStudentGender.BackgroundColor = System.Drawing.Color.White;
+            this.cmb_inputStudentGender.BorderColor = System.Drawing.Color.Transparent;
+            this.cmb_inputStudentGender.BorderRadius = 1;
+            this.cmb_inputStudentGender.Color = System.Drawing.Color.Transparent;
+            this.cmb_inputStudentGender.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
+            this.cmb_inputStudentGender.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.cmb_inputStudentGender.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.cmb_inputStudentGender.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.cmb_inputStudentGender.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.cmb_inputStudentGender.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
+            this.cmb_inputStudentGender.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmb_inputStudentGender.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
+            this.cmb_inputStudentGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_inputStudentGender.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.cmb_inputStudentGender.FillDropDown = true;
+            this.cmb_inputStudentGender.FillIndicator = false;
+            this.cmb_inputStudentGender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmb_inputStudentGender.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_inputStudentGender.ForeColor = System.Drawing.Color.Black;
+            this.cmb_inputStudentGender.FormattingEnabled = true;
+            this.cmb_inputStudentGender.Icon = null;
+            this.cmb_inputStudentGender.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.cmb_inputStudentGender.IndicatorColor = System.Drawing.Color.Gray;
+            this.cmb_inputStudentGender.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.cmb_inputStudentGender.ItemBackColor = System.Drawing.Color.White;
+            this.cmb_inputStudentGender.ItemBorderColor = System.Drawing.Color.White;
+            this.cmb_inputStudentGender.ItemForeColor = System.Drawing.Color.Black;
+            this.cmb_inputStudentGender.ItemHeight = 40;
+            this.cmb_inputStudentGender.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
+            this.cmb_inputStudentGender.ItemHighLightForeColor = System.Drawing.Color.White;
+            this.cmb_inputStudentGender.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.cmb_inutStudentGender.ItemTopMargin = 3;
-            this.cmb_inutStudentGender.Location = new System.Drawing.Point(34, 300);
-            this.cmb_inutStudentGender.Name = "cmb_inutStudentGender";
-            this.cmb_inutStudentGender.Size = new System.Drawing.Size(275, 46);
-            this.cmb_inutStudentGender.TabIndex = 32;
-            this.cmb_inutStudentGender.Text = "Giới tính";
-            this.cmb_inutStudentGender.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.cmb_inutStudentGender.TextLeftMargin = 5;
+            this.cmb_inputStudentGender.ItemTopMargin = 3;
+            this.cmb_inputStudentGender.Location = new System.Drawing.Point(34, 300);
+            this.cmb_inputStudentGender.Name = "cmb_inputStudentGender";
+            this.cmb_inputStudentGender.Size = new System.Drawing.Size(275, 46);
+            this.cmb_inputStudentGender.TabIndex = 32;
+            this.cmb_inputStudentGender.Text = "Giới tính";
+            this.cmb_inputStudentGender.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.cmb_inputStudentGender.TextLeftMargin = 5;
             // 
             // bunifuLabel11
             // 
@@ -637,11 +749,11 @@
             this.btn_deleteButton.ColorContrastOnClick = 45;
             this.btn_deleteButton.ColorContrastOnHover = 45;
             this.btn_deleteButton.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btn_deleteButton.CustomizableEdges = borderEdges1;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btn_deleteButton.CustomizableEdges = borderEdges4;
             this.btn_deleteButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_deleteButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_deleteButton.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -727,11 +839,11 @@
             this.btn_editButton.ColorContrastOnClick = 45;
             this.btn_editButton.ColorContrastOnHover = 45;
             this.btn_editButton.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btn_editButton.CustomizableEdges = borderEdges2;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.btn_editButton.CustomizableEdges = borderEdges5;
             this.btn_editButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_editButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_editButton.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -817,11 +929,11 @@
             this.btn_insertInformation.ColorContrastOnClick = 45;
             this.btn_insertInformation.ColorContrastOnHover = 45;
             this.btn_insertInformation.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btn_insertInformation.CustomizableEdges = borderEdges3;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.btn_insertInformation.CustomizableEdges = borderEdges6;
             this.btn_insertInformation.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_insertInformation.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_insertInformation.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1197,26 +1309,26 @@
             this.txt_inputStudentPhone.Modified = false;
             this.txt_inputStudentPhone.Multiline = false;
             this.txt_inputStudentPhone.Name = "txt_inputStudentPhone";
-            stateProperties13.BorderColor = System.Drawing.Color.White;
-            stateProperties13.FillColor = System.Drawing.Color.Empty;
-            stateProperties13.ForeColor = System.Drawing.Color.Empty;
-            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_inputStudentPhone.OnActiveState = stateProperties13;
-            stateProperties14.BorderColor = System.Drawing.Color.White;
-            stateProperties14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txt_inputStudentPhone.OnDisabledState = stateProperties14;
-            stateProperties15.BorderColor = System.Drawing.Color.White;
-            stateProperties15.FillColor = System.Drawing.Color.Empty;
-            stateProperties15.ForeColor = System.Drawing.Color.Empty;
-            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_inputStudentPhone.OnHoverState = stateProperties15;
-            stateProperties16.BorderColor = System.Drawing.Color.White;
-            stateProperties16.FillColor = System.Drawing.Color.White;
-            stateProperties16.ForeColor = System.Drawing.Color.Empty;
-            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_inputStudentPhone.OnIdleState = stateProperties16;
+            stateProperties29.BorderColor = System.Drawing.Color.White;
+            stateProperties29.FillColor = System.Drawing.Color.Empty;
+            stateProperties29.ForeColor = System.Drawing.Color.Empty;
+            stateProperties29.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_inputStudentPhone.OnActiveState = stateProperties29;
+            stateProperties30.BorderColor = System.Drawing.Color.White;
+            stateProperties30.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties30.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txt_inputStudentPhone.OnDisabledState = stateProperties30;
+            stateProperties31.BorderColor = System.Drawing.Color.White;
+            stateProperties31.FillColor = System.Drawing.Color.Empty;
+            stateProperties31.ForeColor = System.Drawing.Color.Empty;
+            stateProperties31.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_inputStudentPhone.OnHoverState = stateProperties31;
+            stateProperties32.BorderColor = System.Drawing.Color.White;
+            stateProperties32.FillColor = System.Drawing.Color.White;
+            stateProperties32.ForeColor = System.Drawing.Color.Empty;
+            stateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_inputStudentPhone.OnIdleState = stateProperties32;
             this.txt_inputStudentPhone.Padding = new System.Windows.Forms.Padding(3);
             this.txt_inputStudentPhone.PasswordChar = '\0';
             this.txt_inputStudentPhone.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(85)))), ((int)(((byte)(90)))));
@@ -1286,26 +1398,26 @@
             this.txt_inputStudentAddress.Modified = false;
             this.txt_inputStudentAddress.Multiline = false;
             this.txt_inputStudentAddress.Name = "txt_inputStudentAddress";
-            stateProperties17.BorderColor = System.Drawing.Color.White;
-            stateProperties17.FillColor = System.Drawing.Color.Empty;
-            stateProperties17.ForeColor = System.Drawing.Color.Empty;
-            stateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_inputStudentAddress.OnActiveState = stateProperties17;
-            stateProperties18.BorderColor = System.Drawing.Color.White;
-            stateProperties18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties18.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txt_inputStudentAddress.OnDisabledState = stateProperties18;
-            stateProperties19.BorderColor = System.Drawing.Color.White;
-            stateProperties19.FillColor = System.Drawing.Color.Empty;
-            stateProperties19.ForeColor = System.Drawing.Color.Empty;
-            stateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_inputStudentAddress.OnHoverState = stateProperties19;
-            stateProperties20.BorderColor = System.Drawing.Color.White;
-            stateProperties20.FillColor = System.Drawing.Color.White;
-            stateProperties20.ForeColor = System.Drawing.Color.Empty;
-            stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_inputStudentAddress.OnIdleState = stateProperties20;
+            stateProperties33.BorderColor = System.Drawing.Color.White;
+            stateProperties33.FillColor = System.Drawing.Color.Empty;
+            stateProperties33.ForeColor = System.Drawing.Color.Empty;
+            stateProperties33.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_inputStudentAddress.OnActiveState = stateProperties33;
+            stateProperties34.BorderColor = System.Drawing.Color.White;
+            stateProperties34.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties34.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txt_inputStudentAddress.OnDisabledState = stateProperties34;
+            stateProperties35.BorderColor = System.Drawing.Color.White;
+            stateProperties35.FillColor = System.Drawing.Color.Empty;
+            stateProperties35.ForeColor = System.Drawing.Color.Empty;
+            stateProperties35.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_inputStudentAddress.OnHoverState = stateProperties35;
+            stateProperties36.BorderColor = System.Drawing.Color.White;
+            stateProperties36.FillColor = System.Drawing.Color.White;
+            stateProperties36.ForeColor = System.Drawing.Color.Empty;
+            stateProperties36.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_inputStudentAddress.OnIdleState = stateProperties36;
             this.txt_inputStudentAddress.Padding = new System.Windows.Forms.Padding(3);
             this.txt_inputStudentAddress.PasswordChar = '\0';
             this.txt_inputStudentAddress.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(85)))), ((int)(((byte)(90)))));
@@ -1376,26 +1488,26 @@
             this.txt_inputStudentName.Modified = false;
             this.txt_inputStudentName.Multiline = false;
             this.txt_inputStudentName.Name = "txt_inputStudentName";
-            stateProperties21.BorderColor = System.Drawing.Color.White;
-            stateProperties21.FillColor = System.Drawing.Color.Empty;
-            stateProperties21.ForeColor = System.Drawing.Color.Empty;
-            stateProperties21.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_inputStudentName.OnActiveState = stateProperties21;
-            stateProperties22.BorderColor = System.Drawing.Color.White;
-            stateProperties22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties22.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txt_inputStudentName.OnDisabledState = stateProperties22;
-            stateProperties23.BorderColor = System.Drawing.Color.White;
-            stateProperties23.FillColor = System.Drawing.Color.Empty;
-            stateProperties23.ForeColor = System.Drawing.Color.Empty;
-            stateProperties23.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_inputStudentName.OnHoverState = stateProperties23;
-            stateProperties24.BorderColor = System.Drawing.Color.White;
-            stateProperties24.FillColor = System.Drawing.Color.White;
-            stateProperties24.ForeColor = System.Drawing.Color.Empty;
-            stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_inputStudentName.OnIdleState = stateProperties24;
+            stateProperties37.BorderColor = System.Drawing.Color.White;
+            stateProperties37.FillColor = System.Drawing.Color.Empty;
+            stateProperties37.ForeColor = System.Drawing.Color.Empty;
+            stateProperties37.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_inputStudentName.OnActiveState = stateProperties37;
+            stateProperties38.BorderColor = System.Drawing.Color.White;
+            stateProperties38.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties38.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txt_inputStudentName.OnDisabledState = stateProperties38;
+            stateProperties39.BorderColor = System.Drawing.Color.White;
+            stateProperties39.FillColor = System.Drawing.Color.Empty;
+            stateProperties39.ForeColor = System.Drawing.Color.Empty;
+            stateProperties39.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_inputStudentName.OnHoverState = stateProperties39;
+            stateProperties40.BorderColor = System.Drawing.Color.White;
+            stateProperties40.FillColor = System.Drawing.Color.White;
+            stateProperties40.ForeColor = System.Drawing.Color.Empty;
+            stateProperties40.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_inputStudentName.OnIdleState = stateProperties40;
             this.txt_inputStudentName.Padding = new System.Windows.Forms.Padding(3);
             this.txt_inputStudentName.PasswordChar = '\0';
             this.txt_inputStudentName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(85)))), ((int)(((byte)(90)))));
@@ -1431,146 +1543,6 @@
             // 
             this.bunifuElipse3.ElipseRadius = 5;
             this.bunifuElipse3.TargetControl = this.dgv_studentsData;
-            // 
-            // date_inputCheckOutDate
-            // 
-            this.date_inputCheckOutDate.BackColor = System.Drawing.Color.White;
-            this.date_inputCheckOutDate.BorderRadius = 15;
-            this.date_inputCheckOutDate.Color = System.Drawing.Color.Transparent;
-            this.date_inputCheckOutDate.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
-            this.date_inputCheckOutDate.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
-            this.date_inputCheckOutDate.DisabledColor = System.Drawing.Color.Gray;
-            this.date_inputCheckOutDate.DisplayWeekNumbers = false;
-            this.date_inputCheckOutDate.DPHeight = 0;
-            this.date_inputCheckOutDate.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.date_inputCheckOutDate.FillDatePicker = false;
-            this.date_inputCheckOutDate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date_inputCheckOutDate.ForeColor = System.Drawing.Color.Black;
-            this.date_inputCheckOutDate.Icon = ((System.Drawing.Image)(resources.GetObject("date_inputCheckOutDate.Icon")));
-            this.date_inputCheckOutDate.IconColor = System.Drawing.Color.Black;
-            this.date_inputCheckOutDate.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
-            this.date_inputCheckOutDate.LeftTextMargin = 1;
-            this.date_inputCheckOutDate.Location = new System.Drawing.Point(814, 215);
-            this.date_inputCheckOutDate.MinimumSize = new System.Drawing.Size(4, 50);
-            this.date_inputCheckOutDate.Name = "date_inputCheckOutDate";
-            this.date_inputCheckOutDate.Size = new System.Drawing.Size(275, 50);
-            this.date_inputCheckOutDate.TabIndex = 38;
-            this.date_inputCheckOutDate.Value = new System.DateTime(2023, 12, 1, 0, 0, 0, 0);
-            // 
-            // studentID
-            // 
-            this.studentID.DataPropertyName = "studentID";
-            this.studentID.HeaderText = "Mã SV";
-            this.studentID.MinimumWidth = 6;
-            this.studentID.Name = "studentID";
-            this.studentID.ReadOnly = true;
-            this.studentID.Width = 97;
-            // 
-            // fullname
-            // 
-            this.fullname.DataPropertyName = "fullname";
-            this.fullname.HeaderText = "Họ Tên";
-            this.fullname.MinimumWidth = 6;
-            this.fullname.Name = "fullname";
-            this.fullname.ReadOnly = true;
-            this.fullname.Width = 104;
-            // 
-            // phoneNumber
-            // 
-            this.phoneNumber.DataPropertyName = "phoneNumber";
-            this.phoneNumber.HeaderText = "SĐT";
-            this.phoneNumber.MinimumWidth = 6;
-            this.phoneNumber.Name = "phoneNumber";
-            this.phoneNumber.ReadOnly = true;
-            this.phoneNumber.Width = 75;
-            // 
-            // birthday
-            // 
-            this.birthday.DataPropertyName = "birthday";
-            this.birthday.HeaderText = "Ngày sinh";
-            this.birthday.MinimumWidth = 6;
-            this.birthday.Name = "birthday";
-            this.birthday.ReadOnly = true;
-            this.birthday.Width = 130;
-            // 
-            // address
-            // 
-            this.address.DataPropertyName = "address";
-            this.address.HeaderText = "Địa chỉ";
-            this.address.MinimumWidth = 6;
-            this.address.Name = "address";
-            this.address.ReadOnly = true;
-            // 
-            // sex
-            // 
-            this.sex.DataPropertyName = "sex";
-            this.sex.HeaderText = "Giới tính";
-            this.sex.MinimumWidth = 6;
-            this.sex.Name = "sex";
-            this.sex.ReadOnly = true;
-            this.sex.Width = 117;
-            // 
-            // personalID
-            // 
-            this.personalID.DataPropertyName = "personalID";
-            this.personalID.HeaderText = "CCCD";
-            this.personalID.MinimumWidth = 6;
-            this.personalID.Name = "personalID";
-            this.personalID.ReadOnly = true;
-            this.personalID.Width = 87;
-            // 
-            // classroom
-            // 
-            this.classroom.DataPropertyName = "classroom";
-            this.classroom.HeaderText = "Lớp";
-            this.classroom.MinimumWidth = 6;
-            this.classroom.Name = "classroom";
-            this.classroom.ReadOnly = true;
-            this.classroom.Width = 73;
-            // 
-            // RoomID
-            // 
-            this.RoomID.HeaderText = "Mã phòng";
-            this.RoomID.MinimumWidth = 6;
-            this.RoomID.Name = "RoomID";
-            this.RoomID.ReadOnly = true;
-            this.RoomID.Width = 133;
-            // 
-            // startContract
-            // 
-            this.startContract.DataPropertyName = "startContract";
-            this.startContract.HeaderText = "Ngày vào";
-            this.startContract.MinimumWidth = 6;
-            this.startContract.Name = "startContract";
-            this.startContract.ReadOnly = true;
-            this.startContract.Width = 124;
-            // 
-            // timeContract
-            // 
-            this.timeContract.DataPropertyName = "CheckOutDate";
-            this.timeContract.HeaderText = "Thời hạn";
-            this.timeContract.MinimumWidth = 6;
-            this.timeContract.Name = "timeContract";
-            this.timeContract.ReadOnly = true;
-            this.timeContract.Width = 119;
-            // 
-            // lived
-            // 
-            this.lived.DataPropertyName = "StudentLived";
-            this.lived.HeaderText = "Từng ở";
-            this.lived.MinimumWidth = 6;
-            this.lived.Name = "lived";
-            this.lived.ReadOnly = true;
-            this.lived.Width = 104;
-            // 
-            // regStay
-            // 
-            this.regStay.DataPropertyName = "StudentRegResident";
-            this.regStay.HeaderText = "Tạm trú";
-            this.regStay.MinimumWidth = 6;
-            this.regStay.Name = "regStay";
-            this.regStay.ReadOnly = true;
-            this.regStay.Width = 110;
             // 
             // addStudents
             // 
@@ -1618,15 +1590,15 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_editButton;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_insertInformation;
         private Bunifu.UI.WinForms.BunifuDropdown cmb_inputStudentClassroom;
-        private Bunifu.UI.WinForms.BunifuDropdown cmb_inutStudentGender;
+        private Bunifu.UI.WinForms.BunifuDropdown cmb_inputStudentGender;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel11;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse3;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel12;
         private Bunifu.UI.WinForms.BunifuTextBox txt_inputStudentPersonalID;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel13;
         private Bunifu.UI.WinForms.BunifuTextBox txt_inputStudentID;
-        private Bunifu.UI.WinForms.BunifuTextBox txt_inputRoomID;
         private Bunifu.UI.WinForms.BunifuDatePicker date_inputCheckOutDate;
+        private Bunifu.UI.WinForms.BunifuDropdown cmb_inputRoomID;
         private System.Windows.Forms.DataGridViewTextBoxColumn studentID;
         private System.Windows.Forms.DataGridViewTextBoxColumn fullname;
         private System.Windows.Forms.DataGridViewTextBoxColumn phoneNumber;
@@ -1636,9 +1608,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn personalID;
         private System.Windows.Forms.DataGridViewTextBoxColumn classroom;
         private System.Windows.Forms.DataGridViewTextBoxColumn RoomID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn startContract;
-        private System.Windows.Forms.DataGridViewTextBoxColumn timeContract;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lived;
-        private System.Windows.Forms.DataGridViewTextBoxColumn regStay;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CheckInDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CheckOutDate;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn StudentLived;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn StudentRegResident;
     }
 }

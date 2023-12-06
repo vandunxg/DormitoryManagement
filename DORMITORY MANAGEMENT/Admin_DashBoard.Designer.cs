@@ -45,18 +45,18 @@
             this.bunifuPanel5 = new Bunifu.UI.WinForms.BunifuPanel();
             this.pages = new Bunifu.UI.WinForms.BunifuPages();
             this.Overview = new System.Windows.Forms.TabPage();
+            this.overviewPage1 = new DORMITORY_MANAGEMENT.OverviewPage();
             this.addStudents = new System.Windows.Forms.TabPage();
+            this.addStudents1 = new DORMITORY_MANAGEMENT.addStudents();
             this.Rooms = new System.Windows.Forms.TabPage();
+            this.manageRoomControl1 = new DORMITORY_MANAGEMENT.ManageRoomControl();
             this.topPanelDashboard = new Bunifu.UI.WinForms.BunifuPanel();
+            this.btn_exit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.text_showNameofPage = new Bunifu.UI.WinForms.BunifuLabel();
             this.txt_showMainNameofPage = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.btn_exit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.overviewPage1 = new DORMITORY_MANAGEMENT.OverviewPage();
-            this.addStudents1 = new DORMITORY_MANAGEMENT.addStudents();
-            this.manageRoomControl1 = new DORMITORY_MANAGEMENT.ManageRoomControl();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.bunifuPanel3.SuspendLayout();
@@ -472,6 +472,14 @@
             this.Overview.TabIndex = 0;
             this.Overview.Text = "Overview";
             // 
+            // overviewPage1
+            // 
+            this.overviewPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.overviewPage1.Location = new System.Drawing.Point(-4, 0);
+            this.overviewPage1.Name = "overviewPage1";
+            this.overviewPage1.Size = new System.Drawing.Size(1138, 800);
+            this.overviewPage1.TabIndex = 0;
+            // 
             // addStudents
             // 
             this.addStudents.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
@@ -483,6 +491,14 @@
             this.addStudents.TabIndex = 1;
             this.addStudents.Text = "Add Students";
             // 
+            // addStudents1
+            // 
+            this.addStudents1.BackColor = System.Drawing.Color.White;
+            this.addStudents1.Location = new System.Drawing.Point(-1, 2);
+            this.addStudents1.Name = "addStudents1";
+            this.addStudents1.Size = new System.Drawing.Size(1138, 800);
+            this.addStudents1.TabIndex = 0;
+            // 
             // Rooms
             // 
             this.Rooms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
@@ -493,6 +509,14 @@
             this.Rooms.Size = new System.Drawing.Size(1130, 780);
             this.Rooms.TabIndex = 2;
             this.Rooms.Text = "Rooms";
+            // 
+            // manageRoomControl1
+            // 
+            this.manageRoomControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.manageRoomControl1.Location = new System.Drawing.Point(-4, -3);
+            this.manageRoomControl1.Name = "manageRoomControl1";
+            this.manageRoomControl1.Size = new System.Drawing.Size(1138, 800);
+            this.manageRoomControl1.TabIndex = 0;
             // 
             // topPanelDashboard
             // 
@@ -513,59 +537,6 @@
             this.topPanelDashboard.Size = new System.Drawing.Size(1138, 100);
             this.topPanelDashboard.TabIndex = 2;
             this.topPanelDashboard.MouseDown += new System.Windows.Forms.MouseEventHandler(this.topPanelDashboard_MouseDown);
-            // 
-            // text_showNameofPage
-            // 
-            this.text_showNameofPage.AllowParentOverrides = false;
-            this.text_showNameofPage.AutoEllipsis = false;
-            this.text_showNameofPage.CursorType = null;
-            this.text_showNameofPage.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.text_showNameofPage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(126)))), ((int)(((byte)(174)))));
-            this.text_showNameofPage.Location = new System.Drawing.Point(82, 30);
-            this.text_showNameofPage.Name = "text_showNameofPage";
-            this.text_showNameofPage.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.text_showNameofPage.Size = new System.Drawing.Size(73, 20);
-            this.text_showNameofPage.TabIndex = 4;
-            this.text_showNameofPage.Text = "Dashboard";
-            this.text_showNameofPage.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.text_showNameofPage.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // txt_showMainNameofPage
-            // 
-            this.txt_showMainNameofPage.AllowParentOverrides = false;
-            this.txt_showMainNameofPage.AutoEllipsis = false;
-            this.txt_showMainNameofPage.CursorType = null;
-            this.txt_showMainNameofPage.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.txt_showMainNameofPage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.txt_showMainNameofPage.Location = new System.Drawing.Point(34, 56);
-            this.txt_showMainNameofPage.Name = "txt_showMainNameofPage";
-            this.txt_showMainNameofPage.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txt_showMainNameofPage.Size = new System.Drawing.Size(233, 41);
-            this.txt_showMainNameofPage.TabIndex = 3;
-            this.txt_showMainNameofPage.Text = "Main Dashboard";
-            this.txt_showMainNameofPage.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.txt_showMainNameofPage.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuLabel1
-            // 
-            this.bunifuLabel1.AllowParentOverrides = false;
-            this.bunifuLabel1.AutoEllipsis = false;
-            this.bunifuLabel1.CursorType = null;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(126)))), ((int)(((byte)(174)))));
-            this.bunifuLabel1.Location = new System.Drawing.Point(34, 30);
-            this.bunifuLabel1.Name = "bunifuLabel1";
-            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(43, 20);
-            this.bunifuLabel1.TabIndex = 2;
-            this.bunifuLabel1.Text = "Page / ";
-            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 10;
-            this.bunifuElipse1.TargetControl = this;
             // 
             // btn_exit
             // 
@@ -638,7 +609,7 @@
             this.btn_exit.OnIdleState.BorderThickness = 1;
             this.btn_exit.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
             this.btn_exit.OnIdleState.ForeColor = System.Drawing.Color.Black;
-            this.btn_exit.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton1.OnIdleState.IconLeftImage")));
+            this.btn_exit.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.OnIdleState.IconLeftImage")));
             this.btn_exit.OnIdleState.IconRightImage = null;
             this.btn_exit.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
             this.btn_exit.OnPressedState.BorderRadius = 10;
@@ -657,29 +628,58 @@
             this.btn_exit.UseDefaultRadiusAndThickness = true;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
-            // overviewPage1
+            // text_showNameofPage
             // 
-            this.overviewPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
-            this.overviewPage1.Location = new System.Drawing.Point(-4, 0);
-            this.overviewPage1.Name = "overviewPage1";
-            this.overviewPage1.Size = new System.Drawing.Size(1138, 800);
-            this.overviewPage1.TabIndex = 0;
+            this.text_showNameofPage.AllowParentOverrides = false;
+            this.text_showNameofPage.AutoEllipsis = false;
+            this.text_showNameofPage.CursorType = null;
+            this.text_showNameofPage.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.text_showNameofPage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(126)))), ((int)(((byte)(174)))));
+            this.text_showNameofPage.Location = new System.Drawing.Point(82, 30);
+            this.text_showNameofPage.Name = "text_showNameofPage";
+            this.text_showNameofPage.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.text_showNameofPage.Size = new System.Drawing.Size(73, 20);
+            this.text_showNameofPage.TabIndex = 4;
+            this.text_showNameofPage.Text = "Dashboard";
+            this.text_showNameofPage.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.text_showNameofPage.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // addStudents1
+            // txt_showMainNameofPage
             // 
-            this.addStudents1.BackColor = System.Drawing.Color.White;
-            this.addStudents1.Location = new System.Drawing.Point(-1, 2);
-            this.addStudents1.Name = "addStudents1";
-            this.addStudents1.Size = new System.Drawing.Size(1138, 800);
-            this.addStudents1.TabIndex = 0;
+            this.txt_showMainNameofPage.AllowParentOverrides = false;
+            this.txt_showMainNameofPage.AutoEllipsis = false;
+            this.txt_showMainNameofPage.CursorType = null;
+            this.txt_showMainNameofPage.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.txt_showMainNameofPage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
+            this.txt_showMainNameofPage.Location = new System.Drawing.Point(34, 56);
+            this.txt_showMainNameofPage.Name = "txt_showMainNameofPage";
+            this.txt_showMainNameofPage.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txt_showMainNameofPage.Size = new System.Drawing.Size(233, 41);
+            this.txt_showMainNameofPage.TabIndex = 3;
+            this.txt_showMainNameofPage.Text = "Main Dashboard";
+            this.txt_showMainNameofPage.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.txt_showMainNameofPage.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // manageRoomControl1
+            // bunifuLabel1
             // 
-            this.manageRoomControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
-            this.manageRoomControl1.Location = new System.Drawing.Point(-4, -3);
-            this.manageRoomControl1.Name = "manageRoomControl1";
-            this.manageRoomControl1.Size = new System.Drawing.Size(1138, 800);
-            this.manageRoomControl1.TabIndex = 0;
+            this.bunifuLabel1.AllowParentOverrides = false;
+            this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.CursorType = null;
+            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(126)))), ((int)(((byte)(174)))));
+            this.bunifuLabel1.Location = new System.Drawing.Point(34, 30);
+            this.bunifuLabel1.Name = "bunifuLabel1";
+            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel1.Size = new System.Drawing.Size(43, 20);
+            this.bunifuLabel1.TabIndex = 2;
+            this.bunifuLabel1.Text = "Page / ";
+            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 10;
+            this.bunifuElipse1.TargetControl = this;
             // 
             // Admin_Dashboard
             // 

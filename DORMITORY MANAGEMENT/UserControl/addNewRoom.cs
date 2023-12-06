@@ -9,6 +9,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.ComponentModel.Design.ObjectSelectorEditor;
 
 namespace DORMITORY_MANAGEMENT
 {
@@ -89,7 +90,8 @@ namespace DORMITORY_MANAGEMENT
 
                 // Reload lại dữ liệu trong bảng
                 addNewRoom_Load(sender, e);
-
+                ManageRoomControl newManageRoomControl = new ManageRoomControl();
+                
                 // Xoá các trường dữ liệu sau khi thêm thành công
                 clearInputData();
             }
@@ -190,7 +192,14 @@ namespace DORMITORY_MANAGEMENT
             string txt_RoomID = dgv_Rooms.Rows[index].Cells[0].Value.ToString();
 
 
+            string queryCount = "SELECT * FROM Students WHERE RoomID = @txt_RoomID";
+            DataTable numberOfStudents = DataProvider.Instance.ExcuteQuery(queryCount, new object[] { txt_RoomID });
 
+            if (numberOfStudents.Rows.Count > 0)
+            {
+                MessageBox.Show("Phòng đang có sinh viên, không thể xoá?", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             DialogResult resultNotify = MessageBox.Show("Bạn có chắc chắn xoá phòng?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 

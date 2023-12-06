@@ -16,8 +16,7 @@ namespace DORMITORY_MANAGEMENT
         {
             InitializeComponent();
 
-            flowLayoutRoom.Controls.Clear();
-            loadTable();
+            
         }
         #region Events
         private void bunifuPictureBox1_Click(object sender, EventArgs e)
@@ -26,10 +25,7 @@ namespace DORMITORY_MANAGEMENT
             cmb_stateRoom.SelectedIndex = -1;
         }
 
-        private void bunifuPanel1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
@@ -37,9 +33,10 @@ namespace DORMITORY_MANAGEMENT
             addNewRoom.ShowDialog();
         }
 
-        private void ManageRoomControl_Load(object sender, EventArgs e)
+        public void ManageRoomControl_Load(object sender, EventArgs e)
         {
-            
+            flowLayoutRoom.Controls.Clear();
+            loadTable();
         }
         #endregion
 

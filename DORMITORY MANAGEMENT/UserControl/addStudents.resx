@@ -194,16 +194,16 @@
   <metadata name="RoomID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="startContract.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="CheckInDate.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="timeContract.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="CheckOutDate.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lived.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="StudentLived.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="regStay.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="StudentRegResident.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="bunifuPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -290,20 +290,6 @@
         kEHbDFqIrTTiQwr5VET7gQmfsSAC6XX4nM3uYrMk3jaXorQqRVek3vX0id/H4TeQKSgfuEs4VMq7Z72B
         e//A6MPQF281K+Hiwb8WaVSCBT9AMQZmnuKqzPenotC7gQNvrT6iuBUPeT2dtzasxZtMJpPJX3d3/wOi
         QjpIr7RRgwAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="txt_inputRoomID.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAARMAAAAyCAYAAAB/Lj+fAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAG2SURBVHhe7dgxahVRGIbhW6bMElJauhJrl2DjWgTX4BZs
-        02YJqS1EUEQiGMEwo39mPtCgSG4+7Z4HfuZwzpn2ZZgDwH+xruvTmfOZD98BfnHbhZmLmWdJxu/m3mku
-        Xe2vAfzZdOLLzOUsz5KQn25Dsl8DuJ/pxpt5nCQjW0iez3zejwHuZ1mWr9OOl0mJrxLg4aYfb5OSLSbX
-        2Qc4WlKy/XwFeLCkREyATlIiJkAnKREToJOUiAnQSUrEBOgkJWICdJISMQE6SYmYAJ2kREyATlIiJkAn
-        KREToJOUiAnQSUrEBOgkJWICdJISMQE6SYmYAJ2kREyATlIiJkAnKREToJOUiAnQSUrEBOgkJWICdJIS
-        MQE6SYmYAJ2kREyATlIiJkAnKREToJOUiAnQSUrEBOgkJWICdJISMQE6SYmYAJ2kREyATlIiJkAnKRET
-        oJOUHA7rut5kD+BoSckWk8vsARxl+nGVlGwxebEsi68T4GjTj9dJyfbP5GQ23u1HAPcz3fg0j7OkZDcb
-        j+fg/cy37RbAX0wrPs48SULumvPTOXw1c71fB7hr+nAzcz7LR0kHwL9yOPwAqUW1AbIq8KAAAAAASUVO
-        RK5CYII=
 </value>
   </data>
   <data name="bunifuLabel13.BaseStylesheet" xml:space="preserve">
