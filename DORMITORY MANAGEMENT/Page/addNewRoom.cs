@@ -1,15 +1,8 @@
 ﻿using DORMITORY_MANAGEMENT.DAO;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.ComponentModel.Design.ObjectSelectorEditor;
 
 namespace DORMITORY_MANAGEMENT
 {
@@ -53,6 +46,7 @@ namespace DORMITORY_MANAGEMENT
                 int RoomCapacity = int.Parse(cmb_RoomCapacity.SelectedItem.ToString());
                 string RoomStatus = cmb_RoomStatus.SelectedItem.ToString();
                 string RoomType = cmb_inputRoomType.SelectedItem.ToString();
+                string RoomArea = cmb_inputRoomArea.SelectedItem.ToString();
 
                 if (RoomDAO.Instance.checkLength(txt_RoomID) == false)
                 {
@@ -79,8 +73,8 @@ namespace DORMITORY_MANAGEMENT
                 }
 
 
-                string query = "INSERT INTO Rooms (RoomID , RoomNumber , RoomType , RoomCapacity , RoomStatus) VALUES ( @txt_RoomID , @txt_RoomNumber , @RoomType  , @RoomCapacity , @RoomStatus );";
-                DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { txt_RoomID, txt_RoomNumber, RoomType, RoomCapacity, RoomStatus });
+                string query = "INSERT INTO Rooms (RoomID , RoomNumber , RoomType , RoomArea , RoomCapacity , RoomStatus ) VALUES ( @txt_RoomID , @txt_RoomNumber , @RoomType , @RoomArea , @RoomCapacity , @RoomStatus );";
+                DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { txt_RoomID, txt_RoomNumber, RoomType, RoomArea, RoomCapacity, RoomStatus });
 
                 // Thông báo dữ liệu được thêm thành công
                 if (data.Rows.Count > -1)
@@ -90,8 +84,8 @@ namespace DORMITORY_MANAGEMENT
 
                 // Reload lại dữ liệu trong bảng
                 addNewRoom_Load(sender, e);
-                ManageRoomControl newManageRoomControl = new ManageRoomControl();
-                
+
+
                 // Xoá các trường dữ liệu sau khi thêm thành công
                 clearInputData();
             }
@@ -103,7 +97,7 @@ namespace DORMITORY_MANAGEMENT
 
         private void addNewRoom_Load(object sender, EventArgs e)
         {
-            string query = "SELECT * FROM Rooms";
+            string query = "SELECT *  FROM Rooms";
             DataSet data = DataProvider.Instance.ExcuteQueryDataSet(query);
             dgv_Rooms.DataSource = data.Tables[0];
 
@@ -118,23 +112,23 @@ namespace DORMITORY_MANAGEMENT
                 this.Close();
             }
 
-            
+
         }
 
         private void btn_editRoom_Click(object sender, EventArgs e)
         {
             if (txt_inputRoomID.Text != "" && txt_inputRoomNumber.Text != "" && cmb_RoomCapacity.SelectedIndex > -1 && cmb_inputRoomType.SelectedIndex > -1
-               && cmb_RoomStatus.SelectedIndex != -1)
+               && cmb_RoomStatus.SelectedIndex != -1 && cmb_inputRoomArea.SelectedIndex != -1)
             {
                 string txt_RoomID = txt_inputRoomID.Text.ToString();
                 string txt_RoomNumber = txt_inputRoomNumber.Text.ToString();
                 int RoomCapacity = int.Parse(cmb_RoomCapacity.SelectedItem.ToString());
                 string RoomStatus = cmb_RoomStatus.SelectedItem.ToString();
                 string RoomType = cmb_inputRoomType.SelectedItem.ToString();
+                string RoomArea = cmb_inputRoomArea.SelectedItem.ToString();
 
-                
-                string query = "UPDATE Rooms SET RoomNumber = @txt_RoomNumber , RoomType = @RoomType , RoomCapacity = @RoomCapacity , RoomStatus = @RoomStatus WHERE RoomID = @txt_RoomID ;";
-                DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { txt_RoomNumber, RoomType, RoomCapacity, RoomStatus, txt_RoomID });
+                string query = "UPDATE Rooms SET RoomNumber = @txt_RoomNumber , RoomType = @RoomType , RoomArea = @RoomArea , RoomCapacity = @RoomCapacity , RoomStatus = @RoomStatus WHERE RoomID = @txt_RoomID ;";
+                DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { txt_RoomNumber, RoomType , RoomArea , RoomCapacity, RoomStatus, txt_RoomID });
 
                 // Thông báo dữ liệu được thêm thành công
                 if (data.Rows.Count > -1)
@@ -167,18 +161,23 @@ namespace DORMITORY_MANAGEMENT
             if (e.RowIndex >= 0 && e.ColumnIndex >= 0 && e.RowIndex < dgv_Rooms.Rows.Count && e.ColumnIndex < dgv_Rooms.Columns.Count)
             {
                 txt_inputRoomID.Text = dgv_Rooms.Rows[e.RowIndex].Cells[0].Value.ToString();
-                
+
                 txt_inputRoomNumber.Text = dgv_Rooms.Rows[e.RowIndex].Cells[1].Value.ToString();
 
                 string valueSelected = "";
+
+                
 
                 valueSelected = dgv_Rooms.Rows[e.RowIndex].Cells[2].Value.ToString();
                 cmb_inputRoomType.SelectedIndex = cmb_inputRoomType.FindString(valueSelected);
 
                 valueSelected = dgv_Rooms.Rows[e.RowIndex].Cells[3].Value.ToString();
-                cmb_RoomCapacity.SelectedIndex = cmb_RoomCapacity.FindString(valueSelected);
+                cmb_inputRoomArea.SelectedIndex = cmb_inputRoomArea.FindString(valueSelected);
 
                 valueSelected = dgv_Rooms.Rows[e.RowIndex].Cells[4].Value.ToString();
+                cmb_RoomCapacity.SelectedIndex = cmb_RoomCapacity.FindString(valueSelected);
+
+                valueSelected = dgv_Rooms.Rows[e.RowIndex].Cells[5].Value.ToString();
                 cmb_RoomStatus.SelectedIndex = cmb_RoomStatus.FindString(valueSelected);
             }
 
@@ -222,6 +221,10 @@ namespace DORMITORY_MANAGEMENT
             // Load lại data trong bảng
             addNewRoom_Load(sender, e);
         }
+
+        
+
+
         #endregion
 
 
@@ -243,12 +246,12 @@ namespace DORMITORY_MANAGEMENT
 
 
 
+
         #endregion
 
-        private void txt_inputRoomNumber_TextChanged(object sender, EventArgs e)
+        private void cmb_inputRoomArea_SelectedIndexChanged(object sender, EventArgs e)
         {
-            txt_inputRoomID.Clear();
-            txt_inputRoomID.Text = "P" + txt_inputRoomNumber.Text;
+            txt_inputRoomID.Text = cmb_inputRoomArea.SelectedItem.ToString() + txt_inputRoomNumber.Text.ToString();
         }
     }
 }

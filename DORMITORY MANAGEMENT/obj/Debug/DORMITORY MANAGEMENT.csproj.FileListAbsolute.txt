@@ -154,3 +154,4 @@ C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debu
 C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.ManageRoomControl.resources
 C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.OverviewPage.resources
 C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.RoomStudentManager.resources
+C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Page.AddServiceUsage.resources

@@ -10,6 +10,7 @@ CREATE TABLE Rooms (
     RoomID NVARCHAR(10) PRIMARY KEY NOT NULL,
     RoomNumber NVARCHAR(10) NOT NULL,
     RoomType NVARCHAR(20) NOT NULL,
+	RoomArea NVARCHAR(5) NOT NULL,
     RoomCapacity INT NOT NULL,
     RoomStatus NVARCHAR(20) NOT NULL
 );
@@ -36,16 +37,20 @@ CREATE TABLE Students (
 -- Bảng Dịch vụ
 CREATE TABLE Services (
     ServiceID NVARCHAR(10) PRIMARY KEY NOT NULL,
-    ServiceName NVARCHAR(20) NOT NULL,
-    ServicePrice DECIMAL(10, 2) NOT NULL
+    ServiceElectricity MONEY NOT NULL,
+	ServiceWater  MONEY NOT NULL,
+	ServiceTotal  MONEY NOT NULL,
+	ServiceInternet MONEY NOT NULL
 );
 
 -- Bảng Dịch vụ sử dụng
 CREATE TABLE ServiceUsage (
     UsageID NVARCHAR(10) PRIMARY KEY NOT NULL,
-    StudentID NVARCHAR(15) NOT NULL,
+    RoomID NVARCHAR(10) NOT NULL,
     ServiceID NVARCHAR(10)  NOT NULL,
     UsageDate NVARCHAR(10) NOT NULL,
-    FOREIGN KEY (StudentID) REFERENCES Students(StudentID),
+	Paid BIT,
+    FOREIGN KEY (RoomID) REFERENCES Rooms(RoomID),
     FOREIGN KEY (ServiceID) REFERENCES Services(ServiceID)
 );
+

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DORMITORY_MANAGEMENT.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -37,8 +38,28 @@ namespace DORMITORY_MANAGEMENT
             InitializeComponent();
         }
 
-        
+        public RoomStudentManager(string RoomID)
+        {
+            InitializeComponent();
+            lbl_RoomID.Text = RoomID;
 
-        
+            string query = "SELECT StudentName, StudentID FROM Students WHERE RoomID = @RoomID ";
+            DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { RoomID });
+            dgv_Students.DataSource = data;
+
+        }
+
+        #region Events
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+
+
+        #endregion
+
+
     }
 }

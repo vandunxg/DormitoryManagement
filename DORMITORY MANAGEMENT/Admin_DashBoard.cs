@@ -72,5 +72,13 @@ namespace DORMITORY_MANAGEMENT
             }
         }
         #endregion
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            text_showNameofPage.Text = btn_addStudents.Text.ToString();
+            txt_showMainNameofPage.Text = "Add Service Usage";
+
+            pages.SetPage(((Control)sender).Text);
+        }
     }
 }
