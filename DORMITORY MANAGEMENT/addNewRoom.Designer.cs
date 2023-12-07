@@ -62,16 +62,16 @@
             this.btn_editRoom = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_addRoom = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.dgv_Rooms = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse5 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.btn_deleteRoom = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.RoomID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RoomNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RoomType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RoomCapacity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RoomStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse5 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.btn_deleteRoom = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Rooms)).BeginInit();
             this.SuspendLayout();
@@ -196,6 +196,7 @@
             this.bunifuLabel2.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
             this.bunifuLabel2.Location = new System.Drawing.Point(25, 15);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -212,7 +213,8 @@
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel1.Location = new System.Drawing.Point(25, 90);
+            this.bunifuLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
+            this.bunifuLabel1.Location = new System.Drawing.Point(440, 90);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(68, 20);
@@ -240,7 +242,9 @@
             this.txt_inputRoomID.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_inputRoomID.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
             this.txt_inputRoomID.DefaultText = "";
+            this.txt_inputRoomID.Enabled = false;
             this.txt_inputRoomID.FillColor = System.Drawing.Color.White;
+            this.txt_inputRoomID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
             this.txt_inputRoomID.HideSelection = true;
             this.txt_inputRoomID.IconLeft = null;
             this.txt_inputRoomID.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -248,7 +252,7 @@
             this.txt_inputRoomID.IconRight = null;
             this.txt_inputRoomID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_inputRoomID.Lines = new string[0];
-            this.txt_inputRoomID.Location = new System.Drawing.Point(25, 116);
+            this.txt_inputRoomID.Location = new System.Drawing.Point(440, 116);
             this.txt_inputRoomID.MaxLength = 32767;
             this.txt_inputRoomID.MinimumSize = new System.Drawing.Size(1, 1);
             this.txt_inputRoomID.Modified = false;
@@ -271,12 +275,12 @@
             this.txt_inputRoomID.OnHoverState = stateProperties7;
             stateProperties8.BorderColor = System.Drawing.Color.White;
             stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
+            stateProperties8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txt_inputRoomID.OnIdleState = stateProperties8;
             this.txt_inputRoomID.Padding = new System.Windows.Forms.Padding(3);
             this.txt_inputRoomID.PasswordChar = '\0';
-            this.txt_inputRoomID.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(85)))), ((int)(((byte)(90)))));
+            this.txt_inputRoomID.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
             this.txt_inputRoomID.PlaceholderText = "Mã Phòng";
             this.txt_inputRoomID.ReadOnly = false;
             this.txt_inputRoomID.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -302,7 +306,8 @@
             this.bunifuLabel3.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel3.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel3.Location = new System.Drawing.Point(440, 90);
+            this.bunifuLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
+            this.bunifuLabel3.Location = new System.Drawing.Point(25, 90);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel3.Size = new System.Drawing.Size(64, 20);
@@ -331,6 +336,7 @@
             this.txt_inputRoomNumber.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
             this.txt_inputRoomNumber.DefaultText = "";
             this.txt_inputRoomNumber.FillColor = System.Drawing.Color.White;
+            this.txt_inputRoomNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
             this.txt_inputRoomNumber.HideSelection = true;
             this.txt_inputRoomNumber.IconLeft = null;
             this.txt_inputRoomNumber.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -338,7 +344,7 @@
             this.txt_inputRoomNumber.IconRight = null;
             this.txt_inputRoomNumber.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_inputRoomNumber.Lines = new string[0];
-            this.txt_inputRoomNumber.Location = new System.Drawing.Point(440, 116);
+            this.txt_inputRoomNumber.Location = new System.Drawing.Point(25, 116);
             this.txt_inputRoomNumber.MaxLength = 32767;
             this.txt_inputRoomNumber.MinimumSize = new System.Drawing.Size(1, 1);
             this.txt_inputRoomNumber.Modified = false;
@@ -361,7 +367,7 @@
             this.txt_inputRoomNumber.OnHoverState = stateProperties3;
             stateProperties4.BorderColor = System.Drawing.Color.White;
             stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txt_inputRoomNumber.OnIdleState = stateProperties4;
             this.txt_inputRoomNumber.Padding = new System.Windows.Forms.Padding(3);
@@ -384,6 +390,7 @@
             this.txt_inputRoomNumber.TextPlaceholder = "Số phòng";
             this.txt_inputRoomNumber.UseSystemPasswordChar = false;
             this.txt_inputRoomNumber.WordWrap = true;
+            this.txt_inputRoomNumber.TextChanged += new System.EventHandler(this.txt_inputRoomNumber_TextChanged);
             // 
             // cmb_inputRoomType
             // 
@@ -406,7 +413,7 @@
             this.cmb_inputRoomType.FillIndicator = false;
             this.cmb_inputRoomType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmb_inputRoomType.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_inputRoomType.ForeColor = System.Drawing.Color.Black;
+            this.cmb_inputRoomType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
             this.cmb_inputRoomType.FormattingEnabled = true;
             this.cmb_inputRoomType.Icon = null;
             this.cmb_inputRoomType.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
@@ -414,7 +421,7 @@
             this.cmb_inputRoomType.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
             this.cmb_inputRoomType.ItemBackColor = System.Drawing.Color.White;
             this.cmb_inputRoomType.ItemBorderColor = System.Drawing.Color.White;
-            this.cmb_inputRoomType.ItemForeColor = System.Drawing.Color.Black;
+            this.cmb_inputRoomType.ItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
             this.cmb_inputRoomType.ItemHeight = 40;
             this.cmb_inputRoomType.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.cmb_inputRoomType.ItemHighLightForeColor = System.Drawing.Color.White;
@@ -437,6 +444,7 @@
             this.bunifuLabel11.AutoEllipsis = false;
             this.bunifuLabel11.CursorType = null;
             this.bunifuLabel11.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
             this.bunifuLabel11.Location = new System.Drawing.Point(840, 90);
             this.bunifuLabel11.Name = "bunifuLabel11";
             this.bunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -467,7 +475,7 @@
             this.cmb_RoomCapacity.FillIndicator = false;
             this.cmb_RoomCapacity.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmb_RoomCapacity.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_RoomCapacity.ForeColor = System.Drawing.Color.Black;
+            this.cmb_RoomCapacity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
             this.cmb_RoomCapacity.FormattingEnabled = true;
             this.cmb_RoomCapacity.Icon = null;
             this.cmb_RoomCapacity.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
@@ -475,7 +483,7 @@
             this.cmb_RoomCapacity.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
             this.cmb_RoomCapacity.ItemBackColor = System.Drawing.Color.White;
             this.cmb_RoomCapacity.ItemBorderColor = System.Drawing.Color.White;
-            this.cmb_RoomCapacity.ItemForeColor = System.Drawing.Color.Black;
+            this.cmb_RoomCapacity.ItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
             this.cmb_RoomCapacity.ItemHeight = 40;
             this.cmb_RoomCapacity.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.cmb_RoomCapacity.ItemHighLightForeColor = System.Drawing.Color.White;
@@ -501,6 +509,7 @@
             this.bunifuLabel4.AutoEllipsis = false;
             this.bunifuLabel4.CursorType = null;
             this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
             this.bunifuLabel4.Location = new System.Drawing.Point(25, 193);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -531,7 +540,7 @@
             this.cmb_RoomStatus.FillIndicator = false;
             this.cmb_RoomStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmb_RoomStatus.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_RoomStatus.ForeColor = System.Drawing.Color.Black;
+            this.cmb_RoomStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
             this.cmb_RoomStatus.FormattingEnabled = true;
             this.cmb_RoomStatus.Icon = null;
             this.cmb_RoomStatus.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
@@ -539,7 +548,7 @@
             this.cmb_RoomStatus.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
             this.cmb_RoomStatus.ItemBackColor = System.Drawing.Color.White;
             this.cmb_RoomStatus.ItemBorderColor = System.Drawing.Color.White;
-            this.cmb_RoomStatus.ItemForeColor = System.Drawing.Color.Black;
+            this.cmb_RoomStatus.ItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
             this.cmb_RoomStatus.ItemHeight = 40;
             this.cmb_RoomStatus.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.cmb_RoomStatus.ItemHighLightForeColor = System.Drawing.Color.White;
@@ -561,6 +570,7 @@
             this.bunifuLabel5.AutoEllipsis = false;
             this.bunifuLabel5.CursorType = null;
             this.bunifuLabel5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
             this.bunifuLabel5.Location = new System.Drawing.Point(440, 193);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -827,6 +837,52 @@
             this.dgv_Rooms.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Rooms_CellClick);
             this.dgv_Rooms.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Rooms_CellContentClick);
             // 
+            // RoomID
+            // 
+            this.RoomID.DataPropertyName = "RoomID";
+            this.RoomID.FillWeight = 200F;
+            this.RoomID.HeaderText = "Mã phòng";
+            this.RoomID.MinimumWidth = 6;
+            this.RoomID.Name = "RoomID";
+            this.RoomID.ReadOnly = true;
+            this.RoomID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // RoomNumber
+            // 
+            this.RoomNumber.DataPropertyName = "RoomNumber";
+            this.RoomNumber.FillWeight = 200F;
+            this.RoomNumber.HeaderText = "Số phòng";
+            this.RoomNumber.MinimumWidth = 6;
+            this.RoomNumber.Name = "RoomNumber";
+            this.RoomNumber.ReadOnly = true;
+            // 
+            // RoomType
+            // 
+            this.RoomType.DataPropertyName = "RoomType";
+            this.RoomType.FillWeight = 200F;
+            this.RoomType.HeaderText = "Loại phòng";
+            this.RoomType.MinimumWidth = 6;
+            this.RoomType.Name = "RoomType";
+            this.RoomType.ReadOnly = true;
+            // 
+            // RoomCapacity
+            // 
+            this.RoomCapacity.DataPropertyName = "RoomCapacity";
+            this.RoomCapacity.FillWeight = 200F;
+            this.RoomCapacity.HeaderText = "Số lượng";
+            this.RoomCapacity.MinimumWidth = 6;
+            this.RoomCapacity.Name = "RoomCapacity";
+            this.RoomCapacity.ReadOnly = true;
+            // 
+            // RoomStatus
+            // 
+            this.RoomStatus.DataPropertyName = "RoomStatus";
+            this.RoomStatus.FillWeight = 200F;
+            this.RoomStatus.HeaderText = "Tình trạng";
+            this.RoomStatus.MinimumWidth = 6;
+            this.RoomStatus.Name = "RoomStatus";
+            this.RoomStatus.ReadOnly = true;
+            // 
             // bunifuElipse2
             // 
             this.bunifuElipse2.ElipseRadius = 10;
@@ -937,52 +993,6 @@
             this.btn_deleteRoom.TextPadding = new System.Windows.Forms.Padding(0);
             this.btn_deleteRoom.UseDefaultRadiusAndThickness = true;
             this.btn_deleteRoom.Click += new System.EventHandler(this.btn_deleteRoom_Click);
-            // 
-            // RoomID
-            // 
-            this.RoomID.DataPropertyName = "RoomID";
-            this.RoomID.FillWeight = 200F;
-            this.RoomID.HeaderText = "Mã phòng";
-            this.RoomID.MinimumWidth = 6;
-            this.RoomID.Name = "RoomID";
-            this.RoomID.ReadOnly = true;
-            this.RoomID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // RoomNumber
-            // 
-            this.RoomNumber.DataPropertyName = "RoomNumber";
-            this.RoomNumber.FillWeight = 200F;
-            this.RoomNumber.HeaderText = "Số phòng";
-            this.RoomNumber.MinimumWidth = 6;
-            this.RoomNumber.Name = "RoomNumber";
-            this.RoomNumber.ReadOnly = true;
-            // 
-            // RoomType
-            // 
-            this.RoomType.DataPropertyName = "RoomType";
-            this.RoomType.FillWeight = 200F;
-            this.RoomType.HeaderText = "Loại phòng";
-            this.RoomType.MinimumWidth = 6;
-            this.RoomType.Name = "RoomType";
-            this.RoomType.ReadOnly = true;
-            // 
-            // RoomCapacity
-            // 
-            this.RoomCapacity.DataPropertyName = "RoomCapacity";
-            this.RoomCapacity.FillWeight = 200F;
-            this.RoomCapacity.HeaderText = "Số lượng";
-            this.RoomCapacity.MinimumWidth = 6;
-            this.RoomCapacity.Name = "RoomCapacity";
-            this.RoomCapacity.ReadOnly = true;
-            // 
-            // RoomStatus
-            // 
-            this.RoomStatus.DataPropertyName = "RoomStatus";
-            this.RoomStatus.FillWeight = 200F;
-            this.RoomStatus.HeaderText = "Tình trạng";
-            this.RoomStatus.MinimumWidth = 6;
-            this.RoomStatus.Name = "RoomStatus";
-            this.RoomStatus.ReadOnly = true;
             // 
             // addNewRoom
             // 

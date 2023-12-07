@@ -38,7 +38,7 @@
             this.lbl_nameMainValue = new Bunifu.UI.WinForms.BunifuLabel();
             this.lbl_RoomID = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox2 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.roomRating = new Bunifu.UI.WinForms.BunifuRating();
+            this.rate_roomRating = new Bunifu.UI.WinForms.BunifuRating();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -161,35 +161,35 @@
             this.bunifuPictureBox2.TabStop = false;
             this.bunifuPictureBox2.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // roomRating
+            // rate_roomRating
             // 
-            this.roomRating.BackColor = System.Drawing.Color.Transparent;
-            this.roomRating.DisabledEmptyFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            this.roomRating.DisabledRatedFillColor = System.Drawing.Color.DarkGray;
-            this.roomRating.EmptyBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            this.roomRating.EmptyFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            this.roomRating.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(217)))), ((int)(((byte)(20)))));
-            this.roomRating.HoverFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(217)))), ((int)(((byte)(20)))));
-            this.roomRating.InnerRadius = 2F;
-            this.roomRating.Location = new System.Drawing.Point(142, 24);
-            this.roomRating.Maximum = 3;
-            this.roomRating.Name = "roomRating";
-            this.roomRating.OuterRadius = 10F;
-            this.roomRating.RatedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(217)))), ((int)(((byte)(20)))));
-            this.roomRating.RatedFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(217)))), ((int)(((byte)(20)))));
-            this.roomRating.ReadOnly = true;
-            this.roomRating.RightClickToClear = true;
-            this.roomRating.Size = new System.Drawing.Size(73, 22);
-            this.roomRating.TabIndex = 86;
-            this.roomRating.Text = "bunifuRating1";
-            this.roomRating.Value = 2;
+            this.rate_roomRating.BackColor = System.Drawing.Color.Transparent;
+            this.rate_roomRating.DisabledEmptyFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.rate_roomRating.DisabledRatedFillColor = System.Drawing.Color.DarkGray;
+            this.rate_roomRating.EmptyBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.rate_roomRating.EmptyFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.rate_roomRating.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(217)))), ((int)(((byte)(20)))));
+            this.rate_roomRating.HoverFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(217)))), ((int)(((byte)(20)))));
+            this.rate_roomRating.InnerRadius = 2F;
+            this.rate_roomRating.Location = new System.Drawing.Point(142, 24);
+            this.rate_roomRating.Maximum = 3;
+            this.rate_roomRating.Name = "rate_roomRating";
+            this.rate_roomRating.OuterRadius = 10F;
+            this.rate_roomRating.RatedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(217)))), ((int)(((byte)(20)))));
+            this.rate_roomRating.RatedFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(217)))), ((int)(((byte)(20)))));
+            this.rate_roomRating.ReadOnly = true;
+            this.rate_roomRating.RightClickToClear = true;
+            this.rate_roomRating.Size = new System.Drawing.Size(73, 22);
+            this.rate_roomRating.TabIndex = 86;
+            this.rate_roomRating.Text = "bunifuRating1";
+            this.rate_roomRating.Value = 2;
             // 
             // CardRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.roomRating);
+            this.Controls.Add(this.rate_roomRating);
             this.Controls.Add(this.bunifuPictureBox2);
             this.Controls.Add(this.lbl_RoomID);
             this.Controls.Add(this.lbl_value);
@@ -218,6 +218,6 @@
         private Bunifu.UI.WinForms.BunifuLabel lbl_value;
         private Bunifu.UI.WinForms.BunifuLabel lbl_nameMainValue;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox2;
-        private Bunifu.UI.WinForms.BunifuRating roomRating;
+        private Bunifu.UI.WinForms.BunifuRating rate_roomRating;
     }
 }

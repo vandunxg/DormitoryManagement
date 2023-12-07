@@ -241,8 +241,14 @@ namespace DORMITORY_MANAGEMENT
 
 
 
+
+
         #endregion
 
-        
+        private void txt_inputRoomNumber_TextChanged(object sender, EventArgs e)
+        {
+            txt_inputRoomID.Clear();
+            txt_inputRoomID.Text = "P" + txt_inputRoomNumber.Text;
+        }
     }
 }

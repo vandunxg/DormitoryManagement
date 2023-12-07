@@ -11,13 +11,13 @@ namespace DORMITORY_MANAGEMENT.DTO
     {
         public Room() { }
 
-        public Room(string ID, string number, string capacity, string type, string status) { 
+        public Room(string ID, string number, string capacity, string type, string status, string roomStudents) { 
             this.RoomID = ID;
             this.RoomCapacity = capacity;
             this.RoomType = type;
             this.RoomStatus = status;
             this.RoomNumber = number;
-
+            this.RoomStudents = roomStudents;
         }
 
         public Room(DataRow row)
@@ -27,7 +27,7 @@ namespace DORMITORY_MANAGEMENT.DTO
             this.RoomType = row["RoomType"].ToString();
             this.RoomNumber = row["RoomNumber"].ToString();
             this.RoomStatus = row["RoomStatus"].ToString();
-
+            this.RoomStudents = row["StudentCount"].ToString();
         }
 
         private string roomID;
@@ -35,11 +35,14 @@ namespace DORMITORY_MANAGEMENT.DTO
         private string roomCapacity;
         private string roomType;
         private string roomStatus;
+        private string roomStudents;
+
 
         public string RoomID { get => roomID; set => roomID = value; }
         public string RoomNumber { get => roomNumber; set => roomNumber = value; }
         public string RoomCapacity { get => roomCapacity; set => roomCapacity = value; }
         public string RoomType { get => roomType; set => roomType = value; }
         public string RoomStatus { get => roomStatus; set => roomStatus = value; }
+        public string RoomStudents { get => roomStudents; set => roomStudents = value; }
     }
 }

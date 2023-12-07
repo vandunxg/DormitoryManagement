@@ -19,15 +19,13 @@ namespace DORMITORY_MANAGEMENT
             
         }
         #region Events
-        private void bunifuPictureBox1_Click(object sender, EventArgs e)
+
+        private void btn_refreshRoom_Click(object sender, EventArgs e)
         {
-            cmb_typeOfRoom.SelectedIndex = -1;
-            cmb_stateRoom.SelectedIndex = -1;
+            ManageRoomControl_Load(sender, e);
         }
 
-        
-
-        private void bunifuButton1_Click(object sender, EventArgs e)
+        private void btn_manageRoom_Click(object sender, EventArgs e)
         {
             addNewRoom addNewRoom = new addNewRoom();
             addNewRoom.ShowDialog();
@@ -44,21 +42,28 @@ namespace DORMITORY_MANAGEMENT
 
         public void loadTable()
         {
+
             List<Room> list = RoomDAO.Instance.LoadRoomList();
 
             foreach (Room room in list)
             {
                 CardRoom cardRoom = new CardRoom();
-                cardRoom.setAllValue(room.RoomID, int.Parse(room.RoomCapacity), 10);
+                cardRoom.Click += cardRoom_Click;
+                cardRoom.setAllValue(room.RoomID, int.Parse(room.RoomCapacity), int.Parse(room.RoomStudents), room.RoomType);
                 flowLayoutRoom.Controls.Add(cardRoom);
             }
         }
 
+        public void cardRoom_Click(object sender, EventArgs e)
+        {
+            RoomStudentManager roomStudentManager = new RoomStudentManager();
+            roomStudentManager.ShowDialog();
+        }
+
+
+
         #endregion
 
-        private void flowLayoutRoom_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        
     }
 }

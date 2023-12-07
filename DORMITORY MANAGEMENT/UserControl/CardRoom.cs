@@ -24,6 +24,8 @@ namespace DORMITORY_MANAGEMENT
         private string nameMainValue; // Giá trị thực
 
         private int total; // Giá trị tổng
+        
+        private int roomRate;
 
         public int ProgressValue
         {
@@ -82,18 +84,35 @@ namespace DORMITORY_MANAGEMENT
                 total = value;
             }
         }
+
+        public int RoomRate { get => roomRate;
+            set
+            {
+                roomRate = value;
+                rate_roomRating.Value = roomRate;
+            }
+        }
         #endregion
 
         #region Method
 
-        public void setAllValue(string RoomID, int total, int value)
+        public void setAllValue(string RoomID, int total, int value, string roomRating)
         {
             this.ProgressValue = value;
             this.Total = total;
             this.SubValue = total - value;
             this.RoomID = RoomID;
 
-            if(value == total)
+            if (roomRating == "VIP1")
+                this.RoomRate = 1;
+            else if (roomRating == "VIP2")
+            {
+                this.RoomRate = 2;
+            }
+            else
+                this.RoomRate = 3;
+
+            if (value == total)
             {
                 lbl_nameMainValue.ForeColor = Color.Black;
                 lbl_nameSubValue.ForeColor = Color.Black;
