@@ -92,6 +92,13 @@ namespace DORMITORY_MANAGEMENT
                 lbl_ServiceCleaning.Text = roomServices.ServiceCleaning + "đ";
                 lbl_ServiceTotal.Text = roomServices.ServiceTotal + "đ";
             }
+            else
+            {
+                RoomServices roomServices = new RoomServices();
+                cardShowInfo_Electricity.setAllValue("Tiền điện", roomServices.ServiceElectricity);
+                cardShowInfo_Water.setAllValue("Tiền nước", roomServices.ServiceWater);
+                cardShowInfo_Total.setAllValue("Tổng tiền", roomServices.ServiceTotal);
+            }
 
            
 

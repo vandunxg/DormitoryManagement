@@ -51,19 +51,19 @@
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.btn_UpdateServiceState = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.lbl_ServiceTotal = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel12 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lbl_ServiceCleaning = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lbl_ServiceInternet = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lbl_ServiceWater = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lbl_ServiceElectricity = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.lbl_ServiceElectricity = new Bunifu.UI.WinForms.BunifuLabel();
-            this.lbl_ServiceWater = new Bunifu.UI.WinForms.BunifuLabel();
-            this.lbl_ServiceInternet = new Bunifu.UI.WinForms.BunifuLabel();
-            this.lbl_ServiceCleaning = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel12 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.lbl_ServiceTotal = new Bunifu.UI.WinForms.BunifuLabel();
             this.cardShowInfo_Total = new DORMITORY_MANAGEMENT.cardShowInfo();
             this.cardShowInfo_Water = new DORMITORY_MANAGEMENT.cardShowInfo();
             this.cardShowInfo_Electricity = new DORMITORY_MANAGEMENT.cardShowInfo();
@@ -204,7 +204,7 @@
             this.lbl_PaidState.CursorType = System.Windows.Forms.Cursors.Default;
             this.lbl_PaidState.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
             this.lbl_PaidState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(89)))), ((int)(((byte)(98)))));
-            this.lbl_PaidState.Location = new System.Drawing.Point(130, 25);
+            this.lbl_PaidState.Location = new System.Drawing.Point(138, 25);
             this.lbl_PaidState.Name = "lbl_PaidState";
             this.lbl_PaidState.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lbl_PaidState.Size = new System.Drawing.Size(193, 35);
@@ -585,6 +585,176 @@
             this.bunifuPanel2.Size = new System.Drawing.Size(495, 425);
             this.bunifuPanel2.TabIndex = 46;
             // 
+            // lbl_ServiceTotal
+            // 
+            this.lbl_ServiceTotal.AllowParentOverrides = false;
+            this.lbl_ServiceTotal.AutoEllipsis = false;
+            this.lbl_ServiceTotal.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lbl_ServiceTotal.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lbl_ServiceTotal.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold);
+            this.lbl_ServiceTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(89)))), ((int)(((byte)(98)))));
+            this.lbl_ServiceTotal.Location = new System.Drawing.Point(336, 360);
+            this.lbl_ServiceTotal.Name = "lbl_ServiceTotal";
+            this.lbl_ServiceTotal.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbl_ServiceTotal.Size = new System.Drawing.Size(31, 37);
+            this.lbl_ServiceTotal.TabIndex = 57;
+            this.lbl_ServiceTotal.Text = "0đ";
+            this.lbl_ServiceTotal.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lbl_ServiceTotal.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel12
+            // 
+            this.bunifuLabel12.AllowParentOverrides = false;
+            this.bunifuLabel12.AutoEllipsis = false;
+            this.bunifuLabel12.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel12.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel12.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(89)))), ((int)(((byte)(98)))));
+            this.bunifuLabel12.Location = new System.Drawing.Point(191, 360);
+            this.bunifuLabel12.Name = "bunifuLabel12";
+            this.bunifuLabel12.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel12.Size = new System.Drawing.Size(131, 37);
+            this.bunifuLabel12.TabIndex = 56;
+            this.bunifuLabel12.Text = "Tổng tiền :";
+            this.bunifuLabel12.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel12.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // lbl_ServiceCleaning
+            // 
+            this.lbl_ServiceCleaning.AllowParentOverrides = false;
+            this.lbl_ServiceCleaning.AutoEllipsis = false;
+            this.lbl_ServiceCleaning.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lbl_ServiceCleaning.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lbl_ServiceCleaning.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.lbl_ServiceCleaning.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
+            this.lbl_ServiceCleaning.Location = new System.Drawing.Point(230, 256);
+            this.lbl_ServiceCleaning.Name = "lbl_ServiceCleaning";
+            this.lbl_ServiceCleaning.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbl_ServiceCleaning.Size = new System.Drawing.Size(26, 31);
+            this.lbl_ServiceCleaning.TabIndex = 55;
+            this.lbl_ServiceCleaning.Text = "0đ";
+            this.lbl_ServiceCleaning.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lbl_ServiceCleaning.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // lbl_ServiceInternet
+            // 
+            this.lbl_ServiceInternet.AllowParentOverrides = false;
+            this.lbl_ServiceInternet.AutoEllipsis = false;
+            this.lbl_ServiceInternet.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lbl_ServiceInternet.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lbl_ServiceInternet.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.lbl_ServiceInternet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
+            this.lbl_ServiceInternet.Location = new System.Drawing.Point(230, 204);
+            this.lbl_ServiceInternet.Name = "lbl_ServiceInternet";
+            this.lbl_ServiceInternet.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbl_ServiceInternet.Size = new System.Drawing.Size(26, 31);
+            this.lbl_ServiceInternet.TabIndex = 54;
+            this.lbl_ServiceInternet.Text = "0đ";
+            this.lbl_ServiceInternet.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lbl_ServiceInternet.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // lbl_ServiceWater
+            // 
+            this.lbl_ServiceWater.AllowParentOverrides = false;
+            this.lbl_ServiceWater.AutoEllipsis = false;
+            this.lbl_ServiceWater.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lbl_ServiceWater.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lbl_ServiceWater.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.lbl_ServiceWater.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
+            this.lbl_ServiceWater.Location = new System.Drawing.Point(230, 151);
+            this.lbl_ServiceWater.Name = "lbl_ServiceWater";
+            this.lbl_ServiceWater.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbl_ServiceWater.Size = new System.Drawing.Size(26, 31);
+            this.lbl_ServiceWater.TabIndex = 53;
+            this.lbl_ServiceWater.Text = "0đ";
+            this.lbl_ServiceWater.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lbl_ServiceWater.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // lbl_ServiceElectricity
+            // 
+            this.lbl_ServiceElectricity.AllowParentOverrides = false;
+            this.lbl_ServiceElectricity.AutoEllipsis = false;
+            this.lbl_ServiceElectricity.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lbl_ServiceElectricity.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lbl_ServiceElectricity.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.lbl_ServiceElectricity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
+            this.lbl_ServiceElectricity.Location = new System.Drawing.Point(230, 97);
+            this.lbl_ServiceElectricity.Name = "lbl_ServiceElectricity";
+            this.lbl_ServiceElectricity.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbl_ServiceElectricity.Size = new System.Drawing.Size(26, 31);
+            this.lbl_ServiceElectricity.TabIndex = 52;
+            this.lbl_ServiceElectricity.Text = "0đ";
+            this.lbl_ServiceElectricity.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lbl_ServiceElectricity.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel7
+            // 
+            this.bunifuLabel7.AllowParentOverrides = false;
+            this.bunifuLabel7.AutoEllipsis = false;
+            this.bunifuLabel7.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel7.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel7.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.bunifuLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
+            this.bunifuLabel7.Location = new System.Drawing.Point(51, 256);
+            this.bunifuLabel7.Name = "bunifuLabel7";
+            this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel7.Size = new System.Drawing.Size(131, 31);
+            this.bunifuLabel7.TabIndex = 51;
+            this.bunifuLabel7.Text = "Tiền vệ sinh :";
+            this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel7.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel6
+            // 
+            this.bunifuLabel6.AllowParentOverrides = false;
+            this.bunifuLabel6.AutoEllipsis = false;
+            this.bunifuLabel6.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel6.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel6.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.bunifuLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
+            this.bunifuLabel6.Location = new System.Drawing.Point(51, 204);
+            this.bunifuLabel6.Name = "bunifuLabel6";
+            this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel6.Size = new System.Drawing.Size(140, 31);
+            this.bunifuLabel6.TabIndex = 50;
+            this.bunifuLabel6.Text = "Tiền internet :";
+            this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel4
+            // 
+            this.bunifuLabel4.AllowParentOverrides = false;
+            this.bunifuLabel4.AutoEllipsis = false;
+            this.bunifuLabel4.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel4.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.bunifuLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
+            this.bunifuLabel4.Location = new System.Drawing.Point(51, 151);
+            this.bunifuLabel4.Name = "bunifuLabel4";
+            this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel4.Size = new System.Drawing.Size(112, 31);
+            this.bunifuLabel4.TabIndex = 49;
+            this.bunifuLabel4.Text = "Tiền nước :";
+            this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel3
+            // 
+            this.bunifuLabel3.AllowParentOverrides = false;
+            this.bunifuLabel3.AutoEllipsis = false;
+            this.bunifuLabel3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel3.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.bunifuLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
+            this.bunifuLabel3.Location = new System.Drawing.Point(51, 97);
+            this.bunifuLabel3.Name = "bunifuLabel3";
+            this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel3.Size = new System.Drawing.Size(105, 31);
+            this.bunifuLabel3.TabIndex = 48;
+            this.bunifuLabel3.Text = "Tiền điện :";
+            this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // bunifuLabel2
             // 
             this.bunifuLabel2.AllowParentOverrides = false;
@@ -610,176 +780,7 @@
             // bunifuElipse4
             // 
             this.bunifuElipse4.ElipseRadius = 5;
-            // 
-            // bunifuLabel3
-            // 
-            this.bunifuLabel3.AllowParentOverrides = false;
-            this.bunifuLabel3.AutoEllipsis = false;
-            this.bunifuLabel3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel3.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.bunifuLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.bunifuLabel3.Location = new System.Drawing.Point(51, 97);
-            this.bunifuLabel3.Name = "bunifuLabel3";
-            this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(105, 31);
-            this.bunifuLabel3.TabIndex = 48;
-            this.bunifuLabel3.Text = "Tiền điện :";
-            this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuLabel4
-            // 
-            this.bunifuLabel4.AllowParentOverrides = false;
-            this.bunifuLabel4.AutoEllipsis = false;
-            this.bunifuLabel4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel4.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.bunifuLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.bunifuLabel4.Location = new System.Drawing.Point(51, 151);
-            this.bunifuLabel4.Name = "bunifuLabel4";
-            this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(112, 31);
-            this.bunifuLabel4.TabIndex = 49;
-            this.bunifuLabel4.Text = "Tiền nước :";
-            this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuLabel6
-            // 
-            this.bunifuLabel6.AllowParentOverrides = false;
-            this.bunifuLabel6.AutoEllipsis = false;
-            this.bunifuLabel6.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel6.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel6.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.bunifuLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.bunifuLabel6.Location = new System.Drawing.Point(51, 204);
-            this.bunifuLabel6.Name = "bunifuLabel6";
-            this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel6.Size = new System.Drawing.Size(140, 31);
-            this.bunifuLabel6.TabIndex = 50;
-            this.bunifuLabel6.Text = "Tiền internet :";
-            this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuLabel7
-            // 
-            this.bunifuLabel7.AllowParentOverrides = false;
-            this.bunifuLabel7.AutoEllipsis = false;
-            this.bunifuLabel7.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel7.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel7.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.bunifuLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.bunifuLabel7.Location = new System.Drawing.Point(51, 256);
-            this.bunifuLabel7.Name = "bunifuLabel7";
-            this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel7.Size = new System.Drawing.Size(131, 31);
-            this.bunifuLabel7.TabIndex = 51;
-            this.bunifuLabel7.Text = "Tiền vệ sinh :";
-            this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel7.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // lbl_ServiceElectricity
-            // 
-            this.lbl_ServiceElectricity.AllowParentOverrides = false;
-            this.lbl_ServiceElectricity.AutoEllipsis = false;
-            this.lbl_ServiceElectricity.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lbl_ServiceElectricity.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lbl_ServiceElectricity.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.lbl_ServiceElectricity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.lbl_ServiceElectricity.Location = new System.Drawing.Point(230, 97);
-            this.lbl_ServiceElectricity.Name = "lbl_ServiceElectricity";
-            this.lbl_ServiceElectricity.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbl_ServiceElectricity.Size = new System.Drawing.Size(86, 31);
-            this.lbl_ServiceElectricity.TabIndex = 52;
-            this.lbl_ServiceElectricity.Text = "100000đ";
-            this.lbl_ServiceElectricity.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lbl_ServiceElectricity.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // lbl_ServiceWater
-            // 
-            this.lbl_ServiceWater.AllowParentOverrides = false;
-            this.lbl_ServiceWater.AutoEllipsis = false;
-            this.lbl_ServiceWater.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lbl_ServiceWater.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lbl_ServiceWater.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.lbl_ServiceWater.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.lbl_ServiceWater.Location = new System.Drawing.Point(230, 151);
-            this.lbl_ServiceWater.Name = "lbl_ServiceWater";
-            this.lbl_ServiceWater.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbl_ServiceWater.Size = new System.Drawing.Size(86, 31);
-            this.lbl_ServiceWater.TabIndex = 53;
-            this.lbl_ServiceWater.Text = "100000đ";
-            this.lbl_ServiceWater.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lbl_ServiceWater.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // lbl_ServiceInternet
-            // 
-            this.lbl_ServiceInternet.AllowParentOverrides = false;
-            this.lbl_ServiceInternet.AutoEllipsis = false;
-            this.lbl_ServiceInternet.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lbl_ServiceInternet.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lbl_ServiceInternet.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.lbl_ServiceInternet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.lbl_ServiceInternet.Location = new System.Drawing.Point(230, 204);
-            this.lbl_ServiceInternet.Name = "lbl_ServiceInternet";
-            this.lbl_ServiceInternet.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbl_ServiceInternet.Size = new System.Drawing.Size(86, 31);
-            this.lbl_ServiceInternet.TabIndex = 54;
-            this.lbl_ServiceInternet.Text = "100000đ";
-            this.lbl_ServiceInternet.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lbl_ServiceInternet.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // lbl_ServiceCleaning
-            // 
-            this.lbl_ServiceCleaning.AllowParentOverrides = false;
-            this.lbl_ServiceCleaning.AutoEllipsis = false;
-            this.lbl_ServiceCleaning.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lbl_ServiceCleaning.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lbl_ServiceCleaning.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.lbl_ServiceCleaning.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.lbl_ServiceCleaning.Location = new System.Drawing.Point(230, 256);
-            this.lbl_ServiceCleaning.Name = "lbl_ServiceCleaning";
-            this.lbl_ServiceCleaning.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbl_ServiceCleaning.Size = new System.Drawing.Size(86, 31);
-            this.lbl_ServiceCleaning.TabIndex = 55;
-            this.lbl_ServiceCleaning.Text = "100000đ";
-            this.lbl_ServiceCleaning.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lbl_ServiceCleaning.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuLabel12
-            // 
-            this.bunifuLabel12.AllowParentOverrides = false;
-            this.bunifuLabel12.AutoEllipsis = false;
-            this.bunifuLabel12.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel12.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel12.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(89)))), ((int)(((byte)(98)))));
-            this.bunifuLabel12.Location = new System.Drawing.Point(191, 360);
-            this.bunifuLabel12.Name = "bunifuLabel12";
-            this.bunifuLabel12.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel12.Size = new System.Drawing.Size(131, 37);
-            this.bunifuLabel12.TabIndex = 56;
-            this.bunifuLabel12.Text = "Tổng tiền :";
-            this.bunifuLabel12.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel12.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // lbl_ServiceTotal
-            // 
-            this.lbl_ServiceTotal.AllowParentOverrides = false;
-            this.lbl_ServiceTotal.AutoEllipsis = false;
-            this.lbl_ServiceTotal.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lbl_ServiceTotal.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lbl_ServiceTotal.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold);
-            this.lbl_ServiceTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(89)))), ((int)(((byte)(98)))));
-            this.lbl_ServiceTotal.Location = new System.Drawing.Point(336, 360);
-            this.lbl_ServiceTotal.Name = "lbl_ServiceTotal";
-            this.lbl_ServiceTotal.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbl_ServiceTotal.Size = new System.Drawing.Size(132, 37);
-            this.lbl_ServiceTotal.TabIndex = 57;
-            this.lbl_ServiceTotal.Text = "10000000đ";
-            this.lbl_ServiceTotal.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lbl_ServiceTotal.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuElipse4.TargetControl = this;
             // 
             // cardShowInfo_Total
             // 

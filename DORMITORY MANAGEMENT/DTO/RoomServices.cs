@@ -9,7 +9,7 @@ namespace DORMITORY_MANAGEMENT.DTO
 {
     public class RoomServices
     {
-        public RoomServices() { }
+        //public RoomServices() { }
 
         private string serviceID;
         private string serviceElectricity;
@@ -20,6 +20,17 @@ namespace DORMITORY_MANAGEMENT.DTO
         private string paid;
         private string serviceCleaning;
 
+        public RoomServices()
+        {
+            this.ServiceID = "0";
+            this.ServiceElectricity = "0";
+            this.ServiceWater = "0";
+            this.ServiceInternet = "0";
+            this.ServiceTotal = "0";
+            this.RoomID = "0";
+            this.Paid = "0";
+            this.ServiceCleaning = "0";
+        }
 
         public RoomServices(DataRow row)
         {
