@@ -37,20 +37,12 @@ CREATE TABLE Students (
 -- Bảng Dịch vụ
 CREATE TABLE Services (
     ServiceID NVARCHAR(10) PRIMARY KEY NOT NULL,
-    ServiceElectricity MONEY NOT NULL,
-	ServiceWater  MONEY NOT NULL,
-	ServiceTotal  MONEY NOT NULL,
-	ServiceInternet MONEY NOT NULL
-);
-
--- Bảng Dịch vụ sử dụng
-CREATE TABLE ServiceUsage (
-    UsageID NVARCHAR(10) PRIMARY KEY NOT NULL,
-    RoomID NVARCHAR(10) NOT NULL,
-    ServiceID NVARCHAR(10)  NOT NULL,
-    UsageDate NVARCHAR(10) NOT NULL,
+    ServiceElectricity NVARCHAR(10) NOT NULL,
+	ServiceWater  NVARCHAR(10) NOT NULL,
+	ServiceTotal  NVARCHAR(10) NOT NULL,
+	ServiceInternet NVARCHAR(10) NOT NULL,
+	ServiceCleaning NVARCHAR(10) NOT NULL,
 	Paid BIT,
-    FOREIGN KEY (RoomID) REFERENCES Rooms(RoomID),
-    FOREIGN KEY (ServiceID) REFERENCES Services(ServiceID)
+	RoomID NVARCHAR(10) NOT NULL,
+	FOREIGN KEY (RoomID) REFERENCES Rooms(RoomID)
 );
-

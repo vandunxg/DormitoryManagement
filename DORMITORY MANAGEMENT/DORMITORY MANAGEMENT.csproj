@@ -121,6 +121,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTO\RoomServices.cs" />
     <Compile Include="Page\addNewRoom.cs">
       <SubType>Form</SubType>
     </Compile>

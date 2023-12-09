@@ -11,8 +11,9 @@ namespace DORMITORY_MANAGEMENT
             InitializeComponent();
         }
 
-        private string textLabel;
 
+
+        #region Declaration
         public string TextLabel
         {
             get => textLabel;
@@ -20,31 +21,44 @@ namespace DORMITORY_MANAGEMENT
             {
                 textLabel = value;
                 lbl_name.Text = textLabel;
-                OnPropertyChanged("TextLabel");
+
             }
         }
 
-        public int Money { get => money;
+        public string Money
+        {
+            get => money;
             set
             {
                 money = value;
-                lbl_money.Text = money.ToString() + "đ";
+                lbl_money.Text = money + "đ";
             }
         }
 
-        private int money;
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        
+        private string textLabel;
+        private string money;
+        #endregion
 
-        protected virtual void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
+
+        #region Events
 
         private void cardShowInfo_Load(object sender, EventArgs e)
         {
-            lbl_name.Text = TextLabel;
-            lbl_money.Text = Money.ToString() + "đ";
+
         }
+
+        #endregion
+
+        #region Method
+
+        public void setAllValue(string name, string money)
+        {
+            this.Money = money;
+            this.TextLabel = name;
+        }
+
+        #endregion
     }
 }

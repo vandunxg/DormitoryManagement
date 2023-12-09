@@ -17,15 +17,7 @@ namespace DORMITORY_MANAGEMENT
         private void OverviewPage_Load(object sender, EventArgs e)
         {
             // card hiển thị thông tiền tiền điện
-            cardShowInfo_Electricity.TextLabel = "Tiền điện";
             
-
-            // card hiển thị thông tin tiền nước
-            cardShowInfo_water.TextLabel = "Tiền nước";
-
-            // card hiển thị tổng tiền đã thu
-            cardShowInfor_total.TextLabel = "Tiền thu về";
-            cardShowInfor_total.Money = 100000;
 
 
 

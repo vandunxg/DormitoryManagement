@@ -68,8 +68,13 @@ namespace DORMITORY_MANAGEMENT
 
                 if (RoomDAO.Instance.checkRepeatInformation(txt_RoomNumber, "SELECT * FROM dbo.Rooms WHERE RoomNumber = @txt_RoomNumber") == true)
                 {
-                    MessageBox.Show("Số phòng đã tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
+                    if(RoomDAO.Instance.checkRepeatInformation(RoomArea, "SELECT * FROM dbo.Rooms WHERE RoomArea = @RoomArea ") == true)
+                    {
+                        MessageBox.Show("Số phòng đã tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+                    
+                    
                 }
 
 

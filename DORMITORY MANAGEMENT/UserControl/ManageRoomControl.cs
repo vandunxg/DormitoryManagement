@@ -80,95 +80,80 @@ namespace DORMITORY_MANAGEMENT
             ManageRoomControl_Load(sender, e);
         }
 
+
         private void btn_search_Click(object sender, EventArgs e)
         {
-            if(cmb_stateRoom.SelectedIndex == -1 && cmb_typeOfRoom.SelectedIndex == -1 && txt_inputRoomID.Text.ToString() == "")
-            {
-                ManageRoomControl_Load(sender, e);
-            }
-            else if(txt_inputRoomID.Text.ToString() != "")
-            {
-                flowLayoutRoom.Controls.Clear();
-                List<Room> list = RoomDAO.Instance.LoadRoomList();
+            List<Room> originalList = RoomDAO.Instance.LoadRoomList();
+            List<Room> filteredList = new List<Room>(originalList);
 
-                foreach (Room room in list)
+            if (cmb_stateRoom.SelectedIndex != -1)
+            {
+                if(cmb_stateRoom.SelectedIndex == 0)
                 {
-                    if(room.RoomID == txt_inputRoomID.Text.ToString())
+                    foreach (Room room in originalList)
                     {
-                        CardRoom cardRoom = new CardRoom();
-                        cardRoom.Click += cardRoom_Click;
-                        cardRoom.setAllValue(room.RoomID, int.Parse(room.RoomCapacity), int.Parse(room.RoomStudents), room.RoomType);
-                        flowLayoutRoom.Controls.Add(cardRoom);
-                    }
-                }
-            }
-            else if(cmb_stateRoom.SelectedIndex != -1 && cmb_RoomArea.SelectedIndex == -1 && cmb_typeOfRoom.SelectedIndex == -1 && txt_inputRoomID.Text.ToString() == "")
-            {
-                flowLayoutRoom.Controls.Clear();
-                List<Room> list = RoomDAO.Instance.LoadRoomList();
-
-                if (cmb_stateRoom.SelectedIndex == 0)
-                {
-
-                    flowLayoutRoom.Controls.Clear();
-                    foreach (Room room in list)
-                    {
-                        if (int.Parse(room.RoomStudents) < int.Parse(room.RoomCapacity))
+                        if (int.Parse(room.RoomCapacity) == int.Parse(room.RoomStudents))
                         {
-                            CardRoom cardRoom = new CardRoom();
-                            cardRoom.Click += cardRoom_Click;
-                            cardRoom.setAllValue(room.RoomID, int.Parse(room.RoomCapacity), int.Parse(room.RoomStudents), room.RoomType);
-                            flowLayoutRoom.Controls.Add(cardRoom);
+                            filteredList.Remove(room);
                         }
                     }
                 }
                 else
                 {
-                    flowLayoutRoom.Controls.Clear();
-                    foreach (Room room in list)
+                    foreach (Room room in originalList)
                     {
-                        if (int.Parse(room.RoomStudents) == int.Parse(room.RoomCapacity))
+                        if (int.Parse(room.RoomCapacity) != int.Parse(room.RoomStudents))
                         {
-                            CardRoom cardRoom = new CardRoom();
-                            cardRoom.Click += cardRoom_Click;
-                            cardRoom.setAllValue(room.RoomID, int.Parse(room.RoomCapacity), int.Parse(room.RoomStudents), room.RoomType);
-                            flowLayoutRoom.Controls.Add(cardRoom);
+                            filteredList.Remove(room);
                         }
                     }
                 }
             }
-            else if(cmb_stateRoom.SelectedIndex == -1 && cmb_RoomArea.SelectedIndex == -1 && cmb_typeOfRoom.SelectedIndex != -1 && txt_inputRoomID.Text.ToString() == "")
-            {
-                flowLayoutRoom.Controls.Clear();
-                List<Room> list = RoomDAO.Instance.LoadRoomList();
-                foreach (Room room in list)
-                {
-                    if (room.RoomType == cmb_typeOfRoom.SelectedItem.ToString())
-                    {
-                        CardRoom cardRoom = new CardRoom();
-                        cardRoom.Click += cardRoom_Click;
-                        cardRoom.setAllValue(room.RoomID, int.Parse(room.RoomCapacity), int.Parse(room.RoomStudents), room.RoomType);
-                        flowLayoutRoom.Controls.Add(cardRoom);
-                    }
-                }
-            }
-            else if(cmb_stateRoom.SelectedIndex == -1 && cmb_RoomArea.SelectedIndex != -1 && cmb_typeOfRoom.SelectedIndex == -1 && txt_inputRoomID.Text.ToString() == "")
-            {
-                flowLayoutRoom.Controls.Clear();
-                List<Room> list = RoomDAO.Instance.LoadRoomList();
-                foreach (Room room in list)
-                {
-                    if (room.RoomArea == cmb_RoomArea.SelectedItem.ToString())
-                    {
-                        CardRoom cardRoom = new CardRoom();
-                        cardRoom.Click += cardRoom_Click;
-                        cardRoom.setAllValue(room.RoomID, int.Parse(room.RoomCapacity), int.Parse(room.RoomStudents), room.RoomType);
-                        flowLayoutRoom.Controls.Add(cardRoom);
-                    }
-                }
 
+            if (cmb_RoomArea.SelectedIndex != -1)
+            {
+                foreach (Room room in originalList)
+                {
+                    if (room.RoomArea != cmb_RoomArea.SelectedItem.ToString())
+                    {
+                        filteredList.Remove(room);
+                    }
+                }
             }
-        
+
+            if (cmb_typeOfRoom.SelectedIndex != -1)
+            {
+                foreach (Room room in originalList)
+                {
+                    if (room.RoomType != cmb_typeOfRoom.SelectedItem.ToString())
+                    {
+                        filteredList.Remove(room);
+                    }
+                }
+            }
+
+            if (!string.IsNullOrEmpty(txt_inputRoomID.Text))
+            {
+                foreach (Room room in originalList)
+                {
+                    if (room.RoomID != txt_inputRoomID.Text)
+                    {
+                        filteredList.Remove(room);
+                    }
+                }
+            }
+
+            flowLayoutRoom.Controls.Clear();
+
+            foreach (Room room in filteredList)
+            {
+                CardRoom cardRoom = new CardRoom();
+                cardRoom.Click += cardRoom_Click;
+                cardRoom.setAllValue(room.RoomID, int.Parse(room.RoomCapacity), int.Parse(room.RoomStudents), room.RoomType);
+                flowLayoutRoom.Controls.Add(cardRoom);
+            }
         }
+
+
     }
 }

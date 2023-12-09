@@ -69,7 +69,7 @@
             // 
             this.cardShowInfor_total.BackColor = System.Drawing.Color.White;
             this.cardShowInfor_total.Location = new System.Drawing.Point(786, 19);
-            this.cardShowInfor_total.Money = 0;
+            this.cardShowInfor_total.Money = string.Empty;
             this.cardShowInfor_total.Name = "cardShowInfor_total";
             this.cardShowInfor_total.Size = new System.Drawing.Size(314, 144);
             this.cardShowInfor_total.TabIndex = 71;
@@ -79,7 +79,7 @@
             // 
             this.cardShowInfo_water.BackColor = System.Drawing.Color.White;
             this.cardShowInfo_water.Location = new System.Drawing.Point(412, 19);
-            this.cardShowInfo_water.Money = 0;
+            this.cardShowInfo_water.Money = string.Empty;
             this.cardShowInfo_water.Name = "cardShowInfo_water";
             this.cardShowInfo_water.Size = new System.Drawing.Size(314, 144);
             this.cardShowInfo_water.TabIndex = 70;
@@ -89,7 +89,7 @@
             // 
             this.cardShowInfo_Electricity.BackColor = System.Drawing.Color.White;
             this.cardShowInfo_Electricity.Location = new System.Drawing.Point(39, 19);
-            this.cardShowInfo_Electricity.Money = 0;
+            this.cardShowInfo_Electricity.Money = string.Empty;
             this.cardShowInfo_Electricity.Name = "cardShowInfo_Electricity";
             this.cardShowInfo_Electricity.Size = new System.Drawing.Size(314, 144);
             this.cardShowInfo_Electricity.TabIndex = 69;
