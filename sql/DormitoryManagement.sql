@@ -1,4 +1,4 @@
-﻿--Bảng Tài khoản nhân viên
+--Bảng Tài khoản nhân viên
 CREATE TABLE Account(
 	Account_ID NVARCHAR(10) PRIMARY KEY NOT NULL,
 	Account_Email NVARCHAR(20) NOT NULL,
