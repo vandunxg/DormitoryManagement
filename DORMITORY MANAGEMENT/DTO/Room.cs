@@ -26,8 +26,8 @@ namespace DORMITORY_MANAGEMENT.DTO
         {
             this.RoomID = row["RoomID"].ToString();
             this.RoomCapacity = row["RoomCapacity"].ToString();
-            this.RoomType = row["RoomType"].ToString();
-            this.RoomArea = row["RoomArea"].ToString();
+            this.RoomType = row["TypeID"].ToString();
+            this.RoomArea = row["AreaID"].ToString();
             this.RoomNumber = row["RoomNumber"].ToString();
             this.RoomStatus = row["RoomStatus"].ToString();
             this.RoomStudents = row["StudentCount"].ToString();

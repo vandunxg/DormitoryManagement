@@ -45,6 +45,16 @@ namespace DORMITORY_MANAGEMENT
             }
         }
 
+        private void txt_inputRoomNumber_TextChanged(object sender, EventArgs e)
+        {
+            if (cmb_inputRoomArea.SelectedIndex != -1)
+            {
+                txt_inputRoomID.Clear();
+                txt_inputRoomID.Text = cmb_inputRoomArea.SelectedValue.ToString() + txt_inputRoomNumber.Text.ToString();
+
+            }
+        }
+
 
         private void btn_addRoom_Click(object sender, EventArgs e)
         {
@@ -271,14 +281,6 @@ namespace DORMITORY_MANAGEMENT
 
         #endregion
 
-        private void txt_inputRoomNumber_TextChanged(object sender, EventArgs e)
-        {
-            if(cmb_inputRoomArea.SelectedIndex != -1)
-            {
-                txt_inputRoomID.Clear();
-                txt_inputRoomID.Text = cmb_inputRoomArea.SelectedValue.ToString() + txt_inputRoomNumber.Text.ToString();
-            
-            }
-        }
+        
     }
 }

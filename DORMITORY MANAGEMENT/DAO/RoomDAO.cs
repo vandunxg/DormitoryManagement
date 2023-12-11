@@ -49,11 +49,7 @@ namespace DORMITORY_MANAGEMENT.DAO
         {
             List<Room> list = new List<Room>();
 
-            string query = "SELECT Rooms.RoomID , RoomCapacity , RoomType , RoomArea , RoomNumber , RoomStatus , COUNT(Students.StudentID) AS StudentCount FROM Rooms LEFT JOIN Students ON Rooms.RoomID = Students.RoomID GROUP BY Rooms.RoomID , RoomCapacity , RoomType , RoomArea , RoomNumber , RoomStatus ;";
-
-            
-
-            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+            DataTable data = DataProvider.Instance.ExcuteQuery("GetRoom");
 
             foreach (DataRow row in data.Rows)
             {
