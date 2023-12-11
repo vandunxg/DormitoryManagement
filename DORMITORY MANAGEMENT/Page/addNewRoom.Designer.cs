@@ -393,6 +393,7 @@
             this.txt_inputRoomNumber.TextPlaceholder = "Số phòng";
             this.txt_inputRoomNumber.UseSystemPasswordChar = false;
             this.txt_inputRoomNumber.WordWrap = true;
+            this.txt_inputRoomNumber.TextChanged += new System.EventHandler(this.txt_inputRoomNumber_TextChanged);
             // 
             // cmb_inputRoomType
             // 
@@ -1038,13 +1039,6 @@
             this.cmb_inputRoomArea.ItemHeight = 40;
             this.cmb_inputRoomArea.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.cmb_inputRoomArea.ItemHighLightForeColor = System.Drawing.Color.White;
-            this.cmb_inputRoomArea.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F"});
             this.cmb_inputRoomArea.ItemTopMargin = 3;
             this.cmb_inputRoomArea.Location = new System.Drawing.Point(440, 120);
             this.cmb_inputRoomArea.Name = "cmb_inputRoomArea";

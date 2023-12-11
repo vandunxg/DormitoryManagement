@@ -32,9 +32,10 @@ namespace DORMITORY_MANAGEMENT.Page
                 string RoomArea = cmb_RoomArea.SelectedItem.ToString();
                 DataTable data = DataProvider.Instance.ExcuteQuery("SELECT RoomID FROM Rooms WHERE RoomArea = @RoomArea ", new object[] { RoomArea });
                 
-                cmb_RoomID.DataSource = data;
+                cmb_RoomID.DataSource = data.Rows[0];
                 cmb_RoomID.DisplayMember = "RoomID";
                 cmb_RoomID.ValueMember = "RoomID";
+                cmb_RoomID.SelectedIndex = -1;
             }
         }
 
@@ -73,8 +74,8 @@ namespace DORMITORY_MANAGEMENT.Page
         {
             if(cmb_RoomID.SelectedIndex != -1)
             {
-                string RoomID = cmb_RoomID.SelectedText.ToString();
-                MessageBox.Show(RoomID);
+                string RoomID = cmb_RoomID.SelectedValue.ToString();
+                MessageBox.Show(RoomID.ToString());
             
             }
         }

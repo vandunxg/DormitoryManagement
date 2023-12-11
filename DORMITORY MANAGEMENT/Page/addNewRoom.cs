@@ -35,6 +35,16 @@ namespace DORMITORY_MANAGEMENT
 
 
         #region Events
+        private void cmb_inputRoomArea_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmb_inputRoomArea.SelectedIndex != -1)
+            {
+                txt_inputRoomID.Clear();
+                txt_inputRoomID.Text = cmb_inputRoomArea.SelectedValue.ToString() + txt_inputRoomNumber.Text.ToString();
+
+            }
+        }
+
 
         private void btn_addRoom_Click(object sender, EventArgs e)
         {
@@ -68,13 +78,13 @@ namespace DORMITORY_MANAGEMENT
 
                 if (RoomDAO.Instance.checkRepeatInformation(txt_RoomNumber, "SELECT * FROM dbo.Rooms WHERE RoomNumber = @txt_RoomNumber") == true)
                 {
-                    if(RoomDAO.Instance.checkRepeatInformation(RoomArea, "SELECT * FROM dbo.Rooms WHERE RoomArea = @RoomArea ") == true)
+                    if (RoomDAO.Instance.checkRepeatInformation(RoomArea, "SELECT * FROM dbo.Rooms WHERE RoomArea = @RoomArea ") == true)
                     {
                         MessageBox.Show("Số phòng đã tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
-                    
-                    
+
+
                 }
 
 
@@ -106,6 +116,12 @@ namespace DORMITORY_MANAGEMENT
             DataSet data = DataProvider.Instance.ExcuteQueryDataSet(query);
             dgv_Rooms.DataSource = data.Tables[0];
 
+            DataTable dataAreas = DataProvider.Instance.ExcuteQuery("SELECT * FROM Areas");
+
+            cmb_inputRoomArea.ValueMember = "AreaID";
+            cmb_inputRoomArea.DisplayMember = "AreaName";
+            cmb_inputRoomArea.DataSource = dataAreas;
+            
 
         }
 
@@ -133,7 +149,7 @@ namespace DORMITORY_MANAGEMENT
                 string RoomArea = cmb_inputRoomArea.SelectedItem.ToString();
 
                 string query = "UPDATE Rooms SET RoomNumber = @txt_RoomNumber , RoomType = @RoomType , RoomArea = @RoomArea , RoomCapacity = @RoomCapacity , RoomStatus = @RoomStatus WHERE RoomID = @txt_RoomID ;";
-                DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { txt_RoomNumber, RoomType , RoomArea , RoomCapacity, RoomStatus, txt_RoomID });
+                DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { txt_RoomNumber, RoomType, RoomArea, RoomCapacity, RoomStatus, txt_RoomID });
 
                 // Thông báo dữ liệu được thêm thành công
                 if (data.Rows.Count > -1)
@@ -171,7 +187,7 @@ namespace DORMITORY_MANAGEMENT
 
                 string valueSelected = "";
 
-                
+
 
                 valueSelected = dgv_Rooms.Rows[e.RowIndex].Cells[2].Value.ToString();
                 cmb_inputRoomType.SelectedIndex = cmb_inputRoomType.FindString(valueSelected);
@@ -227,7 +243,7 @@ namespace DORMITORY_MANAGEMENT
             addNewRoom_Load(sender, e);
         }
 
-        
+
 
 
         #endregion
@@ -252,11 +268,17 @@ namespace DORMITORY_MANAGEMENT
 
 
 
+
         #endregion
 
-        private void cmb_inputRoomArea_SelectedIndexChanged(object sender, EventArgs e)
+        private void txt_inputRoomNumber_TextChanged(object sender, EventArgs e)
         {
-            txt_inputRoomID.Text = cmb_inputRoomArea.SelectedItem.ToString() + txt_inputRoomNumber.Text.ToString();
+            if(cmb_inputRoomArea.SelectedIndex != -1)
+            {
+                txt_inputRoomID.Clear();
+                txt_inputRoomID.Text = cmb_inputRoomArea.SelectedValue.ToString() + txt_inputRoomNumber.Text.ToString();
+            
+            }
         }
     }
 }

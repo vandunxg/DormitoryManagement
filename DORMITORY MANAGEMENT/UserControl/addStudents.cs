@@ -291,5 +291,7 @@ namespace DORMITORY_MANAGEMENT
             date_inputCheckOutDate.Value = DateTime.Now.Date;
         }
         #endregion
+
+        
     }
 }
