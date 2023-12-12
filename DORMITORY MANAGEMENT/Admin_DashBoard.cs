@@ -80,5 +80,10 @@ namespace DORMITORY_MANAGEMENT
 
             pages.SetPage(((Control)sender).Text);
         }
+
+        private void overviewPage1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
