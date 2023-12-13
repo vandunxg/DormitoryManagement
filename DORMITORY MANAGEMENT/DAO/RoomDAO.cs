@@ -29,7 +29,7 @@ namespace DORMITORY_MANAGEMENT.DAO
 
         public bool checkLength(string checkString)
         {
-            if (checkString.Length > 10)
+            if (checkString.Length > 20)
                 return false;
             return true;
         }
@@ -49,7 +49,7 @@ namespace DORMITORY_MANAGEMENT.DAO
         {
             List<Room> list = new List<Room>();
 
-            DataTable data = DataProvider.Instance.ExcuteQuery("GetRoom");
+            DataTable data = DataProvider.Instance.ExcuteQuery("GetRooms");
 
             foreach (DataRow row in data.Rows)
             {

@@ -50,22 +50,20 @@
             this.btn_exit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.txt_inputRoomID = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.txt_RoomID = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.txt_inputRoomNumber = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.cmb_inputRoomType = new Bunifu.UI.WinForms.BunifuDropdown();
+            this.txt_RoomName = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.cmb_RoomTypes = new Bunifu.UI.WinForms.BunifuDropdown();
             this.bunifuLabel11 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.cmb_RoomCapacity = new Bunifu.UI.WinForms.BunifuDropdown();
-            this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.cmb_RoomStatus = new Bunifu.UI.WinForms.BunifuDropdown();
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.btn_editRoom = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_addRoom = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.dgv_Rooms = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.RoomID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RoomNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RoomType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RoomArea = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RoomName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RoomTypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AreaName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RoomCapacity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RoomStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -73,8 +71,9 @@
             this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse5 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.btn_deleteRoom = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.cmb_inputRoomArea = new Bunifu.UI.WinForms.BunifuDropdown();
+            this.cmb_RoomAreas = new Bunifu.UI.WinForms.BunifuDropdown();
             this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuElipse6 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Rooms)).BeginInit();
             this.SuspendLayout();
@@ -226,81 +225,81 @@
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // txt_inputRoomID
+            // txt_RoomID
             // 
-            this.txt_inputRoomID.AcceptsReturn = false;
-            this.txt_inputRoomID.AcceptsTab = false;
-            this.txt_inputRoomID.AnimationSpeed = 200;
-            this.txt_inputRoomID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txt_inputRoomID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txt_inputRoomID.BackColor = System.Drawing.Color.Transparent;
-            this.txt_inputRoomID.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_inputRoomID.BackgroundImage")));
-            this.txt_inputRoomID.BorderColorActive = System.Drawing.Color.White;
-            this.txt_inputRoomID.BorderColorDisabled = System.Drawing.Color.White;
-            this.txt_inputRoomID.BorderColorHover = System.Drawing.Color.White;
-            this.txt_inputRoomID.BorderColorIdle = System.Drawing.Color.White;
-            this.txt_inputRoomID.BorderRadius = 10;
-            this.txt_inputRoomID.BorderThickness = 1;
-            this.txt_inputRoomID.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txt_inputRoomID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_inputRoomID.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.txt_inputRoomID.DefaultText = "";
-            this.txt_inputRoomID.Enabled = false;
-            this.txt_inputRoomID.FillColor = System.Drawing.Color.White;
-            this.txt_inputRoomID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.txt_inputRoomID.HideSelection = true;
-            this.txt_inputRoomID.IconLeft = null;
-            this.txt_inputRoomID.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_inputRoomID.IconPadding = 10;
-            this.txt_inputRoomID.IconRight = null;
-            this.txt_inputRoomID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_inputRoomID.Lines = new string[0];
-            this.txt_inputRoomID.Location = new System.Drawing.Point(840, 116);
-            this.txt_inputRoomID.MaxLength = 32767;
-            this.txt_inputRoomID.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txt_inputRoomID.Modified = false;
-            this.txt_inputRoomID.Multiline = false;
-            this.txt_inputRoomID.Name = "txt_inputRoomID";
+            this.txt_RoomID.AcceptsReturn = false;
+            this.txt_RoomID.AcceptsTab = false;
+            this.txt_RoomID.AnimationSpeed = 200;
+            this.txt_RoomID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txt_RoomID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txt_RoomID.BackColor = System.Drawing.Color.Transparent;
+            this.txt_RoomID.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_RoomID.BackgroundImage")));
+            this.txt_RoomID.BorderColorActive = System.Drawing.Color.White;
+            this.txt_RoomID.BorderColorDisabled = System.Drawing.Color.White;
+            this.txt_RoomID.BorderColorHover = System.Drawing.Color.White;
+            this.txt_RoomID.BorderColorIdle = System.Drawing.Color.White;
+            this.txt_RoomID.BorderRadius = 10;
+            this.txt_RoomID.BorderThickness = 1;
+            this.txt_RoomID.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txt_RoomID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_RoomID.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.txt_RoomID.DefaultText = "";
+            this.txt_RoomID.Enabled = false;
+            this.txt_RoomID.FillColor = System.Drawing.Color.White;
+            this.txt_RoomID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
+            this.txt_RoomID.HideSelection = true;
+            this.txt_RoomID.IconLeft = null;
+            this.txt_RoomID.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_RoomID.IconPadding = 10;
+            this.txt_RoomID.IconRight = null;
+            this.txt_RoomID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_RoomID.Lines = new string[0];
+            this.txt_RoomID.Location = new System.Drawing.Point(840, 116);
+            this.txt_RoomID.MaxLength = 32767;
+            this.txt_RoomID.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txt_RoomID.Modified = false;
+            this.txt_RoomID.Multiline = false;
+            this.txt_RoomID.Name = "txt_RoomID";
             stateProperties5.BorderColor = System.Drawing.Color.White;
             stateProperties5.FillColor = System.Drawing.Color.Empty;
             stateProperties5.ForeColor = System.Drawing.Color.Empty;
             stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_inputRoomID.OnActiveState = stateProperties5;
+            this.txt_RoomID.OnActiveState = stateProperties5;
             stateProperties6.BorderColor = System.Drawing.Color.White;
             stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txt_inputRoomID.OnDisabledState = stateProperties6;
+            this.txt_RoomID.OnDisabledState = stateProperties6;
             stateProperties7.BorderColor = System.Drawing.Color.White;
             stateProperties7.FillColor = System.Drawing.Color.Empty;
             stateProperties7.ForeColor = System.Drawing.Color.Empty;
             stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_inputRoomID.OnHoverState = stateProperties7;
+            this.txt_RoomID.OnHoverState = stateProperties7;
             stateProperties8.BorderColor = System.Drawing.Color.White;
             stateProperties8.FillColor = System.Drawing.Color.White;
             stateProperties8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_inputRoomID.OnIdleState = stateProperties8;
-            this.txt_inputRoomID.Padding = new System.Windows.Forms.Padding(3);
-            this.txt_inputRoomID.PasswordChar = '\0';
-            this.txt_inputRoomID.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.txt_inputRoomID.PlaceholderText = "Mã Phòng";
-            this.txt_inputRoomID.ReadOnly = false;
-            this.txt_inputRoomID.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txt_inputRoomID.SelectedText = "";
-            this.txt_inputRoomID.SelectionLength = 0;
-            this.txt_inputRoomID.SelectionStart = 0;
-            this.txt_inputRoomID.ShortcutsEnabled = true;
-            this.txt_inputRoomID.Size = new System.Drawing.Size(275, 50);
-            this.txt_inputRoomID.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txt_inputRoomID.TabIndex = 5;
-            this.txt_inputRoomID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txt_inputRoomID.TextMarginBottom = 0;
-            this.txt_inputRoomID.TextMarginLeft = 10;
-            this.txt_inputRoomID.TextMarginTop = 0;
-            this.txt_inputRoomID.TextPlaceholder = "Mã Phòng";
-            this.txt_inputRoomID.UseSystemPasswordChar = false;
-            this.txt_inputRoomID.WordWrap = true;
+            this.txt_RoomID.OnIdleState = stateProperties8;
+            this.txt_RoomID.Padding = new System.Windows.Forms.Padding(3);
+            this.txt_RoomID.PasswordChar = '\0';
+            this.txt_RoomID.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
+            this.txt_RoomID.PlaceholderText = "Mã Phòng";
+            this.txt_RoomID.ReadOnly = false;
+            this.txt_RoomID.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txt_RoomID.SelectedText = "";
+            this.txt_RoomID.SelectionLength = 0;
+            this.txt_RoomID.SelectionStart = 0;
+            this.txt_RoomID.ShortcutsEnabled = true;
+            this.txt_RoomID.Size = new System.Drawing.Size(275, 50);
+            this.txt_RoomID.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txt_RoomID.TabIndex = 5;
+            this.txt_RoomID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_RoomID.TextMarginBottom = 0;
+            this.txt_RoomID.TextMarginLeft = 10;
+            this.txt_RoomID.TextMarginTop = 0;
+            this.txt_RoomID.TextPlaceholder = "Mã Phòng";
+            this.txt_RoomID.UseSystemPasswordChar = false;
+            this.txt_RoomID.WordWrap = true;
             // 
             // bunifuLabel3
             // 
@@ -310,7 +309,7 @@
             this.bunifuLabel3.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.bunifuLabel3.Location = new System.Drawing.Point(25, 90);
+            this.bunifuLabel3.Location = new System.Drawing.Point(440, 90);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel3.Size = new System.Drawing.Size(64, 20);
@@ -319,127 +318,127 @@
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // txt_inputRoomNumber
+            // txt_RoomName
             // 
-            this.txt_inputRoomNumber.AcceptsReturn = false;
-            this.txt_inputRoomNumber.AcceptsTab = false;
-            this.txt_inputRoomNumber.AnimationSpeed = 200;
-            this.txt_inputRoomNumber.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txt_inputRoomNumber.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txt_inputRoomNumber.BackColor = System.Drawing.Color.Transparent;
-            this.txt_inputRoomNumber.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_inputRoomNumber.BackgroundImage")));
-            this.txt_inputRoomNumber.BorderColorActive = System.Drawing.Color.White;
-            this.txt_inputRoomNumber.BorderColorDisabled = System.Drawing.Color.White;
-            this.txt_inputRoomNumber.BorderColorHover = System.Drawing.Color.White;
-            this.txt_inputRoomNumber.BorderColorIdle = System.Drawing.Color.White;
-            this.txt_inputRoomNumber.BorderRadius = 10;
-            this.txt_inputRoomNumber.BorderThickness = 1;
-            this.txt_inputRoomNumber.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txt_inputRoomNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_inputRoomNumber.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.txt_inputRoomNumber.DefaultText = "";
-            this.txt_inputRoomNumber.FillColor = System.Drawing.Color.White;
-            this.txt_inputRoomNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.txt_inputRoomNumber.HideSelection = true;
-            this.txt_inputRoomNumber.IconLeft = null;
-            this.txt_inputRoomNumber.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_inputRoomNumber.IconPadding = 10;
-            this.txt_inputRoomNumber.IconRight = null;
-            this.txt_inputRoomNumber.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_inputRoomNumber.Lines = new string[0];
-            this.txt_inputRoomNumber.Location = new System.Drawing.Point(25, 116);
-            this.txt_inputRoomNumber.MaxLength = 32767;
-            this.txt_inputRoomNumber.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txt_inputRoomNumber.Modified = false;
-            this.txt_inputRoomNumber.Multiline = false;
-            this.txt_inputRoomNumber.Name = "txt_inputRoomNumber";
+            this.txt_RoomName.AcceptsReturn = false;
+            this.txt_RoomName.AcceptsTab = false;
+            this.txt_RoomName.AnimationSpeed = 200;
+            this.txt_RoomName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txt_RoomName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txt_RoomName.BackColor = System.Drawing.Color.Transparent;
+            this.txt_RoomName.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_RoomName.BackgroundImage")));
+            this.txt_RoomName.BorderColorActive = System.Drawing.Color.White;
+            this.txt_RoomName.BorderColorDisabled = System.Drawing.Color.White;
+            this.txt_RoomName.BorderColorHover = System.Drawing.Color.White;
+            this.txt_RoomName.BorderColorIdle = System.Drawing.Color.White;
+            this.txt_RoomName.BorderRadius = 10;
+            this.txt_RoomName.BorderThickness = 1;
+            this.txt_RoomName.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txt_RoomName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_RoomName.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.txt_RoomName.DefaultText = "";
+            this.txt_RoomName.FillColor = System.Drawing.Color.White;
+            this.txt_RoomName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
+            this.txt_RoomName.HideSelection = true;
+            this.txt_RoomName.IconLeft = null;
+            this.txt_RoomName.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_RoomName.IconPadding = 10;
+            this.txt_RoomName.IconRight = null;
+            this.txt_RoomName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_RoomName.Lines = new string[0];
+            this.txt_RoomName.Location = new System.Drawing.Point(440, 116);
+            this.txt_RoomName.MaxLength = 32767;
+            this.txt_RoomName.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txt_RoomName.Modified = false;
+            this.txt_RoomName.Multiline = false;
+            this.txt_RoomName.Name = "txt_RoomName";
             stateProperties1.BorderColor = System.Drawing.Color.White;
             stateProperties1.FillColor = System.Drawing.Color.Empty;
             stateProperties1.ForeColor = System.Drawing.Color.Empty;
             stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_inputRoomNumber.OnActiveState = stateProperties1;
+            this.txt_RoomName.OnActiveState = stateProperties1;
             stateProperties2.BorderColor = System.Drawing.Color.White;
             stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txt_inputRoomNumber.OnDisabledState = stateProperties2;
+            this.txt_RoomName.OnDisabledState = stateProperties2;
             stateProperties3.BorderColor = System.Drawing.Color.White;
             stateProperties3.FillColor = System.Drawing.Color.Empty;
             stateProperties3.ForeColor = System.Drawing.Color.Empty;
             stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_inputRoomNumber.OnHoverState = stateProperties3;
+            this.txt_RoomName.OnHoverState = stateProperties3;
             stateProperties4.BorderColor = System.Drawing.Color.White;
             stateProperties4.FillColor = System.Drawing.Color.White;
             stateProperties4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_inputRoomNumber.OnIdleState = stateProperties4;
-            this.txt_inputRoomNumber.Padding = new System.Windows.Forms.Padding(3);
-            this.txt_inputRoomNumber.PasswordChar = '\0';
-            this.txt_inputRoomNumber.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(85)))), ((int)(((byte)(90)))));
-            this.txt_inputRoomNumber.PlaceholderText = "Số phòng";
-            this.txt_inputRoomNumber.ReadOnly = false;
-            this.txt_inputRoomNumber.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txt_inputRoomNumber.SelectedText = "";
-            this.txt_inputRoomNumber.SelectionLength = 0;
-            this.txt_inputRoomNumber.SelectionStart = 0;
-            this.txt_inputRoomNumber.ShortcutsEnabled = true;
-            this.txt_inputRoomNumber.Size = new System.Drawing.Size(275, 50);
-            this.txt_inputRoomNumber.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txt_inputRoomNumber.TabIndex = 7;
-            this.txt_inputRoomNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txt_inputRoomNumber.TextMarginBottom = 0;
-            this.txt_inputRoomNumber.TextMarginLeft = 10;
-            this.txt_inputRoomNumber.TextMarginTop = 0;
-            this.txt_inputRoomNumber.TextPlaceholder = "Số phòng";
-            this.txt_inputRoomNumber.UseSystemPasswordChar = false;
-            this.txt_inputRoomNumber.WordWrap = true;
-            this.txt_inputRoomNumber.TextChanged += new System.EventHandler(this.txt_inputRoomNumber_TextChanged);
+            this.txt_RoomName.OnIdleState = stateProperties4;
+            this.txt_RoomName.Padding = new System.Windows.Forms.Padding(3);
+            this.txt_RoomName.PasswordChar = '\0';
+            this.txt_RoomName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(85)))), ((int)(((byte)(90)))));
+            this.txt_RoomName.PlaceholderText = "Số phòng";
+            this.txt_RoomName.ReadOnly = false;
+            this.txt_RoomName.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txt_RoomName.SelectedText = "";
+            this.txt_RoomName.SelectionLength = 0;
+            this.txt_RoomName.SelectionStart = 0;
+            this.txt_RoomName.ShortcutsEnabled = true;
+            this.txt_RoomName.Size = new System.Drawing.Size(275, 50);
+            this.txt_RoomName.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txt_RoomName.TabIndex = 7;
+            this.txt_RoomName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_RoomName.TextMarginBottom = 0;
+            this.txt_RoomName.TextMarginLeft = 10;
+            this.txt_RoomName.TextMarginTop = 0;
+            this.txt_RoomName.TextPlaceholder = "Số phòng";
+            this.txt_RoomName.UseSystemPasswordChar = false;
+            this.txt_RoomName.WordWrap = true;
+            this.txt_RoomName.TextChanged += new System.EventHandler(this.txt_inputRoomNumber_TextChanged);
             // 
-            // cmb_inputRoomType
+            // cmb_RoomTypes
             // 
-            this.cmb_inputRoomType.BackColor = System.Drawing.Color.Transparent;
-            this.cmb_inputRoomType.BackgroundColor = System.Drawing.Color.White;
-            this.cmb_inputRoomType.BorderColor = System.Drawing.Color.Transparent;
-            this.cmb_inputRoomType.BorderRadius = 1;
-            this.cmb_inputRoomType.Color = System.Drawing.Color.Transparent;
-            this.cmb_inputRoomType.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
-            this.cmb_inputRoomType.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.cmb_inputRoomType.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.cmb_inputRoomType.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.cmb_inputRoomType.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.cmb_inputRoomType.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
-            this.cmb_inputRoomType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmb_inputRoomType.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
-            this.cmb_inputRoomType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmb_inputRoomType.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.cmb_inputRoomType.FillDropDown = true;
-            this.cmb_inputRoomType.FillIndicator = false;
-            this.cmb_inputRoomType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmb_inputRoomType.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_inputRoomType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.cmb_inputRoomType.FormattingEnabled = true;
-            this.cmb_inputRoomType.Icon = null;
-            this.cmb_inputRoomType.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.cmb_inputRoomType.IndicatorColor = System.Drawing.Color.Gray;
-            this.cmb_inputRoomType.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.cmb_inputRoomType.ItemBackColor = System.Drawing.Color.White;
-            this.cmb_inputRoomType.ItemBorderColor = System.Drawing.Color.White;
-            this.cmb_inputRoomType.ItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.cmb_inputRoomType.ItemHeight = 40;
-            this.cmb_inputRoomType.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
-            this.cmb_inputRoomType.ItemHighLightForeColor = System.Drawing.Color.White;
-            this.cmb_inputRoomType.Items.AddRange(new object[] {
+            this.cmb_RoomTypes.BackColor = System.Drawing.Color.Transparent;
+            this.cmb_RoomTypes.BackgroundColor = System.Drawing.Color.White;
+            this.cmb_RoomTypes.BorderColor = System.Drawing.Color.Transparent;
+            this.cmb_RoomTypes.BorderRadius = 1;
+            this.cmb_RoomTypes.Color = System.Drawing.Color.Transparent;
+            this.cmb_RoomTypes.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
+            this.cmb_RoomTypes.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.cmb_RoomTypes.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.cmb_RoomTypes.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.cmb_RoomTypes.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.cmb_RoomTypes.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
+            this.cmb_RoomTypes.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmb_RoomTypes.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
+            this.cmb_RoomTypes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_RoomTypes.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.cmb_RoomTypes.FillDropDown = true;
+            this.cmb_RoomTypes.FillIndicator = false;
+            this.cmb_RoomTypes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmb_RoomTypes.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_RoomTypes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
+            this.cmb_RoomTypes.FormattingEnabled = true;
+            this.cmb_RoomTypes.Icon = null;
+            this.cmb_RoomTypes.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.cmb_RoomTypes.IndicatorColor = System.Drawing.Color.Gray;
+            this.cmb_RoomTypes.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.cmb_RoomTypes.ItemBackColor = System.Drawing.Color.White;
+            this.cmb_RoomTypes.ItemBorderColor = System.Drawing.Color.White;
+            this.cmb_RoomTypes.ItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
+            this.cmb_RoomTypes.ItemHeight = 40;
+            this.cmb_RoomTypes.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
+            this.cmb_RoomTypes.ItemHighLightForeColor = System.Drawing.Color.White;
+            this.cmb_RoomTypes.Items.AddRange(new object[] {
             "VIP1",
             "VIP2",
             "VIP3"});
-            this.cmb_inputRoomType.ItemTopMargin = 3;
-            this.cmb_inputRoomType.Location = new System.Drawing.Point(25, 217);
-            this.cmb_inputRoomType.Name = "cmb_inputRoomType";
-            this.cmb_inputRoomType.Size = new System.Drawing.Size(275, 46);
-            this.cmb_inputRoomType.TabIndex = 34;
-            this.cmb_inputRoomType.Text = "Loại phòng";
-            this.cmb_inputRoomType.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.cmb_inputRoomType.TextLeftMargin = 5;
+            this.cmb_RoomTypes.ItemTopMargin = 3;
+            this.cmb_RoomTypes.Location = new System.Drawing.Point(25, 217);
+            this.cmb_RoomTypes.Name = "cmb_RoomTypes";
+            this.cmb_RoomTypes.Size = new System.Drawing.Size(275, 46);
+            this.cmb_RoomTypes.TabIndex = 34;
+            this.cmb_RoomTypes.Text = "Loại phòng";
+            this.cmb_RoomTypes.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.cmb_RoomTypes.TextLeftMargin = 5;
             // 
             // bunifuLabel11
             // 
@@ -456,71 +455,6 @@
             this.bunifuLabel11.Text = "Loại phòng";
             this.bunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel11.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // cmb_RoomCapacity
-            // 
-            this.cmb_RoomCapacity.BackColor = System.Drawing.Color.Transparent;
-            this.cmb_RoomCapacity.BackgroundColor = System.Drawing.Color.White;
-            this.cmb_RoomCapacity.BorderColor = System.Drawing.Color.Transparent;
-            this.cmb_RoomCapacity.BorderRadius = 1;
-            this.cmb_RoomCapacity.Color = System.Drawing.Color.Transparent;
-            this.cmb_RoomCapacity.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
-            this.cmb_RoomCapacity.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.cmb_RoomCapacity.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.cmb_RoomCapacity.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.cmb_RoomCapacity.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.cmb_RoomCapacity.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
-            this.cmb_RoomCapacity.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmb_RoomCapacity.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
-            this.cmb_RoomCapacity.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmb_RoomCapacity.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.cmb_RoomCapacity.FillDropDown = true;
-            this.cmb_RoomCapacity.FillIndicator = false;
-            this.cmb_RoomCapacity.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmb_RoomCapacity.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_RoomCapacity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.cmb_RoomCapacity.FormattingEnabled = true;
-            this.cmb_RoomCapacity.Icon = null;
-            this.cmb_RoomCapacity.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.cmb_RoomCapacity.IndicatorColor = System.Drawing.Color.Gray;
-            this.cmb_RoomCapacity.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.cmb_RoomCapacity.ItemBackColor = System.Drawing.Color.White;
-            this.cmb_RoomCapacity.ItemBorderColor = System.Drawing.Color.White;
-            this.cmb_RoomCapacity.ItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.cmb_RoomCapacity.ItemHeight = 40;
-            this.cmb_RoomCapacity.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
-            this.cmb_RoomCapacity.ItemHighLightForeColor = System.Drawing.Color.White;
-            this.cmb_RoomCapacity.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6"});
-            this.cmb_RoomCapacity.ItemTopMargin = 3;
-            this.cmb_RoomCapacity.Location = new System.Drawing.Point(440, 217);
-            this.cmb_RoomCapacity.Name = "cmb_RoomCapacity";
-            this.cmb_RoomCapacity.Size = new System.Drawing.Size(275, 46);
-            this.cmb_RoomCapacity.TabIndex = 36;
-            this.cmb_RoomCapacity.Text = "Số lượng học sinh";
-            this.cmb_RoomCapacity.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.cmb_RoomCapacity.TextLeftMargin = 5;
-            // 
-            // bunifuLabel4
-            // 
-            this.bunifuLabel4.AllowParentOverrides = false;
-            this.bunifuLabel4.AutoEllipsis = false;
-            this.bunifuLabel4.CursorType = null;
-            this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.bunifuLabel4.Location = new System.Drawing.Point(440, 187);
-            this.bunifuLabel4.Name = "bunifuLabel4";
-            this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(118, 20);
-            this.bunifuLabel4.TabIndex = 35;
-            this.bunifuLabel4.Text = "Số lượng học sinh";
-            this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // cmb_RoomStatus
             // 
@@ -559,7 +493,7 @@
             "Hoạt động",
             "Bảo trì"});
             this.cmb_RoomStatus.ItemTopMargin = 3;
-            this.cmb_RoomStatus.Location = new System.Drawing.Point(840, 217);
+            this.cmb_RoomStatus.Location = new System.Drawing.Point(440, 217);
             this.cmb_RoomStatus.Name = "cmb_RoomStatus";
             this.cmb_RoomStatus.Size = new System.Drawing.Size(275, 46);
             this.cmb_RoomStatus.TabIndex = 38;
@@ -574,7 +508,7 @@
             this.bunifuLabel5.CursorType = null;
             this.bunifuLabel5.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.bunifuLabel5.Location = new System.Drawing.Point(840, 187);
+            this.bunifuLabel5.Location = new System.Drawing.Point(440, 187);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel5.Size = new System.Drawing.Size(114, 20);
@@ -791,9 +725,9 @@
             this.dgv_Rooms.ColumnHeadersHeight = 40;
             this.dgv_Rooms.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.RoomID,
-            this.RoomNumber,
-            this.RoomType,
-            this.RoomArea,
+            this.RoomName,
+            this.RoomTypeName,
+            this.AreaName,
             this.RoomCapacity,
             this.RoomStatus});
             this.dgv_Rooms.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
@@ -839,7 +773,6 @@
             this.dgv_Rooms.TabIndex = 41;
             this.dgv_Rooms.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             this.dgv_Rooms.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Rooms_CellClick);
-            this.dgv_Rooms.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Rooms_CellContentClick);
             // 
             // RoomID
             // 
@@ -851,37 +784,37 @@
             this.RoomID.ReadOnly = true;
             this.RoomID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // RoomNumber
+            // RoomName
             // 
-            this.RoomNumber.DataPropertyName = "RoomNumber";
-            this.RoomNumber.FillWeight = 200F;
-            this.RoomNumber.HeaderText = "Số phòng";
-            this.RoomNumber.MinimumWidth = 6;
-            this.RoomNumber.Name = "RoomNumber";
-            this.RoomNumber.ReadOnly = true;
+            this.RoomName.DataPropertyName = "RoomName";
+            this.RoomName.FillWeight = 200F;
+            this.RoomName.HeaderText = "Tên phòng";
+            this.RoomName.MinimumWidth = 6;
+            this.RoomName.Name = "RoomName";
+            this.RoomName.ReadOnly = true;
             // 
-            // RoomType
+            // RoomTypeName
             // 
-            this.RoomType.DataPropertyName = "RoomType";
-            this.RoomType.FillWeight = 200F;
-            this.RoomType.HeaderText = "Loại phòng";
-            this.RoomType.MinimumWidth = 6;
-            this.RoomType.Name = "RoomType";
-            this.RoomType.ReadOnly = true;
+            this.RoomTypeName.DataPropertyName = "RoomTypeName";
+            this.RoomTypeName.FillWeight = 200F;
+            this.RoomTypeName.HeaderText = "Loại phòng";
+            this.RoomTypeName.MinimumWidth = 6;
+            this.RoomTypeName.Name = "RoomTypeName";
+            this.RoomTypeName.ReadOnly = true;
             // 
-            // RoomArea
+            // AreaName
             // 
-            this.RoomArea.DataPropertyName = "RoomArea";
-            this.RoomArea.HeaderText = "Khu";
-            this.RoomArea.MinimumWidth = 6;
-            this.RoomArea.Name = "RoomArea";
-            this.RoomArea.ReadOnly = true;
+            this.AreaName.DataPropertyName = "AreaName";
+            this.AreaName.HeaderText = "Khu";
+            this.AreaName.MinimumWidth = 6;
+            this.AreaName.Name = "AreaName";
+            this.AreaName.ReadOnly = true;
             // 
             // RoomCapacity
             // 
             this.RoomCapacity.DataPropertyName = "RoomCapacity";
             this.RoomCapacity.FillWeight = 200F;
-            this.RoomCapacity.HeaderText = "Số lượng";
+            this.RoomCapacity.HeaderText = "Sức chứa";
             this.RoomCapacity.MinimumWidth = 6;
             this.RoomCapacity.Name = "RoomCapacity";
             this.RoomCapacity.ReadOnly = true;
@@ -903,7 +836,7 @@
             // bunifuElipse3
             // 
             this.bunifuElipse3.ElipseRadius = 10;
-            this.bunifuElipse3.TargetControl = this.cmb_inputRoomType;
+            this.bunifuElipse3.TargetControl = this.cmb_RoomTypes;
             // 
             // bunifuElipse4
             // 
@@ -913,7 +846,7 @@
             // bunifuElipse5
             // 
             this.bunifuElipse5.ElipseRadius = 10;
-            this.bunifuElipse5.TargetControl = this.cmb_RoomCapacity;
+            this.bunifuElipse5.TargetControl = this;
             // 
             // btn_deleteRoom
             // 
@@ -1006,48 +939,48 @@
             this.btn_deleteRoom.UseDefaultRadiusAndThickness = true;
             this.btn_deleteRoom.Click += new System.EventHandler(this.btn_deleteRoom_Click);
             // 
-            // cmb_inputRoomArea
+            // cmb_RoomAreas
             // 
-            this.cmb_inputRoomArea.BackColor = System.Drawing.Color.Transparent;
-            this.cmb_inputRoomArea.BackgroundColor = System.Drawing.Color.White;
-            this.cmb_inputRoomArea.BorderColor = System.Drawing.Color.Transparent;
-            this.cmb_inputRoomArea.BorderRadius = 1;
-            this.cmb_inputRoomArea.Color = System.Drawing.Color.Transparent;
-            this.cmb_inputRoomArea.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
-            this.cmb_inputRoomArea.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.cmb_inputRoomArea.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.cmb_inputRoomArea.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.cmb_inputRoomArea.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.cmb_inputRoomArea.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
-            this.cmb_inputRoomArea.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmb_inputRoomArea.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
-            this.cmb_inputRoomArea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmb_inputRoomArea.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.cmb_inputRoomArea.FillDropDown = true;
-            this.cmb_inputRoomArea.FillIndicator = false;
-            this.cmb_inputRoomArea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmb_inputRoomArea.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_inputRoomArea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.cmb_inputRoomArea.FormattingEnabled = true;
-            this.cmb_inputRoomArea.Icon = null;
-            this.cmb_inputRoomArea.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.cmb_inputRoomArea.IndicatorColor = System.Drawing.Color.Gray;
-            this.cmb_inputRoomArea.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.cmb_inputRoomArea.ItemBackColor = System.Drawing.Color.White;
-            this.cmb_inputRoomArea.ItemBorderColor = System.Drawing.Color.White;
-            this.cmb_inputRoomArea.ItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.cmb_inputRoomArea.ItemHeight = 40;
-            this.cmb_inputRoomArea.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
-            this.cmb_inputRoomArea.ItemHighLightForeColor = System.Drawing.Color.White;
-            this.cmb_inputRoomArea.ItemTopMargin = 3;
-            this.cmb_inputRoomArea.Location = new System.Drawing.Point(440, 120);
-            this.cmb_inputRoomArea.Name = "cmb_inputRoomArea";
-            this.cmb_inputRoomArea.Size = new System.Drawing.Size(275, 46);
-            this.cmb_inputRoomArea.TabIndex = 44;
-            this.cmb_inputRoomArea.Text = "Khu";
-            this.cmb_inputRoomArea.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.cmb_inputRoomArea.TextLeftMargin = 5;
-            this.cmb_inputRoomArea.SelectedIndexChanged += new System.EventHandler(this.cmb_inputRoomArea_SelectedIndexChanged);
+            this.cmb_RoomAreas.BackColor = System.Drawing.Color.Transparent;
+            this.cmb_RoomAreas.BackgroundColor = System.Drawing.Color.White;
+            this.cmb_RoomAreas.BorderColor = System.Drawing.Color.Transparent;
+            this.cmb_RoomAreas.BorderRadius = 1;
+            this.cmb_RoomAreas.Color = System.Drawing.Color.Transparent;
+            this.cmb_RoomAreas.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
+            this.cmb_RoomAreas.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.cmb_RoomAreas.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.cmb_RoomAreas.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.cmb_RoomAreas.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.cmb_RoomAreas.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
+            this.cmb_RoomAreas.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmb_RoomAreas.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
+            this.cmb_RoomAreas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_RoomAreas.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.cmb_RoomAreas.FillDropDown = true;
+            this.cmb_RoomAreas.FillIndicator = false;
+            this.cmb_RoomAreas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmb_RoomAreas.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_RoomAreas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
+            this.cmb_RoomAreas.FormattingEnabled = true;
+            this.cmb_RoomAreas.Icon = null;
+            this.cmb_RoomAreas.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.cmb_RoomAreas.IndicatorColor = System.Drawing.Color.Gray;
+            this.cmb_RoomAreas.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.cmb_RoomAreas.ItemBackColor = System.Drawing.Color.White;
+            this.cmb_RoomAreas.ItemBorderColor = System.Drawing.Color.White;
+            this.cmb_RoomAreas.ItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
+            this.cmb_RoomAreas.ItemHeight = 40;
+            this.cmb_RoomAreas.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
+            this.cmb_RoomAreas.ItemHighLightForeColor = System.Drawing.Color.White;
+            this.cmb_RoomAreas.ItemTopMargin = 3;
+            this.cmb_RoomAreas.Location = new System.Drawing.Point(25, 120);
+            this.cmb_RoomAreas.Name = "cmb_RoomAreas";
+            this.cmb_RoomAreas.Size = new System.Drawing.Size(275, 46);
+            this.cmb_RoomAreas.TabIndex = 44;
+            this.cmb_RoomAreas.Text = "Khu";
+            this.cmb_RoomAreas.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.cmb_RoomAreas.TextLeftMargin = 5;
+            this.cmb_RoomAreas.SelectedIndexChanged += new System.EventHandler(this.cmb_inputRoomArea_SelectedIndexChanged);
             // 
             // bunifuLabel6
             // 
@@ -1056,7 +989,7 @@
             this.bunifuLabel6.CursorType = null;
             this.bunifuLabel6.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.bunifuLabel6.Location = new System.Drawing.Point(440, 90);
+            this.bunifuLabel6.Location = new System.Drawing.Point(25, 90);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel6.Size = new System.Drawing.Size(25, 20);
@@ -1065,13 +998,18 @@
             this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
+            // bunifuElipse6
+            // 
+            this.bunifuElipse6.ElipseRadius = 10;
+            this.bunifuElipse6.TargetControl = this.cmb_RoomAreas;
+            // 
             // addNewRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.ClientSize = new System.Drawing.Size(1138, 800);
-            this.Controls.Add(this.cmb_inputRoomArea);
+            this.Controls.Add(this.cmb_RoomAreas);
             this.Controls.Add(this.bunifuLabel6);
             this.Controls.Add(this.btn_deleteRoom);
             this.Controls.Add(this.dgv_Rooms);
@@ -1079,14 +1017,12 @@
             this.Controls.Add(this.btn_addRoom);
             this.Controls.Add(this.cmb_RoomStatus);
             this.Controls.Add(this.bunifuLabel5);
-            this.Controls.Add(this.cmb_RoomCapacity);
-            this.Controls.Add(this.bunifuLabel4);
-            this.Controls.Add(this.cmb_inputRoomType);
+            this.Controls.Add(this.cmb_RoomTypes);
             this.Controls.Add(this.bunifuLabel11);
             this.Controls.Add(this.bunifuLabel3);
-            this.Controls.Add(this.txt_inputRoomNumber);
+            this.Controls.Add(this.txt_RoomName);
             this.Controls.Add(this.bunifuLabel1);
-            this.Controls.Add(this.txt_inputRoomID);
+            this.Controls.Add(this.txt_RoomID);
             this.Controls.Add(this.bunifuPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "addNewRoom";
@@ -1106,13 +1042,11 @@
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
-        private Bunifu.UI.WinForms.BunifuTextBox txt_inputRoomNumber;
+        private Bunifu.UI.WinForms.BunifuTextBox txt_RoomName;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
-        private Bunifu.UI.WinForms.BunifuTextBox txt_inputRoomID;
-        private Bunifu.UI.WinForms.BunifuDropdown cmb_inputRoomType;
+        private Bunifu.UI.WinForms.BunifuTextBox txt_RoomID;
+        private Bunifu.UI.WinForms.BunifuDropdown cmb_RoomTypes;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel11;
-        private Bunifu.UI.WinForms.BunifuDropdown cmb_RoomCapacity;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
         private Bunifu.UI.WinForms.BunifuDropdown cmb_RoomStatus;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_editRoom;
@@ -1124,13 +1058,14 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse5;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_exit;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_deleteRoom;
-        private Bunifu.UI.WinForms.BunifuDropdown cmb_inputRoomArea;
+        private Bunifu.UI.WinForms.BunifuDropdown cmb_RoomAreas;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel6;
         private System.Windows.Forms.DataGridViewTextBoxColumn RoomID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RoomNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RoomType;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RoomArea;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RoomName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RoomTypeName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AreaName;
         private System.Windows.Forms.DataGridViewTextBoxColumn RoomCapacity;
         private System.Windows.Forms.DataGridViewTextBoxColumn RoomStatus;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse6;
     }
 }

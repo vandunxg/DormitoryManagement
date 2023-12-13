@@ -11,30 +11,20 @@ namespace DORMITORY_MANAGEMENT.DTO
     {
         public Room() { }
 
-        public Room(string ID, string number, string capacity, string type, string area, string status, string roomStudents) { 
-            this.RoomID = ID;
-            this.RoomCapacity = capacity;
-            this.RoomType = type;
-            this.roomArea = area;
-            this.RoomStatus = status;
-            this.RoomNumber = number;
-            this.RoomStudents = roomStudents;
-            
-        }
 
         public Room(DataRow row)
         {
             this.RoomID = row["RoomID"].ToString();
-            this.RoomCapacity = row["RoomCapacity"].ToString();
-            this.RoomType = row["TypeID"].ToString();
-            this.RoomArea = row["AreaID"].ToString();
-            this.RoomNumber = row["RoomNumber"].ToString();
+            this.RoomType = row["RoomName"].ToString();
             this.RoomStatus = row["RoomStatus"].ToString();
-            this.RoomStudents = row["StudentCount"].ToString();
+            this.RoomArea = row["AreaID"].ToString();
+            this.RoomType = row["RoomTypeID"].ToString();
+            this.RoomCapacity = row["RoomCapacity"].ToString();
+            this.RoomStudents = row["NumberOfContracts"].ToString();
         }
 
         private string roomID;
-        private string roomNumber;
+        private string roomName;
         private string roomCapacity;
         private string roomType;
         private string roomStatus;
@@ -43,7 +33,7 @@ namespace DORMITORY_MANAGEMENT.DTO
 
 
         public string RoomID { get => roomID; set => roomID = value; }
-        public string RoomNumber { get => roomNumber; set => roomNumber = value; }
+        public string RoomName { get => roomName; set => roomName = value; }
         public string RoomCapacity { get => roomCapacity; set => roomCapacity = value; }
         public string RoomType { get => roomType; set => roomType = value; }
         public string RoomStatus { get => roomStatus; set => roomStatus = value; }

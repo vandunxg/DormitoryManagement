@@ -99,13 +99,13 @@ GO
 CREATE TABLE Rooms(
 	RoomID NVARCHAR(20) PRIMARY KEY NOT NULL,
 	RoomName NVARCHAR(20) NOT NULL,
+	RoomStatus NVARCHAR(20) NOT NULL,
 	AreaID NVARCHAR(20) NOT NULL,
 	RoomTypeID NVARCHAR(20) NOT NULL,
 	FOREIGN KEY (AreaID) REFERENCES Areas(AreaID),
 	FOREIGN KEY (RoomTypeID) REFERENCES RoomTypes(RoomTypeID)
 );
 GO
-
 
 -- BẢNG HỢP ĐỒNG
 CREATE TABLE Contracts(
@@ -245,22 +245,22 @@ VALUES
 GO
 
 -- INSERT INTO Rooms
-INSERT INTO Rooms(RoomID, RoomName, AreaID, RoomTypeID)
+INSERT INTO Rooms(RoomID, RoomName, RoomStatus, AreaID, RoomTypeID)
 VALUES
-('A101', '101', 'A', 'VIP1'),
-('A102', '102', 'A', 'VIP1'),
-('A103', '103', 'A', 'VIP1'),
-('A104', '104', 'A', 'VIP1'),
-('A105', '105', 'A', 'VIP1'),
-('B102', '101', 'B', 'VIP2'),
-('B103', '102', 'B', 'VIP2'),
-('B104', '103', 'B', 'VIP2'),
-('B105', '104', 'B', 'VIP2'),
-('B106', '105', 'B', 'VIP2'),
-('C101', '101', 'C', 'VIP3'),
-('C102', '102', 'C', 'VIP3'),
-('C201', '201', 'C', 'VIP3'),
-('C202', '202', 'C', 'VIP3');
+('A101', '101', N'Hoạt động', 'A', 'VIP1'),
+('A102', '102', N'Hoạt động', 'A', 'VIP1'),
+('A103', '103', N'Hoạt động', 'A', 'VIP1'),
+('A104', '104', N'Hoạt động', 'A', 'VIP1'),
+('A105', '105', N'Hoạt động', 'A', 'VIP1'),
+('B102', '101', N'Hoạt động', 'B', 'VIP2'),
+('B103', '102', N'Hoạt động', 'B', 'VIP2'),
+('B104', '103', N'Hoạt động', 'B', 'VIP2'),
+('B105', '104', N'Hoạt động', 'B', 'VIP2'),
+('B106', '105', N'Hoạt động', 'B', 'VIP2'),
+('C101', '101', N'Hoạt động', 'C', 'VIP3'),
+('C102', '102', N'Hoạt động', 'C', 'VIP3'),
+('C201', '201', N'Hoạt động', 'C', 'VIP3'),
+('C202', '202', N'Hoạt động', 'C', 'VIP3');
 GO
 
 --INSERT INTO Services
@@ -374,5 +374,78 @@ CREATE PROC DeleteDataStudents
 AS
 BEGIN
 	DELETE FROM dbo.Students WHERE StudentID = @StudentID
+END;
+GO
+
+-- Get Room From sql
+CREATE PROC GetRooms
+AS
+BEGIN
+	SELECT
+		Rooms.*,
+		Areas.AreaName,
+		RoomTypes.RoomCapacity,
+		COUNT(Contracts.ContractID) AS NumberOfContracts
+	FROM
+		Rooms
+	JOIN Areas ON Rooms.AreaID = Areas.AreaID
+	JOIN RoomTypes ON Rooms.RoomTypeID = RoomTypes.RoomTypeID
+	LEFT JOIN Contracts ON Rooms.RoomID = Contracts.RoomID
+	GROUP BY
+		Rooms.RoomID, Rooms.RoomName, Rooms.RoomStatus, Rooms.AreaID, Rooms.RoomTypeID, Areas.AreaName, RoomTypes.RoomCapacity;
+END;
+GO
+
+-- Get Areas From Sql
+CREATE PROC GetAreas
+AS
+BEGIN
+	SELECT * FROM Areas
+END;
+GO
+
+-- Get Room From Sql
+CREATE PROC GetAddRooms
+AS
+BEGIN
+	SELECT
+		Rooms.RoomID, Rooms.RoomName, Rooms.RoomStatus,
+		RoomTypes.RoomTypeName,
+		Areas.AreaName,
+		RoomTypes.RoomCapacity
+	FROM
+		Rooms
+	JOIN RoomTypes ON Rooms.RoomTypeID = RoomTypes.RoomTypeID
+	JOIN Areas ON Rooms.AreaID = Areas.AreaID
+	LEFT JOIN Contracts ON Rooms.RoomID = Contracts.RoomID
+END;
+GO
+
+--Insert Rooms To Sql
+CREATE PROC InsertRoomsData
+@RoomID NVARCHAR(20) , @RoomName NVARCHAR(20) , @RoomStatus NVARCHAR(20) ,
+@AreaID NVARCHAR(20) , @RoomTypeID NVARCHAR(20)
+AS
+BEGIN
+	INSERT INTO Rooms (RoomID, RoomName, RoomStatus , AreaID , RoomTypeID)
+	VALUES
+	(@RoomID , @RoomName , @RoomStatus , @AreaID , @RoomTypeID)
+END;
+GO
+
+SELECT AreaID FROM Areas WHERE AreaName = 'Khu A'
+-- Update Rooms To Sql
+CREATE PROC UpdateRoomsData
+@RoomID NVARCHAR(20) , @RoomName NVARCHAR(20) , @RoomStatus NVARCHAR(20) ,
+@AreaID NVARCHAR(20) , @RoomTypeID NVARCHAR(20)
+AS
+BEGIN
+	UPDATE Rooms
+	SET
+		RoomName = @RoomName,
+		RoomStatus = @RoomStatus,
+		AreaID = @AreaID,
+		RoomTypeID = @RoomTypeID
+	WHERE RoomID = @RoomID
 END;
 GO

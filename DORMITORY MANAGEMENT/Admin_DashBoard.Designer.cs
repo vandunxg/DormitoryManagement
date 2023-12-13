@@ -47,9 +47,8 @@
             this.bunifuPanel5 = new Bunifu.UI.WinForms.BunifuPanel();
             this.pages = new Bunifu.UI.WinForms.BunifuPages();
             this.Overview = new System.Windows.Forms.TabPage();
-            this.overviewPage1 = new DORMITORY_MANAGEMENT.OverviewPage();
             this.addStudents = new System.Windows.Forms.TabPage();
-            this.addStudents1 = new DORMITORY_MANAGEMENT.addStudents();
+            this.Rooms = new System.Windows.Forms.TabPage();
             this.topPanelDashboard = new Bunifu.UI.WinForms.BunifuPanel();
             this.btn_exit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.text_showNameofPage = new Bunifu.UI.WinForms.BunifuLabel();
@@ -57,7 +56,9 @@
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.Rooms = new System.Windows.Forms.TabPage();
+            this.overviewPage1 = new DORMITORY_MANAGEMENT.OverviewPage();
+            this.addStudents1 = new DORMITORY_MANAGEMENT.addStudents();
+            this.manageRoomControl1 = new DORMITORY_MANAGEMENT.ManageRoomControl();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.bunifuPanel3.SuspendLayout();
@@ -65,6 +66,7 @@
             this.pages.SuspendLayout();
             this.Overview.SuspendLayout();
             this.addStudents.SuspendLayout();
+            this.Rooms.SuspendLayout();
             this.topPanelDashboard.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -564,15 +566,6 @@
             this.Overview.TabIndex = 0;
             this.Overview.Text = "Overview";
             // 
-            // overviewPage1
-            // 
-            this.overviewPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
-            this.overviewPage1.Location = new System.Drawing.Point(-4, 0);
-            this.overviewPage1.Name = "overviewPage1";
-            this.overviewPage1.Size = new System.Drawing.Size(1138, 800);
-            this.overviewPage1.TabIndex = 0;
-            this.overviewPage1.Load += new System.EventHandler(this.overviewPage1_Load);
-            // 
             // addStudents
             // 
             this.addStudents.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
@@ -584,13 +577,16 @@
             this.addStudents.TabIndex = 1;
             this.addStudents.Text = "Add Students";
             // 
-            // addStudents1
+            // Rooms
             // 
-            this.addStudents1.BackColor = System.Drawing.Color.White;
-            this.addStudents1.Location = new System.Drawing.Point(-4, -4);
-            this.addStudents1.Name = "addStudents1";
-            this.addStudents1.Size = new System.Drawing.Size(1138, 800);
-            this.addStudents1.TabIndex = 0;
+            this.Rooms.Controls.Add(this.manageRoomControl1);
+            this.Rooms.Location = new System.Drawing.Point(4, 4);
+            this.Rooms.Name = "Rooms";
+            this.Rooms.Padding = new System.Windows.Forms.Padding(3);
+            this.Rooms.Size = new System.Drawing.Size(1130, 780);
+            this.Rooms.TabIndex = 2;
+            this.Rooms.Text = "Rooms";
+            this.Rooms.UseVisualStyleBackColor = true;
             // 
             // topPanelDashboard
             // 
@@ -755,15 +751,30 @@
             this.bunifuElipse1.ElipseRadius = 10;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // Rooms
+            // overviewPage1
             // 
-            this.Rooms.Location = new System.Drawing.Point(4, 4);
-            this.Rooms.Name = "Rooms";
-            this.Rooms.Padding = new System.Windows.Forms.Padding(3);
-            this.Rooms.Size = new System.Drawing.Size(1130, 780);
-            this.Rooms.TabIndex = 2;
-            this.Rooms.Text = "Rooms";
-            this.Rooms.UseVisualStyleBackColor = true;
+            this.overviewPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.overviewPage1.Location = new System.Drawing.Point(-4, 0);
+            this.overviewPage1.Name = "overviewPage1";
+            this.overviewPage1.Size = new System.Drawing.Size(1138, 800);
+            this.overviewPage1.TabIndex = 0;
+            this.overviewPage1.Load += new System.EventHandler(this.overviewPage1_Load);
+            // 
+            // addStudents1
+            // 
+            this.addStudents1.BackColor = System.Drawing.Color.White;
+            this.addStudents1.Location = new System.Drawing.Point(-4, -4);
+            this.addStudents1.Name = "addStudents1";
+            this.addStudents1.Size = new System.Drawing.Size(1138, 800);
+            this.addStudents1.TabIndex = 0;
+            // 
+            // manageRoomControl1
+            // 
+            this.manageRoomControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.manageRoomControl1.Location = new System.Drawing.Point(-4, -4);
+            this.manageRoomControl1.Name = "manageRoomControl1";
+            this.manageRoomControl1.Size = new System.Drawing.Size(1138, 800);
+            this.manageRoomControl1.TabIndex = 0;
             // 
             // Admin_Dashboard
             // 
@@ -785,6 +796,7 @@
             this.pages.ResumeLayout(false);
             this.Overview.ResumeLayout(false);
             this.addStudents.ResumeLayout(false);
+            this.Rooms.ResumeLayout(false);
             this.topPanelDashboard.ResumeLayout(false);
             this.topPanelDashboard.PerformLayout();
             this.ResumeLayout(false);
@@ -814,5 +826,6 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_exit;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
         private System.Windows.Forms.TabPage Rooms;
+        private ManageRoomControl manageRoomControl1;
     }
 }
