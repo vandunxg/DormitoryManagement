@@ -47,7 +47,7 @@ namespace DORMITORY_MANAGEMENT
             lbl_RoomID.Text = RoomID;
             this.RoomID = RoomID;
 
-            string query = "SELECT StudentName, StudentID FROM Students WHERE RoomID = @RoomID ";
+            string query = "GetStudentsinRoom";
             DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { RoomID });
             dgv_Students.DataSource = data;
 
@@ -67,9 +67,9 @@ namespace DORMITORY_MANAGEMENT
 
         private void RoomStudentManager_Load(object sender, EventArgs e)
         {
-            DataTable data = DataProvider.Instance.ExcuteQuery("SELECT * FROM Services WHERE RoomID = @RoomID", new object[] { RoomID });
-            
-            if(data.Rows.Count > 0)
+            DataTable data = DataProvider.Instance.ExcuteQuery("", new object[] { RoomID });
+
+            if (data.Rows.Count > 0)
             {
                 DataRow row = data.Rows[0];
                 RoomServices roomServices = new RoomServices(row);
@@ -99,11 +99,6 @@ namespace DORMITORY_MANAGEMENT
                 cardShowInfo_Water.setAllValue("Tiền nước", roomServices.ServiceWater);
                 cardShowInfo_Total.setAllValue("Tổng tiền", roomServices.ServiceTotal);
             }
-
-           
-
-
-
         }
 
         private void btn_UpdateServiceState_Click(object sender, EventArgs e)

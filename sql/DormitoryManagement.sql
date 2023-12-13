@@ -14,8 +14,11 @@ CREATE TABLE Staffs(
 	StaffEmail NVARCHAR(50) NOT NULL,
 	StaffAddress NVARCHAR(50) NOT NULL,
 	StaffSalary MONEY NOT NULL,
+	StaffImage IMAGE,
 );
 GO
+
+
 
 -- BẢNG TÀI KHOẢN NHÂN VIÊN
 CREATE TABLE Accounts(
@@ -75,7 +78,8 @@ CREATE TABLE Students(
 	StudentEmail NVARCHAR(50) NOT NULL,
 	StudentPhone NVARCHAR(10) NOT NULL,
 	StudentAddress NVARCHAR(50) NOT NULL,
-	StudentLived BIT
+	StudentLived BIT,
+	StudentImage IMAGE,
 	FOREIGN KEY (ClassID) REFERENCES Classrooms(ClassID)
 );
 GO
@@ -125,6 +129,7 @@ CREATE TABLE Contracts(
 );
 GO
 
+
 -- BẢNG DỊCH VỤ
 CREATE TABLE Services(
 	ServiceID NVARCHAR(20) PRIMARY KEY NOT NULL,
@@ -139,6 +144,7 @@ CREATE TABLE Usages(
 	UsageID NVARCHAR(20) PRIMARY KEY NOT NULL,
 	ServiceID NVARCHAR(20) NOT NULL,
 	UsageQuantity INT NOT NULL,
+	--RoomID
 	FOREIGN KEY (ServiceID) REFERENCES Services(ServiceID)
 );
 GO
@@ -157,7 +163,6 @@ CREATE TABLE Bills(
 	FOREIGN KEY (StaffID) REFERENCES Staffs(StaffID)
 );
 GO
-
 
 -- INSERT DATA TO Departments
 INSERT INTO Departments (DepartmentID , DepartmentName)
@@ -272,6 +277,12 @@ VALUES
 ('DV004', N'Vệ sinh', 1000000, N'Tháng');
 GO
 
+-- INSERT INTO USAGES
+INSERT INTO Usages (UsageID , ServiceID , UsageQuantity)
+VALUES
+
+GO
+
 --INSERT INTO Staffs
 INSERT INTO Staffs(StaffID, StaffName, StaffPhone, StaffEmail, StaffAddress, StaffPersonalID, StaffSalary)
 VALUES
@@ -283,6 +294,14 @@ INSERT INTO Students(StudentID, ClassID, StudentName, StudentGender, StudentDOB,
 VALUES
 ('73DCTT22428', '73DCTT22', N'Nguyễn Văn Dũng', 'Nam', '2004-07-23', '038204004400', N'vandunxg@gmail.com', '0835595675', N'Hoằng Hoá, Thanh Hoá', 1);
 GO
+
+-- INSERT INTO Contracts
+
+INSERT INTO Contracts (ContractID , StudentID , StaffID , AreaID , RoomID , RoomTypeID , CheckInDate , CheckOutDate)
+VALUES
+('S101', '73DCTT22428', 'NV001' , 'A' , 'A101' , 'VIP1' , '2022-10-20' , '2023-10-20')
+GO
+
 
 -----------------------------------------------------------------------------------------------------------------------------------------
 
@@ -396,6 +415,14 @@ BEGIN
 END;
 GO
 
+-- Get RoomTypes From Sql
+CREATE PROC GetRoomTypes
+AS
+BEGIN
+	SELECT * FROM RoomTypes
+END;
+GO
+
 -- Get Areas From Sql
 CREATE PROC GetAreas
 AS
@@ -433,19 +460,28 @@ BEGIN
 END;
 GO
 
-SELECT AreaID FROM Areas WHERE AreaName = 'Khu A'
+
+
 -- Update Rooms To Sql
 CREATE PROC UpdateRoomsData
-@RoomID NVARCHAR(20) , @RoomName NVARCHAR(20) , @RoomStatus NVARCHAR(20) ,
-@AreaID NVARCHAR(20) , @RoomTypeID NVARCHAR(20)
+@RoomID NVARCHAR(20) , @RoomStatus NVARCHAR(20) , @RoomTypeID NVARCHAR(20)
 AS
 BEGIN
 	UPDATE Rooms
 	SET
-		RoomName = @RoomName,
 		RoomStatus = @RoomStatus,
-		AreaID = @AreaID,
 		RoomTypeID = @RoomTypeID
 	WHERE RoomID = @RoomID
 END;
 GO
+
+-- Sql Get Student Information in Room
+CREATE PROC GetStudentsinRoom
+AS 
+BEGIN
+	SELECT Students.StudentName , Students.StudentID
+	FROM Students , Contracts
+	WHERE Contracts.StudentID = Students.StudentID
+END;
+GO
+
