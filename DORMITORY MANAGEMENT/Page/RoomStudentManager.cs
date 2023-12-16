@@ -47,9 +47,32 @@ namespace DORMITORY_MANAGEMENT
             lbl_RoomID.Text = RoomID;
             this.RoomID = RoomID;
 
-            string query = "GetStudentsinRoom";
+            string query = "GetStudentsinRoom @RoomID";
             DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { RoomID });
             dgv_Students.DataSource = data;
+
+            List<UsageServices> usageServices = UsageServicesDAO.Instance.LoadUsageServicesList(RoomID);
+
+            int TotalMoney = 0;
+
+            foreach(UsageServices usage in usageServices)
+            {
+                if(usage.ID == "1")
+                {
+                    cardShowInfo_Electricity.setAllValue(usage.ServiceName, usage.TotalMoney.ToString());
+                    
+                }
+                else if(usage.ID == "2")
+                {
+                    cardShowInfo_Water.setAllValue(usage.ServiceName, usage.TotalMoney.ToString());
+                    
+                }
+           
+                TotalMoney += usage.TotalMoney;
+            }
+
+            cardShowInfo_Total.setAllValue("Tổng thanh toán", TotalMoney.ToString());
+            
 
         }
 
@@ -67,16 +90,10 @@ namespace DORMITORY_MANAGEMENT
 
         private void RoomStudentManager_Load(object sender, EventArgs e)
         {
-            DataTable data = DataProvider.Instance.ExcuteQuery("", new object[] { RoomID });
-
-            if (data.Rows.Count > 0)
+            DataTable RoomBills = DataProvider.Instance.ExcuteQuery("SELECT * FROM Bills WHERE RoomID = @RoomID ", new object[] { RoomID });
+            if(RoomBills.Rows.Count > 0)
             {
-                DataRow row = data.Rows[0];
-                RoomServices roomServices = new RoomServices(row);
-                cardShowInfo_Electricity.setAllValue("Tiền điện", roomServices.ServiceElectricity);
-                cardShowInfo_Water.setAllValue("Tiền nước", roomServices.ServiceWater);
-                cardShowInfo_Total.setAllValue("Tổng tiền", roomServices.ServiceTotal);
-                if (roomServices.Paid == "True")
+                if (RoomBills.Rows[0]["BillPaid"].ToString() == "True")
                 {
                     lbl_PaidState.ForeColor = Color.FromArgb(19, 186, 126);
                     lbl_PaidState.Text = "Đã thanh toán";
@@ -86,44 +103,27 @@ namespace DORMITORY_MANAGEMENT
                     lbl_PaidState.ForeColor = Color.FromArgb(219, 89, 98);
                     lbl_PaidState.Text = "Chưa thanh toán";
                 }
-                lbl_ServiceElectricity.Text = roomServices.ServiceElectricity + "đ";
-                lbl_ServiceWater.Text = roomServices.ServiceWater + "đ";
-                lbl_ServiceInternet.Text = roomServices.ServiceInternet + "đ";
-                lbl_ServiceCleaning.Text = roomServices.ServiceCleaning + "đ";
-                lbl_ServiceTotal.Text = roomServices.ServiceTotal + "đ";
             }
-            else
-            {
-                RoomServices roomServices = new RoomServices();
-                cardShowInfo_Electricity.setAllValue("Tiền điện", roomServices.ServiceElectricity);
-                cardShowInfo_Water.setAllValue("Tiền nước", roomServices.ServiceWater);
-                cardShowInfo_Total.setAllValue("Tổng tiền", roomServices.ServiceTotal);
-            }
+
+            DataTable DataUsageServices = DataProvider.Instance.ExcuteQuery("GetInforUsageServices @RoomID ", new object[] { RoomID });
+            dgv_UsageService.DataSource = DataUsageServices;
         }
 
         private void btn_UpdateServiceState_Click(object sender, EventArgs e)
         {
             if(cmb_RoomServiceState.SelectedIndex == 0)
             {
-                DataTable data = DataProvider.Instance.ExcuteQuery("UPDATE Services SET Paid = @Paid WHERE RoomID = @RoomID", new object[] { 1 , RoomID});
-                if(data.Rows.Count > 0)
-                {
-
-                    MessageBox.Show("Đã cập nhật thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-                    
-                    
+                DataTable data = DataProvider.Instance.ExcuteQuery("UPDATE Bills SET BillPaid = @BillPaid WHERE RoomID = @RoomID", new object[] { 1 , RoomID});
+                
+                MessageBox.Show("Đã cập nhật thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                  
             }
             else
             {
-                DataTable data = DataProvider.Instance.ExcuteQuery("UPDATE Services SET Paid = @Paid WHERE RoomID = @RoomID", new object[] { 0, RoomID });
-                if (data.Rows.Count > 0)
-                {
-
-                    MessageBox.Show("Đã cập nhật thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
+                DataTable data = DataProvider.Instance.ExcuteQuery("UPDATE Bills SET BillPaid = @BillPaid WHERE RoomID = @RoomID", new object[] { 0, RoomID });
+                
+                MessageBox.Show("Đã cập nhật thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
             }
             RoomStudentManager_Load(sender, e);
         }

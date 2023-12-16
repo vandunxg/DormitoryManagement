@@ -41,27 +41,15 @@ namespace DORMITORY_MANAGEMENT.Page
 
         private void btn_Insert_Click(object sender, EventArgs e)
         {
-            string VIP1 = "100000", VIP2 = "150000", VIP3 = "200000";
-
-
+           
             if(cmb_RoomID.SelectedIndex != -1 && cmb_RoomArea.SelectedIndex != -1 && cmb_Paid.SelectedIndex != -1
                 && txt_ServiceElectricity.Text.ToString() != "" && txt_ServiceWater.Text.ToString() != "")
             {
                 string _ServiceElectricity = txt_ServiceElectricity.Text.ToString();
                 string _ServiceWater = txt_ServiceWater.Text.ToString();
                 string _RoomID = cmb_RoomID.SelectedValue.ToString();
-                if(cmb_Paid.SelectedIndex == 0)
-                {
-                    string _Paid = "1";
-                }
-                else
-                {
-                    string _Paid = "0";
-                }
                 
                 
-
-                string query = "INSERT INTO Services ";
 
             }
             else

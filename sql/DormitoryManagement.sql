@@ -7,25 +7,23 @@ USE DormitoryManagement;
 GO
 -- BẢNG NHÂN VIÊN
 CREATE TABLE Staffs(
-	StaffID NVARCHAR(20) PRIMARY KEY NOT NULL,
+	StaffID INT IDENTITY(10000,1) PRIMARY KEY NOT NULL,
 	StaffPersonalID NVARCHAR(12) NOT NULL,
 	StaffName NVARCHAR(50) NOT NULL,
 	StaffPhone NVARCHAR(10) NOT NULL,
 	StaffEmail NVARCHAR(50) NOT NULL,
 	StaffAddress NVARCHAR(50) NOT NULL,
-	StaffSalary MONEY NOT NULL,
+	StaffSalary INT NOT NULL,
 	StaffImage IMAGE,
 );
 GO
 
-
-
 -- BẢNG TÀI KHOẢN NHÂN VIÊN
 CREATE TABLE Accounts(
-	AccountID NVARCHAR(20) PRIMARY KEY NOT NULL,
+	AccountID INT IDENTITY(1, 1) PRIMARY KEY NOT NULL,
 	StaffEmail NVARCHAR(50) NOT NULL,
 	AccountPassword NVARCHAR(20) NOT NULL,
-	StaffID NVARCHAR(20) NOT NULL,
+	StaffID INT NOT NULL,
 	FOREIGN KEY (StaffID) REFERENCES Staffs(StaffID),
 );
 GO
@@ -54,7 +52,6 @@ CREATE TABLE Specializations(
 );
 GO
 
-
 -- BẢNG LỚP
 CREATE TABLE Classrooms(
 	ClassID NVARCHAR(20) PRIMARY KEY NOT NULL,
@@ -65,7 +62,6 @@ CREATE TABLE Classrooms(
 	FOREIGN KEY (MajorID) REFERENCES Majors(MajorID)
 );
 GO
-
 
 -- BẢNG SINH VIÊN
 CREATE TABLE Students(
@@ -86,26 +82,27 @@ GO
 
 -- BẢNG KHU PHÒNG
 CREATE TABLE Areas(
-	AreaID NVARCHAR(20) PRIMARY KEY NOT NULL,
+	AreaID INT IDENTITY(1, 1) PRIMARY KEY NOT NULL,
 	AreaName NVARCHAR(10) NOT NULL
 );
 GO
 
 -- BẢNG LOẠI PHÒNG
 CREATE TABLE RoomTypes(
-	RoomTypeID NVARCHAR(20) PRIMARY KEY NOT NULL,
+	RoomTypeID INT IDENTITY(1, 1) PRIMARY KEY NOT NULL,
 	RoomTypeName NVARCHAR(20) NOT NULL,
-	RoomTypePrice MONEY NOT NULL, 
+	RoomTypePrice INT NOT NULL, 
 	RoomCapacity INT NOT NULL
 );
 GO
+
 -- BẢNG PHÒNG
 CREATE TABLE Rooms(
-	RoomID NVARCHAR(20) PRIMARY KEY NOT NULL,
+	RoomID INT IDENTITY(10000, 1) PRIMARY KEY NOT NULL,
 	RoomName NVARCHAR(20) NOT NULL,
 	RoomStatus NVARCHAR(20) NOT NULL,
-	AreaID NVARCHAR(20) NOT NULL,
-	RoomTypeID NVARCHAR(20) NOT NULL,
+	AreaID INT NOT NULL,
+	RoomTypeID INT NOT NULL,
 	FOREIGN KEY (AreaID) REFERENCES Areas(AreaID),
 	FOREIGN KEY (RoomTypeID) REFERENCES RoomTypes(RoomTypeID)
 );
@@ -113,12 +110,13 @@ GO
 
 -- BẢNG HỢP ĐỒNG
 CREATE TABLE Contracts(
-	ContractID NVARCHAR(20) PRIMARY KEY NOT NULL,
+	ContractID INT IDENTITY(10000, 1) PRIMARY KEY NOT NULL,
 	StudentID NVARCHAR(20) NOT NULL,
-	StaffID NVARCHAR(20) NOT NULL,
-	AreaID NVARCHAR(20) NOT NULL,
-	RoomID NVARCHAR(20) NOT NULL,
-	RoomTypeID NVARCHAR(20) NOT NULL,
+	StaffID INT NOT NULL,
+	AreaID INT NOT NULL,
+	ContractState BIT NOT NULL,
+	RoomID INT NOT NULL,
+	RoomTypeID INT NOT NULL,
 	CheckInDate DATE NOT NULL,
 	CheckOutDate DATE NOT NULL,
 	FOREIGN KEY (AreaID) REFERENCES Areas(AreaID),
@@ -132,37 +130,38 @@ GO
 
 -- BẢNG DỊCH VỤ
 CREATE TABLE Services(
-	ServiceID NVARCHAR(20) PRIMARY KEY NOT NULL,
+	ServiceID INT IDENTITY(1, 1) PRIMARY KEY NOT NULL,
 	ServiceName NVARCHAR(20) NOT NULL,
-	ServicePrice MONEY NOT NULL,
+	ServicePrice INT NOT NULL,
 	ServiceUnit NVARCHAR(20) NOT NULL,
 );
 GO
 
 -- BẢNG SỬ DỤNG DỊCH VỤ
 CREATE TABLE Usages(
-	UsageID NVARCHAR(20) PRIMARY KEY NOT NULL,
-	ServiceID NVARCHAR(20) NOT NULL,
+	UsageID INT IDENTITY(1, 1) PRIMARY KEY NOT NULL,
+	ServiceID INT NOT NULL,
 	UsageQuantity INT NOT NULL,
-	--RoomID
+	RoomID INT NOT NULL,
+	UsageMonth INT NOT NULL,
+	UsageYear INT NOT NULL,
 	FOREIGN KEY (ServiceID) REFERENCES Services(ServiceID)
 );
 GO
 
 -- BẢNG HOÁ ĐƠN
 CREATE TABLE Bills(
-	BillID NVARCHAR(20) PRIMARY KEY NOT NULL,
-	RoomID NVARCHAR(20) NOT NULL,
+	BillID INT IDENTITY(10000, 1) PRIMARY KEY NOT NULL,
+	RoomID INT NOT NULL,
 	BillMonth INT NOT NULL,
 	BillYear INT NOT NULL,
 	BillCreationDate DATE NOT NULL, 
-	StaffID NVARCHAR(20) NOT NULL,
-	UsageID NVARCHAR(20) NOT NULL,
-	FOREIGN KEY (UsageID) REFERENCES Usages(UsageID),
-	FOREIGN KEY (RoomID) REFERENCES Rooms(RoomID),
+	StaffID INT NOT NULL,
+	BillPaid BIT
 	FOREIGN KEY (StaffID) REFERENCES Staffs(StaffID)
 );
 GO
+
 
 -- INSERT DATA TO Departments
 INSERT INTO Departments (DepartmentID , DepartmentName)
@@ -230,63 +229,54 @@ VALUES
 GO
 
 -- INSERT INTO Areas
-INSERT INTO Areas (AreaID, AreaName)
+INSERT INTO Areas (AreaName)
 VALUES
-('A', N'Khu A'),
-('B', N'Khu B'),
-('C', N'Khu C'),
-('D', N'Khu D'),
-('E', N'Khu E'),
-('F', N'Khu F'),
-('G', N'Khu G');
+(N'Khu A'),
+(N'Khu B'),
+(N'Khu C'),
+(N'Khu D'),
+(N'Khu E'),
+(N'Khu F'),
+(N'Khu G');
 GO
 
 -- INSERT INTO RoomTypes
-INSERT INTO RoomTypes(RoomTypeID, RoomTypeName, RoomCapacity, RoomTypePrice)
+INSERT INTO RoomTypes(RoomTypeName, RoomCapacity, RoomTypePrice)
 VALUES
-('VIP1', N'VIP 1', 8, 500000),
-('VIP2', N'VIP 2', 6, 700000),
-('VIP3', N'VIP 3', 4, 1000000);
+(N'Loại 1', 8, 500000),
+(N'Loại 2', 6, 700000),
+(N'Loại 3', 4, 1000000);
 GO
 
 -- INSERT INTO Rooms
-INSERT INTO Rooms(RoomID, RoomName, RoomStatus, AreaID, RoomTypeID)
+INSERT INTO Rooms(RoomName, RoomStatus, AreaID, RoomTypeID)
 VALUES
-('A101', '101', N'Hoạt động', 'A', 'VIP1'),
-('A102', '102', N'Hoạt động', 'A', 'VIP1'),
-('A103', '103', N'Hoạt động', 'A', 'VIP1'),
-('A104', '104', N'Hoạt động', 'A', 'VIP1'),
-('A105', '105', N'Hoạt động', 'A', 'VIP1'),
-('B102', '101', N'Hoạt động', 'B', 'VIP2'),
-('B103', '102', N'Hoạt động', 'B', 'VIP2'),
-('B104', '103', N'Hoạt động', 'B', 'VIP2'),
-('B105', '104', N'Hoạt động', 'B', 'VIP2'),
-('B106', '105', N'Hoạt động', 'B', 'VIP2'),
-('C101', '101', N'Hoạt động', 'C', 'VIP3'),
-('C102', '102', N'Hoạt động', 'C', 'VIP3'),
-('C201', '201', N'Hoạt động', 'C', 'VIP3'),
-('C202', '202', N'Hoạt động', 'C', 'VIP3');
+('A101', N'Hoạt động', '1', '1'),
+('A102', N'Hoạt động', '1', '1'),
+('A103', N'Hoạt động', '1', '1')
 GO
 
 --INSERT INTO Services
-INSERT INTO Services(ServiceID, ServiceName, ServicePrice, ServiceUnit)
+INSERT INTO Services(ServiceName, ServicePrice, ServiceUnit)
 VALUES
-('DV001', N'Điện sinh hoạt', 2500, N'kWh'),
-('DV002', N'Nước sinh hoạt', 8000, N'm3'),
-('DV003', N'Internet', 1000000, N'Tháng'),
-('DV004', N'Vệ sinh', 1000000, N'Tháng');
+( N'Điện sinh hoạt', 2500, N'kWh'),
+( N'Nước sinh hoạt', 8000, N'm3'),
+( N'Internet', 1000000, N'Tháng'),
+( N'Vệ sinh', 1000000, N'Tháng');
 GO
-
 -- INSERT INTO USAGES
-INSERT INTO Usages (UsageID , ServiceID , UsageQuantity)
+INSERT INTO Usages(ServiceID, UsageQuantity, RoomID, UsageMonth, UsageYear)
 VALUES
-
+('1', '120', '10002', '12', '2022'),
+('2', '120', '10002', '12', '2022'),
+('3', '1', '10002', '12', '2022'),
+('4', '1', '10002', '12', '2022')
 GO
 
 --INSERT INTO Staffs
-INSERT INTO Staffs(StaffID, StaffName, StaffPhone, StaffEmail, StaffAddress, StaffPersonalID, StaffSalary)
+INSERT INTO Staffs(StaffName, StaffPhone, StaffEmail, StaffAddress, StaffPersonalID, StaffSalary)
 VALUES
-('NV001', N'Nguyễn Văn Dũng', '0835595675', 'contact@vandunxg.com', N'Thanh Hoá', '038204113400', 250000);
+(N'Nguyễn Văn Dũng', '0835595675', 'contact@vandunxg.com', N'Thanh Hoá', '038204113400', 250000);
 GO
 
 --INSERT INTO Students
@@ -294,15 +284,13 @@ INSERT INTO Students(StudentID, ClassID, StudentName, StudentGender, StudentDOB,
 VALUES
 ('73DCTT22428', '73DCTT22', N'Nguyễn Văn Dũng', 'Nam', '2004-07-23', '038204004400', N'vandunxg@gmail.com', '0835595675', N'Hoằng Hoá, Thanh Hoá', 1);
 GO
-
 -- INSERT INTO Contracts
 
-INSERT INTO Contracts (ContractID , StudentID , StaffID , AreaID , RoomID , RoomTypeID , CheckInDate , CheckOutDate)
+INSERT INTO Contracts (StudentID , StaffID , AreaID , RoomID , RoomTypeID , CheckInDate , CheckOutDate)
 VALUES
-('S101', '73DCTT22428', 'NV001' , 'A' , 'A101' , 'VIP1' , '2022-10-20' , '2023-10-20')
+('73DCTT22428', '10001' , '1' , '10002' , '1' , '2022-10-20' , '2023-10-20')
 GO
-
-
+select * from Contracts
 -----------------------------------------------------------------------------------------------------------------------------------------
 
 -- Get Data Students
@@ -333,13 +321,13 @@ GO
 
 -- Insert Data Students to Sql
 CREATE PROC InsertDataStudents 
-@StudentID NVARCHAR(20) , @ClassID NVARCHAR(10) , @StudentName NVARCHAR(50) , @StudentGender NVARCHAR(5) , 
+ @StudentID NVARCHAR(20), @ClassID NVARCHAR(20) , @StudentName NVARCHAR(50) , @StudentGender NVARCHAR(5) , 
  @StudentDOB DATE , @StudentPersonalID NVARCHAR(12) , @StudentEmail NVARCHAR(50) , @StudentPhone NVARCHAR(10) ,  @StudentAddress NVARCHAR(50) , @StudentLived BIT 
 AS
 BEGIN
 	INSERT INTO dbo.Students
 	(
-	    StudentID,
+		StudentID,
 	    ClassID,
 	    StudentName,
 	    StudentGender,
@@ -351,8 +339,7 @@ BEGIN
 	    StudentLived
 	)
 	VALUES
-	(   
-		@StudentID,
+	(   @StudentID,
 		@ClassID,
 		@StudentName,
 		@StudentGender,
@@ -368,7 +355,7 @@ GO
 
 -- Update Data Students to Sql
 CREATE PROC UpdateDataStudents 
-@StudentID NVARCHAR(20) , @ClassID NVARCHAR(10) , @StudentName NVARCHAR(50) , @StudentGender NVARCHAR(5) , 
+@StudentID NVARCHAR(20) , @ClassID NVARCHAR(20) , @StudentName NVARCHAR(50) , @StudentGender NVARCHAR(5) , 
  @StudentDOB DATE , @StudentPersonalID NVARCHAR(12) , @StudentEmail NVARCHAR(50) , @StudentPhone NVARCHAR(10) ,  @StudentAddress NVARCHAR(50) , @StudentLived BIT 
 AS
 BEGIN
@@ -436,27 +423,28 @@ CREATE PROC GetAddRooms
 AS
 BEGIN
 	SELECT
-		Rooms.RoomID, Rooms.RoomName, Rooms.RoomStatus,
-		RoomTypes.RoomTypeName,
-		Areas.AreaName,
-		RoomTypes.RoomCapacity
-	FROM
-		Rooms
-	JOIN RoomTypes ON Rooms.RoomTypeID = RoomTypes.RoomTypeID
-	JOIN Areas ON Rooms.AreaID = Areas.AreaID
-	LEFT JOIN Contracts ON Rooms.RoomID = Contracts.RoomID
+        Rooms.RoomID,
+        Rooms.RoomName,
+        Rooms.RoomStatus,
+        RoomTypes.RoomTypeName,
+        Areas.AreaName,
+        RoomTypes.RoomCapacity
+    FROM
+        Rooms
+    JOIN RoomTypes ON Rooms.RoomTypeID = RoomTypes.RoomTypeID
+    JOIN Areas ON Rooms.AreaID = Areas.AreaID;
 END;
 GO
 
 --Insert Rooms To Sql
 CREATE PROC InsertRoomsData
-@RoomID NVARCHAR(20) , @RoomName NVARCHAR(20) , @RoomStatus NVARCHAR(20) ,
+@RoomName NVARCHAR(20) , @RoomStatus NVARCHAR(20) ,
 @AreaID NVARCHAR(20) , @RoomTypeID NVARCHAR(20)
 AS
 BEGIN
-	INSERT INTO Rooms (RoomID, RoomName, RoomStatus , AreaID , RoomTypeID)
+	INSERT INTO Rooms (RoomName, RoomStatus , AreaID , RoomTypeID)
 	VALUES
-	(@RoomID , @RoomName , @RoomStatus , @AreaID , @RoomTypeID)
+	( @RoomName , @RoomStatus , @AreaID , @RoomTypeID)
 END;
 GO
 
@@ -476,12 +464,150 @@ END;
 GO
 
 -- Sql Get Student Information in Room
-CREATE PROC GetStudentsinRoom
+CREATE PROCEDURE GetStudentsInRoom
+    @RoomID NVARCHAR(20)
 AS 
 BEGIN
-	SELECT Students.StudentName , Students.StudentID
-	FROM Students , Contracts
-	WHERE Contracts.StudentID = Students.StudentID
+    SELECT Students.StudentName, Students.StudentID
+    FROM Students
+    INNER JOIN Contracts ON Students.StudentID = Contracts.StudentID
+    INNER JOIN Rooms ON Contracts.RoomID = Rooms.RoomID
+    WHERE Contracts.RoomID = @RoomID;
 END;
 GO
 
+
+CREATE PROC GetRoomBills
+@RoomID NVARCHAR(20)
+AS
+BEGIN
+	SELECT *
+	FROM Bills
+	WHERE RoomID = @RoomID
+END;
+GO
+
+CREATE PROC GetUsageService
+    @RoomID NVARCHAR(20)
+AS 
+BEGIN
+    SELECT Usages.ServiceID, Usages.UsageQuantity, Services.ServicePrice, Services.ServiceName
+    FROM Usages
+    INNER JOIN Services ON Usages.ServiceID = Services.ServiceID
+    WHERE Usages.RoomID = @RoomID;
+END;
+GO
+
+CREATE PROC GetInforUsageServices
+    @RoomID NVARCHAR(20)
+AS 
+BEGIN
+    SELECT Services.ServiceName, Usages.UsageQuantity, Usages.UsageQuantity * Services.ServicePrice AS TotalMoney
+    FROM Usages
+    INNER JOIN Services ON Usages.ServiceID = Services.ServiceID
+    WHERE Usages.RoomID = @RoomID;
+END;
+GO
+
+
+CREATE PROCEDURE LoadRoomToCreateBill
+    @AreaID INT, @RoomTypeID INT
+AS
+BEGIN
+    SELECT
+        Rooms.RoomID,
+        Rooms.RoomName
+    FROM
+        Rooms
+    JOIN
+        Areas ON Rooms.AreaID = Areas.AreaID AND Areas.AreaID = @AreaID
+    JOIN
+        RoomTypes ON Rooms.RoomTypeID = RoomTypes.RoomTypeID AND RoomTypes.RoomTypeID = @RoomTypeID
+    LEFT JOIN
+        Contracts ON Rooms.RoomID = Contracts.RoomID
+    GROUP BY
+        Rooms.RoomID, Rooms.RoomName, Rooms.RoomStatus, Rooms.AreaID, Rooms.RoomTypeID, Areas.AreaName, RoomTypes.RoomCapacity
+    HAVING
+        COUNT(Contracts.ContractID) < RoomTypes.RoomCapacity;
+END;
+GO	
+
+-- INSERT INTO Contracts
+CREATE PROC InsertDataContracts
+@StudentID NVARCHAR(20), @RoomID NVARCHAR(20) , @StaffID NVARCHAR(20) , @AreaID INT, @RoomTypeID INT,
+@ContractState BIT , @CheckInDate DATE , @CheckOutDate DATE
+AS
+BEGIN
+	INSERT INTO Contracts(StudentID, RoomID, StaffID, AreaID, RoomTypeID, ContractState, CheckInDate, CheckOutDate)
+	VALUES
+	(
+		@StudentID,
+		@RoomID,
+		@StaffID,
+		@AreaID,
+		@RoomTypeID,
+		@ContractState,
+		@CheckInDate,
+		@CheckOutDate
+	)
+END;
+GO
+
+
+CREATE PROCEDURE GetContractDetails
+AS
+BEGIN
+    -- Truy vấn của bạn với CASE
+    SELECT
+        Contracts.ContractID,
+        Contracts.StudentID,
+        Contracts.StaffID,
+		Rooms.RoomName,
+        Contracts.CheckInDate,
+        Contracts.CheckOutDate,
+        CASE
+            WHEN Contracts.ContractState = 1 THEN N'Còn hiệu lực'
+            WHEN Contracts.ContractState = 0 THEN N'Hết hiệu lực'
+        END AS ContractState, -- Thêm CASE cho ContractState
+        Areas.AreaName,
+        RoomTypes.RoomTypeName
+    FROM
+        Contracts
+	INNER JOIN
+		Rooms ON Rooms.RoomID = Contracts.RoomID
+    INNER JOIN
+        Areas ON Areas.AreaID = Contracts.AreaID
+    INNER JOIN
+        RoomTypes ON RoomTypes.RoomTypeID = Contracts.RoomTypeID;
+END;
+GO
+
+CREATE PROCEDURE SearchContracts
+@StudentID NVARCHAR(20)
+AS
+BEGIN
+    -- Truy vấn của bạn với CASE
+    SELECT
+        Contracts.ContractID,
+        Contracts.StudentID,
+        Contracts.StaffID,
+		Rooms.RoomName,
+        Contracts.CheckInDate,
+        Contracts.CheckOutDate,
+        CASE
+            WHEN Contracts.ContractState = 1 THEN N'Còn hiệu lực'
+            WHEN Contracts.ContractState = 0 THEN N'Hết hiệu lực'
+        END AS ContractState, -- Thêm CASE cho ContractState
+        Areas.AreaName,
+        RoomTypes.RoomTypeName
+    FROM
+        Contracts
+	INNER JOIN
+		Rooms ON Rooms.RoomID = Contracts.RoomID
+    INNER JOIN
+        Areas ON Areas.AreaID = Contracts.AreaID
+    INNER JOIN
+        RoomTypes ON RoomTypes.RoomTypeID = Contracts.RoomTypeID
+	WHERE Contracts.StudentID = @StudentID;
+END;
+GO

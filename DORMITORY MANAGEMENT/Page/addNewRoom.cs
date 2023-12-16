@@ -36,39 +36,25 @@ namespace DORMITORY_MANAGEMENT
         #region Events
         private void cmb_inputRoomArea_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmb_RoomAreas.SelectedIndex != -1)
-            {
-                txt_RoomID.Clear();
-                txt_RoomID.Text = cmb_RoomAreas.SelectedValue.ToString() + txt_RoomName.Text.ToString();
 
-            }
         }
 
         private void txt_inputRoomNumber_TextChanged(object sender, EventArgs e)
         {
-            if (cmb_RoomAreas.SelectedIndex != -1)
-            {
-                txt_RoomID.Clear();
-                txt_RoomID.Text = cmb_RoomAreas.SelectedValue.ToString() + txt_RoomName.Text.ToString();
 
-            }
         }
 
         private void btn_addRoom_Click(object sender, EventArgs e)
         {
             if (cmb_RoomAreas.SelectedIndex != -1 && txt_RoomName.Text != "" && cmb_RoomTypes.SelectedIndex > -1 && cmb_RoomStatus.SelectedIndex != -1)
             {
-                string RoomID = this.txt_RoomID.Text.ToString();
-                string RoomName = RoomID;
+                //string RoomID = this.txt_RoomID.Text.ToString();
+                string RoomName = txt_RoomName.Text.ToString().Trim();
                 string RoomStatus = cmb_RoomStatus.SelectedItem.ToString();
                 string RoomType = cmb_RoomTypes.SelectedValue.ToString();
                 string RoomArea = cmb_RoomAreas.SelectedValue.ToString();
 
-                if (RoomDAO.Instance.checkLength(RoomID) == false)
-                {
-                    MessageBox.Show("Mã phòng chỉ dài 10 kí tự!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
+
 
                 if (RoomDAO.Instance.checkLength(RoomName) == false)
                 {
@@ -76,25 +62,16 @@ namespace DORMITORY_MANAGEMENT
                     return;
                 }
 
-                if (RoomDAO.Instance.checkRepeatInformation(RoomID, "SELECT * FROM dbo.Rooms WHERE RoomID = @RoomID") == true)
+
+
+                if (DataProvider.Instance.ExcuteQuery("SELECT * FROM dbo.Rooms WHERE RoomName = @RoomName AND AreaID = @AreaID ", new object[] { RoomName, RoomArea }).Rows.Count > 0)
                 {
-                    MessageBox.Show("Mã Phòng đã tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Tên phòng đã tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
-                if (RoomDAO.Instance.checkRepeatInformation(RoomName, "SELECT * FROM dbo.Rooms WHERE RoomName = @RoomName") == true)
-                {
-                    if (RoomDAO.Instance.checkRepeatInformation(RoomArea, "SELECT * FROM dbo.Rooms WHERE AreaID = @AreaID ") == true)
-                    {
-                        MessageBox.Show("Số phòng đã tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        return;
-                    }
-
-
-                }
-
-                string query = "InsertRoomsData @RoomID , @RoomName , @RoomStatus , @AreaID , @RoomTypeID ;";
-                DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { RoomID, RoomName, RoomStatus, RoomArea, RoomType });
+                string query = "InsertRoomsData  @RoomName , @RoomStatus , @AreaID , @RoomTypeID ;";
+                DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { RoomName, RoomStatus, RoomArea, RoomType });
 
                 // Thông báo dữ liệu được thêm thành công
                 if (data.Rows.Count > -1)
@@ -145,7 +122,7 @@ namespace DORMITORY_MANAGEMENT
             btn_editRoom.Enabled = false;
             cmb_RoomAreas.Enabled = true;
             cmb_RoomStatus.Enabled = true;
-            cmb_RoomTypes.Enabled  = true;
+            cmb_RoomTypes.Enabled = true;
             txt_RoomName.Enabled = true;
             clearInputData();
 
@@ -168,15 +145,15 @@ namespace DORMITORY_MANAGEMENT
 
         private void btn_editRoom_Click(object sender, EventArgs e)
         {
-            
+
 
             if (cmb_RoomStatus.SelectedIndex != -1 && cmb_RoomTypes.SelectedIndex != -1)
             {
                 string RoomID = txt_RoomID.Text;
                 string RoomStatus = cmb_RoomStatus.SelectedItem.ToString();
                 string RoomType = cmb_RoomTypes.SelectedValue.ToString();
-               
-               
+
+
                 DialogResult resultNotify = MessageBox.Show("Bạn có chắc chắn muốn sửa dữ liệu này không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
                 if (resultNotify == DialogResult.Yes)
@@ -275,8 +252,9 @@ namespace DORMITORY_MANAGEMENT
             cmb_RoomAreas.Text = "Khu";
         }
 
+
         #endregion
 
-
+        
     }
 }

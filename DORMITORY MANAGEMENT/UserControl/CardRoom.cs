@@ -102,16 +102,8 @@ namespace DORMITORY_MANAGEMENT
             this.Total = total;
             this.SubValue = total - value;
             this.RoomID = RoomID;
-
-            if (roomRating == "VIP1")
-                this.RoomRate = 1;
-            else if (roomRating == "VIP2")
-            {
-                this.RoomRate = 2;
-            }
-            else
-                this.RoomRate = 3;
-
+            this.RoomRate = int.Parse(roomRating);
+            
             if (value == total)
             {
                 lbl_nameMainValue.ForeColor = Color.Black;

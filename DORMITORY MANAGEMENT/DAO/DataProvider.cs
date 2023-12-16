@@ -53,18 +53,17 @@ namespace DORMITORY_MANAGEMENT.DAO
             return data;
         }
 
-        public int ExcuteNonQuery(string query, object[] parameter = null)
+        public int ExecuteNonQuery(string query, object[] parameters = null)
         {
             int data = 0;
 
-            using (SqlConnection connection = new SqlConnection(connectionString)) // Using có tác dụng khi kết thúc chương trình thì connection tự giải phóng
-
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
 
-                SqlCommand sqlCommand = new SqlCommand(connectionString, connection);
+                SqlCommand sqlCommand = new SqlCommand(query, connection); // Sửa lỗi ở đây
 
-                if (parameter != null)
+                if (parameters != null)
                 {
                     string[] listQuery = query.Split(' ');
                     int index = 0;
@@ -73,21 +72,19 @@ namespace DORMITORY_MANAGEMENT.DAO
                     {
                         if (item.Contains('@'))
                         {
-                            sqlCommand.Parameters.AddWithValue(item, parameter[index++]);
+                            sqlCommand.Parameters.AddWithValue(item, parameters[index++]);
                         }
                     }
                 }
 
-
                 data = sqlCommand.ExecuteNonQuery();
 
-
                 connection.Close();
-
             }
 
             return data;
         }
+
 
         public object ExcuteScalarQuery(string query, object[] parameter = null)
         {

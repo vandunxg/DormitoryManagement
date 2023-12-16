@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DORMITORY_MANAGEMENT.Page;
+using System;
 using System.Windows.Forms;
 
 namespace DORMITORY_MANAGEMENT

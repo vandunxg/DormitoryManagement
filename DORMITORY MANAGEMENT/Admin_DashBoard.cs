@@ -33,6 +33,7 @@ namespace DORMITORY_MANAGEMENT
         public Admin_Dashboard()
         {
             InitializeComponent();
+            
         }
 
 
@@ -44,7 +45,7 @@ namespace DORMITORY_MANAGEMENT
 
             pages.SetPage(((Control)sender).Text);
 
-
+            
 
         }
 
@@ -76,12 +77,18 @@ namespace DORMITORY_MANAGEMENT
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
             text_showNameofPage.Text = btn_addStudents.Text.ToString();
-            txt_showMainNameofPage.Text = "Add Service Usage";
+            txt_showMainNameofPage.Text = "Contract";
 
             pages.SetPage(((Control)sender).Text);
+
         }
 
         private void overviewPage1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuButton2_Click(object sender, EventArgs e)
         {
 
         }

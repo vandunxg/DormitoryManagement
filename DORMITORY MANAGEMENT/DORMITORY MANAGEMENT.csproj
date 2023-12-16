@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu.Dataviz.WinForms">
+      <HintPath>Resources\Bunifu UI\Data\Bunifu.Dataviz.WinForms.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b" />
     <Reference Include="Bunifu.UI.WinForms.1.5.3">
       <HintPath>Resources\Bunifu UI\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
@@ -85,6 +88,9 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuProgressBar">
       <HintPath>..\..\DORMITORY MANAGEMENT\DORMITORY MANAGEMENT\Resources\Bunifu UI\Bunifu.UI.WinForms.BunifuProgressBar.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRadioButton">
+      <HintPath>..\..\DORMITORY MANAGEMENT\DORMITORY MANAGEMENT\Resources\Bunifu UI\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuRating">
       <HintPath>..\..\..\..\..\Downloads\Compressed\BunifuCrackV5-main\BunifuCrackV5-main\Bunifu.UI.WinForms.BunifuRating.dll</HintPath>
     </Reference>
@@ -121,7 +127,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Page\StudentInformations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page\StudentInformations.Designer.cs">
+      <DependentUpon>StudentInformations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ContractsPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\ContractsPage.Designer.cs">
+      <DependentUpon>ContractsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\UsageServicesDAO.cs" />
     <Compile Include="DTO\RoomServices.cs" />
+    <Compile Include="DTO\UsageServices.cs" />
     <Compile Include="Page\addNewRoom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -210,6 +230,9 @@
     <EmbeddedResource Include="Page\RoomStudentManager.resx">
       <DependentUpon>RoomStudentManager.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Page\StudentInformations.resx">
+      <DependentUpon>StudentInformations.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl\addStudents.resx">
       <DependentUpon>addStudents.cs</DependentUpon>
     </EmbeddedResource>
@@ -230,6 +253,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ForgotPasswordPage.resx">
       <DependentUpon>ForgotPasswordPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\ContractsPage.resx">
+      <DependentUpon>ContractsPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\ManageRoomControl.resx">
       <DependentUpon>ManageRoomControl.cs</DependentUpon>

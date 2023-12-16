@@ -135,7 +135,7 @@
             this.lbl_RoomID.Cursor = System.Windows.Forms.Cursors.Default;
             this.lbl_RoomID.CursorType = System.Windows.Forms.Cursors.Default;
             this.lbl_RoomID.Font = new System.Drawing.Font("Segoe UI Semibold", 17F, System.Drawing.FontStyle.Bold);
-            this.lbl_RoomID.Location = new System.Drawing.Point(24, 15);
+            this.lbl_RoomID.Location = new System.Drawing.Point(18, 13);
             this.lbl_RoomID.Name = "lbl_RoomID";
             this.lbl_RoomID.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lbl_RoomID.Size = new System.Drawing.Size(54, 38);
@@ -171,7 +171,7 @@
             this.rate_roomRating.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(217)))), ((int)(((byte)(20)))));
             this.rate_roomRating.HoverFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(217)))), ((int)(((byte)(20)))));
             this.rate_roomRating.InnerRadius = 2F;
-            this.rate_roomRating.Location = new System.Drawing.Point(142, 24);
+            this.rate_roomRating.Location = new System.Drawing.Point(139, 25);
             this.rate_roomRating.Maximum = 3;
             this.rate_roomRating.Name = "rate_roomRating";
             this.rate_roomRating.OuterRadius = 10F;
