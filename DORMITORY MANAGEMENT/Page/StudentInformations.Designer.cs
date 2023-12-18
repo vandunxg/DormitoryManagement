@@ -87,6 +87,9 @@
             this.btn_DeleteStudents = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_EditStudents = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_Saved = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -1308,6 +1311,21 @@
             this.btn_Saved.UseDefaultRadiusAndThickness = true;
             this.btn_Saved.Click += new System.EventHandler(this.btn_Saved_Click);
             // 
+            // bunifuElipse2
+            // 
+            this.bunifuElipse2.ElipseRadius = 10;
+            this.bunifuElipse2.TargetControl = this.cmb_ClassID;
+            // 
+            // bunifuElipse3
+            // 
+            this.bunifuElipse3.ElipseRadius = 10;
+            this.bunifuElipse3.TargetControl = this.cmb_Specializations;
+            // 
+            // bunifuElipse4
+            // 
+            this.bunifuElipse4.ElipseRadius = 10;
+            this.bunifuElipse4.TargetControl = this.date_StudentDOB;
+            // 
             // StudentInformations
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1382,5 +1400,8 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_DeleteStudents;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_EditStudents;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_Saved;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse3;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse4;
     }
 }

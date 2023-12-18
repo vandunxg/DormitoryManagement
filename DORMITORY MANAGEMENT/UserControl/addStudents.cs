@@ -44,18 +44,18 @@ namespace DORMITORY_MANAGEMENT
             {
 
                 string StudentID = dgv_studentsData.Rows[e.RowIndex].Cells[0].Value.ToString();
-                string ClassID = dgv_studentsData.Rows[e.RowIndex].Cells[1].Value.ToString();
+                string ClassID = dgv_studentsData.Rows[e.RowIndex].Cells[8].Value.ToString();
                 string SpecializationID = DataProvider.Instance.ExcuteQuery("SELECT SpecializationID FROM Classrooms WHERE ClassID = @ClassID ", new object[] { ClassID }).Rows[0]["SpecializationID"].ToString();
                 string SpecializationName = DataProvider.Instance.ExcuteQuery("SELECT SpecializationName FROM Specializations WHERE SpecializationID = @SpecializationID ", new object[] { SpecializationID }).Rows[0]["SpecializationName"].ToString();
                 //cmb_Specializations.SelectedIndex = cmb_Specializations.FindString(SpecializationName);
                 //string ClassID = cmb_ClassID.FindString(ClassID);
-                string StudentName = dgv_studentsData.Rows[e.RowIndex].Cells[2].Value.ToString();
-                string StudentGender = dgv_studentsData.Rows[e.RowIndex].Cells[3].Value.ToString();
-                string StudentDOB = dgv_studentsData.Rows[e.RowIndex].Cells[4].Value.ToString();
-                string StudentPersonalID = dgv_studentsData.Rows[e.RowIndex].Cells[5].Value.ToString();
+                string StudentName = dgv_studentsData.Rows[e.RowIndex].Cells[1].Value.ToString();
+                string StudentGender = dgv_studentsData.Rows[e.RowIndex].Cells[4].Value.ToString();
+                string StudentDOB = dgv_studentsData.Rows[e.RowIndex].Cells[2].Value.ToString();
+                string StudentPersonalID = dgv_studentsData.Rows[e.RowIndex].Cells[7].Value.ToString();
                 string StudentEmail = dgv_studentsData.Rows[e.RowIndex].Cells[6].Value.ToString();
-                string StudentPhone = dgv_studentsData.Rows[e.RowIndex].Cells[7].Value.ToString();
-                string StudentAddress = dgv_studentsData.Rows[e.RowIndex].Cells[8].Value.ToString();
+                string StudentPhone = dgv_studentsData.Rows[e.RowIndex].Cells[5].Value.ToString();
+                string StudentAddress = dgv_studentsData.Rows[e.RowIndex].Cells[3].Value.ToString();
                 string StudentLived = dgv_studentsData.Rows[e.RowIndex].Cells[9].Value.ToString();
 
                 StudentInformations studentInformationsDialog = new StudentInformations(StudentID, StudentName, ClassID, SpecializationName, StudentGender, StudentDOB, StudentPersonalID, StudentEmail, StudentPhone, StudentAddress, StudentLived); ;
@@ -209,5 +209,51 @@ namespace DORMITORY_MANAGEMENT
 
         #endregion
 
+        private void btn_SearchContracts_Click(object sender, EventArgs e)
+        {
+            string StudentID = txt_SearchStudentID.Text.Trim();
+
+            if (StudentID.Length > 20)
+            {
+                MessageBox.Show("Mã sinh viên không hợp lệ!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (int.Parse(DataProvider.Instance.ExcuteQuery("SELECT COUNT(StudentID) FROM Students WHERE StudentID = @StudentID ", new object[] { StudentID }).Rows[0][0].ToString()) == 0)
+            {
+                MessageBox.Show("Không tìm thấy mã sinh viên trong hệ thống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            DataTable DataStudents = DataProvider.Instance.ExcuteQuery("SearchStudents @StudentID ", new object[] { StudentID });
+
+            if (DataStudents.Rows.Count < 1)
+            {
+                MessageBox.Show("Không tìm thấy hợp đồng trên hệ thống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            dgv_studentsData.DataSource = DataStudents;
+        }
+
+        private void btn_AddContracts_Click(object sender, EventArgs e)
+        {
+            addStudents_Load(sender, e);
+        }
+
+        private void btn_Refresh_Click(object sender, EventArgs e)
+        {
+            txt_SearchStudentID.Text = string.Empty;
+            txt_StudentAddress.Text = string.Empty;
+            txt_StudentEmail.Text = string.Empty;
+            txt_StudentID.Text = string.Empty;
+            txt_StudentName.Text = string.Empty;
+            txt_StudentPersonalID.Text = string.Empty;
+            txt_StudentPhone.Text = string.Empty;
+            cmb_StudentGender.SelectedIndex = -1;
+            cmb_StudentGender.Text = "Giới tính";
+
+            addStudents_Load(sender, e);
+        }
     }
 }

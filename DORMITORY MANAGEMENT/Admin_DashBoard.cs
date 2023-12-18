@@ -90,7 +90,10 @@ namespace DORMITORY_MANAGEMENT
 
         private void bunifuButton2_Click(object sender, EventArgs e)
         {
+            text_showNameofPage.Text = btn_addStudents.Text.ToString();
+            txt_showMainNameofPage.Text = "Services";
 
+            pages.SetPage(((Control)sender).Text);
         }
     }
 }

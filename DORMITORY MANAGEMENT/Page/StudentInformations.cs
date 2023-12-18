@@ -1,14 +1,8 @@
-﻿using Bunifu.UI.WinForms.BunifuButton;
-using DORMITORY_MANAGEMENT.DAO;
+﻿using DORMITORY_MANAGEMENT.DAO;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DORMITORY_MANAGEMENT.Page
@@ -43,8 +37,8 @@ namespace DORMITORY_MANAGEMENT.Page
             InitializeComponent();
         }
 
-        public StudentInformations(string StudentID, string StudentName, string ClassID , string SpecializationName , string StudentGender, string StudentDOB , string StudentPersonalID , string StudentEmail , string StudentPhone , string StudentAddress, string StudentLived)
-  
+        public StudentInformations(string StudentID, string StudentName, string ClassID, string SpecializationName, string StudentGender, string StudentDOB, string StudentPersonalID, string StudentEmail, string StudentPhone, string StudentAddress, string StudentLived)
+
         {
 
             InitializeComponent();
@@ -57,9 +51,10 @@ namespace DORMITORY_MANAGEMENT.Page
             #endregion
 
             txt_StudentID.Text = StudentID;
+            StudentDeleteID = StudentID;
             txt_StudentName.Text = StudentName;
             txt_StudentPersonalID.Text = StudentPersonalID;
-            txt_StudentEmail.Text = StudentEmail;  
+            txt_StudentEmail.Text = StudentEmail;
             txt_StudentAddress.Text = StudentAddress;
             txt_StudentPhone.Text = StudentPhone;
             cmb_Specializations.SelectedIndex = cmb_Specializations.FindString(SpecializationName);
@@ -74,7 +69,7 @@ namespace DORMITORY_MANAGEMENT.Page
             {
                 checkbox_Lived.Checked = false;
             }
-            
+
         }
 
         private void StudentInformations_Load(object sender, EventArgs e)
@@ -83,17 +78,39 @@ namespace DORMITORY_MANAGEMENT.Page
             btn_DeleteStudents.Enabled = true;
             btn_EditStudents.Enabled = true;
 
+            txt_StudentAddress.Enabled = false;
+            txt_StudentPhone.Enabled = false;
+            txt_StudentName.Enabled = false;
+            txt_StudentPersonalID.Enabled = false;
+            txt_StudentEmail.Enabled = false;
+            txt_StudentID.Enabled = false;
+            cmb_ClassID.Enabled = false;
+            cmb_Specializations.Enabled = false;
+            cmb_StudentGender.Enabled = false;
+            date_StudentDOB.Enabled = false;
+
         }
 
         private void btn_EditStudents_Click(object sender, EventArgs e)
         {
             btn_Saved.Enabled = true;
             btn_DeleteStudents.Enabled = false;
+
+            txt_StudentAddress.Enabled = true;
+            txt_StudentPhone.Enabled = true;
+            txt_StudentName.Enabled = true;
+            txt_StudentPersonalID.Enabled = true;
+            txt_StudentEmail.Enabled = true;
+            txt_StudentID.Enabled = true;
+            cmb_ClassID.Enabled = true;
+            cmb_Specializations.Enabled = true;
+            cmb_StudentGender.Enabled = true;
+            date_StudentDOB.Enabled = true;
         }
 
         private void cmb_ClassID_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void cmb_Specializations_SelectedIndexChanged(object sender, EventArgs e)
@@ -125,7 +142,7 @@ namespace DORMITORY_MANAGEMENT.Page
                 #region Raw Data
                 // Lấy dữ liệu từ trường nhập vào
                 string StudentID = txt_StudentID.Text.ToString();
-                StudentDeleteID = StudentID;
+
                 string StudentName = txt_StudentName.Text.ToString();
                 string StudentDOB = date_StudentDOB.Value.GetDateTimeFormats().First().ToString();
                 string StudentAddress = txt_StudentAddress.Text.ToString();
@@ -233,11 +250,21 @@ namespace DORMITORY_MANAGEMENT.Page
             if (resultNotify == DialogResult.Yes)
             {
                 // TRuy vấn xoá data trong CSDL
-                string query = "DeleteDataStudents @StudentID ";
-                DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { StudentDeleteID });
+                DataTable CheckContract = DataProvider.Instance.ExcuteQuery("SELECT * FROM Contracts WHERE Contracts.StudentID = @StudentID ", new object[] { StudentDeleteID });
 
-                if (data.Rows.Count > -1)
+
+                if(CheckContract.Rows.Count > 0)
                 {
+                    MessageBox.Show("Xoá không thành công, học sinh đang có hợp đồng trong hệ thống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                string query = "DeleteDataStudents @StudentID ";
+                int CheckStatus = DataProvider.Instance.ExecuteNonQuery(query, new object[] { StudentDeleteID });
+
+                if (CheckStatus > 0)
+                {
+
                     MessageBox.Show("Đã xoá thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     // Xoá các trường dữ liệu sau khi thêm thành công

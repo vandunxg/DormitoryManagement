@@ -35,10 +35,7 @@ namespace DORMITORY_MANAGEMENT
             dgv_Contracts.DataSource = DataProvider.Instance.ExcuteQuery("GetContractDetails");
 
             btn_AddContracts.Enabled = true;
-            btn_DeleteContracts.Enabled = false;
-            btn_EditContracts.Enabled = false;
-            btn_PrinContracts.Enabled = false;
-            btn_SkipSelect.Enabled = false;
+            
         }
 
         private void cmb_Areas_SelectedIndexChanged(object sender, EventArgs e)
@@ -62,10 +59,7 @@ namespace DORMITORY_MANAGEMENT
         private void dgv_Contracts_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             btn_AddContracts.Enabled = false;
-            btn_DeleteContracts.Enabled = true;
-            btn_EditContracts.Enabled = true;
-            btn_PrinContracts.Enabled = true;
-            btn_SkipSelect.Enabled = true;
+           
 
             if (e.RowIndex >= 0 && e.ColumnIndex >= 0 && e.RowIndex < dgv_Contracts.Rows.Count && e.ColumnIndex < dgv_Contracts.Columns.Count)
             {
@@ -85,7 +79,7 @@ namespace DORMITORY_MANAGEMENT
         private void btn_SearchContracts_Click(object sender, EventArgs e)
         {
             btn_AddContracts.Enabled = false;
-            btn_SkipSelect.Enabled = true;
+            
             string StudentID = txt_SearchStudentID.Text.Trim();
             
             if (StudentID.Length > 20)
@@ -245,6 +239,16 @@ namespace DORMITORY_MANAGEMENT
         private void btn_SkipSelect_Click(object sender, EventArgs e)
         {
             ContractsPage_Load(sender, e);
+        }
+
+        private void txt_SearchStudentID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuPanel1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

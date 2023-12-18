@@ -127,11 +127,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddServices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddServices.Designer.cs">
+      <DependentUpon>AddServices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContractsDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContractsDetail.Designer.cs">
+      <DependentUpon>ContractsDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Page\StudentInformations.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Page\StudentInformations.Designer.cs">
       <DependentUpon>StudentInformations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Services.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\Services.Designer.cs">
+      <DependentUpon>Services.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl\ContractsPage.cs">
       <SubType>UserControl</SubType>
@@ -221,6 +239,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddServices.resx">
+      <DependentUpon>AddServices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractsDetail.resx">
+      <DependentUpon>ContractsDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Page\addNewRoom.resx">
       <DependentUpon>addNewRoom.cs</DependentUpon>
     </EmbeddedResource>
@@ -232,6 +256,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Page\StudentInformations.resx">
       <DependentUpon>StudentInformations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\Services.resx">
+      <DependentUpon>Services.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\addStudents.resx">
       <DependentUpon>addStudents.cs</DependentUpon>

@@ -80,6 +80,7 @@ CREATE TABLE Students(
 );
 GO
 
+
 -- BẢNG KHU PHÒNG
 CREATE TABLE Areas(
 	AreaID INT IDENTITY(1, 1) PRIMARY KEY NOT NULL,
@@ -162,6 +163,46 @@ CREATE TABLE Bills(
 );
 GO
 
+CREATE TABLE Months(
+	MonthID INT PRIMARY KEY NOT NULL,
+	MonthName INT NOT NULL,
+);
+GO
+
+CREATE TABLE Years(
+	YearID INT PRIMARY KEY NOT NULL,
+	YearName INT NOT NULL,
+);
+GO
+
+--Insert Data To Months
+INSERT INTO Months (MonthID, MonthName)
+VALUES
+('1', '1'),
+('2', '2'),
+('3', '3'),
+('4', '4'),
+('5', '5'),
+('6', '6'),
+('7', '7'),
+('8', '8'),
+('9', '9'),
+('10', '10'),
+('11', '11'),
+('12', '12');
+GO
+
+--Insert data into Years
+DECLARE @Year INT = 2020;
+
+WHILE @Year <= 2035
+BEGIN
+    INSERT INTO Years (YearID, YearName)
+    VALUES
+    (CAST(@Year AS VARCHAR(4)), CAST(@Year AS VARCHAR(4)));
+
+    SET @Year = @Year + 1;
+END;
 
 -- INSERT DATA TO Departments
 INSERT INTO Departments (DepartmentID , DepartmentName)
@@ -290,14 +331,34 @@ INSERT INTO Contracts (StudentID , StaffID , AreaID , RoomID , RoomTypeID , Chec
 VALUES
 ('73DCTT22428', '10001' , '1' , '10002' , '1' , '2022-10-20' , '2023-10-20')
 GO
-select * from Contracts
 -----------------------------------------------------------------------------------------------------------------------------------------
 
 -- Get Data Students
 CREATE PROC GetStudents
 AS
 BEGIN
-	SELECT * FROM dbo.Students
+	SELECT 
+	StudentID AS N'Mã SV',
+	StudentName AS N'Họ tên',
+	StudentDOB AS N'Ngày sinh',
+	StudentAddress AS N'Địa chỉ',
+	StudentGender AS N'Giới tính',
+	StudentPhone AS N'SĐT',
+	StudentEmail AS N'Email',
+	StudentPersonalID AS 'CCCD',
+	ClassID AS N'Lớp',
+	StudentLived AS 'Từng ở'
+	FROM dbo.Students
+END;
+GO
+
+
+CREATE PROC SearchStudents
+@StudentID NVARCHAR(20)
+AS
+BEGIN
+	SELECT * FROM Students
+	WHERE Students.StudentID = @StudentID;
 END;
 GO
 
@@ -373,16 +434,26 @@ BEGIN
 	WHERE StudentID = @StudentID;
 END;
 GO
-
+                
 -- Delete Data Students to Sql
 CREATE PROC DeleteDataStudents 
 @StudentID NVARCHAR(20)
 AS
 BEGIN
-	DELETE FROM dbo.Students WHERE StudentID = @StudentID
+	DELETE FROM Students WHERE StudentID = @StudentID
 END;
 GO
 
+-- Update Contracts When Delete Students
+CREATE PROC UpdateContractWhenStudentDeleted
+@StudentID NVARCHAR(20)
+AS
+BEGIN
+	UPDATE Contracts
+	SET ContractState = '0'
+	WHERE Contracts.StudentID = @StudentID
+END;
+GO
 -- Get Room From sql
 CREATE PROC GetRooms
 AS
@@ -399,6 +470,26 @@ BEGIN
 	LEFT JOIN Contracts ON Rooms.RoomID = Contracts.RoomID
 	GROUP BY
 		Rooms.RoomID, Rooms.RoomName, Rooms.RoomStatus, Rooms.AreaID, Rooms.RoomTypeID, Areas.AreaName, RoomTypes.RoomCapacity;
+END;
+GO
+
+CREATE PROC GetRoomServices
+    @AreaID INT,
+    @RoomTypeID INT
+AS
+BEGIN
+    SELECT
+        Rooms.RoomID,
+        Rooms.RoomName
+    FROM
+        Rooms
+    INNER JOIN
+        Areas ON Rooms.AreaID = Areas.AreaID
+    INNER JOIN
+        RoomTypes ON Rooms.RoomTypeID = RoomTypes.RoomTypeID
+    WHERE
+        Areas.AreaID = @AreaID
+        AND RoomTypes.RoomTypeID = @RoomTypeID;
 END;
 GO
 
@@ -611,3 +702,64 @@ BEGIN
 	WHERE Contracts.StudentID = @StudentID;
 END;
 GO
+
+CREATE PROC GetServices
+AS
+BEGIN
+    SELECT * 
+	FROM Services
+END;
+GO
+
+CREATE PROC InsertUsages
+@RoomID INT , @ServiceID INT , @Months INT , @Years INT , @UsageQuantity INT
+AS
+BEGIN
+	INSERT INTO Usages (RoomID , ServiceID, UsageMonth, UsageYear, UsageQuantity)
+VALUES
+	(
+		@RoomID,
+		@ServiceID,
+		@Months,
+		@Years,
+		@UsageQuantity
+	)
+END;
+GO
+
+CREATE PROCEDURE GetUsageDetails
+AS
+BEGIN
+    SELECT
+        Usages.UsageID AS 'ID',
+        Services.ServiceName AS N'Dịch vụ',
+        Usages.UsageQuantity AS N'Lượng sử dụng',
+        Usages.RoomID AS N'Mã phòng',
+        Usages.UsageMonth AS N'Tháng',
+        Usages.UsageYear AS N'Năm',
+        Usages.UsageQuantity * Services.ServicePrice AS N'Thành tiền'
+    FROM
+        Usages
+    JOIN
+        Services ON Services.ServiceID = Usages.ServiceID;
+END;
+GO
+
+CREATE PROCEDURE SearchUsageDetails
+@RoomID NVARCHAR(20), @Months INT , @Years INT
+AS
+BEGIN
+    SELECT
+        Usages.UsageID AS 'ID',
+        Services.ServiceName AS N'Dịch vụ',
+        Usages.UsageQuantity AS N'Lượng sử dụng',
+        Usages.RoomID AS N'Mã phòng',
+        Usages.UsageMonth AS N'Tháng',
+        Usages.UsageYear AS N'Năm',
+        Usages.UsageQuantity * Services.ServicePrice AS N'Thành tiền'
+    FROM
+        Usages
+    JOIN
+        Services ON Services.ServiceID = Usages.ServiceID
+	WHERE Usages.RoomID = @RoomID AND Usages.UsageMonth = @Months AND Usages.UsageYear = @Years;
+END;
