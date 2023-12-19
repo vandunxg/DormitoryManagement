@@ -95,5 +95,13 @@ namespace DORMITORY_MANAGEMENT
 
             pages.SetPage(((Control)sender).Text);
         }
+
+        private void ManageServices_Click(object sender, EventArgs e)
+        {
+            text_showNameofPage.Text = btn_addStudents.Text.ToString();
+            txt_showMainNameofPage.Text = "Quản lý dịch vụ";
+
+            pages.SetPage(((Control)sender).Text);
+        }
     }
 }

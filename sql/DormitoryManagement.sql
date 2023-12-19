@@ -590,13 +590,13 @@ END;
 GO
 
 CREATE PROC GetInforUsageServices
-    @RoomID NVARCHAR(20)
+    @RoomID NVARCHAR(20), @Months INT, @Years INT
 AS 
 BEGIN
     SELECT Services.ServiceName, Usages.UsageQuantity, Usages.UsageQuantity * Services.ServicePrice AS TotalMoney
     FROM Usages
     INNER JOIN Services ON Usages.ServiceID = Services.ServiceID
-    WHERE Usages.RoomID = @RoomID;
+    WHERE Usages.RoomID = @RoomID AND Usages.UsageMonth = @Months AND Usages.UsageYear = @Years;
 END;
 GO
 
@@ -763,3 +763,44 @@ BEGIN
         Services ON Services.ServiceID = Usages.ServiceID
 	WHERE Usages.RoomID = @RoomID AND Usages.UsageMonth = @Months AND Usages.UsageYear = @Years;
 END;
+GO
+
+CREATE PROC UpdateContracts
+@ContractID INT, @ContractState INT
+AS
+BEGIN
+	UPDATE Contracts
+	SET ContractState = @ContractState
+	WHERE ContractID = @ContractID
+END;
+GO
+
+CREATE PROC UpdateUsages
+@UsageID INT, @RoomID INT, @ServiceID INT, @UsageQuantity INT, @Months INT, @Years INT
+AS
+BEGIN
+	UPDATE Usages
+	SET
+		RoomID = @RoomID,
+		ServiceID = @ServiceID,
+		UsageQuantity = @UsageQuantity,
+		UsageMonth = @Months,
+		UsageYear = @Years
+	WHERE UsageID = @UsageID
+END;
+GO
+
+
+CREATE PROC InsertServices
+@ServiceName NVARCHAR(50), @ServicePrice INT, @ServiceUnit NVARCHAR(20)
+AS
+BEGIN
+	INSERT INTO Services(ServiceName, ServicePrice, ServiceUnit)
+	VALUES
+	(
+		@ServiceName,
+		@ServicePrice,
+		@ServiceUnit
+	)
+END;
+GO

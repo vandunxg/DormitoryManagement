@@ -11,6 +11,7 @@ namespace DORMITORY_MANAGEMENT
             InitializeComponent();
         }
 
+        #region
         private void cardShowInfo2_Load(object sender, EventArgs e)
         {
 
@@ -87,7 +88,7 @@ namespace DORMITORY_MANAGEMENT
 
         private void btn_search_Click(object sender, EventArgs e)
         {
-            if(cmb_Rooms.SelectedIndex != -1 && cmb_Months.SelectedIndex != -1 && cmb_Years.SelectedIndex != -1)
+            if (cmb_Rooms.SelectedIndex != -1 && cmb_Months.SelectedIndex != -1 && cmb_Years.SelectedIndex != -1)
             {
                 string RoomID = cmb_Rooms.SelectedValue.ToString();
                 int Months = int.Parse(cmb_Months.SelectedValue.ToString());
@@ -101,5 +102,49 @@ namespace DORMITORY_MANAGEMENT
                 return;
             }
         }
+
+        private void dgv_Usages_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0 && e.RowIndex < dgv_Usages.Rows.Count && e.ColumnIndex < dgv_Usages.Columns.Count)
+            {
+                string UsageID = dgv_Usages.Rows[e.RowIndex].Cells[0].Value.ToString();
+                string ServiceName = dgv_Usages.Rows[e.RowIndex].Cells[1].Value.ToString();
+                int Quantity = int.Parse(dgv_Usages.Rows[e.RowIndex].Cells[2].Value.ToString());
+                string RoomID = dgv_Usages.Rows[e.RowIndex].Cells[3].Value.ToString();
+                int Months = int.Parse(dgv_Usages.Rows[e.RowIndex].Cells[4].Value.ToString());
+                int Years = int.Parse(dgv_Usages.Rows[e.RowIndex].Cells[5].Value.ToString());
+
+                int RoomTypeID = int.Parse(DataProvider.Instance.ExcuteQuery("SELECT RoomTypeID FROM Rooms WHERE RoomID = @RoomID ", new object[] { RoomID }).Rows[0]["RoomTypeID"].ToString());
+                string RoomTypeName = DataProvider.Instance.ExcuteQuery("SELECT RoomTypeName FROM RoomTypes WHERE RoomTypeID = @RoomTypeID ", new object[] { RoomTypeID }).Rows[0]["RoomTypeName"].ToString();
+
+                int AreaID = int.Parse(DataProvider.Instance.ExcuteQuery("SELECT AreaID FROM Rooms WHERE RoomID = @RoomID ", new object[] { RoomID }).Rows[0]["AreaID"].ToString());
+                string AreaName = DataProvider.Instance.ExcuteQuery("SELECT AreaName FROM Areas WHERE AreaID = @AreaID ", new object[] { AreaID }).Rows[0]["AreaName"].ToString();
+
+
+
+                UsageDetails usageDetailsPage = new UsageDetails(UsageID, AreaName, RoomTypeName, RoomID, ServiceName, Months, Years, Quantity);
+                usageDetailsPage.ShowDialog();
+            }
+        }
+
+        private void btn_refreshRoom_Click(object sender, EventArgs e)
+        {
+            cmb_RoomArea.SelectedIndex = -1;
+            cmb_RoomArea.Text = "Khu";
+            cmb_RoomTypes.SelectedIndex = -1;
+            cmb_RoomTypes.Text = "Loại phòng";
+            cmb_Rooms.SelectedIndex = -1;
+            cmb_Rooms.Text = "Phòng";
+            cmb_Months.SelectedIndex = -1;
+            cmb_Months.Text = "Tháng";
+            cmb_Years.SelectedIndex = -1;
+            cmb_Years.Text = "Năm";
+
+            dgv_Usages.DataSource = DataProvider.Instance.ExcuteQuery("GetUsageDetails");
+        }
+
+        #endregion
+
+
     }
 }

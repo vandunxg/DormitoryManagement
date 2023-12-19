@@ -11,6 +11,7 @@ namespace DORMITORY_MANAGEMENT
         {
             InitializeComponent();
         }
+
         #region mouse move
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
@@ -54,36 +55,7 @@ namespace DORMITORY_MANAGEMENT
                 this.Close();
             }
         }
-
-        private void btn_AddServices_Click(object sender, EventArgs e)
-        {
-            if (cmb_Rooms.SelectedIndex != -1 && cmb_Months.SelectedIndex != -1 && cmb_Years.SelectedIndex != -1
-                && cmb_Services.SelectedIndex != -1 && txt_ServiceQuantity.Text != string.Empty)
-            {
-                string RoomID = cmb_Rooms.SelectedValue.ToString();
-                string ServiceID = cmb_Services.SelectedValue.ToString();
-                int Months = int.Parse(cmb_Months.SelectedValue.ToString());
-                int Years = int.Parse(cmb_Years.SelectedValue.ToString());
-                int Quantity = int.Parse(txt_ServiceQuantity.Text);
-
-                string query = "InsertUsages @RoomID , @ServiceID , @Months , @Years , @UsageQuantity ;";
-                int checkStatusInsertData = DataProvider.Instance.ExecuteNonQuery(query, new object[] { RoomID, ServiceID, Months, Years, Quantity });
-
-                if (checkStatusInsertData > 0)
-                {
-                    MessageBox.Show("Đã thêm dữ liệu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    ClearInput();
-                    return;
-                }
-                else
-                {
-                    MessageBox.Show("Thêm dữ liệu không thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-            }
-        }
-
+       
         private void AddServices_Load(object sender, EventArgs e)
         {
             cmb_Areas.DisplayMember = "AreaName";
@@ -125,6 +97,43 @@ namespace DORMITORY_MANAGEMENT
                 cmb_RoomTypes.DataSource = DataProvider.Instance.ExcuteQuery("GetRoomTypes");
             }
         }
+
+        private void btn_AddServices_Click(object sender, EventArgs e)
+        {
+            if (cmb_Rooms.SelectedIndex != -1 && cmb_Months.SelectedIndex != -1 && cmb_Years.SelectedIndex != -1
+                && cmb_Services.SelectedIndex != -1 && txt_ServiceQuantity.Text != string.Empty)
+            {
+                string RoomID = cmb_Rooms.SelectedValue.ToString();
+                string ServiceID = cmb_Services.SelectedValue.ToString();
+                int Months = int.Parse(cmb_Months.SelectedValue.ToString());
+                int Years = int.Parse(cmb_Years.SelectedValue.ToString());
+                int Quantity = int.Parse(txt_ServiceQuantity.Text);
+
+                string query = "InsertUsages @RoomID , @ServiceID , @Months , @Years , @UsageQuantity ;";
+                int checkStatusInsertData = DataProvider.Instance.ExecuteNonQuery(query, new object[] { RoomID, ServiceID, Months, Years, Quantity });
+
+                if (checkStatusInsertData > 0)
+                {
+                    MessageBox.Show("Đã thêm dữ liệu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ClearInput();
+                    return;
+                }
+                else
+                {
+                    MessageBox.Show("Thêm dữ liệu không thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+            }
+        }
+
+        private void txt_ServiceQuantity_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Loại bỏ ký tự nếu không phải là số
+            }
+        }
         #endregion
 
         #region Methods
@@ -144,6 +153,10 @@ namespace DORMITORY_MANAGEMENT
             cmb_Years.SelectedIndex = -1;
             cmb_Years.Text = "Năm";
         }
+
+
         #endregion
+
+        
     }
 }

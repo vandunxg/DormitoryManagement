@@ -90,6 +90,11 @@ namespace DORMITORY_MANAGEMENT
 
         private void RoomStudentManager_Load(object sender, EventArgs e)
         {
+            string Months = DateTime.Now.Month.ToString();
+            string Years = DateTime.Now.Year.ToString();
+
+
+
             DataTable RoomBills = DataProvider.Instance.ExcuteQuery("SELECT * FROM Bills WHERE RoomID = @RoomID ", new object[] { RoomID });
             if(RoomBills.Rows.Count > 0)
             {
@@ -105,7 +110,7 @@ namespace DORMITORY_MANAGEMENT
                 }
             }
 
-            DataTable DataUsageServices = DataProvider.Instance.ExcuteQuery("GetInforUsageServices @RoomID ", new object[] { RoomID });
+            DataTable DataUsageServices = DataProvider.Instance.ExcuteQuery("GetInforUsageServices @RoomID , @Months , @Years", new object[] { RoomID , Months, Years});
             dgv_UsageService.DataSource = DataUsageServices;
         }
 

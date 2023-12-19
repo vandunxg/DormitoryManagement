@@ -31,6 +31,8 @@ namespace DORMITORY_MANAGEMENT
             cmb_Specializations.DisplayMember = "SpecializationName";
             cmb_Specializations.ValueMember = "SpecializationID";
             cmb_Specializations.DataSource = dataSpecializations;
+            cmb_Specializations.SelectedIndex = -1;
+            cmb_Specializations.Text = "Chuyên nghành";
             #endregion
 
 
@@ -188,27 +190,6 @@ namespace DORMITORY_MANAGEMENT
             }
         }
 
-        #endregion
-
-        #region Method
-
-        private void clearInputData()
-        {
-            txt_StudentAddress.Clear();
-            txt_StudentName.Clear();
-            txt_StudentPersonalID.Clear();
-            txt_StudentPhone.Clear();
-            txt_StudentID.Clear();
-            txt_StudentEmail.Clear();
-            cmb_ClassID.SelectedIndex = -1;
-            cmb_Specializations.SelectedIndex = -1;
-            cmb_StudentGender.SelectedIndex = -1;
-            date_StudentDOB.Value = DateTime.Now.Date;
-            checkbox_Lived.Checked = false;
-        }
-
-        #endregion
-
         private void btn_SearchContracts_Click(object sender, EventArgs e)
         {
             string StudentID = txt_SearchStudentID.Text.Trim();
@@ -255,5 +236,34 @@ namespace DORMITORY_MANAGEMENT
 
             addStudents_Load(sender, e);
         }
+
+        #endregion
+
+        #region Method
+
+        private void clearInputData()
+        {
+            txt_StudentAddress.Clear();
+            txt_StudentName.Clear();
+            txt_StudentPersonalID.Clear();
+            txt_StudentPhone.Clear();
+            txt_StudentID.Clear();
+            txt_StudentEmail.Clear();
+            
+            cmb_Specializations.SelectedIndex = -1;
+            cmb_Specializations.Text = "Chuyên nghành";
+
+            cmb_ClassID.SelectedIndex = -1;
+            cmb_ClassID.Text = "Lớp";
+
+            cmb_StudentGender.SelectedIndex = -1;
+            cmb_StudentGender.Text = "Giới tính";
+            date_StudentDOB.Value = DateTime.Now.Date;
+            checkbox_Lived.Checked = false;
+        }
+
+        #endregion
+
+        
     }
 }

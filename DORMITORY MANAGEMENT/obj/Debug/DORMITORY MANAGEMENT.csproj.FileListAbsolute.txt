@@ -165,4 +165,9 @@ C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debu
 C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Page.StudentInformations.resources
 C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.AddServices.resources
 C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Services.resources
-C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.ContractsDetail.resources
+C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.ContractDetail.resources
+C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.UsageDetails.resources
+C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.ManageServiceControl.resources
+C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.ShowServices.resources
+C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.NewServices.resources
+C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.ShowServicesDetail.resources

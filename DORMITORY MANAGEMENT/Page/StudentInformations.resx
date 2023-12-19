@@ -145,18 +145,6 @@
         UrUvD76KO/cJssvqbs8tFG0AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btn_EditStudents.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAF0AAAAyCAYAAAA+09dMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFUSURBVHhe7dw/SgNBGIbxKS09gqWlJ7FO40xr4xkskx2F
-        gGfwCrZpPUJqCxEMIgmooOQbv83GP8h02fVtnoFfMzPbPBnCNjvh90gTG6VsM7dIuRTsyhaxsdvU2Ok2
-        8c9I07LfLsZsy/rD2IV3fXHzNC4H2+QhdL9G/QH0ye7SedkLaWxnJ9lW9U3oU2zWb37Ar7pTXtmAYcSJ
-        3Qf/k3+tLWI4oTaJYRFdgOgCRBcgugDRBYguQHQBogsQXYDoAkQXILoA0QWILkB0AaILEF2A6AJEFyC6
-        ANEFiC5AdAGiCxBdgOgCRBcgugDRBYguQHQBogsQXYDoAkQXILoA0QVCzPZRW8Bw2ujz2gIG0tiy/WJ6
-        GvOa0/4fmlLihd2E9oIAD/9Q3YReeefn75swfOLIJx7d+9+N6Ie3fXLHm+BfY3PnS7Zr7groV/eiYrN0
-        WQ670iF8AhSpgRHNJpJoAAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="bunifuLabel15.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>

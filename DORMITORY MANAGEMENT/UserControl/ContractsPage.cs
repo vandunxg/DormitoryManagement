@@ -10,7 +10,7 @@ namespace DORMITORY_MANAGEMENT
         public ContractsPage()
         {
             InitializeComponent();
-            
+
         }
 
         public ContractsPage(object sender, EventArgs e)
@@ -18,6 +18,7 @@ namespace DORMITORY_MANAGEMENT
             InitializeComponent();
             ContractsPage_Load(sender, e);
         }
+
         #region Events
 
         public void ContractsPage_Load(object sender, EventArgs e)
@@ -26,16 +27,20 @@ namespace DORMITORY_MANAGEMENT
             cmb_Areas.DisplayMember = "AreaName";
             cmb_Areas.ValueMember = "AreaID";
             cmb_Areas.DataSource = DataProvider.Instance.ExcuteQuery("GetAreas");
+            cmb_Areas.SelectedIndex = -1;
+            cmb_Areas.Text = "Khu";
 
             // Load RoomTypes to combo box
             cmb_RoomTypes.DisplayMember = "RoomTypeName";
             cmb_RoomTypes.ValueMember = "RoomTypeID";
             cmb_RoomTypes.DataSource = DataProvider.Instance.ExcuteQuery("GetRoomTypes");
+            cmb_RoomTypes.SelectedIndex = -1;
+            cmb_RoomTypes.Text = "Loại phòng";
 
             dgv_Contracts.DataSource = DataProvider.Instance.ExcuteQuery("GetContractDetails");
 
             btn_AddContracts.Enabled = true;
-            
+
         }
 
         private void cmb_Areas_SelectedIndexChanged(object sender, EventArgs e)
@@ -46,7 +51,7 @@ namespace DORMITORY_MANAGEMENT
 
         private void cmb_RoomTypes_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(cmb_RoomTypes.SelectedIndex != -1)
+            if (cmb_RoomTypes.SelectedIndex != -1 && cmb_Areas.SelectedIndex != -1)
             {
                 cmb_Rooms.DisplayMember = "RoomName";
                 cmb_Rooms.ValueMember = "RoomID";
@@ -59,29 +64,33 @@ namespace DORMITORY_MANAGEMENT
         private void dgv_Contracts_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             btn_AddContracts.Enabled = false;
-           
+
 
             if (e.RowIndex >= 0 && e.ColumnIndex >= 0 && e.RowIndex < dgv_Contracts.Rows.Count && e.ColumnIndex < dgv_Contracts.Columns.Count)
             {
-                txt_StudentID.Text = dgv_Contracts.Rows[e.RowIndex].Cells[1].Value.ToString();
-                txt_StaffID.Text = dgv_Contracts.Rows[e.RowIndex].Cells[2].Value.ToString();
-                date_ContractCheckin.Value = DateTime.Parse(dgv_Contracts.Rows[e.RowIndex].Cells[4].Value.ToString());
-                date_ContractCheckout.Value = DateTime.Parse(dgv_Contracts.Rows[e.RowIndex].Cells[5].Value.ToString());
-                cmb_ContractState.SelectedIndex = cmb_ContractState.FindString(dgv_Contracts.Rows[e.RowIndex].Cells[6].Value.ToString());
-                cmb_Areas.SelectedIndex = cmb_Areas.FindString(dgv_Contracts.Rows[e.RowIndex].Cells[7].Value.ToString());
-                cmb_RoomTypes.SelectedIndex = cmb_RoomTypes.FindString(dgv_Contracts.Rows[e.RowIndex].Cells[8].Value.ToString());
-                cmb_Rooms.SelectedIndex = cmb_Rooms.FindString(dgv_Contracts.Rows[e.RowIndex].Cells[3].Value.ToString());
-                
-             }
-            
+                string ContractID = dgv_Contracts.Rows[e.RowIndex].Cells[0].Value.ToString();
+                string StudentID = dgv_Contracts.Rows[e.RowIndex].Cells[1].Value.ToString();
+                string StaffID = dgv_Contracts.Rows[e.RowIndex].Cells[2].Value.ToString();
+                string RoomID = dgv_Contracts.Rows[e.RowIndex].Cells[3].Value.ToString();
+                string date_ContractCheckin = dgv_Contracts.Rows[e.RowIndex].Cells[4].Value.ToString();
+                string ContractCheckout = dgv_Contracts.Rows[e.RowIndex].Cells[5].Value.ToString();
+                string ContractState = dgv_Contracts.Rows[e.RowIndex].Cells[6].Value.ToString();
+                string AreaID = dgv_Contracts.Rows[e.RowIndex].Cells[7].Value.ToString();
+                string RoomTypeID = dgv_Contracts.Rows[e.RowIndex].Cells[8].Value.ToString();
+
+                ContractDetail ContractDetailPage = new ContractDetail(ContractID, StudentID, AreaID, RoomTypeID, RoomID, date_ContractCheckin, ContractCheckout, ContractState, StaffID);
+                ContractDetailPage.ShowDialog();
+
+            }
+
         }
 
         private void btn_SearchContracts_Click(object sender, EventArgs e)
         {
             btn_AddContracts.Enabled = false;
-            
+
             string StudentID = txt_SearchStudentID.Text.Trim();
-            
+
             if (StudentID.Length > 20)
             {
                 MessageBox.Show("Mã sinh viên không hợp lệ!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -96,14 +105,49 @@ namespace DORMITORY_MANAGEMENT
 
             DataTable DataContracts = DataProvider.Instance.ExcuteQuery("SearchContracts @StudentID ", new object[] { StudentID });
 
-            if(DataContracts.Rows.Count < 1)
+            if (DataContracts.Rows.Count < 1)
             {
                 MessageBox.Show("Không tìm thấy hợp đồng trên hệ thống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             dgv_Contracts.DataSource = DataContracts;
+
+        }
+
+        private void btn_DeleteContracts_Click(object sender, EventArgs e)
+        {
+            int index = dgv_Contracts.CurrentRow.Index;
+            string ContractID = dgv_Contracts.Rows[index].Cells[0].Value.ToString();
+
+            DialogResult CheckYesorNo = MessageBox.Show("Bạn có chắc chắn xoá hợp đồng này chứ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (CheckYesorNo == DialogResult.Yes)
+            {
+                int CheckDeleteStatus = DataProvider.Instance.ExecuteNonQuery("DELETE FROM Contracts WHERE ContractID = @ContractID ", new object[] { ContractID });
+                if (CheckDeleteStatus > 0)
+                {
+                    MessageBox.Show("Xoá thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ContractsPage_Load(sender, e);
+                    ClearInput();
+                }
+            }
+        }
+
+        private void btn_SkipSelect_Click(object sender, EventArgs e)
+        {
+            ContractsPage_Load(sender, e);
+        }
+
+        private void btn_RefreshPage_Click(object sender, EventArgs e)
+        {
             
+        }
+
+        private void btn_Refresh_Click(object sender, EventArgs e)
+        {
+            ClearInput();
+            ContractsPage_Load(sender, e);
         }
 
         private void btn_AddContracts_Click(object sender, EventArgs e)
@@ -131,7 +175,7 @@ namespace DORMITORY_MANAGEMENT
 
                 #region Check Valid Data
 
-                if(StudentID.Length > 20)
+                if (StudentID.Length > 20)
                 {
                     MessageBox.Show("Mã sinh viên không hợp lệ!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -146,7 +190,7 @@ namespace DORMITORY_MANAGEMENT
                     }
                 }
 
-                if(DateTime.Parse(CheckInDate) > DateTime.Parse(CheckOutDate) || DateTime.Parse(CheckOutDate) < DateTime.Parse(CheckInDate).AddMonths(6) || DateTime.Parse(CheckOutDate) > DateTime.Parse(CheckInDate).AddMonths(12))
+                if (DateTime.Parse(CheckInDate) > DateTime.Parse(CheckOutDate) || DateTime.Parse(CheckOutDate) < DateTime.Parse(CheckInDate).AddMonths(6) || DateTime.Parse(CheckOutDate) > DateTime.Parse(CheckInDate).AddMonths(12))
                 {
                     MessageBox.Show("Hợp đồng phải ít nhất 6 tháng và nhiều nhất là 1 năm!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
@@ -217,38 +261,5 @@ namespace DORMITORY_MANAGEMENT
 
         #endregion
 
-        private void btn_DeleteContracts_Click(object sender, EventArgs e)
-        {
-            int index = dgv_Contracts.CurrentRow.Index;
-            string ContractID = dgv_Contracts.Rows[index].Cells[0].Value.ToString();
-            
-            DialogResult CheckYesorNo = MessageBox.Show("Bạn có chắc chắn xoá hợp đồng này chứ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            
-            if(CheckYesorNo == DialogResult.Yes)
-            {
-                int CheckDeleteStatus = DataProvider.Instance.ExecuteNonQuery("DELETE FROM Contracts WHERE ContractID = @ContractID ", new object[] { ContractID });
-                if(CheckDeleteStatus > 0)
-                {
-                    MessageBox.Show("Xoá thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    ContractsPage_Load(sender, e);
-                    ClearInput();
-                }
-            }
-        }
-
-        private void btn_SkipSelect_Click(object sender, EventArgs e)
-        {
-            ContractsPage_Load(sender, e);
-        }
-
-        private void txt_SearchStudentID_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuPanel1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties17 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -55,7 +55,6 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentInformations));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -85,7 +84,6 @@
             this.checkbox_Lived = new Bunifu.UI.WinForms.BunifuCheckBox();
             this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
             this.btn_DeleteStudents = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.btn_EditStudents = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_Saved = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -151,11 +149,11 @@
             this.btn_exit.ColorContrastOnClick = 45;
             this.btn_exit.ColorContrastOnHover = 45;
             this.btn_exit.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.btn_exit.CustomizableEdges = borderEdges4;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btn_exit.CustomizableEdges = borderEdges3;
             this.btn_exit.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_exit.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_exit.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1131,96 +1129,6 @@
             this.btn_DeleteStudents.UseDefaultRadiusAndThickness = true;
             this.btn_DeleteStudents.Click += new System.EventHandler(this.btn_DeleteStudents_Click);
             // 
-            // btn_EditStudents
-            // 
-            this.btn_EditStudents.AllowAnimations = true;
-            this.btn_EditStudents.AllowMouseEffects = true;
-            this.btn_EditStudents.AllowToggling = false;
-            this.btn_EditStudents.AnimationSpeed = 200;
-            this.btn_EditStudents.AutoGenerateColors = false;
-            this.btn_EditStudents.AutoRoundBorders = false;
-            this.btn_EditStudents.AutoSizeLeftIcon = true;
-            this.btn_EditStudents.AutoSizeRightIcon = true;
-            this.btn_EditStudents.BackColor = System.Drawing.Color.Transparent;
-            this.btn_EditStudents.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
-            this.btn_EditStudents.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_EditStudents.BackgroundImage")));
-            this.btn_EditStudents.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_EditStudents.ButtonText = "Sửa";
-            this.btn_EditStudents.ButtonTextMarginLeft = 0;
-            this.btn_EditStudents.ColorContrastOnClick = 45;
-            this.btn_EditStudents.ColorContrastOnHover = 45;
-            this.btn_EditStudents.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btn_EditStudents.CustomizableEdges = borderEdges3;
-            this.btn_EditStudents.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_EditStudents.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(201)))), ((int)(((byte)(255)))));
-            this.btn_EditStudents.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(201)))), ((int)(((byte)(255)))));
-            this.btn_EditStudents.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btn_EditStudents.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btn_EditStudents.Font = new System.Drawing.Font("Segoe UI Semibold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_EditStudents.ForeColor = System.Drawing.Color.White;
-            this.btn_EditStudents.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_EditStudents.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btn_EditStudents.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.btn_EditStudents.IconMarginLeft = 11;
-            this.btn_EditStudents.IconPadding = 10;
-            this.btn_EditStudents.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_EditStudents.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.btn_EditStudents.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.btn_EditStudents.IconSize = 25;
-            this.btn_EditStudents.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
-            this.btn_EditStudents.IdleBorderRadius = 10;
-            this.btn_EditStudents.IdleBorderThickness = 1;
-            this.btn_EditStudents.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
-            this.btn_EditStudents.IdleIconLeftImage = null;
-            this.btn_EditStudents.IdleIconRightImage = null;
-            this.btn_EditStudents.IndicateFocus = false;
-            this.btn_EditStudents.Location = new System.Drawing.Point(261, 558);
-            this.btn_EditStudents.Name = "btn_EditStudents";
-            this.btn_EditStudents.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(201)))), ((int)(((byte)(255)))));
-            this.btn_EditStudents.OnDisabledState.BorderRadius = 10;
-            this.btn_EditStudents.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_EditStudents.OnDisabledState.BorderThickness = 1;
-            this.btn_EditStudents.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(201)))), ((int)(((byte)(255)))));
-            this.btn_EditStudents.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btn_EditStudents.OnDisabledState.IconLeftImage = null;
-            this.btn_EditStudents.OnDisabledState.IconRightImage = null;
-            this.btn_EditStudents.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(106)))), ((int)(((byte)(255)))));
-            this.btn_EditStudents.onHoverState.BorderRadius = 10;
-            this.btn_EditStudents.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_EditStudents.onHoverState.BorderThickness = 1;
-            this.btn_EditStudents.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(106)))), ((int)(((byte)(255)))));
-            this.btn_EditStudents.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_EditStudents.onHoverState.IconLeftImage = null;
-            this.btn_EditStudents.onHoverState.IconRightImage = null;
-            this.btn_EditStudents.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
-            this.btn_EditStudents.OnIdleState.BorderRadius = 10;
-            this.btn_EditStudents.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_EditStudents.OnIdleState.BorderThickness = 1;
-            this.btn_EditStudents.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
-            this.btn_EditStudents.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_EditStudents.OnIdleState.IconLeftImage = null;
-            this.btn_EditStudents.OnIdleState.IconRightImage = null;
-            this.btn_EditStudents.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
-            this.btn_EditStudents.OnPressedState.BorderRadius = 10;
-            this.btn_EditStudents.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_EditStudents.OnPressedState.BorderThickness = 1;
-            this.btn_EditStudents.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
-            this.btn_EditStudents.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.btn_EditStudents.OnPressedState.IconLeftImage = null;
-            this.btn_EditStudents.OnPressedState.IconRightImage = null;
-            this.btn_EditStudents.Size = new System.Drawing.Size(93, 50);
-            this.btn_EditStudents.TabIndex = 66;
-            this.btn_EditStudents.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_EditStudents.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btn_EditStudents.TextMarginLeft = 0;
-            this.btn_EditStudents.TextPadding = new System.Windows.Forms.Padding(0);
-            this.btn_EditStudents.UseDefaultRadiusAndThickness = true;
-            this.btn_EditStudents.Click += new System.EventHandler(this.btn_EditStudents_Click);
-            // 
             // btn_Saved
             // 
             this.btn_Saved.AllowAnimations = true;
@@ -1334,7 +1242,6 @@
             this.ClientSize = new System.Drawing.Size(616, 652);
             this.Controls.Add(this.btn_Saved);
             this.Controls.Add(this.btn_DeleteStudents);
-            this.Controls.Add(this.btn_EditStudents);
             this.Controls.Add(this.bunifuLabel15);
             this.Controls.Add(this.cmb_Specializations);
             this.Controls.Add(this.cmb_ClassID);
@@ -1398,7 +1305,6 @@
         private Bunifu.UI.WinForms.BunifuCheckBox checkbox_Lived;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel7;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_DeleteStudents;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_EditStudents;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_Saved;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse3;

@@ -32,6 +32,8 @@ namespace DORMITORY_MANAGEMENT.Page
 
         #endregion
 
+        #region Events
+
         public StudentInformations()
         {
             InitializeComponent();
@@ -74,38 +76,13 @@ namespace DORMITORY_MANAGEMENT.Page
 
         private void StudentInformations_Load(object sender, EventArgs e)
         {
-            btn_Saved.Enabled = false;
-            btn_DeleteStudents.Enabled = true;
-            btn_EditStudents.Enabled = true;
-
-            txt_StudentAddress.Enabled = false;
-            txt_StudentPhone.Enabled = false;
-            txt_StudentName.Enabled = false;
-            txt_StudentPersonalID.Enabled = false;
-            txt_StudentEmail.Enabled = false;
-            txt_StudentID.Enabled = false;
-            cmb_ClassID.Enabled = false;
-            cmb_Specializations.Enabled = false;
-            cmb_StudentGender.Enabled = false;
-            date_StudentDOB.Enabled = false;
+            
 
         }
 
         private void btn_EditStudents_Click(object sender, EventArgs e)
         {
-            btn_Saved.Enabled = true;
-            btn_DeleteStudents.Enabled = false;
-
-            txt_StudentAddress.Enabled = true;
-            txt_StudentPhone.Enabled = true;
-            txt_StudentName.Enabled = true;
-            txt_StudentPersonalID.Enabled = true;
-            txt_StudentEmail.Enabled = true;
-            txt_StudentID.Enabled = true;
-            cmb_ClassID.Enabled = true;
-            cmb_Specializations.Enabled = true;
-            cmb_StudentGender.Enabled = true;
-            date_StudentDOB.Enabled = true;
+            
         }
 
         private void cmb_ClassID_SelectedIndexChanged(object sender, EventArgs e)
@@ -224,25 +201,6 @@ namespace DORMITORY_MANAGEMENT.Page
             }
         }
 
-        #region Method
-
-        private void clearInputData()
-        {
-            txt_StudentAddress.Clear();
-            txt_StudentName.Clear();
-            txt_StudentPersonalID.Clear();
-            txt_StudentPhone.Clear();
-            txt_StudentID.Clear();
-            txt_StudentEmail.Clear();
-            cmb_ClassID.SelectedIndex = -1;
-            cmb_Specializations.SelectedIndex = -1;
-            cmb_StudentGender.SelectedIndex = -1;
-            date_StudentDOB.Value = DateTime.Now.Date;
-            checkbox_Lived.Checked = false;
-        }
-
-        #endregion
-
         private void btn_DeleteStudents_Click(object sender, EventArgs e)
         {
             DialogResult resultNotify = MessageBox.Show("Bạn có chắc chắn xoá thông tin này chứ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
@@ -253,7 +211,7 @@ namespace DORMITORY_MANAGEMENT.Page
                 DataTable CheckContract = DataProvider.Instance.ExcuteQuery("SELECT * FROM Contracts WHERE Contracts.StudentID = @StudentID ", new object[] { StudentDeleteID });
 
 
-                if(CheckContract.Rows.Count > 0)
+                if (CheckContract.Rows.Count > 0)
                 {
                     MessageBox.Show("Xoá không thành công, học sinh đang có hợp đồng trong hệ thống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -273,5 +231,27 @@ namespace DORMITORY_MANAGEMENT.Page
 
             }
         }
+
+        #endregion
+
+        #region Method
+
+        private void clearInputData()
+        {
+            txt_StudentAddress.Clear();
+            txt_StudentName.Clear();
+            txt_StudentPersonalID.Clear();
+            txt_StudentPhone.Clear();
+            txt_StudentID.Clear();
+            txt_StudentEmail.Clear();
+            cmb_ClassID.SelectedIndex = -1;
+            cmb_Specializations.SelectedIndex = -1;
+            cmb_StudentGender.SelectedIndex = -1;
+            date_StudentDOB.Value = DateTime.Now.Date;
+            checkbox_Lived.Checked = false;
+        }
+
+        #endregion
+
     }
 }

@@ -35,9 +35,11 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.ManageServices = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Services = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_ManageRooms = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -52,6 +54,8 @@
             this.addStudents = new System.Windows.Forms.TabPage();
             this.Rooms = new System.Windows.Forms.TabPage();
             this.Contract = new System.Windows.Forms.TabPage();
+            this.ServicesPage = new System.Windows.Forms.TabPage();
+            this.ManageServicePage = new System.Windows.Forms.TabPage();
             this.topPanelDashboard = new Bunifu.UI.WinForms.BunifuPanel();
             this.btn_exit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.text_showNameofPage = new Bunifu.UI.WinForms.BunifuLabel();
@@ -59,12 +63,12 @@
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.ServicesPage = new System.Windows.Forms.TabPage();
             this.overviewPage1 = new DORMITORY_MANAGEMENT.OverviewPage();
             this.addStudents1 = new DORMITORY_MANAGEMENT.addStudents();
             this.manageRoomControl1 = new DORMITORY_MANAGEMENT.ManageRoomControl();
             this.contractsPage1 = new DORMITORY_MANAGEMENT.ContractsPage();
             this.services1 = new DORMITORY_MANAGEMENT.Services();
+            this.manageServiceControl1 = new DORMITORY_MANAGEMENT.ManageServiceControl();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.bunifuPanel3.SuspendLayout();
@@ -74,8 +78,9 @@
             this.addStudents.SuspendLayout();
             this.Rooms.SuspendLayout();
             this.Contract.SuspendLayout();
-            this.topPanelDashboard.SuspendLayout();
             this.ServicesPage.SuspendLayout();
+            this.ManageServicePage.SuspendLayout();
+            this.topPanelDashboard.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuPanel1
@@ -86,6 +91,7 @@
             this.bunifuPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(231)))), ((int)(((byte)(232)))));
             this.bunifuPanel1.BorderRadius = 0;
             this.bunifuPanel1.BorderThickness = 0;
+            this.bunifuPanel1.Controls.Add(this.ManageServices);
             this.bunifuPanel1.Controls.Add(this.Services);
             this.bunifuPanel1.Controls.Add(this.bunifuButton1);
             this.bunifuPanel1.Controls.Add(this.btn_ManageRooms);
@@ -100,6 +106,97 @@
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(262, 900);
             this.bunifuPanel1.TabIndex = 0;
+            // 
+            // ManageServices
+            // 
+            this.ManageServices.AllowAnimations = true;
+            this.ManageServices.AllowMouseEffects = true;
+            this.ManageServices.AllowToggling = true;
+            this.ManageServices.AnimationSpeed = 200;
+            this.ManageServices.AutoGenerateColors = false;
+            this.ManageServices.AutoRoundBorders = false;
+            this.ManageServices.AutoSizeLeftIcon = true;
+            this.ManageServices.AutoSizeRightIcon = true;
+            this.ManageServices.BackColor = System.Drawing.Color.Transparent;
+            this.ManageServices.BackColor1 = System.Drawing.Color.White;
+            this.ManageServices.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ManageServices.BackgroundImage")));
+            this.ManageServices.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.ManageServices.ButtonText = "Manage Services";
+            this.ManageServices.ButtonTextMarginLeft = 0;
+            this.ManageServices.ColorContrastOnClick = 45;
+            this.ManageServices.ColorContrastOnHover = 45;
+            this.ManageServices.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.ManageServices.CustomizableEdges = borderEdges1;
+            this.ManageServices.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.ManageServices.DisabledBorderColor = System.Drawing.Color.White;
+            this.ManageServices.DisabledFillColor = System.Drawing.Color.White;
+            this.ManageServices.DisabledForecolor = System.Drawing.Color.White;
+            this.ManageServices.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.ManageServices.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ManageServices.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(167)))));
+            this.ManageServices.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ManageServices.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.ManageServices.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.ManageServices.IconMarginLeft = 11;
+            this.ManageServices.IconPadding = 10;
+            this.ManageServices.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ManageServices.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.ManageServices.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.ManageServices.IconSize = 25;
+            this.ManageServices.IdleBorderColor = System.Drawing.Color.White;
+            this.ManageServices.IdleBorderRadius = 27;
+            this.ManageServices.IdleBorderThickness = 1;
+            this.ManageServices.IdleFillColor = System.Drawing.Color.White;
+            this.ManageServices.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("ManageServices.IdleIconLeftImage")));
+            this.ManageServices.IdleIconRightImage = null;
+            this.ManageServices.IndicateFocus = false;
+            this.ManageServices.Location = new System.Drawing.Point(25, 485);
+            this.ManageServices.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
+            this.ManageServices.Name = "ManageServices";
+            this.ManageServices.OnDisabledState.BorderColor = System.Drawing.Color.White;
+            this.ManageServices.OnDisabledState.BorderRadius = 27;
+            this.ManageServices.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.ManageServices.OnDisabledState.BorderThickness = 1;
+            this.ManageServices.OnDisabledState.FillColor = System.Drawing.Color.White;
+            this.ManageServices.OnDisabledState.ForeColor = System.Drawing.Color.White;
+            this.ManageServices.OnDisabledState.IconLeftImage = null;
+            this.ManageServices.OnDisabledState.IconRightImage = null;
+            this.ManageServices.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ManageServices.onHoverState.BorderRadius = 27;
+            this.ManageServices.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.ManageServices.onHoverState.BorderThickness = 1;
+            this.ManageServices.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ManageServices.onHoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(241)))));
+            this.ManageServices.onHoverState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage")));
+            this.ManageServices.onHoverState.IconRightImage = null;
+            this.ManageServices.OnIdleState.BorderColor = System.Drawing.Color.White;
+            this.ManageServices.OnIdleState.BorderRadius = 27;
+            this.ManageServices.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.ManageServices.OnIdleState.BorderThickness = 1;
+            this.ManageServices.OnIdleState.FillColor = System.Drawing.Color.White;
+            this.ManageServices.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(167)))));
+            this.ManageServices.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("ManageServices.OnIdleState.IconLeftImage")));
+            this.ManageServices.OnIdleState.IconRightImage = null;
+            this.ManageServices.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
+            this.ManageServices.OnPressedState.BorderRadius = 27;
+            this.ManageServices.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.ManageServices.OnPressedState.BorderThickness = 1;
+            this.ManageServices.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
+            this.ManageServices.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(241)))));
+            this.ManageServices.OnPressedState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage1")));
+            this.ManageServices.OnPressedState.IconRightImage = null;
+            this.ManageServices.Size = new System.Drawing.Size(216, 51);
+            this.ManageServices.TabIndex = 7;
+            this.ManageServices.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ManageServices.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ManageServices.TextMarginLeft = 0;
+            this.ManageServices.TextPadding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.ManageServices.UseDefaultRadiusAndThickness = true;
+            this.ManageServices.Click += new System.EventHandler(this.ManageServices_Click);
             // 
             // Services
             // 
@@ -120,11 +217,11 @@
             this.Services.ColorContrastOnClick = 45;
             this.Services.ColorContrastOnHover = 45;
             this.Services.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.Services.CustomizableEdges = borderEdges1;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.Services.CustomizableEdges = borderEdges2;
             this.Services.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Services.DisabledBorderColor = System.Drawing.Color.White;
             this.Services.DisabledFillColor = System.Drawing.Color.White;
@@ -165,7 +262,7 @@
             this.Services.onHoverState.BorderThickness = 1;
             this.Services.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Services.onHoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(241)))));
-            this.Services.onHoverState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage")));
+            this.Services.onHoverState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage2")));
             this.Services.onHoverState.IconRightImage = null;
             this.Services.OnIdleState.BorderColor = System.Drawing.Color.White;
             this.Services.OnIdleState.BorderRadius = 27;
@@ -173,7 +270,7 @@
             this.Services.OnIdleState.BorderThickness = 1;
             this.Services.OnIdleState.FillColor = System.Drawing.Color.White;
             this.Services.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(167)))));
-            this.Services.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton2.OnIdleState.IconLeftImage")));
+            this.Services.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("Services.OnIdleState.IconLeftImage")));
             this.Services.OnIdleState.IconRightImage = null;
             this.Services.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
             this.Services.OnPressedState.BorderRadius = 27;
@@ -181,7 +278,7 @@
             this.Services.OnPressedState.BorderThickness = 1;
             this.Services.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
             this.Services.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(241)))));
-            this.Services.OnPressedState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage1")));
+            this.Services.OnPressedState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage3")));
             this.Services.OnPressedState.IconRightImage = null;
             this.Services.Size = new System.Drawing.Size(216, 51);
             this.Services.TabIndex = 6;
@@ -211,11 +308,11 @@
             this.bunifuButton1.ColorContrastOnClick = 45;
             this.bunifuButton1.ColorContrastOnHover = 45;
             this.bunifuButton1.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.bunifuButton1.CustomizableEdges = borderEdges2;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.bunifuButton1.CustomizableEdges = borderEdges3;
             this.bunifuButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton1.DisabledBorderColor = System.Drawing.Color.White;
             this.bunifuButton1.DisabledFillColor = System.Drawing.Color.White;
@@ -256,7 +353,7 @@
             this.bunifuButton1.onHoverState.BorderThickness = 1;
             this.bunifuButton1.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bunifuButton1.onHoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(241)))));
-            this.bunifuButton1.onHoverState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage2")));
+            this.bunifuButton1.onHoverState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage4")));
             this.bunifuButton1.onHoverState.IconRightImage = null;
             this.bunifuButton1.OnIdleState.BorderColor = System.Drawing.Color.White;
             this.bunifuButton1.OnIdleState.BorderRadius = 27;
@@ -272,7 +369,7 @@
             this.bunifuButton1.OnPressedState.BorderThickness = 1;
             this.bunifuButton1.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
             this.bunifuButton1.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(241)))));
-            this.bunifuButton1.OnPressedState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage3")));
+            this.bunifuButton1.OnPressedState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage5")));
             this.bunifuButton1.OnPressedState.IconRightImage = null;
             this.bunifuButton1.Size = new System.Drawing.Size(219, 51);
             this.bunifuButton1.TabIndex = 5;
@@ -302,11 +399,11 @@
             this.btn_ManageRooms.ColorContrastOnClick = 45;
             this.btn_ManageRooms.ColorContrastOnHover = 45;
             this.btn_ManageRooms.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btn_ManageRooms.CustomizableEdges = borderEdges3;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btn_ManageRooms.CustomizableEdges = borderEdges4;
             this.btn_ManageRooms.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_ManageRooms.DisabledBorderColor = System.Drawing.Color.White;
             this.btn_ManageRooms.DisabledFillColor = System.Drawing.Color.White;
@@ -347,7 +444,7 @@
             this.btn_ManageRooms.onHoverState.BorderThickness = 1;
             this.btn_ManageRooms.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_ManageRooms.onHoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(241)))));
-            this.btn_ManageRooms.onHoverState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage4")));
+            this.btn_ManageRooms.onHoverState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage6")));
             this.btn_ManageRooms.onHoverState.IconRightImage = null;
             this.btn_ManageRooms.OnIdleState.BorderColor = System.Drawing.Color.White;
             this.btn_ManageRooms.OnIdleState.BorderRadius = 27;
@@ -363,7 +460,7 @@
             this.btn_ManageRooms.OnPressedState.BorderThickness = 1;
             this.btn_ManageRooms.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
             this.btn_ManageRooms.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(241)))));
-            this.btn_ManageRooms.OnPressedState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage5")));
+            this.btn_ManageRooms.OnPressedState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage7")));
             this.btn_ManageRooms.OnPressedState.IconRightImage = null;
             this.btn_ManageRooms.Size = new System.Drawing.Size(219, 51);
             this.btn_ManageRooms.TabIndex = 4;
@@ -393,11 +490,11 @@
             this.btn_addStudents.ColorContrastOnClick = 45;
             this.btn_addStudents.ColorContrastOnHover = 45;
             this.btn_addStudents.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.btn_addStudents.CustomizableEdges = borderEdges4;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.btn_addStudents.CustomizableEdges = borderEdges5;
             this.btn_addStudents.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_addStudents.DisabledBorderColor = System.Drawing.Color.White;
             this.btn_addStudents.DisabledFillColor = System.Drawing.Color.White;
@@ -438,7 +535,7 @@
             this.btn_addStudents.onHoverState.BorderThickness = 1;
             this.btn_addStudents.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_addStudents.onHoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(241)))));
-            this.btn_addStudents.onHoverState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage6")));
+            this.btn_addStudents.onHoverState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage8")));
             this.btn_addStudents.onHoverState.IconRightImage = null;
             this.btn_addStudents.OnIdleState.BorderColor = System.Drawing.Color.White;
             this.btn_addStudents.OnIdleState.BorderRadius = 27;
@@ -454,7 +551,7 @@
             this.btn_addStudents.OnPressedState.BorderThickness = 1;
             this.btn_addStudents.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
             this.btn_addStudents.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(241)))));
-            this.btn_addStudents.OnPressedState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage7")));
+            this.btn_addStudents.OnPressedState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage9")));
             this.btn_addStudents.OnPressedState.IconRightImage = null;
             this.btn_addStudents.Size = new System.Drawing.Size(219, 51);
             this.btn_addStudents.TabIndex = 3;
@@ -515,11 +612,11 @@
             this.btn_Overview.ColorContrastOnClick = 45;
             this.btn_Overview.ColorContrastOnHover = 45;
             this.btn_Overview.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.btn_Overview.CustomizableEdges = borderEdges5;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.btn_Overview.CustomizableEdges = borderEdges6;
             this.btn_Overview.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Overview.DisabledBorderColor = System.Drawing.Color.White;
             this.btn_Overview.DisabledFillColor = System.Drawing.Color.White;
@@ -560,7 +657,7 @@
             this.btn_Overview.onHoverState.BorderThickness = 1;
             this.btn_Overview.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_Overview.onHoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(241)))));
-            this.btn_Overview.onHoverState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage8")));
+            this.btn_Overview.onHoverState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage10")));
             this.btn_Overview.onHoverState.IconRightImage = null;
             this.btn_Overview.OnIdleState.BorderColor = System.Drawing.Color.White;
             this.btn_Overview.OnIdleState.BorderRadius = 27;
@@ -576,7 +673,7 @@
             this.btn_Overview.OnPressedState.BorderThickness = 1;
             this.btn_Overview.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
             this.btn_Overview.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(241)))));
-            this.btn_Overview.OnPressedState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage9")));
+            this.btn_Overview.OnPressedState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage11")));
             this.btn_Overview.OnPressedState.IconRightImage = null;
             this.btn_Overview.Size = new System.Drawing.Size(219, 51);
             this.btn_Overview.TabIndex = 1;
@@ -629,13 +726,14 @@
             this.pages.Controls.Add(this.Rooms);
             this.pages.Controls.Add(this.Contract);
             this.pages.Controls.Add(this.ServicesPage);
+            this.pages.Controls.Add(this.ManageServicePage);
             this.pages.Location = new System.Drawing.Point(0, 0);
             this.pages.Multiline = true;
             this.pages.Name = "pages";
-            this.pages.Page = this.ServicesPage;
-            this.pages.PageIndex = 4;
-            this.pages.PageName = "ServicesPage";
-            this.pages.PageTitle = "Services";
+            this.pages.Page = this.ManageServicePage;
+            this.pages.PageIndex = 5;
+            this.pages.PageName = "ManageServicePage";
+            this.pages.PageTitle = "Manage Services";
             this.pages.SelectedIndex = 0;
             this.pages.Size = new System.Drawing.Size(1138, 809);
             this.pages.TabIndex = 0;
@@ -701,6 +799,28 @@
             this.Contract.Text = "Contract";
             this.Contract.UseVisualStyleBackColor = true;
             // 
+            // ServicesPage
+            // 
+            this.ServicesPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.ServicesPage.Controls.Add(this.services1);
+            this.ServicesPage.Location = new System.Drawing.Point(4, 4);
+            this.ServicesPage.Name = "ServicesPage";
+            this.ServicesPage.Padding = new System.Windows.Forms.Padding(3);
+            this.ServicesPage.Size = new System.Drawing.Size(1130, 780);
+            this.ServicesPage.TabIndex = 4;
+            this.ServicesPage.Text = "Services";
+            // 
+            // ManageServicePage
+            // 
+            this.ManageServicePage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.ManageServicePage.Controls.Add(this.manageServiceControl1);
+            this.ManageServicePage.Location = new System.Drawing.Point(4, 4);
+            this.ManageServicePage.Name = "ManageServicePage";
+            this.ManageServicePage.Padding = new System.Windows.Forms.Padding(3);
+            this.ManageServicePage.Size = new System.Drawing.Size(1130, 780);
+            this.ManageServicePage.TabIndex = 5;
+            this.ManageServicePage.Text = "Manage Services";
+            // 
             // topPanelDashboard
             // 
             this.topPanelDashboard.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
@@ -740,11 +860,11 @@
             this.btn_exit.ColorContrastOnClick = 45;
             this.btn_exit.ColorContrastOnHover = 45;
             this.btn_exit.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.btn_exit.CustomizableEdges = borderEdges6;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.btn_exit.CustomizableEdges = borderEdges7;
             this.btn_exit.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_exit.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
             this.btn_exit.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
@@ -864,17 +984,6 @@
             this.bunifuElipse1.ElipseRadius = 10;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // ServicesPage
-            // 
-            this.ServicesPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
-            this.ServicesPage.Controls.Add(this.services1);
-            this.ServicesPage.Location = new System.Drawing.Point(4, 4);
-            this.ServicesPage.Name = "ServicesPage";
-            this.ServicesPage.Padding = new System.Windows.Forms.Padding(3);
-            this.ServicesPage.Size = new System.Drawing.Size(1130, 780);
-            this.ServicesPage.TabIndex = 4;
-            this.ServicesPage.Text = "Services";
-            // 
             // overviewPage1
             // 
             this.overviewPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
@@ -916,6 +1025,14 @@
             this.services1.Size = new System.Drawing.Size(1138, 800);
             this.services1.TabIndex = 0;
             // 
+            // manageServiceControl1
+            // 
+            this.manageServiceControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.manageServiceControl1.Location = new System.Drawing.Point(-4, -4);
+            this.manageServiceControl1.Name = "manageServiceControl1";
+            this.manageServiceControl1.Size = new System.Drawing.Size(1138, 800);
+            this.manageServiceControl1.TabIndex = 0;
+            // 
             // Admin_Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -938,9 +1055,10 @@
             this.addStudents.ResumeLayout(false);
             this.Rooms.ResumeLayout(false);
             this.Contract.ResumeLayout(false);
+            this.ServicesPage.ResumeLayout(false);
+            this.ManageServicePage.ResumeLayout(false);
             this.topPanelDashboard.ResumeLayout(false);
             this.topPanelDashboard.PerformLayout();
-            this.ServicesPage.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -974,5 +1092,8 @@
         private ContractsPage contractsPage1;
         private System.Windows.Forms.TabPage ServicesPage;
         private Services services1;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton ManageServices;
+        private System.Windows.Forms.TabPage ManageServicePage;
+        private ManageServiceControl manageServiceControl1;
     }
 }

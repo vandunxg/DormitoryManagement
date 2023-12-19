@@ -220,7 +220,7 @@
             this.btn_ClearSearch.OnIdleState.BorderThickness = 1;
             this.btn_ClearSearch.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(216)))), ((int)(((byte)(182)))));
             this.btn_ClearSearch.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_ClearSearch.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_deleteInput.OnIdleState.IconLeftImage")));
+            this.btn_ClearSearch.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_ClearSearch.OnIdleState.IconLeftImage")));
             this.btn_ClearSearch.OnIdleState.IconRightImage = null;
             this.btn_ClearSearch.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(216)))), ((int)(((byte)(182)))));
             this.btn_ClearSearch.OnPressedState.BorderRadius = 10;
@@ -397,7 +397,6 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgv_Usages.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_Usages.ColumnHeadersHeight = 40;
-            this.dgv_Usages.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgv_Usages.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.dgv_Usages.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.dgv_Usages.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
@@ -440,6 +439,7 @@
             this.dgv_Usages.Size = new System.Drawing.Size(1100, 568);
             this.dgv_Usages.TabIndex = 78;
             this.dgv_Usages.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.dgv_Usages.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Usages_CellClick);
             // 
             // cmb_Months
             // 
@@ -792,6 +792,7 @@
             this.btn_refreshRoom.TextMarginLeft = 0;
             this.btn_refreshRoom.TextPadding = new System.Windows.Forms.Padding(0);
             this.btn_refreshRoom.UseDefaultRadiusAndThickness = true;
+            this.btn_refreshRoom.Click += new System.EventHandler(this.btn_refreshRoom_Click);
             // 
             // bunifuElipse2
             // 
