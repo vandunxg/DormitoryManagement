@@ -135,10 +135,10 @@
     <Compile Include="Page\NewServices.Designer.cs">
       <DependentUpon>NewServices.cs</DependentUpon>
     </Compile>
-    <Compile Include="ShowServicesDetail.cs">
+    <Compile Include="Page\ShowServicesDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ShowServicesDetail.Designer.cs">
+    <Compile Include="Page\ShowServicesDetail.Designer.cs">
       <DependentUpon>ShowServicesDetail.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl\ManageServiceControl.cs">
@@ -274,7 +274,7 @@
     <EmbeddedResource Include="Page\NewServices.resx">
       <DependentUpon>NewServices.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ShowServicesDetail.resx">
+    <EmbeddedResource Include="Page\ShowServicesDetail.resx">
       <DependentUpon>ShowServicesDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\ManageServiceControl.resx">

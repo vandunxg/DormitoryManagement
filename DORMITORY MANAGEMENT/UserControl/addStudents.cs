@@ -237,6 +237,22 @@ namespace DORMITORY_MANAGEMENT
             addStudents_Load(sender, e);
         }
 
+        private void txt_StudentPhone_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Loại bỏ ký tự nếu không phải là số
+            }
+        }
+
+        private void txt_StudentPersonalID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Loại bỏ ký tự nếu không phải là số
+            }
+        }
+
         #endregion
 
         #region Method
@@ -261,6 +277,8 @@ namespace DORMITORY_MANAGEMENT
             date_StudentDOB.Value = DateTime.Now.Date;
             checkbox_Lived.Checked = false;
         }
+
+
 
         #endregion
 

@@ -560,6 +560,7 @@
             this.txt_StudentPersonalID.TextPlaceholder = "CCCD";
             this.txt_StudentPersonalID.UseSystemPasswordChar = false;
             this.txt_StudentPersonalID.WordWrap = true;
+            this.txt_StudentPersonalID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_StudentPersonalID_KeyPress);
             // 
             // cmb_StudentGender
             // 
@@ -874,6 +875,7 @@
             this.txt_StudentPhone.TextPlaceholder = "Số điện thoại";
             this.txt_StudentPhone.UseSystemPasswordChar = false;
             this.txt_StudentPhone.WordWrap = true;
+            this.txt_StudentPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_StudentPhone_KeyPress);
             // 
             // bunifuLabel2
             // 

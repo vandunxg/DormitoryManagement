@@ -3,6 +3,7 @@ using System;
 using System.Windows.Forms;
 using DORMITORY_MANAGEMENT.DAO;
 using System.Linq;
+using System.Drawing;
 
 namespace DORMITORY_MANAGEMENT
 {
@@ -53,13 +54,23 @@ namespace DORMITORY_MANAGEMENT
             date_ContractCheckout.Value = DateTime.Parse(date_CheckOut);
             cmb_ContractState.SelectedIndex = cmb_ContractState.FindString(ContractState);
 
-            
-            
+            int CheckContractState = cmb_ContractState.SelectedIndex;
+            if(CheckContractState == 0)
+            {
+                lbl_ContractID.ForeColor = Color.FromArgb(72, 186, 120);
+            }
+            else
+            {
+                lbl_ContractID.ForeColor = Color.FromArgb(219, 89, 98);
+            }
+
+
         }
 
+        #region Events
         private void cmb_Areas_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(cmb_Areas.SelectedIndex != -1)
+            if (cmb_Areas.SelectedIndex != -1)
             {
                 cmb_RoomTypes.DisplayMember = "RoomTypeName";
                 cmb_RoomTypes.ValueMember = "RoomTypeID";
@@ -71,7 +82,7 @@ namespace DORMITORY_MANAGEMENT
         {
             cmb_Rooms.DisplayMember = "RoomName";
             cmb_Rooms.ValueMember = "RoomID";
-            cmb_Rooms.DataSource = DataProvider.Instance.ExcuteQuery("GetRoomServices @AreaID , @RoomTypeID ", new object[] {int.Parse(cmb_Areas.SelectedValue.ToString()), int.Parse(cmb_RoomTypes.SelectedValue.ToString())});
+            cmb_Rooms.DataSource = DataProvider.Instance.ExcuteQuery("GetRoomServices @AreaID , @RoomTypeID ", new object[] { int.Parse(cmb_Areas.SelectedValue.ToString()), int.Parse(cmb_RoomTypes.SelectedValue.ToString()) });
         }
 
         private void btn_exit_Click(object sender, EventArgs e)
@@ -82,13 +93,13 @@ namespace DORMITORY_MANAGEMENT
         private void btn_DeleteContracts_Click(object sender, EventArgs e)
         {
             string ContractID = lbl_ContractID.Text;
-            
-            DialogResult CheckNotify = MessageBox.Show("Bạn có chắc chắn muốn xoá hợp đồng này chứ?","Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
-            if(CheckNotify == DialogResult.Yes)
+            DialogResult CheckNotify = MessageBox.Show("Bạn có chắc chắn muốn xoá hợp đồng này chứ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (CheckNotify == DialogResult.Yes)
             {
                 int CheckStatus = DataProvider.Instance.ExecuteNonQuery("DeleteContracts @ContractID ", new object[] { ContractID });
-                
+
                 if (CheckStatus > 0)
                 {
                     MessageBox.Show("Xoá hợp đồng thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -129,7 +140,7 @@ namespace DORMITORY_MANAGEMENT
                 if (CheckStatus > 0)
                 {
                     MessageBox.Show("Chỉnh sửa hợp đồng thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    
+
                     return;
                 }
                 else
@@ -141,6 +152,23 @@ namespace DORMITORY_MANAGEMENT
             }
         }
 
-        
+        private void cmb_ContractState_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmb_ContractState.SelectedIndex != -1)
+            {
+                int CheckContractState = cmb_ContractState.SelectedIndex;
+                if (CheckContractState == 0)
+                {
+                    lbl_ContractID.ForeColor = Color.FromArgb(72, 186, 120);
+                }
+                else
+                {
+                    lbl_ContractID.ForeColor = Color.FromArgb(219, 89, 98);
+                }
+            }
+        }
+        #endregion
+
+
     }
 }

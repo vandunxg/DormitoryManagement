@@ -804,3 +804,18 @@ BEGIN
 	)
 END;
 GO
+
+
+CREATE PROC UpdateServices
+@ServiceID INT, @ServiceName NVARCHAR(50), @ServicePrice INT, @ServiceUnit NVARCHAR(20)
+AS
+BEGIN
+	UPDATE Services
+	SET
+		
+		ServiceName = @ServiceName,
+		ServicePrice = @ServicePrice,
+		ServiceUnit = @ServiceUnit
+	WHERE ServiceID = @ServiceID
+END;
+GO
