@@ -133,6 +133,12 @@
     <Compile Include="Page\AddNewBill.Designer.cs">
       <DependentUpon>AddNewBill.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShowBills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowBills.Designer.cs">
+      <DependentUpon>ShowBills.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\Bills.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -285,6 +291,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Page\AddNewBill.resx">
       <DependentUpon>AddNewBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowBills.resx">
+      <DependentUpon>ShowBills.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\Bills.resx">
       <DependentUpon>Bills.cs</DependentUpon>

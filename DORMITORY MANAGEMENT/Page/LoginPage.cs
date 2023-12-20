@@ -128,11 +128,15 @@ namespace DORMITORY_MANAGEMENT
 
         #endregion
 
-
         #region
 
-        
+
 
         #endregion
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

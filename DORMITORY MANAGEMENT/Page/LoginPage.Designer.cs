@@ -37,22 +37,23 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState1 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
             Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState2 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
             Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState3 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(loginPage));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.leftBackgroundImage = new Bunifu.UI.WinForms.BunifuImageButton();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.txt_InputEmailLogin = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txt_inputPasswordLogin = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.btn_exitLoginPage = new Bunifu.UI.WinForms.BunifuImageButton();
             this.btn_login = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuToggleSwitch1 = new Bunifu.UI.WinForms.BunifuToggleSwitch();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
+            this.btn_exit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -74,7 +75,7 @@
             this.leftBackgroundImage.FadeWhenInactive = false;
             this.leftBackgroundImage.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
             this.leftBackgroundImage.Image = ((System.Drawing.Image)(resources.GetObject("leftBackgroundImage.Image")));
-            //this.leftBackgroundImage.ImageActive = null;
+            this.leftBackgroundImage.ImageActive = null;
             this.leftBackgroundImage.ImageLocation = null;
             this.leftBackgroundImage.ImageMargin = 0;
             this.leftBackgroundImage.ImageSize = new System.Drawing.Size(643, 756);
@@ -92,7 +93,7 @@
             this.leftBackgroundImage.TabIndex = 0;
             this.leftBackgroundImage.ToolTipText = "";
             this.leftBackgroundImage.WaitOnLoad = false;
-            //this.leftBackgroundImage.Zoom = 0;
+            this.leftBackgroundImage.Zoom = 0;
             this.leftBackgroundImage.ZoomSpeed = 10;
             this.leftBackgroundImage.MouseDown += new System.Windows.Forms.MouseEventHandler(this.leftBackgroundImage_MouseDown);
             // 
@@ -264,41 +265,6 @@
             this.txt_inputPasswordLogin.TextChanged += new System.EventHandler(this.txt_inputPasswordLogin_TextChanged);
             this.txt_inputPasswordLogin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_inputPasswordLogin_KeyPress);
             // 
-            // btn_exitLoginPage
-            // 
-            this.btn_exitLoginPage.ActiveImage = null;
-            this.btn_exitLoginPage.AllowAnimations = true;
-            this.btn_exitLoginPage.AllowBuffering = false;
-            this.btn_exitLoginPage.AllowToggling = false;
-            this.btn_exitLoginPage.AllowZooming = false;
-            this.btn_exitLoginPage.AllowZoomingOnFocus = true;
-            this.btn_exitLoginPage.BackColor = System.Drawing.Color.Transparent;
-            this.btn_exitLoginPage.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_exitLoginPage.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btn_exitLoginPage.ErrorImage")));
-            this.btn_exitLoginPage.FadeWhenInactive = false;
-            this.btn_exitLoginPage.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.btn_exitLoginPage.Image = ((System.Drawing.Image)(resources.GetObject("btn_exitLoginPage.Image")));
-            this.btn_exitLoginPage.ImageActive = null;
-            this.btn_exitLoginPage.ImageLocation = null;
-            this.btn_exitLoginPage.ImageMargin = 40;
-            this.btn_exitLoginPage.ImageSize = new System.Drawing.Size(25, 22);
-            this.btn_exitLoginPage.ImageZoomSize = new System.Drawing.Size(65, 62);
-            this.btn_exitLoginPage.InitialImage = ((System.Drawing.Image)(resources.GetObject("btn_exitLoginPage.InitialImage")));
-            this.btn_exitLoginPage.Location = new System.Drawing.Point(1174, -1);
-            this.btn_exitLoginPage.Name = "btn_exitLoginPage";
-            this.btn_exitLoginPage.Rotation = 0;
-            this.btn_exitLoginPage.ShowActiveImage = true;
-            this.btn_exitLoginPage.ShowCursorChanges = true;
-            this.btn_exitLoginPage.ShowImageBorders = true;
-            this.btn_exitLoginPage.ShowSizeMarkers = false;
-            this.btn_exitLoginPage.Size = new System.Drawing.Size(65, 62);
-            this.btn_exitLoginPage.TabIndex = 4;
-            this.btn_exitLoginPage.ToolTipText = "";
-            this.btn_exitLoginPage.WaitOnLoad = false;
-            this.btn_exitLoginPage.Zoom = 40;
-            this.btn_exitLoginPage.ZoomSpeed = 10;
-            this.btn_exitLoginPage.Click += new System.EventHandler(this.btn_exitLoginPage_Click);
-            // 
             // btn_login
             // 
             this.btn_login.AllowAnimations = true;
@@ -318,11 +284,11 @@
             this.btn_login.ColorContrastOnClick = 45;
             this.btn_login.ColorContrastOnHover = 45;
             this.btn_login.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btn_login.CustomizableEdges = borderEdges1;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btn_login.CustomizableEdges = borderEdges2;
             this.btn_login.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_login.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_login.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -340,7 +306,7 @@
             this.btn_login.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btn_login.IconSize = 25;
             this.btn_login.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
-            this.btn_login.IdleBorderRadius = 10;
+            this.btn_login.IdleBorderRadius = 50;
             this.btn_login.IdleBorderThickness = 1;
             this.btn_login.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
             this.btn_login.IdleIconLeftImage = null;
@@ -349,7 +315,7 @@
             this.btn_login.Location = new System.Drawing.Point(748, 422);
             this.btn_login.Name = "btn_login";
             this.btn_login.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btn_login.OnDisabledState.BorderRadius = 10;
+            this.btn_login.OnDisabledState.BorderRadius = 50;
             this.btn_login.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_login.OnDisabledState.BorderThickness = 1;
             this.btn_login.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -357,7 +323,7 @@
             this.btn_login.OnDisabledState.IconLeftImage = null;
             this.btn_login.OnDisabledState.IconRightImage = null;
             this.btn_login.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btn_login.onHoverState.BorderRadius = 10;
+            this.btn_login.onHoverState.BorderRadius = 50;
             this.btn_login.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_login.onHoverState.BorderThickness = 1;
             this.btn_login.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
@@ -365,7 +331,7 @@
             this.btn_login.onHoverState.IconLeftImage = null;
             this.btn_login.onHoverState.IconRightImage = null;
             this.btn_login.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
-            this.btn_login.OnIdleState.BorderRadius = 10;
+            this.btn_login.OnIdleState.BorderRadius = 50;
             this.btn_login.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_login.OnIdleState.BorderThickness = 1;
             this.btn_login.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
@@ -373,7 +339,7 @@
             this.btn_login.OnIdleState.IconLeftImage = null;
             this.btn_login.OnIdleState.IconRightImage = null;
             this.btn_login.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
-            this.btn_login.OnPressedState.BorderRadius = 10;
+            this.btn_login.OnPressedState.BorderRadius = 50;
             this.btn_login.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_login.OnPressedState.BorderThickness = 1;
             this.btn_login.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
@@ -465,6 +431,96 @@
             this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             this.bunifuLabel3.Click += new System.EventHandler(this.bunifuLabel3_Click);
             // 
+            // btn_exit
+            // 
+            this.btn_exit.AllowAnimations = true;
+            this.btn_exit.AllowMouseEffects = true;
+            this.btn_exit.AllowToggling = false;
+            this.btn_exit.AnimationSpeed = 200;
+            this.btn_exit.AutoGenerateColors = false;
+            this.btn_exit.AutoRoundBorders = false;
+            this.btn_exit.AutoSizeLeftIcon = true;
+            this.btn_exit.AutoSizeRightIcon = true;
+            this.btn_exit.BackColor = System.Drawing.Color.Transparent;
+            this.btn_exit.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.btn_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.BackgroundImage")));
+            this.btn_exit.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_exit.ButtonText = "";
+            this.btn_exit.ButtonTextMarginLeft = 0;
+            this.btn_exit.ColorContrastOnClick = 45;
+            this.btn_exit.ColorContrastOnHover = 45;
+            this.btn_exit.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btn_exit.CustomizableEdges = borderEdges1;
+            this.btn_exit.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_exit.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btn_exit.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btn_exit.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btn_exit.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btn_exit.Font = new System.Drawing.Font("Segoe UI Semibold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_exit.ForeColor = System.Drawing.Color.Black;
+            this.btn_exit.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_exit.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_exit.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btn_exit.IconMarginLeft = 11;
+            this.btn_exit.IconPadding = 10;
+            this.btn_exit.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_exit.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_exit.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btn_exit.IconSize = 25;
+            this.btn_exit.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.btn_exit.IdleBorderRadius = 10;
+            this.btn_exit.IdleBorderThickness = 1;
+            this.btn_exit.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.btn_exit.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.IdleIconLeftImage")));
+            this.btn_exit.IdleIconRightImage = null;
+            this.btn_exit.IndicateFocus = false;
+            this.btn_exit.Location = new System.Drawing.Point(1180, 5);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btn_exit.OnDisabledState.BorderRadius = 10;
+            this.btn_exit.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_exit.OnDisabledState.BorderThickness = 1;
+            this.btn_exit.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btn_exit.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btn_exit.OnDisabledState.IconLeftImage = null;
+            this.btn_exit.OnDisabledState.IconRightImage = null;
+            this.btn_exit.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.btn_exit.onHoverState.BorderRadius = 10;
+            this.btn_exit.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_exit.onHoverState.BorderThickness = 1;
+            this.btn_exit.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.btn_exit.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_exit.onHoverState.IconLeftImage = null;
+            this.btn_exit.onHoverState.IconRightImage = null;
+            this.btn_exit.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.btn_exit.OnIdleState.BorderRadius = 10;
+            this.btn_exit.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_exit.OnIdleState.BorderThickness = 1;
+            this.btn_exit.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.btn_exit.OnIdleState.ForeColor = System.Drawing.Color.Black;
+            this.btn_exit.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.OnIdleState.IconLeftImage")));
+            this.btn_exit.OnIdleState.IconRightImage = null;
+            this.btn_exit.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.btn_exit.OnPressedState.BorderRadius = 10;
+            this.btn_exit.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_exit.OnPressedState.BorderThickness = 1;
+            this.btn_exit.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.btn_exit.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btn_exit.OnPressedState.IconLeftImage = null;
+            this.btn_exit.OnPressedState.IconRightImage = null;
+            this.btn_exit.Size = new System.Drawing.Size(51, 51);
+            this.btn_exit.TabIndex = 44;
+            this.btn_exit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_exit.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_exit.TextMarginLeft = 0;
+            this.btn_exit.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btn_exit.UseDefaultRadiusAndThickness = true;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            // 
             // loginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -472,11 +528,11 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.ClientSize = new System.Drawing.Size(1241, 694);
+            this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.bunifuLabel3);
             this.Controls.Add(this.bunifuLabel2);
             this.Controls.Add(this.bunifuToggleSwitch1);
             this.Controls.Add(this.btn_login);
-            this.Controls.Add(this.btn_exitLoginPage);
             this.Controls.Add(this.txt_inputPasswordLogin);
             this.Controls.Add(this.txt_InputEmailLogin);
             this.Controls.Add(this.bunifuLabel1);
@@ -500,12 +556,12 @@
         private Bunifu.UI.WinForms.BunifuTextBox txt_InputEmailLogin;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private Bunifu.UI.WinForms.BunifuTextBox txt_inputPasswordLogin;
-        private Bunifu.UI.WinForms.BunifuImageButton btn_exitLoginPage;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_login;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
         private Bunifu.UI.WinForms.BunifuToggleSwitch bunifuToggleSwitch1;
         private System.Windows.Forms.PageSetupDialog pageSetupDialog1;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_exit;
     }
 }
 

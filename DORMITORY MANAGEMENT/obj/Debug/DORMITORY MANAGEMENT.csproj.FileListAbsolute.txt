@@ -187,3 +187,6 @@ C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj
 C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.ContractsPage.resources
 C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Bills.resources
 C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.AddNewBill.resources
+C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.AddNewBill.resources
+C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Bills.resources
+C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.ShowBills.resources
