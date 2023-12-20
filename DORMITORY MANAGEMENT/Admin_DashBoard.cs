@@ -103,5 +103,21 @@ namespace DORMITORY_MANAGEMENT
 
             pages.SetPage(((Control)sender).Text);
         }
+
+        private void Bills_Click(object sender, EventArgs e)
+        {
+            text_showNameofPage.Text = btn_Bills.Text.ToString();
+            txt_showMainNameofPage.Text = "Hoá đơn";
+
+            pages.SetPage(((Control)sender).Text);
+        }
+
+        private void btn_Logout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            loginPage loginPage = new loginPage();
+            loginPage.Show();
+            
+        }
     }
 }

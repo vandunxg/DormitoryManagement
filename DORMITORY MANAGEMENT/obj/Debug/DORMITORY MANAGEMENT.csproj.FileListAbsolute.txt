@@ -171,3 +171,19 @@ C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debu
 C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.ShowServices.resources
 C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.NewServices.resources
 C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.ShowServicesDetail.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\Bunifu.Dataviz.WinForms.dll
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY MANAGEMENT.csproj.SuggestedBindingRedirects.cache
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY MANAGEMENT.exe.config
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.NewServices.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.ShowServicesDetail.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.ManageServiceControl.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.ContractDetail.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.AddServices.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Page.StudentInformations.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.ShowServices.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.UsageDetails.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Services.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.ContractsPage.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Bills.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.AddNewBill.resources

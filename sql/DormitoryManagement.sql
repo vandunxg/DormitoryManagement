@@ -1,9 +1,9 @@
 -- TẠO DATABASE
-CREATE DATABASE DormitoryManagement;
+CREATE DATABASE DB01;
 GO
 
 -- CHỌN DATABASE 
-USE DormitoryManagement;
+USE DB01;
 GO
 -- BẢNG NHÂN VIÊN
 CREATE TABLE Staffs(
@@ -324,12 +324,6 @@ GO
 INSERT INTO Students(StudentID, ClassID, StudentName, StudentGender, StudentDOB, StudentPersonalID, StudentEmail, StudentPhone, StudentAddress, StudentLived)
 VALUES
 ('73DCTT22428', '73DCTT22', N'Nguyễn Văn Dũng', 'Nam', '2004-07-23', '038204004400', N'vandunxg@gmail.com', '0835595675', N'Hoằng Hoá, Thanh Hoá', 1);
-GO
--- INSERT INTO Contracts
-
-INSERT INTO Contracts (StudentID , StaffID , AreaID , RoomID , RoomTypeID , CheckInDate , CheckOutDate)
-VALUES
-('73DCTT22428', '10001' , '1' , '10002' , '1' , '2022-10-20' , '2023-10-20')
 GO
 -----------------------------------------------------------------------------------------------------------------------------------------
 
@@ -817,5 +811,71 @@ BEGIN
 		ServicePrice = @ServicePrice,
 		ServiceUnit = @ServiceUnit
 	WHERE ServiceID = @ServiceID
+END;
+GO
+
+CREATE PROC GetBills
+AS
+BEGIN
+	SELECT
+		BillID AS N'Mã Hoá đơn',
+		RoomID AS N'Mã phòng',
+		BillMonth AS N'Tháng',
+		BillYear AS N'Năm',
+		BillCreationDate AS N'Ngày tạo',
+		StaffID AS N'Mã nhân viên',
+		BillPaid AS N'Tình trạng'
+	FROM Bills
+END;
+GO
+
+CREATE PROC SearchBills
+@RoomID NVARCHAR(20)
+AS
+BEGIN
+	SELECT
+		BillID AS N'Mã Hoá đơn',
+		RoomID AS N'Mã phòng',
+		BillMonth AS N'Tháng',
+		BillYear AS N'Năm',
+		BillCreationDate AS N'Ngày tạo',
+		StaffID AS N'Mã nhân viên',
+		BillPaid AS N'Tình trạng'
+	FROM Bills
+	WHERE RoomID = @RoomID
+END;
+GO
+
+CREATE PROC SearchBillsPaid
+@BillPaid INT
+AS
+BEGIN
+	SELECT
+		BillID AS N'Mã Hoá đơn',
+		RoomID AS N'Mã phòng',
+		BillMonth AS N'Tháng',
+		BillYear AS N'Năm',
+		BillCreationDate AS N'Ngày tạo',
+		StaffID AS N'Mã nhân viên',
+		BillPaid AS N'Tình trạng'
+	FROM Bills
+	WHERE BillPaid = @BillPaid
+END;
+GO
+
+CREATE PROC InsertBills
+@RoomID INT, @StaffID INT, @Months INT, @Years INT, @DateCreation DATE
+AS
+BEGIN
+	INSERT INTO Bills(RoomID, StaffID, BillMonth, BillYear, BillCreationDate, BillPaid)
+	VALUES
+	(
+		@RoomID,
+		@StaffID,
+		@Months,
+		@Years,
+		@DateCreation,
+		'0'
+	)
 END;
 GO

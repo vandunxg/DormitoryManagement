@@ -127,6 +127,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Page\AddNewBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page\AddNewBill.Designer.cs">
+      <DependentUpon>AddNewBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Bills.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\Bills.Designer.cs">
+      <DependentUpon>Bills.cs</DependentUpon>
+    </Compile>
     <Compile Include="DAO\ServicesDAO.cs" />
     <Compile Include="DTO\ServicesDTO.cs" />
     <Compile Include="Page\NewServices.cs">
@@ -271,6 +283,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Page\AddNewBill.resx">
+      <DependentUpon>AddNewBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\Bills.resx">
+      <DependentUpon>Bills.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Page\NewServices.resx">
       <DependentUpon>NewServices.cs</DependentUpon>
     </EmbeddedResource>
