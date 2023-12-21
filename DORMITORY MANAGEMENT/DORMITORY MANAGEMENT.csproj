@@ -133,10 +133,10 @@
     <Compile Include="Page\AddNewBill.Designer.cs">
       <DependentUpon>AddNewBill.cs</DependentUpon>
     </Compile>
-    <Compile Include="ShowBills.cs">
+    <Compile Include="Page\ShowBills.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ShowBills.Designer.cs">
+    <Compile Include="Page\ShowBills.Designer.cs">
       <DependentUpon>ShowBills.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl\Bills.cs">
@@ -292,7 +292,7 @@
     <EmbeddedResource Include="Page\AddNewBill.resx">
       <DependentUpon>AddNewBill.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ShowBills.resx">
+    <EmbeddedResource Include="Page\ShowBills.resx">
       <DependentUpon>ShowBills.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\Bills.resx">

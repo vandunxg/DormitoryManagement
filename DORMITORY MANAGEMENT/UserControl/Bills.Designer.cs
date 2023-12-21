@@ -180,7 +180,6 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgv_Bills.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_Bills.ColumnHeadersHeight = 40;
-            this.dgv_Bills.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgv_Bills.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.dgv_Bills.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.dgv_Bills.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
@@ -223,6 +222,7 @@
             this.dgv_Bills.Size = new System.Drawing.Size(1099, 598);
             this.dgv_Bills.TabIndex = 28;
             this.dgv_Bills.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.dgv_Bills.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Bills_CellClick);
             // 
             // cmb_BillState
             // 

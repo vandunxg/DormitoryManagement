@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -30,23 +31,23 @@ namespace DORMITORY_MANAGEMENT
 
         private void btn_SearchBills_Click(object sender, EventArgs e)
         {
-            if(txt_RoomID.Text != string.Empty)
+            if (txt_RoomID.Text != string.Empty)
             {
                 string RoomID = txt_RoomID.Text.Trim();
 
-                if(RoomID.Length > 20)
+                if (RoomID.Length > 20)
                 {
                     MessageBox.Show("Mã phòng quá dài!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
-                if(DataProvider.Instance.ExcuteQuery("SELECT * FROM Rooms WHERE RoomID = @RoomID ", new object[] { RoomID }).Rows.Count < 1)
+                if (DataProvider.Instance.ExcuteQuery("SELECT * FROM Rooms WHERE RoomID = @RoomID ", new object[] { RoomID }).Rows.Count < 1)
                 {
                     MessageBox.Show("Mã phòng không tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
-                dgv_Bills.DataSource = DataProvider.Instance.ExcuteQuery("SearchBills @RoomID ", new object[] {RoomID});
+                dgv_Bills.DataSource = DataProvider.Instance.ExcuteQuery("SearchBills @RoomID ", new object[] { RoomID });
             }
             else
             {
@@ -57,9 +58,9 @@ namespace DORMITORY_MANAGEMENT
 
         private void cmb_BillState_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(cmb_BillState.SelectedIndex != -1)
+            if (cmb_BillState.SelectedIndex != -1)
             {
-                if(cmb_BillState.SelectedIndex == 0)
+                if (cmb_BillState.SelectedIndex == 0)
                 {
                     dgv_Bills.DataSource = DataProvider.Instance.ExcuteQuery("SearchBillsPaid @BillPaid ", new object[] { 1 });
                 }
@@ -79,6 +80,35 @@ namespace DORMITORY_MANAGEMENT
         {
             AddNewBill addNewBill = new AddNewBill();
             addNewBill.ShowDialog();
+        }
+
+        private void dgv_Bills_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0 && e.RowIndex < dgv_Bills.Rows.Count && e.ColumnIndex < dgv_Bills.Columns.Count)
+            {
+                string BillID = dgv_Bills.Rows[e.RowIndex].Cells[0].Value.ToString();
+                string RoomID = dgv_Bills.Rows[e.RowIndex].Cells[1].Value.ToString();
+                string RoomName = DataProvider.Instance.ExcuteQuery("SELECT RoomName FROM Rooms WHERE RoomID = @RoomID ", new object[] { RoomID }).Rows[0]["RoomName"].ToString();
+                int RoomTypeID = int.Parse(DataProvider.Instance.ExcuteQuery("SELECT RoomTypeID FROM Rooms WHERE RoomID = @RoomID ", new object[] { RoomID }).Rows[0]["RoomTypeID"].ToString());
+                string RoomTypeName = DataProvider.Instance.ExcuteQuery("SELECT RoomTypeName FROM RoomTypes WHERE RoomTypeID = @RoomTypeID ", new object[] { RoomTypeID }).Rows[0]["RoomTypeName"].ToString();
+                int AreaID = int.Parse(DataProvider.Instance.ExcuteQuery("SELECT AreaID FROM Rooms WHERE RoomID = @RoomID ", new object[] { RoomID }).Rows[0]["AreaID"].ToString());
+                string AreaName = DataProvider.Instance.ExcuteQuery("SELECT AreaName FROM Areas WHERE AreaID = @AreaID ", new object[] { AreaID }).Rows[0]["AreaName"].ToString();
+                
+                int Months = int.Parse(dgv_Bills.Rows[e.RowIndex].Cells[2].Value.ToString());
+                int Years = int.Parse(dgv_Bills.Rows[e.RowIndex].Cells[3].Value.ToString());
+                string StaffID = dgv_Bills.Rows[e.RowIndex].Cells[5].Value.ToString();
+                int BillPaid;
+                if (dgv_Bills.Rows[e.RowIndex].Cells[6].Value.ToString() == "True")
+                {
+                    BillPaid = 0;
+                }
+                else
+                {
+                    BillPaid = 1;
+                }
+                ShowBills showBills = new ShowBills(BillID, AreaName, RoomTypeName, RoomID, RoomName, Months, Years, StaffID, BillPaid);
+                showBills.ShowDialog();
+            }
         }
     }
 }

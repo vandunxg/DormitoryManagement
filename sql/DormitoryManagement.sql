@@ -879,3 +879,47 @@ BEGIN
 	)
 END;
 GO
+
+CREATE PROCEDURE GetServicesToBill
+    @RoomID INT, 
+    @Months INT, 
+    @Years INT
+AS
+BEGIN
+    SELECT 
+        Usages.UsageID AS 'ID',
+        Services.ServiceName AS 'Tên dịch vụ',
+        Usages.UsageQuantity AS 'Số lượng',
+        Usages.UsageQuantity * Services.ServicePrice AS 'Thành tiền'
+    FROM 
+        Usages
+    INNER JOIN 
+        Services ON Usages.ServiceID = Services.ServiceID
+    WHERE 
+        Usages.RoomID = @RoomID 
+        AND Usages.UsageMonth = @Months 
+        AND Usages.UsageYear = @Years;
+END;
+GO
+
+CREATE PROC CalTotalMoneyBill
+    @RoomID INT, 
+    @Months INT, 
+    @Years INT
+AS
+BEGIN
+    DECLARE @TotalMoney DECIMAL(18, 2);
+	SELECT
+	@TotalMoney = ISNULL(@TotalMoney, 0) + Usages.UsageQuantity * Services.ServicePrice
+    
+	FROM 
+        Usages
+    INNER JOIN 
+        Services ON Usages.ServiceID = Services.ServiceID
+    WHERE 
+        Usages.RoomID = '10000' 
+        AND Usages.UsageMonth = '12' 
+        AND Usages.UsageYear = '2023';
+	SELECT @TotalMoney AS 'Thành tiền';
+END;
+GO
