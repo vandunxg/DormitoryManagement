@@ -76,7 +76,7 @@ namespace DORMITORY_MANAGEMENT
 
         private void cmb_RoomTypes_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmb_RoomTypes.SelectedIndex != -1)
+            if (cmb_RoomArea.SelectedIndex != -1 && cmb_RoomTypes.SelectedIndex != -1)
             {
                 cmb_Rooms.DisplayMember = "RoomID";
                 cmb_Rooms.ValueMember = "RoomID";
