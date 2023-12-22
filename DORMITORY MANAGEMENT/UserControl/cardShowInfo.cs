@@ -11,7 +11,12 @@ namespace DORMITORY_MANAGEMENT
             InitializeComponent();
         }
 
-
+        public cardShowInfo(string CardName, string Money)
+        {
+            InitializeComponent();
+            lbl_name.Text = CardName;
+            lbl_money.Text = Money + "đ";
+        }
 
         #region Declaration
         public string TextLabel
@@ -55,8 +60,8 @@ namespace DORMITORY_MANAGEMENT
 
         public void setAllValue(string name, string money)
         {
-            this.Money = money;
-            this.TextLabel = name;
+            lbl_name.Text = name;
+            lbl_money.Text = money;
         }
 
         #endregion

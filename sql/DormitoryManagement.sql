@@ -917,9 +917,126 @@ BEGIN
     INNER JOIN 
         Services ON Usages.ServiceID = Services.ServiceID
     WHERE 
-        Usages.RoomID = '10000' 
-        AND Usages.UsageMonth = '12' 
-        AND Usages.UsageYear = '2023';
+        Usages.RoomID = @RoomID 
+        AND Usages.UsageMonth = @Months 
+        AND Usages.UsageYear = @Years;
 	SELECT @TotalMoney AS 'Thành tiền';
 END;
 GO
+
+CREATE PROC UpdateStaffs
+@StaffID INT, @StaffName NVARCHAR(50), @StaffPhone NVARCHAR(10), @StaffAddress NVARCHAR(50), @StaffPersonalID NVARCHAR(15)
+AS
+BEGIN
+	UPDATE Staffs
+	SET
+		StaffName = @StaffName,
+		StaffPhone = @StaffPhone,
+		StaffAddress = @StaffAddress,
+		StaffPersonalID = @StaffPersonalID
+	WHERE StaffID = @StaffID
+END;
+GO
+
+CREATE PROC UpdateEmail
+@StaffID INT, @StaffEmail NVARCHAR(50)
+AS
+BEGIN
+	UPDATE Staffs
+	SET
+		StaffEmail = @StaffEmail
+	WHERE StaffID = @StaffID
+END;
+GO
+
+CREATE PROC UpdatePassword
+@StaffID INT, @StaffEmail NVARCHAR(50) , @Password NVARCHAR(50)
+AS
+BEGIN
+	UPDATE Accounts
+	SET
+		StaffEmail = @StaffEmail,
+		AccountPassword = @Password
+	WHERE Accounts.StaffID = @StaffID
+END;
+GO
+
+CREATE PROC TotalUsageCost
+@ServiceID INT, @Months INT, @Years INT
+AS
+	BEGIN	
+		SELECT
+			SUM(s.ServicePrice * u.UsageQuantity) AS TotalUsageCost
+		FROM
+			Services s
+		JOIN
+			Usages u ON s.ServiceID = u.ServiceID
+		WHERE
+			s.ServiceID = @ServiceID
+			AND u.UsageMonth = @Months
+			AND u.UsageYear = @Years
+		GROUP BY
+			s.ServiceID, s.ServiceName;
+END;
+GO
+
+CREATE PROCEDURE CalTotalMoneyAllRoom
+    @Months INT, 
+    @Years INT
+AS
+BEGIN
+    DECLARE @TotalMoney INT = 0; -- Khởi tạo giá trị mặc định cho @TotalMoney
+
+    SELECT
+        @TotalMoney += Usages.UsageQuantity * Services.ServicePrice
+    FROM 
+        Usages
+    INNER JOIN 
+        Services ON Usages.ServiceID = Services.ServiceID
+    INNER JOIN 
+        Bills ON Usages.RoomID = Bills.RoomID
+               AND Usages.UsageMonth = Bills.BillMonth
+               AND Usages.UsageYear = Bills.BillYear
+    WHERE 
+        Usages.UsageMonth = @Months 
+        AND Usages.UsageYear = @Years
+        AND Bills.BillPaid = 1; -- Chỉ tính tiền cho các hóa đơn đã thanh toán
+
+    SELECT @TotalMoney AS 'TotalMoney';
+END;
+GO
+
+CREATE PROCEDURE CountRooms
+AS
+BEGIN
+    SELECT COUNT(RoomID) AS "AmountRoom" 
+	FROM Rooms
+END;
+GO
+
+CREATE PROCEDURE CountRoomsActive
+AS
+BEGIN
+    SELECT COUNT(RoomID) AS "AmountRoom" 
+	FROM Rooms
+	WHERE RoomStatus = N'Hoạt động'
+END;
+GO
+
+CREATE PROCEDURE CountBills
+AS
+BEGIN
+    SELECT COUNT(BillID) AS "AmountBills" 
+	FROM Bills
+END;
+GO
+
+CREATE PROCEDURE CountBillsPaid
+AS
+BEGIN
+    SELECT COUNT(BillID) AS "AmountBills" 
+	FROM Bills
+	WHERE BillPaid = '1'
+END;
+GO
+

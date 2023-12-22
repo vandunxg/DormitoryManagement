@@ -38,6 +38,8 @@ namespace DORMITORY_MANAGEMENT
 
         }
 
+
+
         private void dgv_studentsData_CellClick(object sender, DataGridViewCellEventArgs e)
         {
 

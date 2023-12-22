@@ -1,7 +1,7 @@
 ﻿using DORMITORY_MANAGEMENT.DAO;
+using DORMITORY_MANAGEMENT.DTO;
 using System;
 using System.Runtime.InteropServices;
-using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace DORMITORY_MANAGEMENT
@@ -71,8 +71,6 @@ namespace DORMITORY_MANAGEMENT
             this.Hide();
         }
 
-        
-
         private void btn_login_Click(object sender, EventArgs e)
         {
             string inputEmailLogin = txt_InputEmailLogin.Text.ToString();
@@ -86,13 +84,22 @@ namespace DORMITORY_MANAGEMENT
             {
                 if (Account.Instance.checkValidEmail(inputEmailLogin) == false)
                 {
-                    MessageBox.Show("Email không đúng định dạng!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Email không đúng định dạng!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if(inputEmailLogin.Length > 50 || inputPasswordEmail.Length > 20)
+                {
+                    MessageBox.Show("Email hoặc mật khẩu sai định dạng!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
                 if (Account.Instance.checkValidAccount(inputEmailLogin, inputPasswordEmail))
                 {
                     Admin_Dashboard adminPage = new Admin_Dashboard();
+
+                    AuthService.SetLoggedInUserId(int.Parse(DataProvider.Instance.ExcuteQuery("SELECT StaffID FROM Staffs WHERE StaffEmail = @StaffEmail ", new object[] { inputEmailLogin }).Rows[0]["StaffEmail"].ToString()));
+
                     adminPage.Visible = true;
                     this.Visible = false;
                 }
@@ -126,6 +133,11 @@ namespace DORMITORY_MANAGEMENT
 
         }
 
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         #endregion
 
         #region
@@ -134,9 +146,6 @@ namespace DORMITORY_MANAGEMENT
 
         #endregion
 
-        private void btn_exit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+
     }
 }

@@ -431,6 +431,7 @@
             this.txt_StaffID.TextPlaceholder = "Số lượng";
             this.txt_StaffID.UseSystemPasswordChar = false;
             this.txt_StaffID.WordWrap = true;
+            this.txt_StaffID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_StaffID_KeyPress);
             // 
             // bunifuLabel1
             // 
@@ -644,6 +645,7 @@
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.dgv_RoomServices.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_RoomServices.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_RoomServices.BackgroundColor = System.Drawing.Color.White;
             this.dgv_RoomServices.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_RoomServices.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -882,6 +884,7 @@
             this.btn_SavedBills.TextMarginLeft = 0;
             this.btn_SavedBills.TextPadding = new System.Windows.Forms.Padding(0);
             this.btn_SavedBills.UseDefaultRadiusAndThickness = true;
+            this.btn_SavedBills.Click += new System.EventHandler(this.btn_SavedBills_Click);
             // 
             // btn_DeleteBills
             // 
@@ -971,6 +974,7 @@
             this.btn_DeleteBills.TextMarginLeft = 0;
             this.btn_DeleteBills.TextPadding = new System.Windows.Forms.Padding(0);
             this.btn_DeleteBills.UseDefaultRadiusAndThickness = true;
+            this.btn_DeleteBills.Click += new System.EventHandler(this.btn_DeleteBills_Click);
             // 
             // bunifuLabel2
             // 

@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OverviewPage));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            this.btn_Refresh = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.cardShowOverview_payBill = new DORMITORY_MANAGEMENT.cardShowOverview();
             this.cardShowOverview_totalRoom = new DORMITORY_MANAGEMENT.cardShowOverview();
             this.cardShowInfor_total = new DORMITORY_MANAGEMENT.cardShowInfo();
@@ -35,10 +38,100 @@
             this.cardShowInfo_Electricity = new DORMITORY_MANAGEMENT.cardShowInfo();
             this.SuspendLayout();
             // 
+            // btn_Refresh
+            // 
+            this.btn_Refresh.AllowAnimations = true;
+            this.btn_Refresh.AllowMouseEffects = true;
+            this.btn_Refresh.AllowToggling = false;
+            this.btn_Refresh.AnimationSpeed = 200;
+            this.btn_Refresh.AutoGenerateColors = false;
+            this.btn_Refresh.AutoRoundBorders = false;
+            this.btn_Refresh.AutoSizeLeftIcon = true;
+            this.btn_Refresh.AutoSizeRightIcon = true;
+            this.btn_Refresh.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Refresh.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.btn_Refresh.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Refresh.BackgroundImage")));
+            this.btn_Refresh.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Refresh.ButtonText = "";
+            this.btn_Refresh.ButtonTextMarginLeft = 0;
+            this.btn_Refresh.ColorContrastOnClick = 45;
+            this.btn_Refresh.ColorContrastOnHover = 45;
+            this.btn_Refresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btn_Refresh.CustomizableEdges = borderEdges1;
+            this.btn_Refresh.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_Refresh.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btn_Refresh.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btn_Refresh.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btn_Refresh.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btn_Refresh.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Refresh.ForeColor = System.Drawing.Color.White;
+            this.btn_Refresh.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Refresh.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_Refresh.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btn_Refresh.IconMarginLeft = 11;
+            this.btn_Refresh.IconPadding = 10;
+            this.btn_Refresh.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Refresh.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_Refresh.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btn_Refresh.IconSize = 25;
+            this.btn_Refresh.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.btn_Refresh.IdleBorderRadius = 1;
+            this.btn_Refresh.IdleBorderThickness = 1;
+            this.btn_Refresh.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.btn_Refresh.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Refresh.IdleIconLeftImage")));
+            this.btn_Refresh.IdleIconRightImage = null;
+            this.btn_Refresh.IndicateFocus = false;
+            this.btn_Refresh.Location = new System.Drawing.Point(26, 11);
+            this.btn_Refresh.Name = "btn_Refresh";
+            this.btn_Refresh.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btn_Refresh.OnDisabledState.BorderRadius = 1;
+            this.btn_Refresh.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Refresh.OnDisabledState.BorderThickness = 1;
+            this.btn_Refresh.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btn_Refresh.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btn_Refresh.OnDisabledState.IconLeftImage = null;
+            this.btn_Refresh.OnDisabledState.IconRightImage = null;
+            this.btn_Refresh.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.btn_Refresh.onHoverState.BorderRadius = 1;
+            this.btn_Refresh.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Refresh.onHoverState.BorderThickness = 1;
+            this.btn_Refresh.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.btn_Refresh.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_Refresh.onHoverState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage")));
+            this.btn_Refresh.onHoverState.IconRightImage = null;
+            this.btn_Refresh.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.btn_Refresh.OnIdleState.BorderRadius = 1;
+            this.btn_Refresh.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Refresh.OnIdleState.BorderThickness = 1;
+            this.btn_Refresh.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.btn_Refresh.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btn_Refresh.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Refresh.OnIdleState.IconLeftImage")));
+            this.btn_Refresh.OnIdleState.IconRightImage = null;
+            this.btn_Refresh.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.btn_Refresh.OnPressedState.BorderRadius = 1;
+            this.btn_Refresh.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Refresh.OnPressedState.BorderThickness = 1;
+            this.btn_Refresh.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.btn_Refresh.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btn_Refresh.OnPressedState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("resource.IconLeftImage1")));
+            this.btn_Refresh.OnPressedState.IconRightImage = null;
+            this.btn_Refresh.Size = new System.Drawing.Size(49, 49);
+            this.btn_Refresh.TabIndex = 85;
+            this.btn_Refresh.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Refresh.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_Refresh.TextMarginLeft = 0;
+            this.btn_Refresh.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btn_Refresh.UseDefaultRadiusAndThickness = true;
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
+            // 
             // cardShowOverview_payBill
             // 
             this.cardShowOverview_payBill.BackColor = System.Drawing.Color.White;
-            this.cardShowOverview_payBill.Location = new System.Drawing.Point(634, 186);
+            this.cardShowOverview_payBill.Location = new System.Drawing.Point(644, 263);
             this.cardShowOverview_payBill.Name = "cardShowOverview_payBill";
             this.cardShowOverview_payBill.NameCard = null;
             this.cardShowOverview_payBill.NameMainValue = null;
@@ -53,7 +146,7 @@
             // cardShowOverview_totalRoom
             // 
             this.cardShowOverview_totalRoom.BackColor = System.Drawing.Color.White;
-            this.cardShowOverview_totalRoom.Location = new System.Drawing.Point(39, 186);
+            this.cardShowOverview_totalRoom.Location = new System.Drawing.Point(39, 263);
             this.cardShowOverview_totalRoom.Name = "cardShowOverview_totalRoom";
             this.cardShowOverview_totalRoom.NameCard = null;
             this.cardShowOverview_totalRoom.NameMainValue = null;
@@ -68,30 +161,30 @@
             // cardShowInfor_total
             // 
             this.cardShowInfor_total.BackColor = System.Drawing.Color.White;
-            this.cardShowInfor_total.Location = new System.Drawing.Point(786, 19);
-            this.cardShowInfor_total.Money = string.Empty;
+            this.cardShowInfor_total.Location = new System.Drawing.Point(770, 71);
+            this.cardShowInfor_total.Money = "";
             this.cardShowInfor_total.Name = "cardShowInfor_total";
-            this.cardShowInfor_total.Size = new System.Drawing.Size(314, 144);
+            this.cardShowInfor_total.Size = new System.Drawing.Size(340, 144);
             this.cardShowInfor_total.TabIndex = 71;
             this.cardShowInfor_total.TextLabel = null;
             // 
             // cardShowInfo_water
             // 
             this.cardShowInfo_water.BackColor = System.Drawing.Color.White;
-            this.cardShowInfo_water.Location = new System.Drawing.Point(412, 19);
-            this.cardShowInfo_water.Money = string.Empty;
+            this.cardShowInfo_water.Location = new System.Drawing.Point(406, 71);
+            this.cardShowInfo_water.Money = "";
             this.cardShowInfo_water.Name = "cardShowInfo_water";
-            this.cardShowInfo_water.Size = new System.Drawing.Size(314, 144);
+            this.cardShowInfo_water.Size = new System.Drawing.Size(340, 144);
             this.cardShowInfo_water.TabIndex = 70;
             this.cardShowInfo_water.TextLabel = null;
             // 
             // cardShowInfo_Electricity
             // 
             this.cardShowInfo_Electricity.BackColor = System.Drawing.Color.White;
-            this.cardShowInfo_Electricity.Location = new System.Drawing.Point(39, 19);
-            this.cardShowInfo_Electricity.Money = string.Empty;
+            this.cardShowInfo_Electricity.Location = new System.Drawing.Point(39, 71);
+            this.cardShowInfo_Electricity.Money = "";
             this.cardShowInfo_Electricity.Name = "cardShowInfo_Electricity";
-            this.cardShowInfo_Electricity.Size = new System.Drawing.Size(314, 144);
+            this.cardShowInfo_Electricity.Size = new System.Drawing.Size(340, 144);
             this.cardShowInfo_Electricity.TabIndex = 69;
             this.cardShowInfo_Electricity.TextLabel = null;
             this.cardShowInfo_Electricity.Load += new System.EventHandler(this.cardShowInfo_Electricity_Load);
@@ -101,6 +194,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.Controls.Add(this.btn_Refresh);
             this.Controls.Add(this.cardShowOverview_payBill);
             this.Controls.Add(this.cardShowOverview_totalRoom);
             this.Controls.Add(this.cardShowInfor_total);
@@ -119,5 +213,6 @@
         private cardShowInfo cardShowInfor_total;
         private cardShowOverview cardShowOverview_totalRoom;
         private cardShowOverview cardShowOverview_payBill;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_Refresh;
     }
 }

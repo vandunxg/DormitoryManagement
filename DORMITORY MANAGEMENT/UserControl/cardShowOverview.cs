@@ -75,6 +75,8 @@ namespace DORMITORY_MANAGEMENT
 
         public void setAllValue(int total, int progressValue, string nameCard, string nameSubValue, string nameProgressValue)
         {
+            CircleProgress.Maximum = total;
+            //CircleProgress.Name = nameCard;
             this.ProgressValue = progressValue;
             this.NameCard = nameCard;
             this.SubValue = total - ProgressValue;

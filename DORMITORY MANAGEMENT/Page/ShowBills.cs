@@ -77,6 +77,7 @@ namespace DORMITORY_MANAGEMENT
 
         }
 
+        #region Events
         private void cmb_RoomTypes_SelectedIndexChanged(object sender, EventArgs e)
         {
             if(cmb_RoomTypes.SelectedIndex != -1 && cmb_RoomTypes.SelectedIndex != -1)
@@ -92,5 +93,90 @@ namespace DORMITORY_MANAGEMENT
         {
             this.Close();
         }
+
+        private void btn_DeleteBills_Click(object sender, EventArgs e)
+        {
+            string BillID = lbl_BillID.Text;
+
+            DialogResult CheckNotify = MessageBox.Show("Bạn có chắc chắn muốn xoá hoá đơn này chứ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (CheckNotify == DialogResult.Yes)
+            {
+                int CheckStatus = DataProvider.Instance.ExecuteNonQuery("DELETE FROM Bills WHERE BillID = @BillID ", new object[] { BillID });
+
+                if (CheckStatus > 0)
+                {
+                    MessageBox.Show("Xoá hoá đơn thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
+                    return;
+                }
+                else
+                {
+                    MessageBox.Show("Xoá hoá đơn không thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
+        }
+
+        private void btn_SavedBills_Click(object sender, EventArgs e)
+        {
+            if (cmb_Rooms.SelectedIndex != -1 && cmb_Months.SelectedIndex != -1 && cmb_Years.SelectedIndex != -1 && cmb_BillState.SelectedIndex != -1 && txt_StaffID.Text != string.Empty)
+            {
+                int RoomID = int.Parse(cmb_Rooms.SelectedValue.ToString());
+                int StaffID = int.Parse(txt_StaffID.Text.Trim());
+                int BillID = int.Parse(lbl_BillID.Text);
+                int Months = int.Parse(cmb_Months.SelectedValue.ToString());
+                int Years = int.Parse(cmb_Years.SelectedValue.ToString());
+                int BillState;
+                if (cmb_BillState.SelectedIndex == 0)
+                {
+                    BillState = 1;
+                }
+                else
+                {
+                    BillState = 0;
+                }
+
+
+
+                if (DataProvider.Instance.ExcuteQuery("SELECT * FROM Staffs WHERE StaffID = @StaffID ", new object[] { StaffID }).Rows.Count < 1)
+                {
+                    MessageBox.Show("Không tìm thấy mã nhân viên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                DialogResult CheckNotify = MessageBox.Show("Bạn có chắc chắn muốn sửa hoá đơn này chứ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (CheckNotify == DialogResult.Yes)
+                {
+                    int CheckStatus = DataProvider.Instance.ExecuteNonQuery("UpdateBills @BillID , @RoomID , @BillPaid , @StaffID , @Months , @Years ", new object[] { BillID, RoomID, BillState, StaffID, Months, Years });
+
+                    if (CheckStatus > 0)
+                    {
+                        MessageBox.Show("Sửa hoá đơn thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sửa hoá đơn không thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập đủ trường dữ liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+        }
+
+        private void txt_StaffID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Loại bỏ ký tự nếu không phải là số
+            }
+        }
+        #endregion
     }
 }

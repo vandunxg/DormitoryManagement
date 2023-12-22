@@ -399,6 +399,18 @@
         MzOz0obhLz6MPU/Xg29zAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="btn_ExportExcel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAIEAAAAyCAYAAAB7/riLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFQSURBVHhe7d0/SgQxGIfhlJYewdLSG3gANWk9go1nETyD
+        V7DdtfjClpPYbClbiKCIrKCCFvrL7PgHyQmSN/Aw7GamykuGbbLu7/ApHoccZyHbg66faI3WNcWFT3Yy
+        LfnvCMN8u0yGZGtdKw+jHVauL1rrZRgWO1MCiqAEUH0AjVvt38y33FGyU314/jeJDui18OZzPJ92gXGL
+        QI9SvHU+22t1Et1wtS/RFyIAEYAIIEQAIgARQIgARAAigBABiABEACECEAGIAEIEIAIQAYQIQAQgAggR
+        gAhABBAiABGACCBEACIAEUCIAEQAIoAQAYgARAAhAiiCFD9qE+iHIrBlbQI9sHKY5bqcbH4WBmM36JTW
+        /9KVA45Vw13tBrTNJ3v6OelcO8GeXgv38l67GY1JCiDb40G+8mMA32P8z4McLzjruHGbHwKzw+u4u1l5
+        574AMcqfDq0Pc80AAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="btn_Refresh.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAYAAABznEEcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8

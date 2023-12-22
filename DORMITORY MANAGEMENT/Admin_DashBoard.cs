@@ -29,12 +29,15 @@ namespace DORMITORY_MANAGEMENT
 
         #endregion
 
+        
 
         public Admin_Dashboard()
         {
             InitializeComponent();
             
         }
+
+        
 
 
         #region Events
@@ -72,7 +75,6 @@ namespace DORMITORY_MANAGEMENT
                 Application.Exit();
             }
         }
-        #endregion
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
@@ -117,7 +119,19 @@ namespace DORMITORY_MANAGEMENT
             this.Hide();
             loginPage loginPage = new loginPage();
             loginPage.Show();
-            
+
         }
+
+        private void bunifuButton2_Click_1(object sender, EventArgs e)
+        {
+            text_showNameofPage.Text = btn_Settings.Text.ToString();
+            txt_showMainNameofPage.Text = "Thông tin nhân viên";
+
+            pages.SetPage(((Control)sender).Text);
+        }
+
+        #endregion
+
+
     }
 }
