@@ -1,9 +1,8 @@
-﻿using System.Runtime.InteropServices;
+﻿using DORMITORY_MANAGEMENT.DAO;
 using System;
-using System.Windows.Forms;
-using DORMITORY_MANAGEMENT.DAO;
-using System.Linq;
 using System.Drawing;
+using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
 namespace DORMITORY_MANAGEMENT
 {
@@ -41,7 +40,7 @@ namespace DORMITORY_MANAGEMENT
             InitializeComponent();
 
 
-         
+
             cmb_Areas.DisplayMember = "AreaName";
             cmb_Areas.ValueMember = "AreaID";
             cmb_Areas.DataSource = DataProvider.Instance.ExcuteQuery("GetAreas");
@@ -55,7 +54,7 @@ namespace DORMITORY_MANAGEMENT
             cmb_ContractState.SelectedIndex = cmb_ContractState.FindString(ContractState);
 
             int CheckContractState = cmb_ContractState.SelectedIndex;
-            if(CheckContractState == 0)
+            if (CheckContractState == 0)
             {
                 lbl_ContractID.ForeColor = Color.FromArgb(72, 186, 120);
             }

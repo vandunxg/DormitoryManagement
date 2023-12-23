@@ -1,10 +1,6 @@
 ﻿using DORMITORY_MANAGEMENT.DTO;
-using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DORMITORY_MANAGEMENT.DAO
 {
@@ -29,7 +25,7 @@ namespace DORMITORY_MANAGEMENT.DAO
         {
             List<UsageServices> list = new List<UsageServices>();
 
-            DataTable data = DataProvider.Instance.ExcuteQuery("GetUsageService @RoomID", new object[] {RoomID});
+            DataTable data = DataProvider.Instance.ExcuteQuery("GetUsageService @RoomID", new object[] { RoomID });
 
             foreach (DataRow row in data.Rows)
             {

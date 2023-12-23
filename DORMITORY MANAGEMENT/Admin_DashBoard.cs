@@ -32,7 +32,7 @@ namespace DORMITORY_MANAGEMENT
         public Admin_Dashboard()
         {
             InitializeComponent();
-            
+
         }
 
         #region Events
@@ -43,7 +43,7 @@ namespace DORMITORY_MANAGEMENT
 
             pages.SetPage(((Control)sender).Text);
 
-            
+
 
         }
 
@@ -65,7 +65,7 @@ namespace DORMITORY_MANAGEMENT
         private void btn_exit_Click(object sender, EventArgs e)
         {
             DialogResult = MessageBox.Show("Bạn có chắc chắn muốn thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if(DialogResult == DialogResult.OK)
+            if (DialogResult == DialogResult.OK)
             {
                 Application.Exit();
             }

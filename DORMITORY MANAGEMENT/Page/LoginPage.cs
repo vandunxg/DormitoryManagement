@@ -88,7 +88,7 @@ namespace DORMITORY_MANAGEMENT
                     return;
                 }
 
-                if(inputEmailLogin.Length > 50 || inputPasswordEmail.Length > 20)
+                if (inputEmailLogin.Length > 50 || inputPasswordEmail.Length > 20)
                 {
                     MessageBox.Show("Email hoặc mật khẩu sai định dạng!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;

@@ -149,7 +149,7 @@ namespace DORMITORY_MANAGEMENT
 
         private void btn_RefreshPage_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btn_Refresh_Click(object sender, EventArgs e)
@@ -273,6 +273,6 @@ namespace DORMITORY_MANAGEMENT
 
         #endregion
 
-        
+
     }
 }

@@ -76,13 +76,13 @@ namespace DORMITORY_MANAGEMENT.Page
 
         private void StudentInformations_Load(object sender, EventArgs e)
         {
-            
+
 
         }
 
         private void btn_EditStudents_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void cmb_ClassID_SelectedIndexChanged(object sender, EventArgs e)

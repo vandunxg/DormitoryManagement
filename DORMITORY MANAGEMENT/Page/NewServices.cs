@@ -1,13 +1,6 @@
 ﻿using DORMITORY_MANAGEMENT.DAO;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DORMITORY_MANAGEMENT
@@ -48,14 +41,14 @@ namespace DORMITORY_MANAGEMENT
 
         private void btn_AddServices_Click(object sender, EventArgs e)
         {
-            if(txt_ServiceName.Text != string.Empty && txt_ServicePrice.Text != string.Empty && txt_ServiceUnit.Text != string.Empty)
+            if (txt_ServiceName.Text != string.Empty && txt_ServicePrice.Text != string.Empty && txt_ServiceUnit.Text != string.Empty)
             {
                 string ServiceName = txt_ServiceName.Text.Trim();
                 int ServicePrice = int.Parse(txt_ServicePrice.Text.Trim());
                 string ServiceUnit = txt_ServiceUnit.Text.Trim();
 
 
-                if(ServiceName.Length > 50)
+                if (ServiceName.Length > 50)
                 {
                     MessageBox.Show("Tên dịch vụ quá dài!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;

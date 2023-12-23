@@ -1,5 +1,4 @@
 ﻿using System;
-using System.ComponentModel;
 using System.Windows.Forms;
 
 namespace DORMITORY_MANAGEMENT
@@ -41,7 +40,7 @@ namespace DORMITORY_MANAGEMENT
         }
 
 
-        
+
         private string textLabel;
         private string money;
         #endregion

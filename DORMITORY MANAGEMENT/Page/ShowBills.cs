@@ -1,7 +1,6 @@
 ﻿using DORMITORY_MANAGEMENT.DAO;
 using System;
 using System.Runtime.InteropServices;
-using System.Security.Cryptography;
 using System.Windows.Forms;
 
 namespace DORMITORY_MANAGEMENT
@@ -31,13 +30,13 @@ namespace DORMITORY_MANAGEMENT
         #endregion
 
         public ShowBills()
-        {  
-            
+        {
+
         }
 
         private string RoomName;
 
-        public ShowBills(string BillID, string AreaName, string RoomTypeName,string RoomID,  string RoomName, int Months, int Years, string StaffID, int BillPaid)
+        public ShowBills(string BillID, string AreaName, string RoomTypeName, string RoomID, string RoomName, int Months, int Years, string StaffID, int BillPaid)
         {
             InitializeComponent();
 
@@ -71,7 +70,7 @@ namespace DORMITORY_MANAGEMENT
             cmb_BillState.SelectedIndex = BillPaid;
 
 
-            dgv_RoomServices.DataSource = DataProvider.Instance.ExcuteQuery("GetServicesToBill @RoomID , @Months , @Years ", new object[] {RoomID, Months, Years});
+            dgv_RoomServices.DataSource = DataProvider.Instance.ExcuteQuery("GetServicesToBill @RoomID , @Months , @Years ", new object[] { RoomID, Months, Years });
 
             txt_TotalMoney.Text = DataProvider.Instance.ExcuteQuery("CalTotalMoneyBill @RoomID , @Months , @Years ", new object[] { RoomID, Months, Years }).Rows[0][0].ToString();
 
@@ -80,7 +79,7 @@ namespace DORMITORY_MANAGEMENT
         #region Events
         private void cmb_RoomTypes_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(cmb_RoomTypes.SelectedIndex != -1 && cmb_RoomTypes.SelectedIndex != -1)
+            if (cmb_RoomTypes.SelectedIndex != -1 && cmb_RoomTypes.SelectedIndex != -1)
             {
                 cmb_Rooms.DisplayMember = "RoomName";
                 cmb_Rooms.ValueMember = "RoomID";

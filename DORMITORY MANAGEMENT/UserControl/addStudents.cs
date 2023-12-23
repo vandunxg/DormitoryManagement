@@ -4,8 +4,6 @@ using System;
 using System.Data;
 using System.Linq;
 using System.Windows.Forms;
-using System.IO;
-using OfficeOpenXml;
 using Excel = Microsoft.Office.Interop.Excel;
 
 namespace DORMITORY_MANAGEMENT
@@ -255,7 +253,7 @@ namespace DORMITORY_MANAGEMENT
                 e.Handled = true; // Loại bỏ ký tự nếu không phải là số
             }
         }
-        
+
         private void btn_ExportExcel_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
@@ -300,7 +298,7 @@ namespace DORMITORY_MANAGEMENT
             txt_StudentPhone.Clear();
             txt_StudentID.Clear();
             txt_StudentEmail.Clear();
-            
+
             cmb_Specializations.SelectedIndex = -1;
             cmb_Specializations.Text = "Chuyên nghành";
 
@@ -428,6 +426,6 @@ namespace DORMITORY_MANAGEMENT
 
         #endregion
 
-        
+
     }
 }

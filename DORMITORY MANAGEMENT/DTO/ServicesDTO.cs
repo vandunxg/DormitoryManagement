@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data;
 
 namespace DORMITORY_MANAGEMENT.DTO
 {
@@ -21,7 +16,7 @@ namespace DORMITORY_MANAGEMENT.DTO
 
         public ServicesDTO()
         {
-           
+
         }
 
         public ServicesDTO(DataRow row)

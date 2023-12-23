@@ -1,13 +1,9 @@
-﻿using System;
-using System.Windows.Forms;
+﻿using DORMITORY_MANAGEMENT.DAO;
 using DORMITORY_MANAGEMENT.DTO;
+using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DORMITORY_MANAGEMENT.DAO;
-using System.Runtime.InteropServices.WindowsRuntime;
+using System.Windows.Forms;
 
 namespace DORMITORY_MANAGEMENT
 {
@@ -121,7 +117,7 @@ namespace DORMITORY_MANAGEMENT
             if (!string.IsNullOrEmpty(txt_inputRoomID.Text))
             {
 
-                if(txt_inputRoomID.Text.Length > 20)
+                if (txt_inputRoomID.Text.Length > 20)
                 {
                     MessageBox.Show("Mã phòng quá dài!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -177,7 +173,7 @@ namespace DORMITORY_MANAGEMENT
         {
             CardRoom cardRoom = (CardRoom)sender;
             string txt_RoomID = cardRoom.RoomID;
-            
+
             RoomStudentManager roomStudentManager = new RoomStudentManager(txt_RoomID);
             roomStudentManager.ShowDialog();
         }
@@ -185,6 +181,6 @@ namespace DORMITORY_MANAGEMENT
 
         #endregion
 
-        
+
     }
 }

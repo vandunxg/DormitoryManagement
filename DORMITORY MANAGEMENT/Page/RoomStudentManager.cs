@@ -2,13 +2,9 @@
 using DORMITORY_MANAGEMENT.DTO;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DORMITORY_MANAGEMENT
@@ -55,24 +51,24 @@ namespace DORMITORY_MANAGEMENT
 
             int TotalMoney = 0;
 
-            foreach(UsageServices usage in usageServices)
+            foreach (UsageServices usage in usageServices)
             {
-                if(usage.ID == "1")
+                if (usage.ID == "1")
                 {
                     cardShowInfo_Electricity.setAllValue(usage.ServiceName, usage.TotalMoney.ToString());
-                    
+
                 }
-                else if(usage.ID == "2")
+                else if (usage.ID == "2")
                 {
                     cardShowInfo_Water.setAllValue(usage.ServiceName, usage.TotalMoney.ToString());
-                    
+
                 }
-           
+
                 TotalMoney += usage.TotalMoney;
             }
 
             cardShowInfo_Total.setAllValue("Tổng thanh toán", TotalMoney.ToString());
-            
+
 
         }
 
@@ -96,7 +92,7 @@ namespace DORMITORY_MANAGEMENT
 
 
             DataTable RoomBills = DataProvider.Instance.ExcuteQuery("SELECT * FROM Bills WHERE RoomID = @RoomID ", new object[] { RoomID });
-            if(RoomBills.Rows.Count > 0)
+            if (RoomBills.Rows.Count > 0)
             {
                 if (RoomBills.Rows[0]["BillPaid"].ToString() == "True")
                 {
@@ -110,29 +106,29 @@ namespace DORMITORY_MANAGEMENT
                 }
             }
 
-            DataTable DataUsageServices = DataProvider.Instance.ExcuteQuery("GetInforUsageServices @RoomID , @Months , @Years", new object[] { RoomID , Months, Years});
+            DataTable DataUsageServices = DataProvider.Instance.ExcuteQuery("GetInforUsageServices @RoomID , @Months , @Years", new object[] { RoomID, Months, Years });
             dgv_UsageService.DataSource = DataUsageServices;
         }
 
         private void btn_UpdateServiceState_Click(object sender, EventArgs e)
         {
-            if(cmb_RoomServiceState.SelectedIndex == 0)
+            if (cmb_RoomServiceState.SelectedIndex == 0)
             {
-                DataTable data = DataProvider.Instance.ExcuteQuery("UPDATE Bills SET BillPaid = @BillPaid WHERE RoomID = @RoomID", new object[] { 1 , RoomID});
-                
+                DataTable data = DataProvider.Instance.ExcuteQuery("UPDATE Bills SET BillPaid = @BillPaid WHERE RoomID = @RoomID", new object[] { 1, RoomID });
+
                 MessageBox.Show("Đã cập nhật thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                  
+
             }
             else
             {
                 DataTable data = DataProvider.Instance.ExcuteQuery("UPDATE Bills SET BillPaid = @BillPaid WHERE RoomID = @RoomID", new object[] { 0, RoomID });
-                
+
                 MessageBox.Show("Đã cập nhật thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                
+
             }
             RoomStudentManager_Load(sender, e);
         }
 
-        
+
     }
 }

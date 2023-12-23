@@ -55,7 +55,7 @@ namespace DORMITORY_MANAGEMENT
                 this.Close();
             }
         }
-       
+
         private void AddServices_Load(object sender, EventArgs e)
         {
             cmb_Areas.DisplayMember = "AreaName";
@@ -157,6 +157,6 @@ namespace DORMITORY_MANAGEMENT
 
         #endregion
 
-        
+
     }
 }

@@ -53,7 +53,7 @@ namespace DORMITORY_MANAGEMENT
             {
                 ShowServices cardService = new ShowServices(DataServices.ServiceName, DataServices.ServiceID, DataServices.ServicePrice, DataServices.ServiceUnit);
                 cardService.Click += cardService_Click;
-                
+
 
                 flowLayoutPanel.Controls.Add(cardService);
             }
@@ -61,7 +61,7 @@ namespace DORMITORY_MANAGEMENT
 
         #endregion
 
-        
+
     }
 
 }

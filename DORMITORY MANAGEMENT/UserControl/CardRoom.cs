@@ -24,7 +24,7 @@ namespace DORMITORY_MANAGEMENT
         private string nameMainValue; // Giá trị thực
 
         private int total; // Giá trị tổng
-        
+
         private int roomRate;
 
         public int ProgressValue
@@ -85,7 +85,9 @@ namespace DORMITORY_MANAGEMENT
             }
         }
 
-        public int RoomRate { get => roomRate;
+        public int RoomRate
+        {
+            get => roomRate;
             set
             {
                 roomRate = value;
@@ -103,7 +105,7 @@ namespace DORMITORY_MANAGEMENT
             this.SubValue = total - value;
             this.RoomID = RoomID;
             this.RoomRate = int.Parse(roomRating);
-            
+
             if (value == total)
             {
                 lbl_nameMainValue.ForeColor = Color.Black;

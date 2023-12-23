@@ -23,7 +23,9 @@ namespace DORMITORY_MANAGEMENT
 
         private int total; // Giá trị tổng
 
-        public int ProgressValue { get => progressValue;
+        public int ProgressValue
+        {
+            get => progressValue;
             set
             {
                 progressValue = value;
@@ -33,28 +35,36 @@ namespace DORMITORY_MANAGEMENT
 
         }
 
-        public int SubValue { get => subValue;
+        public int SubValue
+        {
+            get => subValue;
             set
             {
                 subValue = value;
                 lbl_subValue.Text = subValue.ToString();
             }
         }
-        public string NameCard { get => nameCard;
+        public string NameCard
+        {
+            get => nameCard;
             set
             {
                 nameCard = value;
                 lbl_nameCard.Text = nameCard;
-            } 
+            }
         }
-        public string NameSubValue { get => nameSubValue;
+        public string NameSubValue
+        {
+            get => nameSubValue;
             set
             {
                 nameSubValue = value;
                 lbl_nameSubValue.Text = nameSubValue;
             }
         }
-        public string NameMainValue { get => nameMainValue;
+        public string NameMainValue
+        {
+            get => nameMainValue;
             set
             {
                 nameMainValue = value;
@@ -62,7 +72,9 @@ namespace DORMITORY_MANAGEMENT
             }
         }
 
-        public int Total { get => total;
+        public int Total
+        {
+            get => total;
             set
             {
                 total = value;
@@ -82,7 +94,7 @@ namespace DORMITORY_MANAGEMENT
             this.SubValue = total - ProgressValue;
             this.NameSubValue = nameSubValue;
             this.NameMainValue = nameProgressValue;
-            
+
         }
 
         #endregion

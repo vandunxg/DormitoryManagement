@@ -1,13 +1,6 @@
 ﻿using DORMITORY_MANAGEMENT.DAO;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DORMITORY_MANAGEMENT
@@ -75,7 +68,7 @@ namespace DORMITORY_MANAGEMENT
             cmb_Months.SelectedIndex = cmb_Months.FindString(Months.ToString());
             cmb_Years.SelectedIndex = cmb_Years.FindString(Years.ToString());
             txt_ServiceQuantity.Text = Quantity.ToString();
-            
+
         }
 
         #region Events
@@ -106,7 +99,7 @@ namespace DORMITORY_MANAGEMENT
                     return;
                 }
             }
-         }
+        }
 
         private void btn_SavedUsage_Click(object sender, EventArgs e)
         {

@@ -180,6 +180,6 @@ namespace DORMITORY_MANAGEMENT.DAO
             return data;
         }
 
-        
+
     }
 }
