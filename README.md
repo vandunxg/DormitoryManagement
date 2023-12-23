@@ -5,7 +5,7 @@
 <h1>ỨNG DỰNG QUẢN LÝ KÍ TÚC XÁ</h1>
 <p>Phần mềm Quản lý Kí túc xá" là một ứng dụng được phát triển trong khuôn khổ dự án cuối kỳ môn C#. Ứng dụng này được thiết kế để giải quyết các thách thức liên quan đến việc quản lý thông tin và hoạt động hàng ngày của một kí túc xá. </p>
 
-<h4> <span> · </span> <a href="https://github.com/vandunxg/Dormitory Management/blob/master/README.md"> Documentation </a> <span> · </span> <a href="https://github.com/vandunxg/Dormitory Management/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/vandunxg/Dormitory Management/issues"> Request Feature </a> </h4>
+<h4> <span> · </span> <a href="https://github.com/vandunxg/DormitoryManagement/blob/master/README.md"> Documentation </a> <span> · </span> <a href="https://github.com/vandunxg/DormitoryManagement/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/vandunxg/DormitoryManagement/issues"> Request Feature </a> </h4>
 
 
 </div>
