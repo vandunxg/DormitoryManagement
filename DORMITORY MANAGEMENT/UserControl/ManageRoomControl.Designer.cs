@@ -227,7 +227,7 @@
             this.btn_search.AutoSizeLeftIcon = true;
             this.btn_search.AutoSizeRightIcon = true;
             this.btn_search.BackColor = System.Drawing.Color.Transparent;
-            this.btn_search.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
+            this.btn_search.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.btn_search.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_search.BackgroundImage")));
             this.btn_search.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_search.ButtonText = "Tìm kiếm";
@@ -256,10 +256,10 @@
             this.btn_search.IconRightCursor = System.Windows.Forms.Cursors.Default;
             this.btn_search.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btn_search.IconSize = 25;
-            this.btn_search.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
+            this.btn_search.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.btn_search.IdleBorderRadius = 10;
             this.btn_search.IdleBorderThickness = 1;
-            this.btn_search.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
+            this.btn_search.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.btn_search.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_search.IdleIconLeftImage")));
             this.btn_search.IdleIconRightImage = null;
             this.btn_search.IndicateFocus = false;
@@ -273,19 +273,19 @@
             this.btn_search.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btn_search.OnDisabledState.IconLeftImage = null;
             this.btn_search.OnDisabledState.IconRightImage = null;
-            this.btn_search.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btn_search.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
             this.btn_search.onHoverState.BorderRadius = 10;
             this.btn_search.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_search.onHoverState.BorderThickness = 1;
-            this.btn_search.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btn_search.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
             this.btn_search.onHoverState.ForeColor = System.Drawing.Color.White;
             this.btn_search.onHoverState.IconLeftImage = null;
             this.btn_search.onHoverState.IconRightImage = null;
-            this.btn_search.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
+            this.btn_search.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.btn_search.OnIdleState.BorderRadius = 10;
             this.btn_search.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_search.OnIdleState.BorderThickness = 1;
-            this.btn_search.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
+            this.btn_search.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.btn_search.OnIdleState.ForeColor = System.Drawing.Color.White;
             this.btn_search.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_search.OnIdleState.IconLeftImage")));
             this.btn_search.OnIdleState.IconRightImage = null;
@@ -470,6 +470,7 @@
             this.txt_inputRoomID.TextPlaceholder = "Mã phòng";
             this.txt_inputRoomID.UseSystemPasswordChar = false;
             this.txt_inputRoomID.WordWrap = true;
+            this.txt_inputRoomID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_inputRoomID_KeyPress);
             // 
             // btn_manageRoom
             // 
@@ -482,7 +483,7 @@
             this.btn_manageRoom.AutoSizeLeftIcon = true;
             this.btn_manageRoom.AutoSizeRightIcon = true;
             this.btn_manageRoom.BackColor = System.Drawing.Color.Transparent;
-            this.btn_manageRoom.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
+            this.btn_manageRoom.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.btn_manageRoom.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_manageRoom.BackgroundImage")));
             this.btn_manageRoom.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_manageRoom.ButtonText = "Quản lý phòng";
@@ -511,10 +512,10 @@
             this.btn_manageRoom.IconRightCursor = System.Windows.Forms.Cursors.Default;
             this.btn_manageRoom.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btn_manageRoom.IconSize = 25;
-            this.btn_manageRoom.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
+            this.btn_manageRoom.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.btn_manageRoom.IdleBorderRadius = 10;
             this.btn_manageRoom.IdleBorderThickness = 1;
-            this.btn_manageRoom.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
+            this.btn_manageRoom.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.btn_manageRoom.IdleIconLeftImage = null;
             this.btn_manageRoom.IdleIconRightImage = null;
             this.btn_manageRoom.IndicateFocus = false;
@@ -528,19 +529,19 @@
             this.btn_manageRoom.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btn_manageRoom.OnDisabledState.IconLeftImage = null;
             this.btn_manageRoom.OnDisabledState.IconRightImage = null;
-            this.btn_manageRoom.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btn_manageRoom.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
             this.btn_manageRoom.onHoverState.BorderRadius = 10;
             this.btn_manageRoom.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_manageRoom.onHoverState.BorderThickness = 1;
-            this.btn_manageRoom.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btn_manageRoom.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
             this.btn_manageRoom.onHoverState.ForeColor = System.Drawing.Color.White;
             this.btn_manageRoom.onHoverState.IconLeftImage = null;
             this.btn_manageRoom.onHoverState.IconRightImage = null;
-            this.btn_manageRoom.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
+            this.btn_manageRoom.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.btn_manageRoom.OnIdleState.BorderRadius = 10;
             this.btn_manageRoom.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_manageRoom.OnIdleState.BorderThickness = 1;
-            this.btn_manageRoom.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
+            this.btn_manageRoom.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.btn_manageRoom.OnIdleState.ForeColor = System.Drawing.Color.White;
             this.btn_manageRoom.OnIdleState.IconLeftImage = null;
             this.btn_manageRoom.OnIdleState.IconRightImage = null;

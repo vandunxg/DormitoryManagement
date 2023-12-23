@@ -9,9 +9,8 @@ namespace DORMITORY_MANAGEMENT
         public OverviewPage()
         {
             InitializeComponent();
-            
-        }
 
+        }
 
         #region Method
 
@@ -73,7 +72,6 @@ namespace DORMITORY_MANAGEMENT
 
         }
         #endregion
-
 
     }
 }

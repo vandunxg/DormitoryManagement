@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DORMITORY_MANAGEMENT.DAO;
+using System.Runtime.InteropServices.WindowsRuntime;
 
 namespace DORMITORY_MANAGEMENT
 {
@@ -119,6 +120,13 @@ namespace DORMITORY_MANAGEMENT
 
             if (!string.IsNullOrEmpty(txt_inputRoomID.Text))
             {
+
+                if(txt_inputRoomID.Text.Length > 20)
+                {
+                    MessageBox.Show("Mã phòng quá dài!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
                 foreach (Room room in originalList)
                 {
                     if (room.RoomID != txt_inputRoomID.Text)
@@ -136,6 +144,14 @@ namespace DORMITORY_MANAGEMENT
                 cardRoom.Click += cardRoom_Click;
                 cardRoom.setAllValue(room.RoomID, int.Parse(room.RoomCapacity), int.Parse(room.RoomStudents), room.RoomType);
                 flowLayoutRoom.Controls.Add(cardRoom);
+            }
+        }
+
+        private void txt_inputRoomID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Loại bỏ ký tự nếu không phải là số
             }
         }
 
@@ -166,8 +182,9 @@ namespace DORMITORY_MANAGEMENT
             roomStudentManager.ShowDialog();
         }
 
+
         #endregion
 
-
+        
     }
 }

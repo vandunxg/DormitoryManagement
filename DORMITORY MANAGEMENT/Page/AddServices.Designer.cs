@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties13 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddServices));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.cmb_Years = new Bunifu.UI.WinForms.BunifuDropdown();
@@ -52,6 +52,7 @@
             this.bunifuLabel15 = new Bunifu.UI.WinForms.BunifuLabel();
             this.cmb_Areas = new Bunifu.UI.WinForms.BunifuDropdown();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
             this.btn_exit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -60,7 +61,6 @@
             this.bunifuElipse6 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse7 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.btn_AddServices = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -231,26 +231,26 @@
             this.txt_ServiceQuantity.Modified = false;
             this.txt_ServiceQuantity.Multiline = false;
             this.txt_ServiceQuantity.Name = "txt_ServiceQuantity";
-            stateProperties13.BorderColor = System.Drawing.Color.White;
-            stateProperties13.FillColor = System.Drawing.Color.Empty;
-            stateProperties13.ForeColor = System.Drawing.Color.Empty;
-            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_ServiceQuantity.OnActiveState = stateProperties13;
-            stateProperties14.BorderColor = System.Drawing.Color.White;
-            stateProperties14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txt_ServiceQuantity.OnDisabledState = stateProperties14;
-            stateProperties15.BorderColor = System.Drawing.Color.White;
-            stateProperties15.FillColor = System.Drawing.Color.Empty;
-            stateProperties15.ForeColor = System.Drawing.Color.Empty;
-            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_ServiceQuantity.OnHoverState = stateProperties15;
-            stateProperties16.BorderColor = System.Drawing.Color.White;
-            stateProperties16.FillColor = System.Drawing.Color.White;
-            stateProperties16.ForeColor = System.Drawing.Color.Empty;
-            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_ServiceQuantity.OnIdleState = stateProperties16;
+            stateProperties1.BorderColor = System.Drawing.Color.White;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_ServiceQuantity.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.White;
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txt_ServiceQuantity.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.White;
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_ServiceQuantity.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.White;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_ServiceQuantity.OnIdleState = stateProperties4;
             this.txt_ServiceQuantity.Padding = new System.Windows.Forms.Padding(3);
             this.txt_ServiceQuantity.PasswordChar = '\0';
             this.txt_ServiceQuantity.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(85)))), ((int)(((byte)(90)))));
@@ -520,6 +520,23 @@
             this.bunifuPanel1.TabIndex = 75;
             this.bunifuPanel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bunifuPanel1_MouseDown);
             // 
+            // bunifuLabel6
+            // 
+            this.bunifuLabel6.AllowParentOverrides = false;
+            this.bunifuLabel6.AutoEllipsis = false;
+            this.bunifuLabel6.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel6.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel6.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
+            this.bunifuLabel6.Location = new System.Drawing.Point(22, 17);
+            this.bunifuLabel6.Name = "bunifuLabel6";
+            this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel6.Size = new System.Drawing.Size(301, 35);
+            this.bunifuLabel6.TabIndex = 77;
+            this.bunifuLabel6.Text = "Cập nhập dịch vụ sử dụng";
+            this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // btn_exit
             // 
             this.btn_exit.AllowAnimations = true;
@@ -539,11 +556,11 @@
             this.btn_exit.ColorContrastOnClick = 45;
             this.btn_exit.ColorContrastOnHover = 45;
             this.btn_exit.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges8.BottomLeft = true;
-            borderEdges8.BottomRight = true;
-            borderEdges8.TopLeft = true;
-            borderEdges8.TopRight = true;
-            this.btn_exit.CustomizableEdges = borderEdges8;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btn_exit.CustomizableEdges = borderEdges2;
             this.btn_exit.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_exit.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_exit.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -651,7 +668,7 @@
             this.btn_AddServices.AutoSizeLeftIcon = true;
             this.btn_AddServices.AutoSizeRightIcon = true;
             this.btn_AddServices.BackColor = System.Drawing.Color.Transparent;
-            this.btn_AddServices.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
+            this.btn_AddServices.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.btn_AddServices.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_AddServices.BackgroundImage")));
             this.btn_AddServices.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_AddServices.ButtonText = "Cập nhật";
@@ -659,11 +676,11 @@
             this.btn_AddServices.ColorContrastOnClick = 45;
             this.btn_AddServices.ColorContrastOnHover = 45;
             this.btn_AddServices.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges7.BottomLeft = true;
-            borderEdges7.BottomRight = true;
-            borderEdges7.TopLeft = true;
-            borderEdges7.TopRight = true;
-            this.btn_AddServices.CustomizableEdges = borderEdges7;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btn_AddServices.CustomizableEdges = borderEdges1;
             this.btn_AddServices.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_AddServices.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_AddServices.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -680,10 +697,10 @@
             this.btn_AddServices.IconRightCursor = System.Windows.Forms.Cursors.Default;
             this.btn_AddServices.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btn_AddServices.IconSize = 25;
-            this.btn_AddServices.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
+            this.btn_AddServices.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.btn_AddServices.IdleBorderRadius = 10;
             this.btn_AddServices.IdleBorderThickness = 1;
-            this.btn_AddServices.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
+            this.btn_AddServices.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.btn_AddServices.IdleIconLeftImage = null;
             this.btn_AddServices.IdleIconRightImage = null;
             this.btn_AddServices.IndicateFocus = false;
@@ -697,19 +714,19 @@
             this.btn_AddServices.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btn_AddServices.OnDisabledState.IconLeftImage = null;
             this.btn_AddServices.OnDisabledState.IconRightImage = null;
-            this.btn_AddServices.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btn_AddServices.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
             this.btn_AddServices.onHoverState.BorderRadius = 10;
             this.btn_AddServices.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_AddServices.onHoverState.BorderThickness = 1;
-            this.btn_AddServices.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btn_AddServices.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
             this.btn_AddServices.onHoverState.ForeColor = System.Drawing.Color.White;
             this.btn_AddServices.onHoverState.IconLeftImage = null;
             this.btn_AddServices.onHoverState.IconRightImage = null;
-            this.btn_AddServices.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
+            this.btn_AddServices.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.btn_AddServices.OnIdleState.BorderRadius = 10;
             this.btn_AddServices.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_AddServices.OnIdleState.BorderThickness = 1;
-            this.btn_AddServices.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
+            this.btn_AddServices.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.btn_AddServices.OnIdleState.ForeColor = System.Drawing.Color.White;
             this.btn_AddServices.OnIdleState.IconLeftImage = null;
             this.btn_AddServices.OnIdleState.IconRightImage = null;
@@ -729,23 +746,6 @@
             this.btn_AddServices.TextPadding = new System.Windows.Forms.Padding(0);
             this.btn_AddServices.UseDefaultRadiusAndThickness = true;
             this.btn_AddServices.Click += new System.EventHandler(this.btn_AddServices_Click);
-            // 
-            // bunifuLabel6
-            // 
-            this.bunifuLabel6.AllowParentOverrides = false;
-            this.bunifuLabel6.AutoEllipsis = false;
-            this.bunifuLabel6.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel6.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel6.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.bunifuLabel6.Location = new System.Drawing.Point(22, 17);
-            this.bunifuLabel6.Name = "bunifuLabel6";
-            this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel6.Size = new System.Drawing.Size(301, 35);
-            this.bunifuLabel6.TabIndex = 77;
-            this.bunifuLabel6.Text = "Cập nhập dịch vụ sử dụng";
-            this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // AddServices
             // 

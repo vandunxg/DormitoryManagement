@@ -644,7 +644,7 @@
         IAiC4BlycvIHkITV1vNdfWkAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="Services.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_Servives.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAANgAAAAzCAYAAAD1o8asAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJGSURBVHhe7d07ThthFEBhly4pKSkpXbKEVBGly5RZQJbA
@@ -660,7 +660,7 @@
         Ntt/53pVp/MPzGA7jr2wMKQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="Services.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_Servives.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAs
         SgAALEoBd3p0TQAABMVJREFUeF7tnN1x2zoQRl2CO0hKSAc3HSQdJB0kHfh24NtBSlAJKUEvGVMixfAt
@@ -764,7 +764,7 @@
         lBeW34JyT+f2r/9/xtcjhBBCCCGEEEIIIYSsj5ub7zMdCo0PAOqMAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_Contracts.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAANsAAAAzCAYAAAAelH2vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJESURBVHhe7d2/TlNhGIDxjh0ZGRkZO3IJToaxo6MX4CVw
@@ -780,7 +780,7 @@
         39EeNBj8BZU7nUjyl1FaAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuButton1.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_Contracts.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAs
         SgAALEoBd3p0TQAABD1JREFUeF7tneFxozAQhVNCSrgS0sFdB0kHSQcpwekgJaQEl3Al8CcTDIShBJdw

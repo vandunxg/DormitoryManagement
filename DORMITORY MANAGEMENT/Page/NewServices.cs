@@ -39,6 +39,7 @@ namespace DORMITORY_MANAGEMENT
         {
             InitializeComponent();
         }
+
         #region Events
         private void btn_exit_Click(object sender, EventArgs e)
         {

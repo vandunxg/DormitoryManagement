@@ -29,22 +29,17 @@ namespace DORMITORY_MANAGEMENT
 
         #endregion
 
-        
-
         public Admin_Dashboard()
         {
             InitializeComponent();
             
         }
 
-        
-
-
         #region Events
         private void btn_Overview_Click(object sender, EventArgs e)
         {
             text_showNameofPage.Text = btn_Overview.Text.ToString();
-            txt_showMainNameofPage.Text = "Main Dashboard";
+            txt_showMainNameofPage.Text = "Trang chủ";
 
             pages.SetPage(((Control)sender).Text);
 
@@ -55,7 +50,7 @@ namespace DORMITORY_MANAGEMENT
         private void btn_addStudents_Click(object sender, EventArgs e)
         {
             text_showNameofPage.Text = btn_addStudents.Text.ToString();
-            txt_showMainNameofPage.Text = "Add Students Informations";
+            txt_showMainNameofPage.Text = "Thêm sinh viên";
 
             pages.SetPage(((Control)sender).Text);
         }
@@ -63,7 +58,7 @@ namespace DORMITORY_MANAGEMENT
         private void btn_ManageRooms_Click(object sender, EventArgs e)
         {
             text_showNameofPage.Text = btn_ManageRooms.Text.ToString();
-            txt_showMainNameofPage.Text = "Manage Rooms";
+            txt_showMainNameofPage.Text = "Quản lý phòng";
             pages.SetPage(((Control)sender).Text);
         }
 
@@ -78,8 +73,8 @@ namespace DORMITORY_MANAGEMENT
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
-            text_showNameofPage.Text = btn_addStudents.Text.ToString();
-            txt_showMainNameofPage.Text = "Contract";
+            text_showNameofPage.Text = btn_Contracts.Text.ToString();
+            txt_showMainNameofPage.Text = "Hợp đồng";
 
             pages.SetPage(((Control)sender).Text);
 
@@ -92,15 +87,15 @@ namespace DORMITORY_MANAGEMENT
 
         private void bunifuButton2_Click(object sender, EventArgs e)
         {
-            text_showNameofPage.Text = btn_addStudents.Text.ToString();
-            txt_showMainNameofPage.Text = "Services";
+            text_showNameofPage.Text = btn_Servives.Text.ToString();
+            txt_showMainNameofPage.Text = "Dịch vụ";
 
             pages.SetPage(((Control)sender).Text);
         }
 
         private void ManageServices_Click(object sender, EventArgs e)
         {
-            text_showNameofPage.Text = btn_addStudents.Text.ToString();
+            text_showNameofPage.Text = ManageServices.Text.ToString();
             txt_showMainNameofPage.Text = "Quản lý dịch vụ";
 
             pages.SetPage(((Control)sender).Text);

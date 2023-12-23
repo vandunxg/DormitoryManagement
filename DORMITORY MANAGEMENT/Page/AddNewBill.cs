@@ -51,6 +51,14 @@ namespace DORMITORY_MANAGEMENT
         #endregion
 
         #region Events
+        private void txt_StaffID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Loại bỏ ký tự nếu không phải là số
+            }
+        }
+
         private void btn_exit_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -147,8 +155,9 @@ namespace DORMITORY_MANAGEMENT
                 return;
             }
         }
+
         #endregion
 
-
+        
     }
 }

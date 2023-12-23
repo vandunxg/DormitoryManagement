@@ -55,8 +55,8 @@ namespace DORMITORY_MANAGEMENT
             txt_ServiceQuantity.Text = Quantity.ToString();
             
         }
-        
 
+        #region Events
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
@@ -114,5 +114,15 @@ namespace DORMITORY_MANAGEMENT
                 }
             }
         }
+
+        private void txt_ServiceQuantity_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Loại bỏ ký tự nếu không phải là số
+            }
+        }
+
+        #endregion
     }
 }

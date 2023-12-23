@@ -71,7 +71,7 @@
             this.btn_AddNewBill.AutoSizeLeftIcon = true;
             this.btn_AddNewBill.AutoSizeRightIcon = true;
             this.btn_AddNewBill.BackColor = System.Drawing.Color.Transparent;
-            this.btn_AddNewBill.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
+            this.btn_AddNewBill.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.btn_AddNewBill.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_AddNewBill.BackgroundImage")));
             this.btn_AddNewBill.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_AddNewBill.ButtonText = "Tạo hoá đơn";
@@ -100,10 +100,10 @@
             this.btn_AddNewBill.IconRightCursor = System.Windows.Forms.Cursors.Default;
             this.btn_AddNewBill.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btn_AddNewBill.IconSize = 25;
-            this.btn_AddNewBill.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
+            this.btn_AddNewBill.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.btn_AddNewBill.IdleBorderRadius = 45;
             this.btn_AddNewBill.IdleBorderThickness = 1;
-            this.btn_AddNewBill.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
+            this.btn_AddNewBill.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.btn_AddNewBill.IdleIconLeftImage = null;
             this.btn_AddNewBill.IdleIconRightImage = null;
             this.btn_AddNewBill.IndicateFocus = false;
@@ -125,11 +125,11 @@
             this.btn_AddNewBill.onHoverState.ForeColor = System.Drawing.Color.White;
             this.btn_AddNewBill.onHoverState.IconLeftImage = null;
             this.btn_AddNewBill.onHoverState.IconRightImage = null;
-            this.btn_AddNewBill.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
+            this.btn_AddNewBill.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.btn_AddNewBill.OnIdleState.BorderRadius = 45;
             this.btn_AddNewBill.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_AddNewBill.OnIdleState.BorderThickness = 1;
-            this.btn_AddNewBill.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
+            this.btn_AddNewBill.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.btn_AddNewBill.OnIdleState.ForeColor = System.Drawing.Color.White;
             this.btn_AddNewBill.OnIdleState.IconLeftImage = null;
             this.btn_AddNewBill.OnIdleState.IconRightImage = null;
@@ -383,6 +383,7 @@
             this.txt_RoomID.TextPlaceholder = "Mã phòng";
             this.txt_RoomID.UseSystemPasswordChar = false;
             this.txt_RoomID.WordWrap = true;
+            this.txt_RoomID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_RoomID_KeyPress);
             // 
             // btn_SearchBills
             // 

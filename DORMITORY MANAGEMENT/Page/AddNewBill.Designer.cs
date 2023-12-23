@@ -131,7 +131,7 @@
             this.btn_exit.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.IdleIconLeftImage")));
             this.btn_exit.IdleIconRightImage = null;
             this.btn_exit.IndicateFocus = false;
-            this.btn_exit.Location = new System.Drawing.Point(649, 27);
+            this.btn_exit.Location = new System.Drawing.Point(651, 21);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_exit.OnDisabledState.BorderRadius = 10;
@@ -202,7 +202,7 @@
             this.btn_AddBill.AutoSizeLeftIcon = true;
             this.btn_AddBill.AutoSizeRightIcon = true;
             this.btn_AddBill.BackColor = System.Drawing.Color.Transparent;
-            this.btn_AddBill.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
+            this.btn_AddBill.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.btn_AddBill.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_AddBill.BackgroundImage")));
             this.btn_AddBill.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_AddBill.ButtonText = "Tạo";
@@ -231,10 +231,10 @@
             this.btn_AddBill.IconRightCursor = System.Windows.Forms.Cursors.Default;
             this.btn_AddBill.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btn_AddBill.IconSize = 25;
-            this.btn_AddBill.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
+            this.btn_AddBill.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.btn_AddBill.IdleBorderRadius = 10;
             this.btn_AddBill.IdleBorderThickness = 1;
-            this.btn_AddBill.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
+            this.btn_AddBill.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.btn_AddBill.IdleIconLeftImage = null;
             this.btn_AddBill.IdleIconRightImage = null;
             this.btn_AddBill.IndicateFocus = false;
@@ -248,19 +248,19 @@
             this.btn_AddBill.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btn_AddBill.OnDisabledState.IconLeftImage = null;
             this.btn_AddBill.OnDisabledState.IconRightImage = null;
-            this.btn_AddBill.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btn_AddBill.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.btn_AddBill.onHoverState.BorderRadius = 10;
             this.btn_AddBill.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_AddBill.onHoverState.BorderThickness = 1;
-            this.btn_AddBill.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btn_AddBill.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.btn_AddBill.onHoverState.ForeColor = System.Drawing.Color.White;
             this.btn_AddBill.onHoverState.IconLeftImage = null;
             this.btn_AddBill.onHoverState.IconRightImage = null;
-            this.btn_AddBill.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
+            this.btn_AddBill.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.btn_AddBill.OnIdleState.BorderRadius = 10;
             this.btn_AddBill.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_AddBill.OnIdleState.BorderThickness = 1;
-            this.btn_AddBill.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
+            this.btn_AddBill.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.btn_AddBill.OnIdleState.ForeColor = System.Drawing.Color.White;
             this.btn_AddBill.OnIdleState.IconLeftImage = null;
             this.btn_AddBill.OnIdleState.IconRightImage = null;
@@ -671,6 +671,7 @@
             this.txt_StaffID.TextPlaceholder = "Số lượng";
             this.txt_StaffID.UseSystemPasswordChar = false;
             this.txt_StaffID.WordWrap = true;
+            this.txt_StaffID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_StaffID_KeyPress);
             // 
             // bunifuLabel13
             // 

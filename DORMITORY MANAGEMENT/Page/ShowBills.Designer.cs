@@ -764,11 +764,11 @@
             this.btn_ExportBills.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btn_ExportBills.OnDisabledState.IconLeftImage = null;
             this.btn_ExportBills.OnDisabledState.IconRightImage = null;
-            this.btn_ExportBills.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(108)))), ((int)(((byte)(116)))));
+            this.btn_ExportBills.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(181)))), ((int)(((byte)(116)))));
             this.btn_ExportBills.onHoverState.BorderRadius = 10;
             this.btn_ExportBills.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_ExportBills.onHoverState.BorderThickness = 1;
-            this.btn_ExportBills.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(108)))), ((int)(((byte)(116)))));
+            this.btn_ExportBills.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(181)))), ((int)(((byte)(116)))));
             this.btn_ExportBills.onHoverState.ForeColor = System.Drawing.Color.White;
             this.btn_ExportBills.onHoverState.IconLeftImage = null;
             this.btn_ExportBills.onHoverState.IconRightImage = null;
@@ -780,11 +780,11 @@
             this.btn_ExportBills.OnIdleState.ForeColor = System.Drawing.Color.White;
             this.btn_ExportBills.OnIdleState.IconLeftImage = null;
             this.btn_ExportBills.OnIdleState.IconRightImage = null;
-            this.btn_ExportBills.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(122)))), ((int)(((byte)(130)))));
+            this.btn_ExportBills.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(181)))), ((int)(((byte)(116)))));
             this.btn_ExportBills.OnPressedState.BorderRadius = 10;
             this.btn_ExportBills.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_ExportBills.OnPressedState.BorderThickness = 1;
-            this.btn_ExportBills.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(122)))), ((int)(((byte)(130)))));
+            this.btn_ExportBills.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(181)))), ((int)(((byte)(116)))));
             this.btn_ExportBills.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btn_ExportBills.OnPressedState.IconLeftImage = null;
             this.btn_ExportBills.OnPressedState.IconRightImage = null;

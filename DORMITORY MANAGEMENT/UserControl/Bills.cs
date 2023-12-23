@@ -1,13 +1,5 @@
 ﻿using DORMITORY_MANAGEMENT.DAO;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DORMITORY_MANAGEMENT
@@ -18,6 +10,8 @@ namespace DORMITORY_MANAGEMENT
         {
             InitializeComponent();
         }
+
+        #region Events
 
         private void Bills_Load(object sender, EventArgs e)
         {
@@ -93,7 +87,7 @@ namespace DORMITORY_MANAGEMENT
                 string RoomTypeName = DataProvider.Instance.ExcuteQuery("SELECT RoomTypeName FROM RoomTypes WHERE RoomTypeID = @RoomTypeID ", new object[] { RoomTypeID }).Rows[0]["RoomTypeName"].ToString();
                 int AreaID = int.Parse(DataProvider.Instance.ExcuteQuery("SELECT AreaID FROM Rooms WHERE RoomID = @RoomID ", new object[] { RoomID }).Rows[0]["AreaID"].ToString());
                 string AreaName = DataProvider.Instance.ExcuteQuery("SELECT AreaName FROM Areas WHERE AreaID = @AreaID ", new object[] { AreaID }).Rows[0]["AreaName"].ToString();
-                
+
                 int Months = int.Parse(dgv_Bills.Rows[e.RowIndex].Cells[2].Value.ToString());
                 int Years = int.Parse(dgv_Bills.Rows[e.RowIndex].Cells[3].Value.ToString());
                 string StaffID = dgv_Bills.Rows[e.RowIndex].Cells[5].Value.ToString();
@@ -110,5 +104,17 @@ namespace DORMITORY_MANAGEMENT
                 showBills.ShowDialog();
             }
         }
+
+        private void txt_RoomID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Loại bỏ ký tự nếu không phải là số
+            }
+
+        }
+
+        #endregion  
     }
 }

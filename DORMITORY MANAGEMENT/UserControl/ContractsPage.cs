@@ -21,6 +21,14 @@ namespace DORMITORY_MANAGEMENT
 
         #region Events
 
+        private void txt_StaffID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Loại bỏ ký tự nếu không phải là số
+            }
+        }
+
         public void ContractsPage_Load(object sender, EventArgs e)
         {
             // Load Area Data to combo box
@@ -185,7 +193,7 @@ namespace DORMITORY_MANAGEMENT
                 if (StaffID.Length > 20)
                 {
                     {
-                        MessageBox.Show("Mã sinh viên không hợp lệ!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Mã nhân viên không hợp lệ!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
                 }
@@ -234,6 +242,10 @@ namespace DORMITORY_MANAGEMENT
                 }
                 #endregion
             }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         #endregion
@@ -261,5 +273,6 @@ namespace DORMITORY_MANAGEMENT
 
         #endregion
 
+        
     }
 }

@@ -416,6 +416,7 @@
             this.txt_ServiceQuantity.TextPlaceholder = "Số lượng";
             this.txt_ServiceQuantity.UseSystemPasswordChar = false;
             this.txt_ServiceQuantity.WordWrap = true;
+            this.txt_ServiceQuantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_ServiceQuantity_KeyPress);
             // 
             // bunifuLabel3
             // 

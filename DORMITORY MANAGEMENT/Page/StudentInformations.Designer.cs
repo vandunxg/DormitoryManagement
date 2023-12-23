@@ -1086,7 +1086,7 @@
             this.btn_DeleteStudents.IdleIconLeftImage = null;
             this.btn_DeleteStudents.IdleIconRightImage = null;
             this.btn_DeleteStudents.IndicateFocus = false;
-            this.btn_DeleteStudents.Location = new System.Drawing.Point(499, 558);
+            this.btn_DeleteStudents.Location = new System.Drawing.Point(513, 558);
             this.btn_DeleteStudents.Name = "btn_DeleteStudents";
             this.btn_DeleteStudents.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btn_DeleteStudents.OnDisabledState.BorderRadius = 10;
@@ -1120,7 +1120,7 @@
             this.btn_DeleteStudents.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btn_DeleteStudents.OnPressedState.IconLeftImage = null;
             this.btn_DeleteStudents.OnPressedState.IconRightImage = null;
-            this.btn_DeleteStudents.Size = new System.Drawing.Size(95, 50);
+            this.btn_DeleteStudents.Size = new System.Drawing.Size(81, 50);
             this.btn_DeleteStudents.TabIndex = 67;
             this.btn_DeleteStudents.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_DeleteStudents.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1176,7 +1176,7 @@
             this.btn_Saved.IdleIconLeftImage = null;
             this.btn_Saved.IdleIconRightImage = null;
             this.btn_Saved.IndicateFocus = false;
-            this.btn_Saved.Location = new System.Drawing.Point(380, 558);
+            this.btn_Saved.Location = new System.Drawing.Point(406, 558);
             this.btn_Saved.Name = "btn_Saved";
             this.btn_Saved.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btn_Saved.OnDisabledState.BorderRadius = 10;
@@ -1210,7 +1210,7 @@
             this.btn_Saved.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btn_Saved.OnPressedState.IconLeftImage = null;
             this.btn_Saved.OnPressedState.IconRightImage = null;
-            this.btn_Saved.Size = new System.Drawing.Size(95, 50);
+            this.btn_Saved.Size = new System.Drawing.Size(83, 50);
             this.btn_Saved.TabIndex = 68;
             this.btn_Saved.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_Saved.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
