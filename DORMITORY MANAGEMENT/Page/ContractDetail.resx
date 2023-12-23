@@ -121,18 +121,6 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btn_ExportContracts.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAEAAAAAyCAYAAADsg90UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFFSURBVGhD7Zs9TgMxEIVdUnIESkpuwAEAu+UINJwFiTNw
-        BdqEYqyUa9OkRCkQEgihIAESFDDeLD9C7wR+z9InK292i/nWu9Uk/F2x5ONU8yxVe/D9sy+8p5IXsdjJ
-        1O7vSsN8uxVTsbXv4OZesLa/eJ/LNCx2pvZdQGse3tA1q/2b+VY4KnbqP57/FbvHX4W3WPP59PTHo8FH
-        ybchVnuFRRICCpmQABQyIQEoZEICUMiEBKCQCQlAIRMSgEImJACFTEgACpmQABQyIQEoZEICUMiEBKCQ
-        CQlAIRMSgEImJACFTEgACpmQABQyIQEoZEICUskfqMCCC7AlKvSPtUHJdZsQP0uDUZ4C7/0ytIFhN3GH
-        LuiZWOzpZ2LcT8Cevwr3zju6uCuKN1/t8aBexbH57zX+Z6Dmi65nhzcf/Nnhdd7ddB3CF/qj6lv+6XKn
-        AAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="btn_SavedContracts.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAE0AAAAyCAYAAAAZfVakAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
