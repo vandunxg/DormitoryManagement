@@ -308,10 +308,10 @@ GO
 -- INSERT INTO USAGES
 INSERT INTO Usages(ServiceID, UsageQuantity, RoomID, UsageMonth, UsageYear)
 VALUES
-('1', '120', '10002', '12', '2022'),
-('2', '120', '10002', '12', '2022'),
-('3', '1', '10002', '12', '2022'),
-('4', '1', '10002', '12', '2022')
+('1', '120', '10002', '12', '2023'),
+('2', '120', '10002', '12', '2023'),
+('3', '1', '10002', '12', '2023'),
+('4', '1', '10002', '12', '2023')
 GO
 
 --INSERT INTO Staffs
@@ -325,6 +325,10 @@ INSERT INTO Students(StudentID, ClassID, StudentName, StudentGender, StudentDOB,
 VALUES
 ('73DCTT22428', '73DCTT22', N'Nguyễn Văn Dũng', 'Nam', '2004-07-23', '038204004400', N'vandunxg@gmail.com', '0835595675', N'Hoằng Hoá, Thanh Hoá', 1);
 GO
+
+INSERT INTO Accounts(StaffEmail, AccountPassword, StaffID)
+VALUES
+('contact@vandunxg.com', 'dung2004', '10000')
 -----------------------------------------------------------------------------------------------------------------------------------------
 
 -- Get Data Students

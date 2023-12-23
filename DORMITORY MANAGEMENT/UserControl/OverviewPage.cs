@@ -1,5 +1,6 @@
 ﻿using DORMITORY_MANAGEMENT.DAO;
 using System;
+using System.Data;
 using System.Windows.Forms;
 
 namespace DORMITORY_MANAGEMENT
@@ -46,15 +47,32 @@ namespace DORMITORY_MANAGEMENT
             string Months = DateTime.Now.Month.ToString();
             string Years = DateTime.Now.Year.ToString();
 
-            string ElectricMoney = DataProvider.Instance.ExcuteQuery("TotalUsageCost @ServiceID , @Months , @Years ", new object[] { "1", Months, Years }).Rows[0]["TotalUsageCost"].ToString();
+            DataTable GetData = DataProvider.Instance.ExcuteQuery("TotalUsageCost @ServiceID , @Months , @Years ", new object[] { "1", Months, Years });
+            string ElectricMoney = "0đ";
+
+            if (GetData.Rows.Count > 0)
+            {
+                ElectricMoney = GetData.Rows[0]["TotalUsageCost"].ToString();
+            }
 
             cardShowInfo_Electricity.setAllValue($"Điện tháng {Months}", ElectricMoney);
 
-
-            string WaterMoney = DataProvider.Instance.ExcuteQuery("TotalUsageCost @ServiceID , @Months , @Years ", new object[] { "2", Months, Years }).Rows[0]["TotalUsageCost"].ToString();
+            GetData = DataProvider.Instance.ExcuteQuery("TotalUsageCost @ServiceID , @Months , @Years ", new object[] { "2", Months, Years });
+            string WaterMoney = "0đ";
+            if (GetData.Rows.Count > 0)
+            {
+                WaterMoney = GetData.Rows[0]["TotalUsageCost"].ToString();
+            }
             cardShowInfo_water.setAllValue($"Nước tháng {Months}", WaterMoney);
 
-            string TotalMoney = DataProvider.Instance.ExcuteQuery("CalTotalMoneyAllRoom @Months , @Years ", new object[] { Months, Years }).Rows[0]["TotalMoney"].ToString();
+            GetData = DataProvider.Instance.ExcuteQuery("CalTotalMoneyAllRoom @Months , @Years ", new object[] { Months, Years });
+            string TotalMoney = "0đ";
+
+            if (GetData.Rows.Count > 0)
+            {
+                TotalMoney = GetData.Rows[0]["TotalMoney"].ToString();
+            }
+
             cardShowInfor_total.setAllValue($"Đã thu", TotalMoney);
 
             int TotalRooms = int.Parse(DataProvider.Instance.ExcuteQuery("CountRooms").Rows[0]["AmountRoom"].ToString());
