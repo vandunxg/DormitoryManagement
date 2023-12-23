@@ -1025,7 +1025,9 @@
             this.Controls.Add(this.txt_RoomID);
             this.Controls.Add(this.bunifuPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "addNewRoom";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "addNewRoom";
             this.Load += new System.EventHandler(this.addNewRoom_Load);
             this.bunifuPanel1.ResumeLayout(false);

@@ -32,7 +32,7 @@ namespace DORMITORY_MANAGEMENT.DAO
 
         public bool checkValidAccount(string email, string password)
         {
-            string query = "SELECT * FROM dbo.Account WHERE Account_Email = @email AND Account_Password = @password";
+            string query = "SELECT * FROM Accounts WHERE StaffEmail = @email AND AccountPassword = @password";
 
             DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { email, password });
 

@@ -14,7 +14,7 @@ namespace DORMITORY_MANAGEMENT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ContractDetail());
+            Application.Run(new loginPage());
         }
     }
 }

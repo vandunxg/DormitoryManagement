@@ -727,7 +727,9 @@
             this.Controls.Add(this.cardShowInfo_Electricity);
             this.Controls.Add(this.bunifuPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RoomStudentManager";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RoomStudentManager";
             this.Load += new System.EventHandler(this.RoomStudentManager_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Students)).EndInit();

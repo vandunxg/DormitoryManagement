@@ -560,7 +560,7 @@
             this.btn_Servives.OnIdleState.BorderThickness = 1;
             this.btn_Servives.OnIdleState.FillColor = System.Drawing.Color.White;
             this.btn_Servives.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(167)))));
-            this.btn_Servives.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("Services.OnIdleState.IconLeftImage")));
+            this.btn_Servives.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Servives.OnIdleState.IconLeftImage")));
             this.btn_Servives.OnIdleState.IconRightImage = null;
             this.btn_Servives.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
             this.btn_Servives.OnPressedState.BorderRadius = 27;
@@ -651,7 +651,7 @@
             this.btn_Contracts.OnIdleState.BorderThickness = 1;
             this.btn_Contracts.OnIdleState.FillColor = System.Drawing.Color.White;
             this.btn_Contracts.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(167)))));
-            this.btn_Contracts.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton1.OnIdleState.IconLeftImage")));
+            this.btn_Contracts.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Contracts.OnIdleState.IconLeftImage")));
             this.btn_Contracts.OnIdleState.IconRightImage = null;
             this.btn_Contracts.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
             this.btn_Contracts.OnPressedState.BorderRadius = 27;
@@ -1389,6 +1389,7 @@
             this.Controls.Add(this.bunifuPanel3);
             this.Controls.Add(this.bunifuPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Admin_Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin_Dashboard";

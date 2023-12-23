@@ -1266,7 +1266,9 @@
             this.Controls.Add(this.bunifuLabel1);
             this.Controls.Add(this.txt_StudentAddress);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "StudentInformations";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StudentInformations";
             this.Load += new System.EventHandler(this.StudentInformations_Load);
             this.bunifuPanel1.ResumeLayout(false);

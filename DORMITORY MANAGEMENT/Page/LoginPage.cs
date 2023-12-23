@@ -98,10 +98,11 @@ namespace DORMITORY_MANAGEMENT
                 {
                     Admin_Dashboard adminPage = new Admin_Dashboard();
 
-                    AuthService.SetLoggedInUserId(int.Parse(DataProvider.Instance.ExcuteQuery("SELECT StaffID FROM Staffs WHERE StaffEmail = @StaffEmail ", new object[] { inputEmailLogin }).Rows[0]["StaffEmail"].ToString()));
-
+                    AuthService.SetLoggedInUserId(int.Parse(DataProvider.Instance.ExcuteQuery("SELECT StaffID FROM Staffs WHERE StaffEmail = @StaffEmail ", new object[] { inputEmailLogin }).Rows[0]["StaffID"].ToString()));
                     adminPage.Visible = true;
                     this.Visible = false;
+
+
                 }
                 else
                 {

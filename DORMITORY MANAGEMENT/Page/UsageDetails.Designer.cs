@@ -89,6 +89,7 @@
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(721, 70);
             this.bunifuPanel1.TabIndex = 98;
+            this.bunifuPanel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.bunifuPanel1_MouseMove);
             // 
             // lbl_UsageID
             // 
@@ -885,6 +886,7 @@
             this.Controls.Add(this.bunifuLabel15);
             this.Controls.Add(this.cmb_Areas);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UsageDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UsageDetails";
