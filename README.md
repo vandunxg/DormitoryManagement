@@ -77,7 +77,9 @@
 
 Clone code về máy
 ```bash
-https://github.com/vandunxg/DormitoryManagement
+clone https://github.com/vandunxg/DormitoryManagement
+
+cd DormitoryManagement
 ```
 Mở project với Visual Studio 2022
 
