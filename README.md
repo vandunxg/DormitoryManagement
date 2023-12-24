@@ -5,7 +5,7 @@
 <h1>QUẢN LÍ KÝ TÚC XÁ</h1>
 <p>Ứng dụng Quản lý Ký túc xá được thiết kế để đáp ứng nhu cầu quản lý số lượng lớn sinh viên, phòng ở và các thông tin hóa đơn liên quan. Với sự tăng lên đột biến trong số lượng sinh viên và cơ sở vật chất ký túc xá, ứng dụng này giải quyết một thách thức lớn trong việc tổ chức và theo dõi thông tin.thách thức lớn trong việc tổ chức và theo dõi thông tin.</p>
 
-<h4> <a href=[https://youtu.be/fBFsM8bavwk](https://youtu.be/fBFsM8bavwk)>View Demo</a> <span> · </span> <a href="https://github.com/vandunxg/DormitoryManagement/blob/master/README.md"> Documentation </a> <span> · </span> <a href="https://github.com/vandunxg/DormitoryManagement/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/vandunxg/DormitoryManagement/issues"> Request Feature </a> </h4>
+<h4> <a href="https://youtu.be/fBFsM8bavwk">View Demo</a> <span> · </span> <a href="https://github.com/vandunxg/DormitoryManagement/blob/master/README.md"> Documentation </a> <span> · </span> <a href="https://github.com/vandunxg/DormitoryManagement/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/vandunxg/DormitoryManagement/issues"> Request Feature </a> </h4>
 
 
 </div>
