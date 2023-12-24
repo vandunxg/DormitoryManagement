@@ -21,6 +21,7 @@
 ## :star2: About the Project
 
 ### :camera: Screenshots
+<details> 
 <div align="center"> <a href="https://raw.githubusercontent.com/vandunxg/DormitoryManagement/main/DORMITORY%20MANAGEMENT/Resources/DEMO/bandicam 2023-12-23 15-49-48-941.mp4"><img src="https://raw.githubusercontent.com/vandunxg/DormitoryManagement/main/DORMITORY%20MANAGEMENT/Resources/DEMO/1.jpg" alt='image' width='800'/></a> </div>
 <div align="center"> <a href="https://raw.githubusercontent.com/vandunxg/DormitoryManagement/main/DORMITORY%20MANAGEMENT/Resources/DEMO/bandicam 2023-12-23 15-49-48-941.mp4"><img src="https://raw.githubusercontent.com/vandunxg/DormitoryManagement/main/DORMITORY%20MANAGEMENT/Resources/DEMO/2.jpg" alt='image' width='800'/></a> </div>
 <div align="center"> <a href="https://raw.githubusercontent.com/vandunxg/DormitoryManagement/main/DORMITORY%20MANAGEMENT/Resources/DEMO/bandicam 2023-12-23 15-49-48-941.mp4"><img src="https://raw.githubusercontent.com/vandunxg/DormitoryManagement/main/DORMITORY%20MANAGEMENT/Resources/DEMO/3.jpg" alt='image' width='800'/></a> </div>
@@ -40,7 +41,7 @@
 <div align="center"> <a href="https://raw.githubusercontent.com/vandunxg/DormitoryManagement/main/DORMITORY%20MANAGEMENT/Resources/DEMO/bandicam 2023-12-23 15-49-48-941.mp4"><img src="https://raw.githubusercontent.com/vandunxg/DormitoryManagement/main/DORMITORY%20MANAGEMENT/Resources/DEMO/17.jpg" alt='image' width='800'/></a> </div>
 <div align="center"> <a href="https://raw.githubusercontent.com/vandunxg/DormitoryManagement/main/DORMITORY%20MANAGEMENT/Resources/DEMO/bandicam 2023-12-23 15-49-48-941.mp4"><img src="https://raw.githubusercontent.com/vandunxg/DormitoryManagement/main/DORMITORY%20MANAGEMENT/Resources/DEMO/18.jpg" alt='image' width='800'/></a> </div>
 <div align="center"> <a href="https://raw.githubusercontent.com/vandunxg/DormitoryManagement/main/DORMITORY%20MANAGEMENT/Resources/DEMO/bandicam 2023-12-23 15-49-48-941.mp4"><img src="https://raw.githubusercontent.com/vandunxg/DormitoryManagement/main/DORMITORY%20MANAGEMENT/Resources/DEMO/19.jpg" alt='image' width='800'/></a> </div>
-
+</details>
 
 ### :space_invader: Tech Stack
 <details> <summary>Client</summary> <ul>
@@ -79,8 +80,11 @@ Clone code về máy
 https://github.com/vandunxg/DormitoryManagement
 ```
 Mở project với Visual Studio 2022
+
 Setup SQL cho project
+
 Debug project
+
 Run project
 
 
@@ -96,7 +100,7 @@ Run project
 
 ## :warning: License
 
-Distributed under the no License. See LICENSE.txt for more information.
+<a href="[https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16](https://github.com/vandunxg/DormitoryManagement/blob/main/LICENSE)">MIT License</a>
 
 ## :handshake: Contact
 
