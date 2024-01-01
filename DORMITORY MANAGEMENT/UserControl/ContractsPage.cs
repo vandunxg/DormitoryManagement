@@ -1,4 +1,5 @@
 ﻿using DORMITORY_MANAGEMENT.DAO;
+using DORMITORY_MANAGEMENT.DTO;
 using System;
 using System.Data;
 using System.Windows.Forms;
@@ -45,10 +46,15 @@ namespace DORMITORY_MANAGEMENT
             cmb_RoomTypes.SelectedIndex = -1;
             cmb_RoomTypes.Text = "Loại phòng";
 
+            cmb_DateCheckOut.DisplayMember = "DateContractName";
+            cmb_DateCheckOut.ValueMember = "DateContractID";
+            cmb_DateCheckOut.DataSource = DataProvider.Instance.ExcuteQuery("SELECT * FROM DateContract");
+
             dgv_Contracts.DataSource = DataProvider.Instance.ExcuteQuery("GetContractDetails");
 
             btn_AddContracts.Enabled = true;
 
+            txt_StaffID.Text = AuthService.GetLoggedInUserId().ToString();
         }
 
         private void cmb_Areas_SelectedIndexChanged(object sender, EventArgs e)
@@ -167,11 +173,11 @@ namespace DORMITORY_MANAGEMENT
                 string StaffID = txt_StaffID.Text.ToString().Trim();
                 string AreaID = cmb_Areas.SelectedValue.ToString();
                 string RoomTypeID = cmb_RoomTypes.SelectedValue.ToString();
-                string CheckInDate = date_ContractCheckin.Value.Date.ToString();
-                string CheckOutDate = date_ContractCheckout.Value.Date.ToString();
+                
+                string CheckOutDate = date_ContractCheckIn.Value.Date.ToString();
                 string RoomID = cmb_Rooms.SelectedValue.ToString();
                 int ContractState;
-                if (cmb_ContractState.SelectedIndex == 0)
+                if (cmb_DateCheckOut.SelectedIndex == 0)
                 {
                     ContractState = 1;
                 }
@@ -198,11 +204,7 @@ namespace DORMITORY_MANAGEMENT
                     }
                 }
 
-                if (DateTime.Parse(CheckInDate) > DateTime.Parse(CheckOutDate) || DateTime.Parse(CheckOutDate) < DateTime.Parse(CheckInDate).AddMonths(6) || DateTime.Parse(CheckOutDate) > DateTime.Parse(CheckInDate).AddMonths(12))
-                {
-                    MessageBox.Show("Hợp đồng phải ít nhất 6 tháng và nhiều nhất là 1 năm!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
+                
 
                 if (int.Parse(DataProvider.Instance.ExcuteQuery("SELECT COUNT(StaffID) FROM Staffs WHERE StaffID = @StaffID ", new object[] { StaffID }).Rows[0][0].ToString()) == 0)
                 {
@@ -266,8 +268,8 @@ namespace DORMITORY_MANAGEMENT
             cmb_Rooms.SelectedIndex = -1;
             cmb_Rooms.Text = "Phòng";
 
-            date_ContractCheckin.Value = DateTime.Now;
-            date_ContractCheckout.Value = DateTime.Now;
+            
+            date_ContractCheckIn.Value = DateTime.Now;
 
         }
 

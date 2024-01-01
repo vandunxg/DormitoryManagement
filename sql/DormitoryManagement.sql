@@ -80,7 +80,6 @@ CREATE TABLE Students(
 );
 GO
 
-
 -- BẢNG KHU PHÒNG
 CREATE TABLE Areas(
 	AreaID INT IDENTITY(1, 1) PRIMARY KEY NOT NULL,
@@ -128,7 +127,6 @@ CREATE TABLE Contracts(
 );
 GO
 
-
 -- BẢNG DỊCH VỤ
 CREATE TABLE Services(
 	ServiceID INT IDENTITY(1, 1) PRIMARY KEY NOT NULL,
@@ -163,18 +161,26 @@ CREATE TABLE Bills(
 );
 GO
 
+-- Bảng Tháng
 CREATE TABLE Months(
 	MonthID INT PRIMARY KEY NOT NULL,
 	MonthName INT NOT NULL,
 );
 GO
 
+-- Bảng Năm
 CREATE TABLE Years(
 	YearID INT PRIMARY KEY NOT NULL,
 	YearName INT NOT NULL,
 );
 GO
 
+-- Bảng Thời hạn hợp đồng
+CREATE TABLE DateContract(
+	DateContractID INT PRIMARY KEY NOT NULL,
+	DateContractName INT NOT NULL,
+)
+----------------------------------------------------------------------------------------
 --Insert Data To Months
 INSERT INTO Months (MonthID, MonthName)
 VALUES
@@ -203,6 +209,15 @@ BEGIN
 
     SET @Year = @Year + 1;
 END;
+
+-- Insert data to DateContract
+INSERT INTO DateContract (DateContractID, DateContractName)
+VALUES
+(6, 6),
+(12, 12),
+(18, 18),
+(24, 24)
+GO
 
 -- INSERT DATA TO Departments
 INSERT INTO Departments (DepartmentID , DepartmentName)
