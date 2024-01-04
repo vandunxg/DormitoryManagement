@@ -20,18 +20,23 @@ namespace DORMITORY_MANAGEMENT
         private void LoadData()
         {
 
+
+            int StaffID = AuthService.GetLoggedInUserId();
+            DataTable StaffData = DataProvider.Instance.ExcuteQuery("SELECT * FROM Staffs WHERE StaffID = @StaffID ", new object[] { StaffID });
             
+            if(StaffData.Rows.Count > 0)
+            {
+                DataRow DataOfStaff = StaffData.Rows[0];
 
-            DataRow DataOfStaff = DataProvider.Instance.ExcuteQuery("SELECT * FROM Staffs WHERE StaffID = @StaffID ", new object[] { AuthService.GetLoggedInUserId() }).Rows[0];
+                txt_StaffName.Text = DataOfStaff["StaffName"].ToString();
+                txt_StaffID.Text = DataOfStaff["StaffID"].ToString();
+                txt_StaffAddress.Text = DataOfStaff["StaffAddress"].ToString();
+                txt_StaffPersonalID.Text = DataOfStaff["StaffPersonalID"].ToString();
+                txt_StaffPhone.Text = DataOfStaff["StaffPhone"].ToString();
+                txt_StaffSalary.Text = DataOfStaff["StaffSalary"].ToString();
 
-            txt_StaffName.Text = DataOfStaff["StaffName"].ToString();
-            txt_StaffID.Text = DataOfStaff["StaffID"].ToString();
-            txt_StaffAddress.Text = DataOfStaff["StaffAddress"].ToString();
-            txt_StaffPersonalID.Text = DataOfStaff["StaffPersonalID"].ToString();
-            txt_StaffPhone.Text = DataOfStaff["StaffPhone"].ToString();
-            txt_StaffSalary.Text = DataOfStaff["StaffSalary"].ToString();
-
-            txt_StaffEmail.Text = DataOfStaff["StaffEmail"].ToString();
+                txt_StaffEmail.Text = DataOfStaff["StaffEmail"].ToString();
+            }
         }
         #endregion
 

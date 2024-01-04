@@ -29,6 +29,8 @@ namespace DORMITORY_MANAGEMENT
             cmb_Years.DataSource = DataProvider.Instance.ExcuteQuery("SELECT * FROM Years");
             cmb_Years.SelectedIndex = -1;
             cmb_Years.Text = "Năm";
+
+            txt_StaffID.Text = AuthService.GetLoggedInUserId().ToString();
         }
 
         #region mouse move
@@ -86,7 +88,7 @@ namespace DORMITORY_MANAGEMENT
             cmb_Years.SelectedIndex = -1;
             cmb_Years.Text = "Năm";
 
-            txt_StaffID.Text = AuthService.GetLoggedInUserId().ToString();
+            
 
         }
 

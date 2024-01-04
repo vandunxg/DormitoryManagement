@@ -199,6 +199,18 @@
     <Compile Include="Page\ShowBills.Designer.cs">
       <DependentUpon>ShowBills.cs</DependentUpon>
     </Compile>
+    <Compile Include="Page\StudentBillDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page\StudentBillDetail.Designer.cs">
+      <DependentUpon>StudentBillDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\StudentBills.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\StudentBills.Designer.cs">
+      <DependentUpon>StudentBills.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\Settings.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -354,6 +366,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Page\ShowBills.resx">
       <DependentUpon>ShowBills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\StudentBillDetail.resx">
+      <DependentUpon>StudentBillDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\StudentBills.resx">
+      <DependentUpon>StudentBills.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>

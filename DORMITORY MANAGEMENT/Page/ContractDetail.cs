@@ -158,5 +158,10 @@ namespace DORMITORY_MANAGEMENT
             long CalTotalMoney = (long.Parse(txt_RoomPrice.Text) * long.Parse(cmb_DateCheckOut.SelectedValue.ToString())) - long.Parse(txt_DepositPrice.Text);
             txt_TotalMoney.Text = CalTotalMoney.ToString();
         }
+
+        private void lbl_ContractID_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

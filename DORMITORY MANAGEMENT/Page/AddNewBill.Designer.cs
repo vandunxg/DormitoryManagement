@@ -654,7 +654,7 @@
             this.txt_StaffID.Padding = new System.Windows.Forms.Padding(3);
             this.txt_StaffID.PasswordChar = '\0';
             this.txt_StaffID.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(85)))), ((int)(((byte)(90)))));
-            this.txt_StaffID.PlaceholderText = "Số lượng";
+            this.txt_StaffID.PlaceholderText = "Mã nhân viên";
             this.txt_StaffID.ReadOnly = false;
             this.txt_StaffID.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_StaffID.SelectedText = "";
@@ -668,7 +668,7 @@
             this.txt_StaffID.TextMarginBottom = 0;
             this.txt_StaffID.TextMarginLeft = 10;
             this.txt_StaffID.TextMarginTop = 0;
-            this.txt_StaffID.TextPlaceholder = "Số lượng";
+            this.txt_StaffID.TextPlaceholder = "Mã nhân viên";
             this.txt_StaffID.UseSystemPasswordChar = false;
             this.txt_StaffID.WordWrap = true;
             this.txt_StaffID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_StaffID_KeyPress);

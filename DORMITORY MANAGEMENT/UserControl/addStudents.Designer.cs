@@ -1071,7 +1071,7 @@
             this.bunifuPanel3.Controls.Add(this.btn_SearchContracts);
             this.bunifuPanel3.Controls.Add(this.txt_SearchStudentID);
             this.bunifuPanel3.Controls.Add(this.btn_insertInformation);
-            this.bunifuPanel3.Location = new System.Drawing.Point(25, 350);
+            this.bunifuPanel3.Location = new System.Drawing.Point(25, 349);
             this.bunifuPanel3.Name = "bunifuPanel3";
             this.bunifuPanel3.ShowBorders = true;
             this.bunifuPanel3.Size = new System.Drawing.Size(1092, 78);

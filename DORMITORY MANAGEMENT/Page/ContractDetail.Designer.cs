@@ -64,8 +64,6 @@
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.cmb_DateCheckOut = new Bunifu.UI.WinForms.BunifuDropdown();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.date_ContractCheckin = new Bunifu.UI.WinForms.BunifuDatePicker();
-            this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.cmb_Rooms = new Bunifu.UI.WinForms.BunifuDropdown();
             this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -79,6 +77,7 @@
             this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse5 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse6 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.date_ContractCheckin = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.bunifuElipse7 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.btn_SavedContracts = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.txt_DepositPrice = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -86,6 +85,7 @@
             this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
             this.txt_TotalMoney = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuLabel9 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -128,6 +128,7 @@
             this.lbl_ContractID.Text = "100001";
             this.lbl_ContractID.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lbl_ContractID.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lbl_ContractID.Click += new System.EventHandler(this.lbl_ContractID_Click);
             // 
             // btn_exit
             // 
@@ -488,46 +489,6 @@
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // date_ContractCheckin
-            // 
-            this.date_ContractCheckin.BackColor = System.Drawing.Color.White;
-            this.date_ContractCheckin.BorderRadius = 15;
-            this.date_ContractCheckin.Color = System.Drawing.Color.Transparent;
-            this.date_ContractCheckin.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
-            this.date_ContractCheckin.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
-            this.date_ContractCheckin.DisabledColor = System.Drawing.Color.Gray;
-            this.date_ContractCheckin.DisplayWeekNumbers = false;
-            this.date_ContractCheckin.DPHeight = 0;
-            this.date_ContractCheckin.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.date_ContractCheckin.FillDatePicker = false;
-            this.date_ContractCheckin.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date_ContractCheckin.ForeColor = System.Drawing.Color.Black;
-            this.date_ContractCheckin.Icon = ((System.Drawing.Image)(resources.GetObject("date_ContractCheckin.Icon")));
-            this.date_ContractCheckin.IconColor = System.Drawing.Color.Black;
-            this.date_ContractCheckin.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
-            this.date_ContractCheckin.LeftTextMargin = 1;
-            this.date_ContractCheckin.Location = new System.Drawing.Point(341, 85);
-            this.date_ContractCheckin.MinimumSize = new System.Drawing.Size(4, 50);
-            this.date_ContractCheckin.Name = "date_ContractCheckin";
-            this.date_ContractCheckin.Size = new System.Drawing.Size(300, 50);
-            this.date_ContractCheckin.TabIndex = 86;
-            this.date_ContractCheckin.Value = new System.DateTime(2023, 12, 1, 0, 0, 0, 0);
-            // 
-            // bunifuLabel4
-            // 
-            this.bunifuLabel4.AllowParentOverrides = false;
-            this.bunifuLabel4.AutoEllipsis = false;
-            this.bunifuLabel4.CursorType = null;
-            this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel4.Location = new System.Drawing.Point(341, 59);
-            this.bunifuLabel4.Name = "bunifuLabel4";
-            this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(61, 20);
-            this.bunifuLabel4.TabIndex = 85;
-            this.bunifuLabel4.Text = "Ngày tạo";
-            this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
             // bunifuLabel1
             // 
             this.bunifuLabel1.AllowParentOverrides = false;
@@ -817,6 +778,31 @@
             // 
             this.bunifuElipse6.ElipseRadius = 10;
             this.bunifuElipse6.TargetControl = this.date_ContractCheckin;
+            // 
+            // date_ContractCheckin
+            // 
+            this.date_ContractCheckin.BackColor = System.Drawing.Color.White;
+            this.date_ContractCheckin.BorderRadius = 15;
+            this.date_ContractCheckin.Color = System.Drawing.Color.Transparent;
+            this.date_ContractCheckin.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
+            this.date_ContractCheckin.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
+            this.date_ContractCheckin.DisabledColor = System.Drawing.Color.Gray;
+            this.date_ContractCheckin.DisplayWeekNumbers = false;
+            this.date_ContractCheckin.DPHeight = 0;
+            this.date_ContractCheckin.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.date_ContractCheckin.FillDatePicker = false;
+            this.date_ContractCheckin.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date_ContractCheckin.ForeColor = System.Drawing.Color.Black;
+            this.date_ContractCheckin.Icon = ((System.Drawing.Image)(resources.GetObject("date_ContractCheckin.Icon")));
+            this.date_ContractCheckin.IconColor = System.Drawing.Color.Black;
+            this.date_ContractCheckin.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
+            this.date_ContractCheckin.LeftTextMargin = 1;
+            this.date_ContractCheckin.Location = new System.Drawing.Point(341, 85);
+            this.date_ContractCheckin.MinimumSize = new System.Drawing.Size(4, 50);
+            this.date_ContractCheckin.Name = "date_ContractCheckin";
+            this.date_ContractCheckin.Size = new System.Drawing.Size(300, 50);
+            this.date_ContractCheckin.TabIndex = 86;
+            this.date_ContractCheckin.Value = new System.DateTime(2023, 12, 1, 0, 0, 0, 0);
             // 
             // bunifuElipse7
             // 
@@ -1133,7 +1119,7 @@
             this.txt_TotalMoney.Padding = new System.Windows.Forms.Padding(3);
             this.txt_TotalMoney.PasswordChar = '\0';
             this.txt_TotalMoney.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(85)))), ((int)(((byte)(90)))));
-            this.txt_TotalMoney.PlaceholderText = "Giá phòng";
+            this.txt_TotalMoney.PlaceholderText = "Tổng tiền thanh toán";
             this.txt_TotalMoney.ReadOnly = true;
             this.txt_TotalMoney.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_TotalMoney.SelectedText = "";
@@ -1147,7 +1133,7 @@
             this.txt_TotalMoney.TextMarginBottom = 0;
             this.txt_TotalMoney.TextMarginLeft = 10;
             this.txt_TotalMoney.TextMarginTop = 0;
-            this.txt_TotalMoney.TextPlaceholder = "Giá phòng";
+            this.txt_TotalMoney.TextPlaceholder = "Tổng tiền thanh toán";
             this.txt_TotalMoney.UseSystemPasswordChar = false;
             this.txt_TotalMoney.WordWrap = true;
             // 
@@ -1165,6 +1151,21 @@
             this.bunifuLabel9.Text = "Tổng tiền thanh toán";
             this.bunifuLabel9.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel9.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel4
+            // 
+            this.bunifuLabel4.AllowParentOverrides = false;
+            this.bunifuLabel4.AutoEllipsis = false;
+            this.bunifuLabel4.CursorType = null;
+            this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuLabel4.Location = new System.Drawing.Point(341, 59);
+            this.bunifuLabel4.Name = "bunifuLabel4";
+            this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel4.Size = new System.Drawing.Size(61, 20);
+            this.bunifuLabel4.TabIndex = 85;
+            this.bunifuLabel4.Text = "Ngày tạo";
+            this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // ContractDetail
             // 
@@ -1219,8 +1220,6 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
         private Bunifu.UI.WinForms.BunifuDropdown cmb_DateCheckOut;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
-        private Bunifu.UI.WinForms.BunifuDatePicker date_ContractCheckin;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private Bunifu.UI.WinForms.BunifuDropdown cmb_Rooms;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel7;
@@ -1241,5 +1240,7 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel8;
         private Bunifu.UI.WinForms.BunifuTextBox txt_TotalMoney;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel9;
+        private Bunifu.UI.WinForms.BunifuDatePicker date_ContractCheckin;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
     }
 }

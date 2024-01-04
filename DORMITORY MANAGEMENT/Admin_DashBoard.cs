@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DORMITORY_MANAGEMENT.DTO;
+using System;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -32,7 +33,13 @@ namespace DORMITORY_MANAGEMENT
         public Admin_Dashboard()
         {
             InitializeComponent();
+            AuthService.SetLoggedInUserId(10001);
+        }
 
+        public Admin_Dashboard(int StaffID)
+        {
+            InitializeComponent();
+            AuthService.SetLoggedInUserId(StaffID);
         }
 
         #region Events
@@ -42,8 +49,6 @@ namespace DORMITORY_MANAGEMENT
             txt_showMainNameofPage.Text = "Trang chủ";
 
             pages.SetPage(((Control)sender).Text);
-
-
 
         }
 
@@ -125,8 +130,18 @@ namespace DORMITORY_MANAGEMENT
             pages.SetPage(((Control)sender).Text);
         }
 
+
+        private void btn_StudentBills_Click(object sender, EventArgs e)
+        {
+            text_showNameofPage.Text = btn_StudentBills.Text.ToString();
+            txt_showMainNameofPage.Text = "Hoá đơn sinh viên";
+
+            pages.SetPage(((Control)sender).Text);
+        }
+
+
         #endregion
 
-
+        
     }
 }

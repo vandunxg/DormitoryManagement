@@ -1093,3 +1093,55 @@ BEGIN
 	)
 END;
 GO
+
+CREATE PROC GetStudentBill
+AS
+BEGIN
+	SELECT
+		BillID AS N'Mã hoá đơn',
+		StudentID AS N'Mã sinh viên',
+		BillCreationDate AS N'Ngày tạo',
+		StaffID AS N'Mã nhân viên',
+		BillTotalMoney AS N'Tổng thanh toán',
+		BillPaid AS N'Tình trạng'
+	FROM StudentBills
+END;
+GO
+
+CREATE PROC GetStudentBillFilter
+@RoomID INT, @Months INT, @Years INT
+AS
+BEGIN
+	SELECT
+		BillID AS N'Mã hoá đơn',
+		StudentID AS N'Mã sinh viên',
+		BillCreationDate AS N'Ngày tạo',
+		StaffID AS N'Mã nhân viên',
+		BillTotalMoney AS N'Tổng thanh toán',
+		BillPaid AS N'Tình trạng'
+	FROM StudentBills
+	WHERE
+		RoomID = @RoomID 
+		AND BillMonth = @Months
+		AND BillYear = @Years
+END;
+GO
+
+CREATE PROC GetStudentBillSearch
+@StudentID NVARCHAR(20), @Months INT, @Years INT
+AS
+BEGIN
+	SELECT
+		BillID AS N'Mã hoá đơn',
+		StudentID AS N'Mã sinh viên',
+		BillCreationDate AS N'Ngày tạo',
+		StaffID AS N'Mã nhân viên',
+		BillTotalMoney AS N'Tổng thanh toán',
+		BillPaid AS N'Tình trạng'
+	FROM StudentBills
+	WHERE
+		StudentID = @StudentID 
+		AND BillMonth = @Months
+		AND BillYear = @Years
+END;
+GO
