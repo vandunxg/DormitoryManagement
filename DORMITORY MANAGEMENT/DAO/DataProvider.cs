@@ -9,7 +9,7 @@ namespace DORMITORY_MANAGEMENT.DAO
 
         private static DataProvider instance;
 
-        private string connectionString = @"Data Source=VANDUNXG;Initial Catalog=DB;Integrated Security=True";
+        private string connectionString = @"Data Source=VANDUNXG;Initial Catalog=DB002;Integrated Security=True";
 
         private DataProvider() { }
 

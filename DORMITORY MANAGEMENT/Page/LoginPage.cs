@@ -96,9 +96,10 @@ namespace DORMITORY_MANAGEMENT
 
                 if (Account.Instance.checkValidAccount(inputEmailLogin, inputPasswordEmail))
                 {
-                    Admin_Dashboard adminPage = new Admin_Dashboard();
+                    
 
                     AuthService.SetLoggedInUserId(int.Parse(DataProvider.Instance.ExcuteQuery("SELECT StaffID FROM Staffs WHERE StaffEmail = @StaffEmail ", new object[] { inputEmailLogin }).Rows[0]["StaffID"].ToString()));
+                    Admin_Dashboard adminPage = new Admin_Dashboard();
                     adminPage.Visible = true;
                     this.Visible = false;
 

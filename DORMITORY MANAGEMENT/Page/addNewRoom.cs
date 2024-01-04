@@ -39,6 +39,18 @@ namespace DORMITORY_MANAGEMENT
 
         }
 
+        private void cmb_RoomTypes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmb_RoomTypes.SelectedIndex != -1)
+            {
+                txt_RoomPrice.Text = DataProvider.Instance.ExcuteQuery("SELECT RoomTypePrice FROM RoomTypes WHERE RoomTypeID = @RoomTypeID ", new object[] { cmb_RoomTypes.SelectedValue }).Rows[0]["RoomTypePrice"].ToString();
+            }
+            else
+            {
+                txt_RoomPrice.Text = string.Empty;
+            }
+        }
+
         private void txt_inputRoomNumber_TextChanged(object sender, EventArgs e)
         {
 
@@ -253,8 +265,9 @@ namespace DORMITORY_MANAGEMENT
         }
 
 
+
         #endregion
 
-
+        
     }
 }

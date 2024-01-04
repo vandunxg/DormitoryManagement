@@ -1,9 +1,9 @@
 -- TẠO DATABASE
-CREATE DATABASE DB;
+CREATE DATABASE DB002;
 GO
 
 -- CHỌN DATABASE 
-USE DB;
+USE DB002;
 GO
 -- BẢNG NHÂN VIÊN
 CREATE TABLE Staffs(
@@ -114,7 +114,8 @@ CREATE TABLE Contracts(
 	StudentID NVARCHAR(20) NOT NULL,
 	StaffID INT NOT NULL,
 	AreaID INT NOT NULL,
-	ContractState BIT NOT NULL,
+	ContractState BIT,
+	ContractDeposit INT NOT NULL,
 	RoomID INT NOT NULL,
 	RoomTypeID INT NOT NULL,
 	CheckInDate DATE NOT NULL,
@@ -158,6 +159,21 @@ CREATE TABLE Bills(
 	StaffID INT NOT NULL,
 	BillPaid BIT
 	FOREIGN KEY (StaffID) REFERENCES Staffs(StaffID)
+);
+GO
+
+-- Bảng Student Bill
+CREATE TABLE StudentBills(
+	BillID INT IDENTITY(10000, 1) PRIMARY KEY NOT NULL,
+	RoomID INT NOT NULL,
+	StudentID NVARCHAR(20) NOT NULL,
+	BillMonth INT NOT NULL,
+	BillYear INT NOT NULL,
+	BillCreationDate DATE NOT NULL,
+	StaffID INT NOT NULL,
+	BillTotalMoney INT NOT NULL,
+	BillPaid BIT 
+	FOREIGN KEY (StudentID) REFERENCES Students(StudentID)
 );
 GO
 
@@ -332,7 +348,7 @@ GO
 --INSERT INTO Staffs
 INSERT INTO Staffs(StaffName, StaffPhone, StaffEmail, StaffAddress, StaffPersonalID, StaffSalary)
 VALUES
-(N'Nguyễn Văn Dũng', '0835595675', 'contact@vandunxg.com', N'Thanh Hoá', '038204113400', 250000);
+(N'Minh Thư', '0835595678', 'minhthu@gmail.com', N'Thanh Hoá', '038204113411', 250000);
 GO
 
 --INSERT INTO Students
@@ -343,8 +359,9 @@ GO
 
 INSERT INTO Accounts(StaffEmail, AccountPassword, StaffID)
 VALUES
-('contact@vandunxg.com', 'dung2004', '10000')
+('minhthu@gmail.com', 'dung2004', '10001')
 -----------------------------------------------------------------------------------------------------------------------------------------
+GO
 
 -- Get Data Students
 CREATE PROC GetStudents
@@ -638,11 +655,12 @@ GO
 
 -- INSERT INTO Contracts
 CREATE PROC InsertDataContracts
-@StudentID NVARCHAR(20), @RoomID NVARCHAR(20) , @StaffID NVARCHAR(20) , @AreaID INT, @RoomTypeID INT,
-@ContractState BIT , @CheckInDate DATE , @CheckOutDate DATE
+@StudentID NVARCHAR(20), @RoomID INT , @StaffID INT , @AreaID INT, @RoomTypeID INT,
+@ContractState BIT , @CheckInDate DATE , @CheckOutDate DATE ,
+@ContractDeposit INT
 AS
 BEGIN
-	INSERT INTO Contracts(StudentID, RoomID, StaffID, AreaID, RoomTypeID, ContractState, CheckInDate, CheckOutDate)
+	INSERT INTO Contracts(StudentID, RoomID, StaffID, AreaID, RoomTypeID, ContractState, CheckInDate, CheckOutDate, ContractDeposit)
 	VALUES
 	(
 		@StudentID,
@@ -652,7 +670,8 @@ BEGIN
 		@RoomTypeID,
 		@ContractState,
 		@CheckInDate,
-		@CheckOutDate
+		@CheckOutDate,
+		@ContractDeposit
 	)
 END;
 GO
@@ -663,18 +682,15 @@ AS
 BEGIN
     -- Truy vấn của bạn với CASE
     SELECT
-        Contracts.ContractID,
-        Contracts.StudentID,
-        Contracts.StaffID,
-		Rooms.RoomName,
-        Contracts.CheckInDate,
-        Contracts.CheckOutDate,
-        CASE
-            WHEN Contracts.ContractState = 1 THEN N'Còn hiệu lực'
-            WHEN Contracts.ContractState = 0 THEN N'Hết hiệu lực'
-        END AS ContractState, -- Thêm CASE cho ContractState
-        Areas.AreaName,
-        RoomTypes.RoomTypeName
+        Contracts.ContractID AS N'Mã HĐ',
+        Contracts.StudentID AS N'Mã SV',
+        Contracts.StaffID AS N'Mã NV',
+		Areas.AreaName AS N'Khu',
+		RoomTypes.RoomTypeName AS N'Loại phòng',
+		Rooms.RoomName AS N'Phòng',
+        Contracts.CheckInDate AS N'Ngày tạo HĐ',
+        Contracts.CheckOutDate AS N'Ngày hết hạn',
+        Contracts.ContractDeposit AS N'Tiền cọc'
     FROM
         Contracts
 	INNER JOIN
@@ -779,11 +795,11 @@ END;
 GO
 
 CREATE PROC UpdateContracts
-@ContractID INT, @ContractState INT
+@ContractID INT, @ContractDeposit INT
 AS
 BEGIN
 	UPDATE Contracts
-	SET ContractState = @ContractState
+	SET ContractDeposit = @ContractDeposit
 	WHERE ContractID = @ContractID
 END;
 GO
@@ -927,7 +943,7 @@ CREATE PROC CalTotalMoneyBill
     @Years INT
 AS
 BEGIN
-    DECLARE @TotalMoney DECIMAL(18, 2);
+    DECLARE @TotalMoney INT;
 	SELECT
 	@TotalMoney = ISNULL(@TotalMoney, 0) + Usages.UsageQuantity * Services.ServicePrice
     
@@ -1059,3 +1075,21 @@ BEGIN
 END;
 GO
 
+CREATE PROC InsertStudentBills
+@RoomID INT, @StudentID NVARCHAR(20), @BillMonth INT, @BillYear INT, @BillCreationDate DATE,
+@StaffID INT, @BillTotalMoney INT, @BillPaid BIT
+AS
+BEGIN
+	INSERT INTO StudentBills(RoomID, StudentID, BillMonth, BillYear, BillCreationDate, StaffID, BillTotalMoney, BillPaid)
+	VALUES(
+		@RoomID,
+		@StudentID,
+		@BillMonth,
+		@BillYear,
+		@BillCreationDate,
+		@StaffID,
+		@BillTotalMoney,
+		@BillPaid
+	)
+END;
+GO

@@ -1,5 +1,7 @@
 ﻿using DORMITORY_MANAGEMENT.DAO;
+using DORMITORY_MANAGEMENT.DTO;
 using System;
+using System.Data;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -84,7 +86,7 @@ namespace DORMITORY_MANAGEMENT
             cmb_Years.SelectedIndex = -1;
             cmb_Years.Text = "Năm";
 
-            txt_StaffID.Text = string.Empty;
+            txt_StaffID.Text = AuthService.GetLoggedInUserId().ToString();
 
         }
 
@@ -139,6 +141,16 @@ namespace DORMITORY_MANAGEMENT
 
                 if (CheckStatus > 0)
                 {
+
+                    DataTable StudentIDData = DataProvider.Instance.ExcuteQuery("SELECT StudentID FROM Contracts WHERE RoomID = @RoomID ", new object[] { RoomID });
+
+                    double TotalMoney = 1.0 * double.Parse(DataProvider.Instance.ExcuteQuery("CalTotalMoneyBill @RoomID , @Months , @Years ", new object[] { RoomID, Months, Years }).Rows[0][0].ToString()) / StudentIDData.Rows.Count;
+
+                    for (int i = 0; i < StudentIDData.Rows.Count; i++)
+                    {
+                        int InsertData = DataProvider.Instance.ExecuteNonQuery("InsertStudentBills @RoomID , @StudentID , @BillMonth , @BillYear , @BillCreationDate , @StaffID , @BillTotalMoney , @BillPaid", new object[] { RoomID, StudentIDData.Rows[i][0], Months, Years, DateCreation, StaffID, TotalMoney, 0 });
+                    }
+
                     MessageBox.Show("Thêm hoá đơn thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     AddNewBill_Load(sender, e);
                     return;

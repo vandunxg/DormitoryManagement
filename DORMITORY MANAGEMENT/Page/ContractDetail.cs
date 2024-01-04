@@ -34,7 +34,7 @@ namespace DORMITORY_MANAGEMENT
             InitializeComponent();
         }
 
-        public ContractDetail(string ContractID, string StudentID, string AreaID, string RoomTypeID, string RoomID, string date_CheckIn, string date_CheckOut, string ContractState, string StaffID)
+        public ContractDetail(string ContractID, string StudentID, string AreaID, string RoomTypeID, string RoomID, string date_CheckIn, string date_CheckOut, string StaffID, string ContractDeposit)
         {
 
             InitializeComponent();
@@ -50,19 +50,17 @@ namespace DORMITORY_MANAGEMENT
             txt_StaffID.Text = StaffID;
             cmb_Areas.SelectedIndex = cmb_Areas.FindString(AreaID);
             date_ContractCheckin.Value = DateTime.Parse(date_CheckIn);
-            date_ContractCheckout.Value = DateTime.Parse(date_CheckOut);
-            cmb_ContractState.SelectedIndex = cmb_ContractState.FindString(ContractState);
 
-            int CheckContractState = cmb_ContractState.SelectedIndex;
-            if (CheckContractState == 0)
-            {
-                lbl_ContractID.ForeColor = Color.FromArgb(72, 186, 120);
-            }
-            else
-            {
-                lbl_ContractID.ForeColor = Color.FromArgb(219, 89, 98);
-            }
+            cmb_DateCheckOut.DisplayMember = "DateContractID";
+            cmb_DateCheckOut.ValueMember = "DateContractName";
+            cmb_DateCheckOut.DataSource = DataProvider.Instance.ExcuteQuery("SELECT * FROM DateContract");
+            cmb_DateCheckOut.Enabled = false;
 
+            cmb_DateCheckOut.SelectedIndex = cmb_DateCheckOut.FindString(date_CheckOut);
+
+            
+
+            txt_DepositPrice.Text = ContractDeposit;
 
         }
 
@@ -79,9 +77,14 @@ namespace DORMITORY_MANAGEMENT
 
         private void cmb_RoomTypes_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cmb_Rooms.DisplayMember = "RoomName";
-            cmb_Rooms.ValueMember = "RoomID";
-            cmb_Rooms.DataSource = DataProvider.Instance.ExcuteQuery("GetRoomServices @AreaID , @RoomTypeID ", new object[] { int.Parse(cmb_Areas.SelectedValue.ToString()), int.Parse(cmb_RoomTypes.SelectedValue.ToString()) });
+            if (cmb_RoomTypes.SelectedIndex != -1)
+            {
+                cmb_Rooms.DisplayMember = "RoomName";
+                cmb_Rooms.ValueMember = "RoomID";
+                cmb_Rooms.DataSource = DataProvider.Instance.ExcuteQuery("GetRoomServices @AreaID , @RoomTypeID ", new object[] { int.Parse(cmb_Areas.SelectedValue.ToString()), int.Parse(cmb_RoomTypes.SelectedValue.ToString()) });
+                
+                txt_RoomPrice.Text = DataProvider.Instance.ExcuteQuery("SELECT RoomTypePrice FROM RoomTypes WHERE RoomTypeID = @RoomTypeID ", new object[] { cmb_RoomTypes.SelectedValue }).Rows[0]["RoomTypePrice"].ToString();
+            }
         }
 
         private void btn_exit_Click(object sender, EventArgs e)
@@ -116,25 +119,15 @@ namespace DORMITORY_MANAGEMENT
         private void btn_SavedContracts_Click(object sender, EventArgs e)
         {
             string ContractID = lbl_ContractID.Text.Trim();
-            //string StudentID = txt_StudentID.Text.Trim();
-            int AreaID = int.Parse(cmb_Areas.SelectedValue.ToString());
-            int RoomTypeID = int.Parse(cmb_RoomTypes.SelectedValue.ToString());
-            int RoomID = int.Parse(cmb_Rooms.SelectedValue.ToString());
-            int ContractState;
-            if (cmb_ContractState.SelectedIndex == 0)
-            {
-                ContractState = 1;
-            }
-            else
-            {
-                ContractState = 0;
-            }
+     
+            string ContractDeposit = txt_DepositPrice.Text.Trim();
+            
 
             DialogResult CheckNotify = MessageBox.Show("Bạn có chắc chắn muốn sửa hợp đồng này chứ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
             if (CheckNotify == DialogResult.Yes)
             {
-                int CheckStatus = DataProvider.Instance.ExecuteNonQuery("UpdateContracts @ContractID , @ContractState ", new object[] { ContractID, ContractState });
+                int CheckStatus = DataProvider.Instance.ExecuteNonQuery("UpdateContracts @ContractID , @ContractDeposit ", new object[] { ContractID, ContractDeposit });
 
                 if (CheckStatus > 0)
                 {
@@ -153,21 +146,17 @@ namespace DORMITORY_MANAGEMENT
 
         private void cmb_ContractState_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmb_ContractState.SelectedIndex != -1)
-            {
-                int CheckContractState = cmb_ContractState.SelectedIndex;
-                if (CheckContractState == 0)
-                {
-                    lbl_ContractID.ForeColor = Color.FromArgb(72, 186, 120);
-                }
-                else
-                {
-                    lbl_ContractID.ForeColor = Color.FromArgb(219, 89, 98);
-                }
-            }
+            
         }
+
+
         #endregion
 
-
+        private void txt_DepositPrice_TextChanged(object sender, EventArgs e)
+        {
+            txt_TotalMoney.Text = string.Empty;
+            long CalTotalMoney = (long.Parse(txt_RoomPrice.Text) * long.Parse(cmb_DateCheckOut.SelectedValue.ToString())) - long.Parse(txt_DepositPrice.Text);
+            txt_TotalMoney.Text = CalTotalMoney.ToString();
+        }
     }
 }

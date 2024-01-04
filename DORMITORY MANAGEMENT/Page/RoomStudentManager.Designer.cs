@@ -32,7 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RoomStudentManager));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
@@ -47,12 +46,8 @@
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.lbl_PaidState = new Bunifu.UI.WinForms.BunifuLabel();
             this.btn_exit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_addRoom = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.cmb_RoomServiceState = new Bunifu.UI.WinForms.BunifuDropdown();
-            this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.btn_UpdateServiceState = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.dgv_UsageService = new Bunifu.UI.WinForms.BunifuDataGridView();
@@ -82,7 +77,7 @@
             this.lbl_RoomID.CursorType = System.Windows.Forms.Cursors.Default;
             this.lbl_RoomID.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold);
             this.lbl_RoomID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.lbl_RoomID.Location = new System.Drawing.Point(139, 17);
+            this.lbl_RoomID.Location = new System.Drawing.Point(153, 17);
             this.lbl_RoomID.Name = "lbl_RoomID";
             this.lbl_RoomID.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lbl_RoomID.Size = new System.Drawing.Size(63, 45);
@@ -191,7 +186,6 @@
             this.bunifuPanel1.BorderRadius = 3;
             this.bunifuPanel1.BorderThickness = 1;
             this.bunifuPanel1.Controls.Add(this.bunifuLabel1);
-            this.bunifuPanel1.Controls.Add(this.lbl_PaidState);
             this.bunifuPanel1.Controls.Add(this.btn_exit);
             this.bunifuPanel1.Controls.Add(this.lbl_RoomID);
             this.bunifuPanel1.Location = new System.Drawing.Point(-3, -2);
@@ -212,28 +206,11 @@
             this.bunifuLabel1.Location = new System.Drawing.Point(32, 17);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(97, 45);
+            this.bunifuLabel1.Size = new System.Drawing.Size(114, 45);
             this.bunifuLabel1.TabIndex = 47;
-            this.bunifuLabel1.Text = "Phòng";
+            this.bunifuLabel1.Text = "Phòng :";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // lbl_PaidState
-            // 
-            this.lbl_PaidState.AllowParentOverrides = false;
-            this.lbl_PaidState.AutoEllipsis = false;
-            this.lbl_PaidState.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lbl_PaidState.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lbl_PaidState.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
-            this.lbl_PaidState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(89)))), ((int)(((byte)(98)))));
-            this.lbl_PaidState.Location = new System.Drawing.Point(466, 23);
-            this.lbl_PaidState.Name = "lbl_PaidState";
-            this.lbl_PaidState.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbl_PaidState.Size = new System.Drawing.Size(193, 35);
-            this.lbl_PaidState.TabIndex = 46;
-            this.lbl_PaidState.Text = "Chưa thanh toán";
-            this.lbl_PaidState.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lbl_PaidState.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // btn_exit
             // 
@@ -254,11 +231,11 @@
             this.btn_exit.ColorContrastOnClick = 45;
             this.btn_exit.ColorContrastOnHover = 45;
             this.btn_exit.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btn_exit.CustomizableEdges = borderEdges3;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btn_exit.CustomizableEdges = borderEdges2;
             this.btn_exit.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_exit.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_exit.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -344,11 +321,11 @@
             this.btn_addRoom.ColorContrastOnClick = 45;
             this.btn_addRoom.ColorContrastOnHover = 45;
             this.btn_addRoom.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btn_addRoom.CustomizableEdges = borderEdges2;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btn_addRoom.CustomizableEdges = borderEdges1;
             this.btn_addRoom.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_addRoom.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_addRoom.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -413,157 +390,6 @@
             this.btn_addRoom.TextMarginLeft = 0;
             this.btn_addRoom.TextPadding = new System.Windows.Forms.Padding(0);
             this.btn_addRoom.UseDefaultRadiusAndThickness = true;
-            // 
-            // cmb_RoomServiceState
-            // 
-            this.cmb_RoomServiceState.BackColor = System.Drawing.Color.Transparent;
-            this.cmb_RoomServiceState.BackgroundColor = System.Drawing.Color.White;
-            this.cmb_RoomServiceState.BorderColor = System.Drawing.Color.Transparent;
-            this.cmb_RoomServiceState.BorderRadius = 1;
-            this.cmb_RoomServiceState.Color = System.Drawing.Color.Transparent;
-            this.cmb_RoomServiceState.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
-            this.cmb_RoomServiceState.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.cmb_RoomServiceState.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.cmb_RoomServiceState.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.cmb_RoomServiceState.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.cmb_RoomServiceState.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
-            this.cmb_RoomServiceState.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmb_RoomServiceState.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
-            this.cmb_RoomServiceState.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmb_RoomServiceState.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.cmb_RoomServiceState.FillDropDown = true;
-            this.cmb_RoomServiceState.FillIndicator = false;
-            this.cmb_RoomServiceState.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmb_RoomServiceState.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_RoomServiceState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.cmb_RoomServiceState.FormattingEnabled = true;
-            this.cmb_RoomServiceState.Icon = null;
-            this.cmb_RoomServiceState.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.cmb_RoomServiceState.IndicatorColor = System.Drawing.Color.Gray;
-            this.cmb_RoomServiceState.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.cmb_RoomServiceState.ItemBackColor = System.Drawing.Color.White;
-            this.cmb_RoomServiceState.ItemBorderColor = System.Drawing.Color.White;
-            this.cmb_RoomServiceState.ItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.cmb_RoomServiceState.ItemHeight = 40;
-            this.cmb_RoomServiceState.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
-            this.cmb_RoomServiceState.ItemHighLightForeColor = System.Drawing.Color.White;
-            this.cmb_RoomServiceState.Items.AddRange(new object[] {
-            "Đã thanh toán",
-            "Chưa thanh toán"});
-            this.cmb_RoomServiceState.ItemTopMargin = 3;
-            this.cmb_RoomServiceState.Location = new System.Drawing.Point(29, 735);
-            this.cmb_RoomServiceState.Name = "cmb_RoomServiceState";
-            this.cmb_RoomServiceState.Size = new System.Drawing.Size(275, 46);
-            this.cmb_RoomServiceState.TabIndex = 43;
-            this.cmb_RoomServiceState.Text = "Tình trạng thanh toán";
-            this.cmb_RoomServiceState.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.cmb_RoomServiceState.TextLeftMargin = 5;
-            // 
-            // bunifuLabel5
-            // 
-            this.bunifuLabel5.AllowParentOverrides = false;
-            this.bunifuLabel5.AutoEllipsis = false;
-            this.bunifuLabel5.CursorType = null;
-            this.bunifuLabel5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.bunifuLabel5.Location = new System.Drawing.Point(29, 709);
-            this.bunifuLabel5.Name = "bunifuLabel5";
-            this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel5.Size = new System.Drawing.Size(142, 20);
-            this.bunifuLabel5.TabIndex = 44;
-            this.bunifuLabel5.Text = "Tình trạng thanh toán";
-            this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // btn_UpdateServiceState
-            // 
-            this.btn_UpdateServiceState.AllowAnimations = true;
-            this.btn_UpdateServiceState.AllowMouseEffects = true;
-            this.btn_UpdateServiceState.AllowToggling = false;
-            this.btn_UpdateServiceState.AnimationSpeed = 200;
-            this.btn_UpdateServiceState.AutoGenerateColors = false;
-            this.btn_UpdateServiceState.AutoRoundBorders = false;
-            this.btn_UpdateServiceState.AutoSizeLeftIcon = true;
-            this.btn_UpdateServiceState.AutoSizeRightIcon = true;
-            this.btn_UpdateServiceState.BackColor = System.Drawing.Color.Transparent;
-            this.btn_UpdateServiceState.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
-            this.btn_UpdateServiceState.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_UpdateServiceState.BackgroundImage")));
-            this.btn_UpdateServiceState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_UpdateServiceState.ButtonText = "Cập nhật";
-            this.btn_UpdateServiceState.ButtonTextMarginLeft = 0;
-            this.btn_UpdateServiceState.ColorContrastOnClick = 45;
-            this.btn_UpdateServiceState.ColorContrastOnHover = 45;
-            this.btn_UpdateServiceState.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btn_UpdateServiceState.CustomizableEdges = borderEdges1;
-            this.btn_UpdateServiceState.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_UpdateServiceState.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btn_UpdateServiceState.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btn_UpdateServiceState.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btn_UpdateServiceState.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btn_UpdateServiceState.Font = new System.Drawing.Font("Segoe UI Semibold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_UpdateServiceState.ForeColor = System.Drawing.Color.White;
-            this.btn_UpdateServiceState.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_UpdateServiceState.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btn_UpdateServiceState.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.btn_UpdateServiceState.IconMarginLeft = 11;
-            this.btn_UpdateServiceState.IconPadding = 10;
-            this.btn_UpdateServiceState.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_UpdateServiceState.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.btn_UpdateServiceState.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.btn_UpdateServiceState.IconSize = 25;
-            this.btn_UpdateServiceState.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
-            this.btn_UpdateServiceState.IdleBorderRadius = 10;
-            this.btn_UpdateServiceState.IdleBorderThickness = 1;
-            this.btn_UpdateServiceState.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
-            this.btn_UpdateServiceState.IdleIconLeftImage = null;
-            this.btn_UpdateServiceState.IdleIconRightImage = null;
-            this.btn_UpdateServiceState.IndicateFocus = false;
-            this.btn_UpdateServiceState.Location = new System.Drawing.Point(365, 731);
-            this.btn_UpdateServiceState.Name = "btn_UpdateServiceState";
-            this.btn_UpdateServiceState.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btn_UpdateServiceState.OnDisabledState.BorderRadius = 10;
-            this.btn_UpdateServiceState.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_UpdateServiceState.OnDisabledState.BorderThickness = 1;
-            this.btn_UpdateServiceState.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btn_UpdateServiceState.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btn_UpdateServiceState.OnDisabledState.IconLeftImage = null;
-            this.btn_UpdateServiceState.OnDisabledState.IconRightImage = null;
-            this.btn_UpdateServiceState.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
-            this.btn_UpdateServiceState.onHoverState.BorderRadius = 10;
-            this.btn_UpdateServiceState.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_UpdateServiceState.onHoverState.BorderThickness = 1;
-            this.btn_UpdateServiceState.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
-            this.btn_UpdateServiceState.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_UpdateServiceState.onHoverState.IconLeftImage = null;
-            this.btn_UpdateServiceState.onHoverState.IconRightImage = null;
-            this.btn_UpdateServiceState.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
-            this.btn_UpdateServiceState.OnIdleState.BorderRadius = 10;
-            this.btn_UpdateServiceState.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_UpdateServiceState.OnIdleState.BorderThickness = 1;
-            this.btn_UpdateServiceState.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
-            this.btn_UpdateServiceState.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_UpdateServiceState.OnIdleState.IconLeftImage = null;
-            this.btn_UpdateServiceState.OnIdleState.IconRightImage = null;
-            this.btn_UpdateServiceState.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
-            this.btn_UpdateServiceState.OnPressedState.BorderRadius = 10;
-            this.btn_UpdateServiceState.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_UpdateServiceState.OnPressedState.BorderThickness = 1;
-            this.btn_UpdateServiceState.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
-            this.btn_UpdateServiceState.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.btn_UpdateServiceState.OnPressedState.IconLeftImage = null;
-            this.btn_UpdateServiceState.OnPressedState.IconRightImage = null;
-            this.btn_UpdateServiceState.Size = new System.Drawing.Size(135, 50);
-            this.btn_UpdateServiceState.TabIndex = 45;
-            this.btn_UpdateServiceState.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_UpdateServiceState.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btn_UpdateServiceState.TextMarginLeft = 0;
-            this.btn_UpdateServiceState.TextPadding = new System.Windows.Forms.Padding(0);
-            this.btn_UpdateServiceState.UseDefaultRadiusAndThickness = true;
-            this.btn_UpdateServiceState.Click += new System.EventHandler(this.btn_UpdateServiceState_Click);
             // 
             // bunifuElipse3
             // 
@@ -678,20 +504,20 @@
             // cardShowInfo_Total
             // 
             this.cardShowInfo_Total.BackColor = System.Drawing.Color.White;
-            this.cardShowInfo_Total.Location = new System.Drawing.Point(780, 90);
+            this.cardShowInfo_Total.Location = new System.Drawing.Point(753, 90);
             this.cardShowInfo_Total.Money = "";
             this.cardShowInfo_Total.Name = "cardShowInfo_Total";
-            this.cardShowInfo_Total.Size = new System.Drawing.Size(314, 144);
+            this.cardShowInfo_Total.Size = new System.Drawing.Size(341, 144);
             this.cardShowInfo_Total.TabIndex = 3;
             this.cardShowInfo_Total.TextLabel = null;
             // 
             // cardShowInfo_Water
             // 
             this.cardShowInfo_Water.BackColor = System.Drawing.Color.White;
-            this.cardShowInfo_Water.Location = new System.Drawing.Point(405, 90);
+            this.cardShowInfo_Water.Location = new System.Drawing.Point(388, 90);
             this.cardShowInfo_Water.Money = "";
             this.cardShowInfo_Water.Name = "cardShowInfo_Water";
-            this.cardShowInfo_Water.Size = new System.Drawing.Size(314, 144);
+            this.cardShowInfo_Water.Size = new System.Drawing.Size(346, 144);
             this.cardShowInfo_Water.TabIndex = 2;
             this.cardShowInfo_Water.TextLabel = null;
             // 
@@ -701,14 +527,13 @@
             this.cardShowInfo_Electricity.Location = new System.Drawing.Point(29, 90);
             this.cardShowInfo_Electricity.Money = "";
             this.cardShowInfo_Electricity.Name = "cardShowInfo_Electricity";
-            this.cardShowInfo_Electricity.Size = new System.Drawing.Size(314, 144);
+            this.cardShowInfo_Electricity.Size = new System.Drawing.Size(341, 144);
             this.cardShowInfo_Electricity.TabIndex = 1;
             this.cardShowInfo_Electricity.TextLabel = null;
             // 
             // bunifuElipse6
             // 
             this.bunifuElipse6.ElipseRadius = 10;
-            this.bunifuElipse6.TargetControl = this.cmb_RoomServiceState;
             // 
             // RoomStudentManager
             // 
@@ -717,9 +542,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.ClientSize = new System.Drawing.Size(1120, 808);
             this.Controls.Add(this.dgv_UsageService);
-            this.Controls.Add(this.btn_UpdateServiceState);
-            this.Controls.Add(this.bunifuLabel5);
-            this.Controls.Add(this.cmb_RoomServiceState);
             this.Controls.Add(this.btn_addRoom);
             this.Controls.Add(this.cardShowInfo_Total);
             this.Controls.Add(this.dgv_Students);
@@ -737,7 +559,6 @@
             this.bunifuPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_UsageService)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -755,10 +576,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn StudentName;
         private System.Windows.Forms.DataGridViewTextBoxColumn StudentID;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_addRoom;
-        private Bunifu.UI.WinForms.BunifuDropdown cmb_RoomServiceState;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_UpdateServiceState;
-        private Bunifu.UI.WinForms.BunifuLabel lbl_PaidState;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse3;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse4;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;

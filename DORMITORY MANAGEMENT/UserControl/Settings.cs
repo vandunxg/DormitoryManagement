@@ -2,6 +2,7 @@
 using DORMITORY_MANAGEMENT.DTO;
 using System;
 using System.Data;
+using System.Net.Security;
 using System.Windows.Forms;
 
 namespace DORMITORY_MANAGEMENT
@@ -19,7 +20,7 @@ namespace DORMITORY_MANAGEMENT
         private void LoadData()
         {
 
-            AuthService.SetLoggedInUserId(10000);
+            
 
             DataRow DataOfStaff = DataProvider.Instance.ExcuteQuery("SELECT * FROM Staffs WHERE StaffID = @StaffID ", new object[] { AuthService.GetLoggedInUserId() }).Rows[0];
 

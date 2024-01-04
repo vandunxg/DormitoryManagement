@@ -3,7 +3,6 @@ using DORMITORY_MANAGEMENT.DTO;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -94,16 +93,7 @@ namespace DORMITORY_MANAGEMENT
             DataTable RoomBills = DataProvider.Instance.ExcuteQuery("SELECT * FROM Bills WHERE RoomID = @RoomID ", new object[] { RoomID });
             if (RoomBills.Rows.Count > 0)
             {
-                if (RoomBills.Rows[0]["BillPaid"].ToString() == "True")
-                {
-                    lbl_PaidState.ForeColor = Color.FromArgb(19, 186, 126);
-                    lbl_PaidState.Text = "Đã thanh toán";
-                }
-                else
-                {
-                    lbl_PaidState.ForeColor = Color.FromArgb(219, 89, 98);
-                    lbl_PaidState.Text = "Chưa thanh toán";
-                }
+
             }
 
             DataTable DataUsageServices = DataProvider.Instance.ExcuteQuery("GetInforUsageServices @RoomID , @Months , @Years", new object[] { RoomID, Months, Years });
@@ -112,21 +102,7 @@ namespace DORMITORY_MANAGEMENT
 
         private void btn_UpdateServiceState_Click(object sender, EventArgs e)
         {
-            if (cmb_RoomServiceState.SelectedIndex == 0)
-            {
-                DataTable data = DataProvider.Instance.ExcuteQuery("UPDATE Bills SET BillPaid = @BillPaid WHERE RoomID = @RoomID", new object[] { 1, RoomID });
 
-                MessageBox.Show("Đã cập nhật thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            }
-            else
-            {
-                DataTable data = DataProvider.Instance.ExcuteQuery("UPDATE Bills SET BillPaid = @BillPaid WHERE RoomID = @RoomID", new object[] { 0, RoomID });
-
-                MessageBox.Show("Đã cập nhật thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            }
-            RoomStudentManager_Load(sender, e);
         }
 
 
