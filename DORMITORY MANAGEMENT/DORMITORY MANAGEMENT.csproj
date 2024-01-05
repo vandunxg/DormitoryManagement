@@ -191,314 +191,314 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DTO\AuthService.cs" />
-    <Compile Include="EmptyCard.cs">
+    <Compile Include="CARD\Card_Empty.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="EmptyCard.Designer.cs">
-      <DependentUpon>EmptyCard.cs</DependentUpon>
+    <Compile Include="CARD\Card_Empty.Designer.cs">
+      <DependentUpon>Card_Empty.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_ContractsOutDate.cs">
+    <Compile Include="FORM\Form_ContractsOutDate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_ContractsOutDate.Designer.cs">
+    <Compile Include="FORM\Form_ContractsOutDate.Designer.cs">
       <DependentUpon>Form_ContractsOutDate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_DebtBills.cs">
+    <Compile Include="FORM\Form_DebtBills.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_DebtBills.Designer.cs">
+    <Compile Include="FORM\Form_DebtBills.Designer.cs">
       <DependentUpon>Form_DebtBills.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_PaidBill.cs">
+    <Compile Include="FORM\Form_PaidBill.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_PaidBill.Designer.cs">
+    <Compile Include="FORM\Form_PaidBill.Designer.cs">
       <DependentUpon>Form_PaidBill.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_ShowStudents.cs">
+    <Compile Include="FORM\Form_ShowStudents.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_ShowStudents.Designer.cs">
+    <Compile Include="FORM\Form_ShowStudents.Designer.cs">
       <DependentUpon>Form_ShowStudents.cs</DependentUpon>
     </Compile>
-    <Compile Include="FORM\AddNewBill.cs">
+    <Compile Include="FORM\Form_AddNewBill.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FORM\AddNewBill.Designer.cs">
-      <DependentUpon>AddNewBill.cs</DependentUpon>
+    <Compile Include="FORM\Form_AddNewBill.Designer.cs">
+      <DependentUpon>Form_AddNewBill.cs</DependentUpon>
     </Compile>
-    <Compile Include="FORM\ShowBills.cs">
+    <Compile Include="FORM\Form_ShowBill.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FORM\ShowBills.Designer.cs">
-      <DependentUpon>ShowBills.cs</DependentUpon>
+    <Compile Include="FORM\Form_ShowBill.Designer.cs">
+      <DependentUpon>Form_ShowBill.cs</DependentUpon>
     </Compile>
-    <Compile Include="FORM\StudentBillDetail.cs">
+    <Compile Include="FORM\Form_StudentsBill.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FORM\StudentBillDetail.Designer.cs">
-      <DependentUpon>StudentBillDetail.cs</DependentUpon>
+    <Compile Include="FORM\Form_StudentsBill.Designer.cs">
+      <DependentUpon>Form_StudentsBill.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\StatisticsOverview.cs">
+    <Compile Include="Page\Page_Statistics.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\StatisticsOverview.Designer.cs">
-      <DependentUpon>StatisticsOverview.cs</DependentUpon>
+    <Compile Include="Page\Page_Statistics.Designer.cs">
+      <DependentUpon>Page_Statistics.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\StudentBills.cs">
+    <Compile Include="Page\Page_StudentsBill.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\StudentBills.Designer.cs">
-      <DependentUpon>StudentBills.cs</DependentUpon>
+    <Compile Include="Page\Page_StudentsBill.Designer.cs">
+      <DependentUpon>Page_StudentsBill.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\Settings.cs">
+    <Compile Include="Page\Page_Settings.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\Settings.Designer.cs">
-      <DependentUpon>Settings.cs</DependentUpon>
+    <Compile Include="Page\Page_Settings.Designer.cs">
+      <DependentUpon>Page_Settings.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\Bills.cs">
+    <Compile Include="Page\Page_BillManagement.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\Bills.Designer.cs">
-      <DependentUpon>Bills.cs</DependentUpon>
+    <Compile Include="Page\Page_BillManagement.Designer.cs">
+      <DependentUpon>Page_BillManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="DAO\ServicesDAO.cs" />
     <Compile Include="DTO\ServicesDTO.cs" />
-    <Compile Include="FORM\NewServices.cs">
+    <Compile Include="FORM\Form_AddNewService.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FORM\NewServices.Designer.cs">
-      <DependentUpon>NewServices.cs</DependentUpon>
+    <Compile Include="FORM\Form_AddNewService.Designer.cs">
+      <DependentUpon>Form_AddNewService.cs</DependentUpon>
     </Compile>
-    <Compile Include="FORM\ShowServicesDetail.cs">
+    <Compile Include="FORM\Form_ServiceDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FORM\ShowServicesDetail.Designer.cs">
-      <DependentUpon>ShowServicesDetail.cs</DependentUpon>
+    <Compile Include="FORM\Form_ServiceDetail.Designer.cs">
+      <DependentUpon>Form_ServiceDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\ManageServiceControl.cs">
+    <Compile Include="Page\Page_ServiceManagement.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\ManageServiceControl.Designer.cs">
-      <DependentUpon>ManageServiceControl.cs</DependentUpon>
+    <Compile Include="Page\Page_ServiceManagement.Designer.cs">
+      <DependentUpon>Page_ServiceManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="FORM\ContractDetail.cs">
+    <Compile Include="FORM\Form_ContractDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FORM\ContractDetail.Designer.cs">
-      <DependentUpon>ContractDetail.cs</DependentUpon>
+    <Compile Include="FORM\Form_ContractDetail.Designer.cs">
+      <DependentUpon>Form_ContractDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="FORM\AddServices.cs">
+    <Compile Include="FORM\Form_UpdateUsageService.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FORM\AddServices.Designer.cs">
-      <DependentUpon>AddServices.cs</DependentUpon>
+    <Compile Include="FORM\Form_UpdateUsageService.Designer.cs">
+      <DependentUpon>Form_UpdateUsageService.cs</DependentUpon>
     </Compile>
-    <Compile Include="FORM\StudentInformations.cs">
+    <Compile Include="FORM\Form_Students.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FORM\StudentInformations.Designer.cs">
-      <DependentUpon>StudentInformations.cs</DependentUpon>
+    <Compile Include="FORM\Form_Students.Designer.cs">
+      <DependentUpon>Form_Students.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\ShowServices.cs">
+    <Compile Include="CARD\Card_ShowServices.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\ShowServices.Designer.cs">
-      <DependentUpon>ShowServices.cs</DependentUpon>
+    <Compile Include="CARD\Card_ShowServices.Designer.cs">
+      <DependentUpon>Card_ShowServices.cs</DependentUpon>
     </Compile>
-    <Compile Include="FORM\UsageDetails.cs">
+    <Compile Include="FORM\Form_UsageDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FORM\UsageDetails.Designer.cs">
-      <DependentUpon>UsageDetails.cs</DependentUpon>
+    <Compile Include="FORM\Form_UsageDetail.Designer.cs">
+      <DependentUpon>Form_UsageDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\Services.cs">
+    <Compile Include="Page\Page_ServicesUsage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\Services.Designer.cs">
-      <DependentUpon>Services.cs</DependentUpon>
+    <Compile Include="Page\Page_ServicesUsage.Designer.cs">
+      <DependentUpon>Page_ServicesUsage.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\ContractsPage.cs">
+    <Compile Include="Page\Page_AddNewContract.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\ContractsPage.Designer.cs">
-      <DependentUpon>ContractsPage.cs</DependentUpon>
+    <Compile Include="Page\Page_AddNewContract.Designer.cs">
+      <DependentUpon>Page_AddNewContract.cs</DependentUpon>
     </Compile>
     <Compile Include="DAO\UsageServicesDAO.cs" />
     <Compile Include="DTO\RoomServices.cs" />
     <Compile Include="DTO\UsageServices.cs" />
-    <Compile Include="FORM\addNewRoom.cs">
+    <Compile Include="FORM\Form_RoomManagement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FORM\addNewRoom.Designer.cs">
-      <DependentUpon>addNewRoom.cs</DependentUpon>
+    <Compile Include="FORM\Form_RoomManagement.Designer.cs">
+      <DependentUpon>Form_RoomManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="FORM\RoomStudentManager.cs">
+    <Compile Include="FORM\Form_StudentsRoom.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FORM\RoomStudentManager.Designer.cs">
-      <DependentUpon>RoomStudentManager.cs</DependentUpon>
+    <Compile Include="FORM\Form_StudentsRoom.Designer.cs">
+      <DependentUpon>Form_StudentsRoom.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\addStudents.cs">
+    <Compile Include="Page\Page_AddNewStudents.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\addStudents.Designer.cs">
-      <DependentUpon>addStudents.cs</DependentUpon>
+    <Compile Include="Page\Page_AddNewStudents.Designer.cs">
+      <DependentUpon>Page_AddNewStudents.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin_Dashboard.cs">
+    <Compile Include="AdminDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin_Dashboard.Designer.cs">
-      <DependentUpon>Admin_Dashboard.cs</DependentUpon>
+    <Compile Include="AdminDashboard.Designer.cs">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\CardRoom.cs">
+    <Compile Include="CARD\Card_ShowRoom.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\CardRoom.Designer.cs">
-      <DependentUpon>CardRoom.cs</DependentUpon>
+    <Compile Include="CARD\Card_ShowRoom.Designer.cs">
+      <DependentUpon>Card_ShowRoom.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\cardShowInfo.cs">
+    <Compile Include="CARD\Card_ShowInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\cardShowInfo.Designer.cs">
-      <DependentUpon>cardShowInfo.cs</DependentUpon>
+    <Compile Include="CARD\Card_ShowInfo.Designer.cs">
+      <DependentUpon>Card_ShowInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\cardShowOverview.cs">
+    <Compile Include="CARD\Card_ShowOverview.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\cardShowOverview.Designer.cs">
-      <DependentUpon>cardShowOverview.cs</DependentUpon>
+    <Compile Include="CARD\Card_ShowOverview.Designer.cs">
+      <DependentUpon>Card_ShowOverview.cs</DependentUpon>
     </Compile>
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\RoomDAO.cs" />
     <Compile Include="DAO\studentsDAO.cs" />
     <Compile Include="DTO\Room.cs" />
-    <Compile Include="FORM\LoginPage.cs">
+    <Compile Include="FORM\Form_LoginPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FORM\LoginPage.Designer.cs">
-      <DependentUpon>LoginPage.cs</DependentUpon>
+    <Compile Include="FORM\Form_LoginPage.Designer.cs">
+      <DependentUpon>Form_LoginPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="FORM\ForgotPasswordPage.cs">
+    <Compile Include="FORM\Form_ForgotPassword.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FORM\ForgotPasswordPage.Designer.cs">
-      <DependentUpon>ForgotPasswordPage.cs</DependentUpon>
+    <Compile Include="FORM\Form_ForgotPassword.Designer.cs">
+      <DependentUpon>Form_ForgotPassword.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\ManageRoomControl.cs">
+    <Compile Include="Page\Page_RoomManagement.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\ManageRoomControl.Designer.cs">
-      <DependentUpon>ManageRoomControl.cs</DependentUpon>
+    <Compile Include="Page\Page_RoomManagement.Designer.cs">
+      <DependentUpon>Page_RoomManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\OverviewPage.cs">
+    <Compile Include="Page\Page_Overview.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\OverviewPage.Designer.cs">
-      <DependentUpon>OverviewPage.cs</DependentUpon>
+    <Compile Include="Page\Page_Overview.Designer.cs">
+      <DependentUpon>Page_Overview.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="EmptyCard.resx">
-      <DependentUpon>EmptyCard.cs</DependentUpon>
+    <EmbeddedResource Include="CARD\Card_Empty.resx">
+      <DependentUpon>Card_Empty.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_ContractsOutDate.resx">
+    <EmbeddedResource Include="FORM\Form_ContractsOutDate.resx">
       <DependentUpon>Form_ContractsOutDate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_DebtBills.resx">
+    <EmbeddedResource Include="FORM\Form_DebtBills.resx">
       <DependentUpon>Form_DebtBills.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_PaidBill.resx">
+    <EmbeddedResource Include="FORM\Form_PaidBill.resx">
       <DependentUpon>Form_PaidBill.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_ShowStudents.resx">
+    <EmbeddedResource Include="FORM\Form_ShowStudents.resx">
       <DependentUpon>Form_ShowStudents.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FORM\AddNewBill.resx">
-      <DependentUpon>AddNewBill.cs</DependentUpon>
+    <EmbeddedResource Include="FORM\Form_AddNewBill.resx">
+      <DependentUpon>Form_AddNewBill.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FORM\ShowBills.resx">
-      <DependentUpon>ShowBills.cs</DependentUpon>
+    <EmbeddedResource Include="FORM\Form_ShowBill.resx">
+      <DependentUpon>Form_ShowBill.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FORM\StudentBillDetail.resx">
-      <DependentUpon>StudentBillDetail.cs</DependentUpon>
+    <EmbeddedResource Include="FORM\Form_StudentsBill.resx">
+      <DependentUpon>Form_StudentsBill.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\StatisticsOverview.resx">
-      <DependentUpon>StatisticsOverview.cs</DependentUpon>
+    <EmbeddedResource Include="Page\Page_Statistics.resx">
+      <DependentUpon>Page_Statistics.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\StudentBills.resx">
-      <DependentUpon>StudentBills.cs</DependentUpon>
+    <EmbeddedResource Include="Page\Page_StudentsBill.resx">
+      <DependentUpon>Page_StudentsBill.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\Settings.resx">
-      <DependentUpon>Settings.cs</DependentUpon>
+    <EmbeddedResource Include="Page\Page_Settings.resx">
+      <DependentUpon>Page_Settings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\Bills.resx">
-      <DependentUpon>Bills.cs</DependentUpon>
+    <EmbeddedResource Include="Page\Page_BillManagement.resx">
+      <DependentUpon>Page_BillManagement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FORM\NewServices.resx">
-      <DependentUpon>NewServices.cs</DependentUpon>
+    <EmbeddedResource Include="FORM\Form_AddNewService.resx">
+      <DependentUpon>Form_AddNewService.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FORM\ShowServicesDetail.resx">
-      <DependentUpon>ShowServicesDetail.cs</DependentUpon>
+    <EmbeddedResource Include="FORM\Form_ServiceDetail.resx">
+      <DependentUpon>Form_ServiceDetail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\ManageServiceControl.resx">
-      <DependentUpon>ManageServiceControl.cs</DependentUpon>
+    <EmbeddedResource Include="Page\Page_ServiceManagement.resx">
+      <DependentUpon>Page_ServiceManagement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FORM\ContractDetail.resx">
-      <DependentUpon>ContractDetail.cs</DependentUpon>
+    <EmbeddedResource Include="FORM\Form_ContractDetail.resx">
+      <DependentUpon>Form_ContractDetail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FORM\AddServices.resx">
-      <DependentUpon>AddServices.cs</DependentUpon>
+    <EmbeddedResource Include="FORM\Form_UpdateUsageService.resx">
+      <DependentUpon>Form_UpdateUsageService.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FORM\addNewRoom.resx">
-      <DependentUpon>addNewRoom.cs</DependentUpon>
+    <EmbeddedResource Include="FORM\Form_RoomManagement.resx">
+      <DependentUpon>Form_RoomManagement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FORM\RoomStudentManager.resx">
-      <DependentUpon>RoomStudentManager.cs</DependentUpon>
+    <EmbeddedResource Include="FORM\Form_StudentsRoom.resx">
+      <DependentUpon>Form_StudentsRoom.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FORM\StudentInformations.resx">
-      <DependentUpon>StudentInformations.cs</DependentUpon>
+    <EmbeddedResource Include="FORM\Form_Students.resx">
+      <DependentUpon>Form_Students.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\ShowServices.resx">
-      <DependentUpon>ShowServices.cs</DependentUpon>
+    <EmbeddedResource Include="CARD\Card_ShowServices.resx">
+      <DependentUpon>Card_ShowServices.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FORM\UsageDetails.resx">
-      <DependentUpon>UsageDetails.cs</DependentUpon>
+    <EmbeddedResource Include="FORM\Form_UsageDetail.resx">
+      <DependentUpon>Form_UsageDetail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\Services.resx">
-      <DependentUpon>Services.cs</DependentUpon>
+    <EmbeddedResource Include="Page\Page_ServicesUsage.resx">
+      <DependentUpon>Page_ServicesUsage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\addStudents.resx">
-      <DependentUpon>addStudents.cs</DependentUpon>
+    <EmbeddedResource Include="Page\Page_AddNewStudents.resx">
+      <DependentUpon>Page_AddNewStudents.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin_Dashboard.resx">
-      <DependentUpon>Admin_Dashboard.cs</DependentUpon>
+    <EmbeddedResource Include="AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\CardRoom.resx">
-      <DependentUpon>CardRoom.cs</DependentUpon>
+    <EmbeddedResource Include="CARD\Card_ShowRoom.resx">
+      <DependentUpon>Card_ShowRoom.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\cardShowInfo.resx">
-      <DependentUpon>cardShowInfo.cs</DependentUpon>
+    <EmbeddedResource Include="CARD\Card_ShowInfo.resx">
+      <DependentUpon>Card_ShowInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\cardShowOverview.resx">
-      <DependentUpon>cardShowOverview.cs</DependentUpon>
+    <EmbeddedResource Include="CARD\Card_ShowOverview.resx">
+      <DependentUpon>Card_ShowOverview.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FORM\LoginPage.resx">
-      <DependentUpon>LoginPage.cs</DependentUpon>
+    <EmbeddedResource Include="FORM\Form_LoginPage.resx">
+      <DependentUpon>Form_LoginPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FORM\ForgotPasswordPage.resx">
-      <DependentUpon>ForgotPasswordPage.cs</DependentUpon>
+    <EmbeddedResource Include="FORM\Form_ForgotPassword.resx">
+      <DependentUpon>Form_ForgotPassword.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\ContractsPage.resx">
-      <DependentUpon>ContractsPage.cs</DependentUpon>
+    <EmbeddedResource Include="Page\Page_AddNewContract.resx">
+      <DependentUpon>Page_AddNewContract.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\ManageRoomControl.resx">
-      <DependentUpon>ManageRoomControl.cs</DependentUpon>
+    <EmbeddedResource Include="Page\Page_RoomManagement.resx">
+      <DependentUpon>Page_RoomManagement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\OverviewPage.resx">
-      <DependentUpon>OverviewPage.cs</DependentUpon>
+    <EmbeddedResource Include="Page\Page_Overview.resx">
+      <DependentUpon>Page_Overview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -568,6 +568,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="nem-%28xem%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MessageBox\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
