@@ -1145,3 +1145,65 @@ BEGIN
 		AND BillYear = @Years
 END;
 GO
+
+CREATE PROC GetDebtBills
+AS
+BEGIN
+	SELECT
+		BillID AS N'Mã hoá đơn'
+		, StudentID AS N'Mã sinh viên'
+		, BillCreationDate AS N'Ngày tạo'
+		, StaffID AS N'Mã nhân viên'
+		, BillTotalMoney AS N'Tổng tiền'
+	FROM StudentBills
+	WHERE BillPaid = 0
+END;
+GO
+
+CREATE PROC GetDebtBillsFilter
+@Months INT, @Years INT
+AS
+BEGIN
+	SELECT
+		BillID AS N'Mã hoá đơn'
+		, StudentID AS N'Mã sinh viên'
+		, BillCreationDate AS N'Ngày tạo'
+		, StaffID AS N'Mã nhân viên'
+		, BillTotalMoney AS N'Tổng tiền'
+	FROM StudentBills
+	WHERE BillPaid = 0
+	AND BillMonth = @Months
+	AND BillYear = @Years
+END;
+GO
+
+CREATE PROC GetPaidBills
+AS
+BEGIN
+	SELECT
+		BillID AS N'Mã hoá đơn'
+		, StudentID AS N'Mã sinh viên'
+		, BillCreationDate AS N'Ngày tạo'
+		, StaffID AS N'Mã nhân viên'
+		, BillTotalMoney AS N'Tổng tiền'
+	FROM StudentBills
+	WHERE BillPaid = 1
+END;
+GO
+
+CREATE PROC GetPaidBillsFilter
+@Months INT, @Years INT
+AS
+BEGIN
+	SELECT
+		BillID AS N'Mã hoá đơn'
+		, StudentID AS N'Mã sinh viên'
+		, BillCreationDate AS N'Ngày tạo'
+		, StaffID AS N'Mã nhân viên'
+		, BillTotalMoney AS N'Tổng tiền'
+	FROM StudentBills
+	WHERE BillPaid = 1
+	AND BillMonth = @Months
+	AND BillYear = @Years
+END;
+GO

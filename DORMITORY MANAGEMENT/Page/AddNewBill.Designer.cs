@@ -72,7 +72,7 @@
             this.bunifuPanel1.BackgroundColor = System.Drawing.Color.Transparent;
             this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
             this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel1.BorderColor = System.Drawing.Color.White;
             this.bunifuPanel1.BorderRadius = 3;
             this.bunifuPanel1.BorderThickness = 1;
             this.bunifuPanel1.Controls.Add(this.btn_exit);
@@ -80,7 +80,7 @@
             this.bunifuPanel1.Location = new System.Drawing.Point(-10, -15);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(729, 81);
+            this.bunifuPanel1.Size = new System.Drawing.Size(729, 76);
             this.bunifuPanel1.TabIndex = 0;
             this.bunifuPanel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bunifuPanel1_MouseDown);
             // 
@@ -232,16 +232,16 @@
             this.btn_AddBill.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btn_AddBill.IconSize = 25;
             this.btn_AddBill.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
-            this.btn_AddBill.IdleBorderRadius = 10;
+            this.btn_AddBill.IdleBorderRadius = 45;
             this.btn_AddBill.IdleBorderThickness = 1;
             this.btn_AddBill.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.btn_AddBill.IdleIconLeftImage = null;
             this.btn_AddBill.IdleIconRightImage = null;
             this.btn_AddBill.IndicateFocus = false;
-            this.btn_AddBill.Location = new System.Drawing.Point(598, 397);
+            this.btn_AddBill.Location = new System.Drawing.Point(577, 397);
             this.btn_AddBill.Name = "btn_AddBill";
             this.btn_AddBill.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btn_AddBill.OnDisabledState.BorderRadius = 10;
+            this.btn_AddBill.OnDisabledState.BorderRadius = 45;
             this.btn_AddBill.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_AddBill.OnDisabledState.BorderThickness = 1;
             this.btn_AddBill.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -249,7 +249,7 @@
             this.btn_AddBill.OnDisabledState.IconLeftImage = null;
             this.btn_AddBill.OnDisabledState.IconRightImage = null;
             this.btn_AddBill.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
-            this.btn_AddBill.onHoverState.BorderRadius = 10;
+            this.btn_AddBill.onHoverState.BorderRadius = 45;
             this.btn_AddBill.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_AddBill.onHoverState.BorderThickness = 1;
             this.btn_AddBill.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
@@ -257,7 +257,7 @@
             this.btn_AddBill.onHoverState.IconLeftImage = null;
             this.btn_AddBill.onHoverState.IconRightImage = null;
             this.btn_AddBill.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
-            this.btn_AddBill.OnIdleState.BorderRadius = 10;
+            this.btn_AddBill.OnIdleState.BorderRadius = 45;
             this.btn_AddBill.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_AddBill.OnIdleState.BorderThickness = 1;
             this.btn_AddBill.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
@@ -265,14 +265,14 @@
             this.btn_AddBill.OnIdleState.IconLeftImage = null;
             this.btn_AddBill.OnIdleState.IconRightImage = null;
             this.btn_AddBill.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
-            this.btn_AddBill.OnPressedState.BorderRadius = 10;
+            this.btn_AddBill.OnPressedState.BorderRadius = 45;
             this.btn_AddBill.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_AddBill.OnPressedState.BorderThickness = 1;
             this.btn_AddBill.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
             this.btn_AddBill.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btn_AddBill.OnPressedState.IconLeftImage = null;
             this.btn_AddBill.OnPressedState.IconRightImage = null;
-            this.btn_AddBill.Size = new System.Drawing.Size(84, 50);
+            this.btn_AddBill.Size = new System.Drawing.Size(105, 50);
             this.btn_AddBill.TabIndex = 115;
             this.btn_AddBill.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_AddBill.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -692,7 +692,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(703, 488);
+            this.ClientSize = new System.Drawing.Size(703, 474);
             this.Controls.Add(this.btn_AddBill);
             this.Controls.Add(this.bunifuLabel5);
             this.Controls.Add(this.cmb_Years);

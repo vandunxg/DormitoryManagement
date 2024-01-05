@@ -213,3 +213,9 @@ C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debu
 C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY MANAGEMENT.application
 C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.StudentBills.resources
 C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.StudentBillDetail.resources
+C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.EmptyCard.resources
+C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.StatisticsOverview.resources
+C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Form_ShowStudents.resources
+C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Form_DebtBills.resources
+C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Form_PaidBill.resources

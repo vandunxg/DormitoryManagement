@@ -283,6 +283,18 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Bunifu.UI.WinForms.BunifuScrollBar.dll" size="182976">
+      <assemblyIdentity name="Bunifu.UI.WinForms.BunifuScrollBar" version="5.0.7.0" publicKeyToken="E8E24CCD28363FE9" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>doVl0UH2j94aMWp5fnngO7Tg3RzZxeyqzStSGVYR+Uk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Bunifu.UI.WinForms.BunifuSeparator.dll" size="38592">
       <assemblyIdentity name="Bunifu.UI.WinForms.BunifuSeparator" version="5.0.7.0" publicKeyToken="E8E24CCD28363FE9" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -355,14 +367,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DORMITORY MANAGEMENT.exe" size="4222408">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DORMITORY MANAGEMENT.exe" size="4535752">
       <assemblyIdentity name="DORMITORY MANAGEMENT" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>usMPpUPSFzTuClNQAXYiR3v7Yl8CtH5yYf/yRAtg7/k=</dsig:DigestValue>
+        <dsig:DigestValue>B620xX2V6IZbnlrF7hB0Q2+W9MDAVXYm3H9AuCAqY1g=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

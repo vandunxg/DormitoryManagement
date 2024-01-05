@@ -84,7 +84,7 @@
             this.btn_AddNewServices.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btn_AddNewServices.IconSize = 25;
             this.btn_AddNewServices.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
-            this.btn_AddNewServices.IdleBorderRadius = 10;
+            this.btn_AddNewServices.IdleBorderRadius = 50;
             this.btn_AddNewServices.IdleBorderThickness = 1;
             this.btn_AddNewServices.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.btn_AddNewServices.IdleIconLeftImage = null;
@@ -93,7 +93,7 @@
             this.btn_AddNewServices.Location = new System.Drawing.Point(971, 20);
             this.btn_AddNewServices.Name = "btn_AddNewServices";
             this.btn_AddNewServices.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btn_AddNewServices.OnDisabledState.BorderRadius = 10;
+            this.btn_AddNewServices.OnDisabledState.BorderRadius = 50;
             this.btn_AddNewServices.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_AddNewServices.OnDisabledState.BorderThickness = 1;
             this.btn_AddNewServices.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -101,7 +101,7 @@
             this.btn_AddNewServices.OnDisabledState.IconLeftImage = null;
             this.btn_AddNewServices.OnDisabledState.IconRightImage = null;
             this.btn_AddNewServices.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
-            this.btn_AddNewServices.onHoverState.BorderRadius = 10;
+            this.btn_AddNewServices.onHoverState.BorderRadius = 50;
             this.btn_AddNewServices.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_AddNewServices.onHoverState.BorderThickness = 1;
             this.btn_AddNewServices.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
@@ -109,7 +109,7 @@
             this.btn_AddNewServices.onHoverState.IconLeftImage = null;
             this.btn_AddNewServices.onHoverState.IconRightImage = null;
             this.btn_AddNewServices.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
-            this.btn_AddNewServices.OnIdleState.BorderRadius = 10;
+            this.btn_AddNewServices.OnIdleState.BorderRadius = 50;
             this.btn_AddNewServices.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_AddNewServices.OnIdleState.BorderThickness = 1;
             this.btn_AddNewServices.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
@@ -117,7 +117,7 @@
             this.btn_AddNewServices.OnIdleState.IconLeftImage = null;
             this.btn_AddNewServices.OnIdleState.IconRightImage = null;
             this.btn_AddNewServices.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));
-            this.btn_AddNewServices.OnPressedState.BorderRadius = 10;
+            this.btn_AddNewServices.OnPressedState.BorderRadius = 50;
             this.btn_AddNewServices.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn_AddNewServices.OnPressedState.BorderThickness = 1;
             this.btn_AddNewServices.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(97)))), ((int)(((byte)(242)))));

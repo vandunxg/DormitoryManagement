@@ -139,9 +139,22 @@ namespace DORMITORY_MANAGEMENT
             pages.SetPage(((Control)sender).Text);
         }
 
+        private void bunifuButton1_Click_1(object sender, EventArgs e)
+        {
+            text_showNameofPage.Text =  btn_Statistic.Text.ToString();
+            txt_showMainNameofPage.Text = "Thống kê";
+
+            pages.SetPage(((Control)sender).Text);
+        }
+
+
+
 
         #endregion
 
-        
+        private void bunifuButton1_Click_2(object sender, EventArgs e)
+        {
+
+        }
     }
 }
