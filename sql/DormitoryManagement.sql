@@ -1207,3 +1207,29 @@ BEGIN
 	AND BillYear = @Years
 END;
 GO
+
+CREATE PROCEDURE GetContractOutDate
+AS
+BEGIN
+    -- Truy vấn của bạn với CASE
+    SELECT
+        Contracts.ContractID AS N'Mã HĐ',
+        Contracts.StudentID AS N'Mã SV',
+        Contracts.StaffID AS N'Mã NV',
+		Areas.AreaName AS N'Khu',
+		RoomTypes.RoomTypeName AS N'Loại phòng',
+		Rooms.RoomName AS N'Phòng',
+        Contracts.CheckInDate AS N'Ngày tạo HĐ',
+        Contracts.CheckOutDate AS N'Ngày hết hạn',
+        Contracts.ContractDeposit AS N'Tiền cọc'
+    FROM
+        Contracts
+	INNER JOIN
+		Rooms ON Rooms.RoomID = Contracts.RoomID
+    INNER JOIN
+        Areas ON Areas.AreaID = Contracts.AreaID
+    INNER JOIN
+        RoomTypes ON RoomTypes.RoomTypeID = Contracts.RoomTypeID
+	WHERE Contracts.CheckOutDate < GETDATE()
+END;
+GO

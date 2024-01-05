@@ -55,7 +55,7 @@
             this.btn_Refresh = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.emptyCard7 = new DORMITORY_MANAGEMENT.EmptyCard();
             this.emptyCard6 = new DORMITORY_MANAGEMENT.EmptyCard();
-            this.emptyCard5 = new DORMITORY_MANAGEMENT.EmptyCard();
+            this.emptyCard_ContractsOutDate = new DORMITORY_MANAGEMENT.EmptyCard();
             this.emptyCard3 = new DORMITORY_MANAGEMENT.EmptyCard();
             this.emptyCard_DebtBills = new DORMITORY_MANAGEMENT.EmptyCard();
             this.emptyCard_PaidBill = new DORMITORY_MANAGEMENT.EmptyCard();
@@ -315,6 +315,7 @@
             this.bunifuPictureBox4.TabIndex = 27;
             this.bunifuPictureBox4.TabStop = false;
             this.bunifuPictureBox4.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.bunifuPictureBox4.Click += new System.EventHandler(this.bunifuPictureBox4_Click);
             // 
             // lbl_name
             // 
@@ -333,6 +334,7 @@
             this.lbl_name.Text = "Hợp đồng quá hạn";
             this.lbl_name.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lbl_name.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lbl_name.Click += new System.EventHandler(this.lbl_name_Click);
             // 
             // lbl_ContractsOutDate
             // 
@@ -350,6 +352,7 @@
             this.lbl_ContractsOutDate.Text = "0";
             this.lbl_ContractsOutDate.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lbl_ContractsOutDate.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lbl_ContractsOutDate.Click += new System.EventHandler(this.lbl_ContractsOutDate_Click);
             // 
             // lbl_EmptyRoom
             // 
@@ -561,13 +564,14 @@
             this.emptyCard6.Size = new System.Drawing.Size(322, 158);
             this.emptyCard6.TabIndex = 46;
             // 
-            // emptyCard5
+            // emptyCard_ContractsOutDate
             // 
-            this.emptyCard5.BackColor = System.Drawing.Color.White;
-            this.emptyCard5.Location = new System.Drawing.Point(28, 581);
-            this.emptyCard5.Name = "emptyCard5";
-            this.emptyCard5.Size = new System.Drawing.Size(322, 158);
-            this.emptyCard5.TabIndex = 21;
+            this.emptyCard_ContractsOutDate.BackColor = System.Drawing.Color.White;
+            this.emptyCard_ContractsOutDate.Location = new System.Drawing.Point(28, 581);
+            this.emptyCard_ContractsOutDate.Name = "emptyCard_ContractsOutDate";
+            this.emptyCard_ContractsOutDate.Size = new System.Drawing.Size(322, 158);
+            this.emptyCard_ContractsOutDate.TabIndex = 21;
+            this.emptyCard_ContractsOutDate.Click += new System.EventHandler(this.emptyCard_ContractsOutDate_Click);
             // 
             // emptyCard3
             // 
@@ -630,7 +634,7 @@
             this.Controls.Add(this.lbl_name);
             this.Controls.Add(this.bunifuPictureBox4);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.emptyCard5);
+            this.Controls.Add(this.emptyCard_ContractsOutDate);
             this.Controls.Add(this.emptyCard3);
             this.Controls.Add(this.lbl_NumberofNonPaid);
             this.Controls.Add(this.bunifuLabel10);
@@ -682,7 +686,7 @@
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox5;
         private EmptyCard emptyCard_DebtBills;
         private EmptyCard emptyCard3;
-        private EmptyCard emptyCard5;
+        private EmptyCard emptyCard_ContractsOutDate;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox4;
         private Bunifu.UI.WinForms.BunifuLabel lbl_name;
