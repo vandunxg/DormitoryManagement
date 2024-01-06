@@ -268,9 +268,9 @@
             this.cmb_RoomTypes.BorderRadius = 1;
             this.cmb_RoomTypes.Color = System.Drawing.Color.Transparent;
             this.cmb_RoomTypes.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
-            this.cmb_RoomTypes.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.cmb_RoomTypes.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.cmb_RoomTypes.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.cmb_RoomTypes.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.cmb_RoomTypes.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.cmb_RoomTypes.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.cmb_RoomTypes.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.cmb_RoomTypes.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
             this.cmb_RoomTypes.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
@@ -327,9 +327,9 @@
             this.cmb_Rooms.BorderRadius = 1;
             this.cmb_Rooms.Color = System.Drawing.Color.Transparent;
             this.cmb_Rooms.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
-            this.cmb_Rooms.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.cmb_Rooms.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.cmb_Rooms.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.cmb_Rooms.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.cmb_Rooms.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.cmb_Rooms.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.cmb_Rooms.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.cmb_Rooms.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
             this.cmb_Rooms.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
@@ -454,8 +454,8 @@
             stateProperties9.ForeColor = System.Drawing.Color.Empty;
             stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txt_StaffID.OnActiveState = stateProperties9;
-            stateProperties10.BorderColor = System.Drawing.Color.White;
-            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
             this.txt_StaffID.OnDisabledState = stateProperties10;
@@ -543,7 +543,7 @@
             this.btn_AddContracts.IdleIconLeftImage = null;
             this.btn_AddContracts.IdleIconRightImage = null;
             this.btn_AddContracts.IndicateFocus = false;
-            this.btn_AddContracts.Location = new System.Drawing.Point(932, 14);
+            this.btn_AddContracts.Location = new System.Drawing.Point(914, 14);
             this.btn_AddContracts.Name = "btn_AddContracts";
             this.btn_AddContracts.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_AddContracts.OnDisabledState.BorderRadius = 45;
@@ -642,7 +642,7 @@
             this.txt_SearchStudentID.Padding = new System.Windows.Forms.Padding(3);
             this.txt_SearchStudentID.PasswordChar = '\0';
             this.txt_SearchStudentID.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(85)))), ((int)(((byte)(90)))));
-            this.txt_SearchStudentID.PlaceholderText = "Mã sinh viên";
+            this.txt_SearchStudentID.PlaceholderText = "Tìm theo mã sinh viên";
             this.txt_SearchStudentID.ReadOnly = false;
             this.txt_SearchStudentID.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_SearchStudentID.SelectedText = "";
@@ -656,7 +656,7 @@
             this.txt_SearchStudentID.TextMarginBottom = 0;
             this.txt_SearchStudentID.TextMarginLeft = 10;
             this.txt_SearchStudentID.TextMarginTop = 0;
-            this.txt_SearchStudentID.TextPlaceholder = "Mã sinh viên";
+            this.txt_SearchStudentID.TextPlaceholder = "Tìm theo mã sinh viên";
             this.txt_SearchStudentID.UseSystemPasswordChar = false;
             this.txt_SearchStudentID.WordWrap = true;
             // 
@@ -725,7 +725,7 @@
             this.btn_Refresh.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Refresh.IdleIconLeftImage")));
             this.btn_Refresh.IdleIconRightImage = null;
             this.btn_Refresh.IndicateFocus = false;
-            this.btn_Refresh.Location = new System.Drawing.Point(1035, 14);
+            this.btn_Refresh.Location = new System.Drawing.Point(1028, 14);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Refresh.OnDisabledState.BorderRadius = 1;
@@ -964,9 +964,6 @@
             this.cmb_DateCheckOut.ItemHeight = 40;
             this.cmb_DateCheckOut.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.cmb_DateCheckOut.ItemHighLightForeColor = System.Drawing.Color.White;
-            this.cmb_DateCheckOut.Items.AddRange(new object[] {
-            "Còn hiệu lực",
-            "Hết hiệu lực"});
             this.cmb_DateCheckOut.ItemTopMargin = 3;
             this.cmb_DateCheckOut.Location = new System.Drawing.Point(814, 208);
             this.cmb_DateCheckOut.Name = "cmb_DateCheckOut";
@@ -1041,7 +1038,7 @@
             this.txt_RoomPrice.BackColor = System.Drawing.Color.Transparent;
             this.txt_RoomPrice.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_RoomPrice.BackgroundImage")));
             this.txt_RoomPrice.BorderColorActive = System.Drawing.Color.White;
-            this.txt_RoomPrice.BorderColorDisabled = System.Drawing.Color.White;
+            this.txt_RoomPrice.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.txt_RoomPrice.BorderColorHover = System.Drawing.Color.White;
             this.txt_RoomPrice.BorderColorIdle = System.Drawing.Color.White;
             this.txt_RoomPrice.BorderRadius = 10;
@@ -1069,8 +1066,8 @@
             stateProperties5.ForeColor = System.Drawing.Color.Empty;
             stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txt_RoomPrice.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.White;
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
             this.txt_RoomPrice.OnDisabledState = stateProperties6;
@@ -1176,7 +1173,7 @@
             this.txt_DepositPrice.Padding = new System.Windows.Forms.Padding(3);
             this.txt_DepositPrice.PasswordChar = '\0';
             this.txt_DepositPrice.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(85)))), ((int)(((byte)(90)))));
-            this.txt_DepositPrice.PlaceholderText = "Mã nhân viên";
+            this.txt_DepositPrice.PlaceholderText = "Tiền cọc";
             this.txt_DepositPrice.ReadOnly = false;
             this.txt_DepositPrice.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_DepositPrice.SelectedText = "";
@@ -1190,7 +1187,7 @@
             this.txt_DepositPrice.TextMarginBottom = 0;
             this.txt_DepositPrice.TextMarginLeft = 10;
             this.txt_DepositPrice.TextMarginTop = 0;
-            this.txt_DepositPrice.TextPlaceholder = "Mã nhân viên";
+            this.txt_DepositPrice.TextPlaceholder = "Tiền cọc";
             this.txt_DepositPrice.UseSystemPasswordChar = false;
             this.txt_DepositPrice.WordWrap = true;
             // 

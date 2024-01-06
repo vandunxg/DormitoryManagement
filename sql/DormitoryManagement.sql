@@ -1233,3 +1233,37 @@ BEGIN
 	WHERE Contracts.CheckOutDate < GETDATE()
 END;
 GO
+
+CREATE PROCEDURE RenewContracts
+@ContractID INT, @StaffID INT, @CheckInDate DATE, @CheckOutDate DATE
+AS
+BEGIN
+    -- Truy vấn của bạn với CASE
+    UPDATE Contracts
+	SET
+		StaffID = @StaffID
+		, CheckInDate = @CheckInDate
+		, CheckOutDate = @CheckOutDate
+	WHERE Contracts.ContractID = @ContractID;
+END;
+GO
+
+CREATE PROC DeleteContracts
+@ContractID INT
+AS
+BEGIN
+	DELETE FROM Contracts WHERE ContractID = @ContractID
+END;
+GO
+
+CREATE PROC CmpCheckOutDate
+@StudentID NVARCHAR(20)
+AS
+BEGIN
+	SELECT TOP 1 CheckOutDate
+	FROM Contracts
+	WHERE StudentID = @StudentID
+	ORDER BY CheckOutDate DESC;
+END;
+GO
+

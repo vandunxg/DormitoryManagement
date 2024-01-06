@@ -399,6 +399,12 @@
     <Compile Include="Page\Page_Overview.Designer.cs">
       <DependentUpon>Page_Overview.cs</DependentUpon>
     </Compile>
+    <Compile Include="Page\Page_RenewContracts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Page\Page_RenewContracts.Designer.cs">
+      <DependentUpon>Page_RenewContracts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CARD\Card_Empty.resx">
@@ -499,6 +505,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Page\Page_Overview.resx">
       <DependentUpon>Page_Overview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\Page_RenewContracts.resx">
+      <DependentUpon>Page_RenewContracts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

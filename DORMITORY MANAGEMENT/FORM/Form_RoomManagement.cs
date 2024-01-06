@@ -142,17 +142,7 @@ namespace DORMITORY_MANAGEMENT
 
         private void btn_exit_Click_1(object sender, EventArgs e)
         {
-            if (cmb_RoomAreas.SelectedIndex != -1 && txt_RoomName.Text != "" && cmb_RoomTypes.SelectedIndex > -1 && cmb_RoomStatus.SelectedIndex != -1)
-            {
-                DialogResult = MessageBox.Show("Bạn có chắc chắn muốn đóng cửa sổ?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-                if (DialogResult == DialogResult.OK)
-                {
-                    this.Close();
-                }
-            }
-            else
                 this.Close();
-
         }
 
         private void btn_editRoom_Click(object sender, EventArgs e)

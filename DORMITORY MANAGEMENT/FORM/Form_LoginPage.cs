@@ -8,7 +8,7 @@ namespace DORMITORY_MANAGEMENT
 {
     public partial class loginPage : Form
     {
-
+        #region Mouse move
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
 
@@ -16,7 +16,7 @@ namespace DORMITORY_MANAGEMENT
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
-
+        #endregion
 
         public loginPage()
         {

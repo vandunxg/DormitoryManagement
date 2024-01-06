@@ -13,7 +13,7 @@ namespace DORMITORY_MANAGEMENT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AdminDashboard());
+            Application.Run(new loginPage());
         }
     }
 }

@@ -88,7 +88,7 @@ namespace DORMITORY_MANAGEMENT
             cmb_Years.SelectedIndex = -1;
             cmb_Years.Text = "Năm";
 
-            
+            txt_StaffID.Text = AuthService.GetLoggedInUserId().ToString();
 
         }
 

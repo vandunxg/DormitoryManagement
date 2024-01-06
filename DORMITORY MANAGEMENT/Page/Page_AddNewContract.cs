@@ -192,9 +192,17 @@ namespace DORMITORY_MANAGEMENT
 
                 if (int.Parse(DataProvider.Instance.ExcuteQuery("SELECT COUNT(ContractID) FROM Contracts WHERE StudentID = @StudentID ", new object[] { StudentID }).Rows[0][0].ToString()) > 0)
                 {
-                    MessageBox.Show("Sinh viên đã tạo hợp đồng trước đó!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
+
+                    DateTime CmpDate = DateTime.Parse(DataProvider.Instance.ExcuteQuery("CmpCheckOutDate @StudentID ", new object[] { StudentID }).Rows[0]["CheckOutDate"].ToString());
+
+                    if(CmpDate.Date > DateTime.Now.Date)
+                    {
+                        MessageBox.Show("Hợp đồng của sinh viên đang khả dụng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
                 }
+
                 #endregion
 
                 #region Insert Data

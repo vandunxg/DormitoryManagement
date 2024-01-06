@@ -63,17 +63,16 @@
             this.bunifuPanel5 = new Bunifu.UI.WinForms.BunifuPanel();
             this.PageManagement = new Bunifu.UI.WinForms.BunifuPages();
             this.page_Overview = new System.Windows.Forms.TabPage();
-            this.page_Overview1 = new DORMITORY_MANAGEMENT.Page_Overview();
             this.page_Students = new System.Windows.Forms.TabPage();
-            this.page_AddNewStudents1 = new DORMITORY_MANAGEMENT.Page_AddNewStudents();
             this.page_Rooms = new System.Windows.Forms.TabPage();
-            this.page_RoomManagement1 = new DORMITORY_MANAGEMENT.Page_RoomManagement();
             this.pages_Contracts = new System.Windows.Forms.TabPage();
-            this.page_AddNewContract1 = new DORMITORY_MANAGEMENT.Page_AddNewContract();
             this.page_ContractDate = new System.Windows.Forms.TabPage();
             this.page_ServicesUsage = new System.Windows.Forms.TabPage();
-            this.page_ServicesUsage1 = new DORMITORY_MANAGEMENT.Page_ServicesUsage();
             this.page_ServicesManagement = new System.Windows.Forms.TabPage();
+            this.page_Bills = new System.Windows.Forms.TabPage();
+            this.page_StudentBills = new System.Windows.Forms.TabPage();
+            this.page_Statistics = new System.Windows.Forms.TabPage();
+            this.page_Settings = new System.Windows.Forms.TabPage();
             this.topPanelDashboard = new Bunifu.UI.WinForms.BunifuPanel();
             this.btn_exit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.text_showNameofPage = new Bunifu.UI.WinForms.BunifuLabel();
@@ -81,15 +80,17 @@
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.PageSetup = new System.Windows.Forms.PageSetupDialog();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.page_Overview1 = new DORMITORY_MANAGEMENT.Page_Overview();
+            this.page_AddNewStudents1 = new DORMITORY_MANAGEMENT.Page_AddNewStudents();
+            this.page_RoomManagement1 = new DORMITORY_MANAGEMENT.Page_RoomManagement();
+            this.page_AddNewContract1 = new DORMITORY_MANAGEMENT.Page_AddNewContract();
+            this.page_ServicesUsage1 = new DORMITORY_MANAGEMENT.Page_ServicesUsage();
             this.manageServiceControl1 = new DORMITORY_MANAGEMENT.ManageServiceControl();
-            this.page_Bills = new System.Windows.Forms.TabPage();
             this.page_BillManagement1 = new DORMITORY_MANAGEMENT.Page_BillManagement();
-            this.page_StudentBills = new System.Windows.Forms.TabPage();
             this.page_StudentsBill1 = new DORMITORY_MANAGEMENT.Page_StudentsBill();
-            this.page_Statistics = new System.Windows.Forms.TabPage();
             this.page_Statistics1 = new DORMITORY_MANAGEMENT.Page_Statistics();
-            this.page_Settings = new System.Windows.Forms.TabPage();
             this.page_Settings1 = new DORMITORY_MANAGEMENT.Page_Settings();
+            this.page_RenewContracts1 = new DORMITORY_MANAGEMENT.Page_RenewContracts();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.bunifuPanel3.SuspendLayout();
@@ -99,13 +100,14 @@
             this.page_Students.SuspendLayout();
             this.page_Rooms.SuspendLayout();
             this.pages_Contracts.SuspendLayout();
+            this.page_ContractDate.SuspendLayout();
             this.page_ServicesUsage.SuspendLayout();
             this.page_ServicesManagement.SuspendLayout();
-            this.topPanelDashboard.SuspendLayout();
             this.page_Bills.SuspendLayout();
             this.page_StudentBills.SuspendLayout();
             this.page_Statistics.SuspendLayout();
             this.page_Settings.SuspendLayout();
+            this.topPanelDashboard.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuPanel1
@@ -210,7 +212,7 @@
             this.btn_ContractsDate.OnIdleState.BorderThickness = 1;
             this.btn_ContractsDate.OnIdleState.FillColor = System.Drawing.Color.White;
             this.btn_ContractsDate.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(167)))));
-            this.btn_ContractsDate.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton1.OnIdleState.IconLeftImage")));
+            this.btn_ContractsDate.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_ContractsDate.OnIdleState.IconLeftImage")));
             this.btn_ContractsDate.OnIdleState.IconRightImage = null;
             this.btn_ContractsDate.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
             this.btn_ContractsDate.OnPressedState.BorderRadius = 27;
@@ -301,7 +303,7 @@
             this.btn_Statistics.OnIdleState.BorderThickness = 1;
             this.btn_Statistics.OnIdleState.FillColor = System.Drawing.Color.White;
             this.btn_Statistics.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(167)))));
-            this.btn_Statistics.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Statistic.OnIdleState.IconLeftImage")));
+            this.btn_Statistics.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Statistics.OnIdleState.IconLeftImage")));
             this.btn_Statistics.OnIdleState.IconRightImage = null;
             this.btn_Statistics.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
             this.btn_Statistics.OnPressedState.BorderRadius = 27;
@@ -755,7 +757,7 @@
             this.btn_ServiceManagement.OnIdleState.BorderThickness = 1;
             this.btn_ServiceManagement.OnIdleState.FillColor = System.Drawing.Color.White;
             this.btn_ServiceManagement.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(167)))));
-            this.btn_ServiceManagement.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("ManageServices.OnIdleState.IconLeftImage")));
+            this.btn_ServiceManagement.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_ServiceManagement.OnIdleState.IconLeftImage")));
             this.btn_ServiceManagement.OnIdleState.IconRightImage = null;
             this.btn_ServiceManagement.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
             this.btn_ServiceManagement.OnPressedState.BorderRadius = 27;
@@ -1028,7 +1030,7 @@
             this.btn_Rooms.OnIdleState.BorderThickness = 1;
             this.btn_Rooms.OnIdleState.FillColor = System.Drawing.Color.White;
             this.btn_Rooms.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(167)))));
-            this.btn_Rooms.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_ManageRooms.OnIdleState.IconLeftImage")));
+            this.btn_Rooms.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Rooms.OnIdleState.IconLeftImage")));
             this.btn_Rooms.OnIdleState.IconRightImage = null;
             this.btn_Rooms.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
             this.btn_Rooms.OnPressedState.BorderRadius = 27;
@@ -1119,7 +1121,7 @@
             this.btn_Students.OnIdleState.BorderThickness = 1;
             this.btn_Students.OnIdleState.FillColor = System.Drawing.Color.White;
             this.btn_Students.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(167)))));
-            this.btn_Students.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_addStudents.OnIdleState.IconLeftImage")));
+            this.btn_Students.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Students.OnIdleState.IconLeftImage")));
             this.btn_Students.OnIdleState.IconRightImage = null;
             this.btn_Students.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
             this.btn_Students.OnPressedState.BorderRadius = 27;
@@ -1311,10 +1313,10 @@
             this.PageManagement.Location = new System.Drawing.Point(0, 0);
             this.PageManagement.Multiline = true;
             this.PageManagement.Name = "PageManagement";
-            this.PageManagement.Page = this.page_Settings;
-            this.PageManagement.PageIndex = 10;
-            this.PageManagement.PageName = "page_Settings";
-            this.PageManagement.PageTitle = "Nhân viên";
+            this.PageManagement.Page = this.page_ContractDate;
+            this.PageManagement.PageIndex = 4;
+            this.PageManagement.PageName = "page_ContractDate";
+            this.PageManagement.PageTitle = "Gia hạn hợp đồng";
             this.PageManagement.SelectedIndex = 0;
             this.PageManagement.Size = new System.Drawing.Size(1138, 813);
             this.PageManagement.TabIndex = 0;
@@ -1347,14 +1349,6 @@
             this.page_Overview.Text = "Trang chủ";
             this.page_Overview.UseVisualStyleBackColor = true;
             // 
-            // page_Overview1
-            // 
-            this.page_Overview1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
-            this.page_Overview1.Location = new System.Drawing.Point(-4, -4);
-            this.page_Overview1.Name = "page_Overview1";
-            this.page_Overview1.Size = new System.Drawing.Size(1138, 800);
-            this.page_Overview1.TabIndex = 0;
-            // 
             // page_Students
             // 
             this.page_Students.Controls.Add(this.page_AddNewStudents1);
@@ -1365,14 +1359,6 @@
             this.page_Students.TabIndex = 1;
             this.page_Students.Text = "Sinh viên";
             this.page_Students.UseVisualStyleBackColor = true;
-            // 
-            // page_AddNewStudents1
-            // 
-            this.page_AddNewStudents1.BackColor = System.Drawing.Color.White;
-            this.page_AddNewStudents1.Location = new System.Drawing.Point(-4, -4);
-            this.page_AddNewStudents1.Name = "page_AddNewStudents1";
-            this.page_AddNewStudents1.Size = new System.Drawing.Size(1138, 800);
-            this.page_AddNewStudents1.TabIndex = 0;
             // 
             // page_Rooms
             // 
@@ -1385,14 +1371,6 @@
             this.page_Rooms.Text = "Phòng";
             this.page_Rooms.UseVisualStyleBackColor = true;
             // 
-            // page_RoomManagement1
-            // 
-            this.page_RoomManagement1.BackColor = System.Drawing.Color.White;
-            this.page_RoomManagement1.Location = new System.Drawing.Point(-4, -4);
-            this.page_RoomManagement1.Name = "page_RoomManagement1";
-            this.page_RoomManagement1.Size = new System.Drawing.Size(1138, 800);
-            this.page_RoomManagement1.TabIndex = 0;
-            // 
             // pages_Contracts
             // 
             this.pages_Contracts.Controls.Add(this.page_AddNewContract1);
@@ -1404,16 +1382,9 @@
             this.pages_Contracts.Text = "Hợp đồng";
             this.pages_Contracts.UseVisualStyleBackColor = true;
             // 
-            // page_AddNewContract1
-            // 
-            this.page_AddNewContract1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
-            this.page_AddNewContract1.Location = new System.Drawing.Point(-4, -4);
-            this.page_AddNewContract1.Name = "page_AddNewContract1";
-            this.page_AddNewContract1.Size = new System.Drawing.Size(1138, 800);
-            this.page_AddNewContract1.TabIndex = 0;
-            // 
             // page_ContractDate
             // 
+            this.page_ContractDate.Controls.Add(this.page_RenewContracts1);
             this.page_ContractDate.Location = new System.Drawing.Point(4, 4);
             this.page_ContractDate.Name = "page_ContractDate";
             this.page_ContractDate.Padding = new System.Windows.Forms.Padding(3);
@@ -1433,14 +1404,6 @@
             this.page_ServicesUsage.Text = "Dịch vụ";
             this.page_ServicesUsage.UseVisualStyleBackColor = true;
             // 
-            // page_ServicesUsage1
-            // 
-            this.page_ServicesUsage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
-            this.page_ServicesUsage1.Location = new System.Drawing.Point(-4, -4);
-            this.page_ServicesUsage1.Name = "page_ServicesUsage1";
-            this.page_ServicesUsage1.Size = new System.Drawing.Size(1138, 800);
-            this.page_ServicesUsage1.TabIndex = 0;
-            // 
             // page_ServicesManagement
             // 
             this.page_ServicesManagement.Controls.Add(this.manageServiceControl1);
@@ -1451,6 +1414,50 @@
             this.page_ServicesManagement.TabIndex = 6;
             this.page_ServicesManagement.Text = "Quản lý dịch vụ";
             this.page_ServicesManagement.UseVisualStyleBackColor = true;
+            // 
+            // page_Bills
+            // 
+            this.page_Bills.Controls.Add(this.page_BillManagement1);
+            this.page_Bills.Location = new System.Drawing.Point(4, 4);
+            this.page_Bills.Name = "page_Bills";
+            this.page_Bills.Padding = new System.Windows.Forms.Padding(3);
+            this.page_Bills.Size = new System.Drawing.Size(1130, 784);
+            this.page_Bills.TabIndex = 7;
+            this.page_Bills.Text = "Hoá đơn";
+            this.page_Bills.UseVisualStyleBackColor = true;
+            // 
+            // page_StudentBills
+            // 
+            this.page_StudentBills.Controls.Add(this.page_StudentsBill1);
+            this.page_StudentBills.Location = new System.Drawing.Point(4, 4);
+            this.page_StudentBills.Name = "page_StudentBills";
+            this.page_StudentBills.Padding = new System.Windows.Forms.Padding(3);
+            this.page_StudentBills.Size = new System.Drawing.Size(1130, 784);
+            this.page_StudentBills.TabIndex = 8;
+            this.page_StudentBills.Text = "Hoá đơn sinh viên";
+            this.page_StudentBills.UseVisualStyleBackColor = true;
+            // 
+            // page_Statistics
+            // 
+            this.page_Statistics.Controls.Add(this.page_Statistics1);
+            this.page_Statistics.Location = new System.Drawing.Point(4, 4);
+            this.page_Statistics.Name = "page_Statistics";
+            this.page_Statistics.Padding = new System.Windows.Forms.Padding(3);
+            this.page_Statistics.Size = new System.Drawing.Size(1130, 784);
+            this.page_Statistics.TabIndex = 9;
+            this.page_Statistics.Text = "Thống kê";
+            this.page_Statistics.UseVisualStyleBackColor = true;
+            // 
+            // page_Settings
+            // 
+            this.page_Settings.Controls.Add(this.page_Settings1);
+            this.page_Settings.Location = new System.Drawing.Point(4, 4);
+            this.page_Settings.Name = "page_Settings";
+            this.page_Settings.Padding = new System.Windows.Forms.Padding(3);
+            this.page_Settings.Size = new System.Drawing.Size(1130, 784);
+            this.page_Settings.TabIndex = 10;
+            this.page_Settings.Text = "Nhân viên";
+            this.page_Settings.UseVisualStyleBackColor = true;
             // 
             // topPanelDashboard
             // 
@@ -1615,6 +1622,46 @@
             this.bunifuElipse1.ElipseRadius = 10;
             this.bunifuElipse1.TargetControl = this;
             // 
+            // page_Overview1
+            // 
+            this.page_Overview1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.page_Overview1.Location = new System.Drawing.Point(-4, -4);
+            this.page_Overview1.Name = "page_Overview1";
+            this.page_Overview1.Size = new System.Drawing.Size(1138, 800);
+            this.page_Overview1.TabIndex = 0;
+            // 
+            // page_AddNewStudents1
+            // 
+            this.page_AddNewStudents1.BackColor = System.Drawing.Color.White;
+            this.page_AddNewStudents1.Location = new System.Drawing.Point(-4, -4);
+            this.page_AddNewStudents1.Name = "page_AddNewStudents1";
+            this.page_AddNewStudents1.Size = new System.Drawing.Size(1138, 800);
+            this.page_AddNewStudents1.TabIndex = 0;
+            // 
+            // page_RoomManagement1
+            // 
+            this.page_RoomManagement1.BackColor = System.Drawing.Color.White;
+            this.page_RoomManagement1.Location = new System.Drawing.Point(-4, -4);
+            this.page_RoomManagement1.Name = "page_RoomManagement1";
+            this.page_RoomManagement1.Size = new System.Drawing.Size(1138, 800);
+            this.page_RoomManagement1.TabIndex = 0;
+            // 
+            // page_AddNewContract1
+            // 
+            this.page_AddNewContract1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.page_AddNewContract1.Location = new System.Drawing.Point(-4, -4);
+            this.page_AddNewContract1.Name = "page_AddNewContract1";
+            this.page_AddNewContract1.Size = new System.Drawing.Size(1138, 800);
+            this.page_AddNewContract1.TabIndex = 0;
+            // 
+            // page_ServicesUsage1
+            // 
+            this.page_ServicesUsage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.page_ServicesUsage1.Location = new System.Drawing.Point(-4, -4);
+            this.page_ServicesUsage1.Name = "page_ServicesUsage1";
+            this.page_ServicesUsage1.Size = new System.Drawing.Size(1138, 800);
+            this.page_ServicesUsage1.TabIndex = 0;
+            // 
             // manageServiceControl1
             // 
             this.manageServiceControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
@@ -1622,17 +1669,6 @@
             this.manageServiceControl1.Name = "manageServiceControl1";
             this.manageServiceControl1.Size = new System.Drawing.Size(1138, 800);
             this.manageServiceControl1.TabIndex = 0;
-            // 
-            // page_Bills
-            // 
-            this.page_Bills.Controls.Add(this.page_BillManagement1);
-            this.page_Bills.Location = new System.Drawing.Point(4, 4);
-            this.page_Bills.Name = "page_Bills";
-            this.page_Bills.Padding = new System.Windows.Forms.Padding(3);
-            this.page_Bills.Size = new System.Drawing.Size(1130, 784);
-            this.page_Bills.TabIndex = 7;
-            this.page_Bills.Text = "Hoá đơn";
-            this.page_Bills.UseVisualStyleBackColor = true;
             // 
             // page_BillManagement1
             // 
@@ -1642,17 +1678,6 @@
             this.page_BillManagement1.Size = new System.Drawing.Size(1138, 800);
             this.page_BillManagement1.TabIndex = 0;
             // 
-            // page_StudentBills
-            // 
-            this.page_StudentBills.Controls.Add(this.page_StudentsBill1);
-            this.page_StudentBills.Location = new System.Drawing.Point(4, 4);
-            this.page_StudentBills.Name = "page_StudentBills";
-            this.page_StudentBills.Padding = new System.Windows.Forms.Padding(3);
-            this.page_StudentBills.Size = new System.Drawing.Size(1130, 784);
-            this.page_StudentBills.TabIndex = 8;
-            this.page_StudentBills.Text = "Hoá đơn sinh viên";
-            this.page_StudentBills.UseVisualStyleBackColor = true;
-            // 
             // page_StudentsBill1
             // 
             this.page_StudentsBill1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
@@ -1660,17 +1685,6 @@
             this.page_StudentsBill1.Name = "page_StudentsBill1";
             this.page_StudentsBill1.Size = new System.Drawing.Size(1138, 800);
             this.page_StudentsBill1.TabIndex = 0;
-            // 
-            // page_Statistics
-            // 
-            this.page_Statistics.Controls.Add(this.page_Statistics1);
-            this.page_Statistics.Location = new System.Drawing.Point(4, 4);
-            this.page_Statistics.Name = "page_Statistics";
-            this.page_Statistics.Padding = new System.Windows.Forms.Padding(3);
-            this.page_Statistics.Size = new System.Drawing.Size(1130, 784);
-            this.page_Statistics.TabIndex = 9;
-            this.page_Statistics.Text = "Thống kê";
-            this.page_Statistics.UseVisualStyleBackColor = true;
             // 
             // page_Statistics1
             // 
@@ -1680,17 +1694,6 @@
             this.page_Statistics1.Size = new System.Drawing.Size(1138, 800);
             this.page_Statistics1.TabIndex = 0;
             // 
-            // page_Settings
-            // 
-            this.page_Settings.Controls.Add(this.page_Settings1);
-            this.page_Settings.Location = new System.Drawing.Point(4, 4);
-            this.page_Settings.Name = "page_Settings";
-            this.page_Settings.Padding = new System.Windows.Forms.Padding(3);
-            this.page_Settings.Size = new System.Drawing.Size(1130, 784);
-            this.page_Settings.TabIndex = 10;
-            this.page_Settings.Text = "Nhân viên";
-            this.page_Settings.UseVisualStyleBackColor = true;
-            // 
             // page_Settings1
             // 
             this.page_Settings1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
@@ -1698,6 +1701,14 @@
             this.page_Settings1.Name = "page_Settings1";
             this.page_Settings1.Size = new System.Drawing.Size(1138, 800);
             this.page_Settings1.TabIndex = 0;
+            // 
+            // page_RenewContracts1
+            // 
+            this.page_RenewContracts1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.page_RenewContracts1.Location = new System.Drawing.Point(-4, -4);
+            this.page_RenewContracts1.Name = "page_RenewContracts1";
+            this.page_RenewContracts1.Size = new System.Drawing.Size(1138, 800);
+            this.page_RenewContracts1.TabIndex = 0;
             // 
             // AdminDashboard
             // 
@@ -1722,14 +1733,15 @@
             this.page_Students.ResumeLayout(false);
             this.page_Rooms.ResumeLayout(false);
             this.pages_Contracts.ResumeLayout(false);
+            this.page_ContractDate.ResumeLayout(false);
             this.page_ServicesUsage.ResumeLayout(false);
             this.page_ServicesManagement.ResumeLayout(false);
-            this.topPanelDashboard.ResumeLayout(false);
-            this.topPanelDashboard.PerformLayout();
             this.page_Bills.ResumeLayout(false);
             this.page_StudentBills.ResumeLayout(false);
             this.page_Statistics.ResumeLayout(false);
             this.page_Settings.ResumeLayout(false);
+            this.topPanelDashboard.ResumeLayout(false);
+            this.topPanelDashboard.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1791,5 +1803,6 @@
         private Page_Statistics page_Statistics1;
         private System.Windows.Forms.TabPage page_Settings;
         private Page_Settings page_Settings1;
+        private Page_RenewContracts page_RenewContracts1;
     }
 }

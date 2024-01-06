@@ -197,7 +197,7 @@
             this.bunifuPanel1.BackgroundColor = System.Drawing.Color.Transparent;
             this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
             this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel1.BorderColor = System.Drawing.Color.White;
             this.bunifuPanel1.BorderRadius = 3;
             this.bunifuPanel1.BorderThickness = 1;
             this.bunifuPanel1.Controls.Add(this.lbl_BillID);
@@ -375,6 +375,7 @@
             this.txt_StaffID.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_StaffID.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
             this.txt_StaffID.DefaultText = "";
+            this.txt_StaffID.Enabled = false;
             this.txt_StaffID.FillColor = System.Drawing.Color.White;
             this.txt_StaffID.HideSelection = true;
             this.txt_StaffID.IconLeft = null;
@@ -394,8 +395,8 @@
             stateProperties5.ForeColor = System.Drawing.Color.Empty;
             stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txt_StaffID.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.White;
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
             this.txt_StaffID.OnDisabledState = stateProperties6;
@@ -1004,8 +1005,8 @@
             stateProperties1.ForeColor = System.Drawing.Color.Empty;
             stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txt_TotalMoney.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.White;
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
             this.txt_TotalMoney.OnDisabledState = stateProperties2;

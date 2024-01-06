@@ -230,7 +230,7 @@
         gg==
 </value>
   </data>
-  <data name="bunifuButton1.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_ContractsDate.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAs
         SgAALEoBd3p0TQAABD1JREFUeF7tneFxozAQhVNCSrgS0sFdB0kHSQcpwekgJaQEl3Al8CcTDIShBJdw
@@ -346,7 +346,7 @@
         AElFTkSuQmCC
 </value>
   </data>
-  <data name="btn_Statistic.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_Statistics.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAs
         SgAALEoBd3p0TQAABJBJREFUeF7tnNt12zAMhjNCNmhH6AbtBskGyQbpBskG6QYeISNkBL1ZsmVFb331
@@ -942,7 +942,7 @@
         IAiC4BlycvIHkITV1vNdfWkAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="ManageServices.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_ServiceManagement.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAs
         SgAALEoBd3p0TQAAA/VJREFUeF7tndFxm0AYhF2CO4hLcAdJB0kHdgdyB04HSQdOByrBJehNwCFyb3lV
@@ -1274,7 +1274,7 @@
         jPPmAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btn_ManageRooms.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_Rooms.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAs
         SgAALEoBd3p0TQAAAxZJREFUeF7tneFx2kAYRCmBElKCS0gnTgd2B04HTgcuJSXoj8dCEhqVQAmJbtjM
@@ -1378,7 +1378,7 @@
         TkSuQmCC
 </value>
   </data>
-  <data name="btn_addStudents.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_Students.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAs
         SgAALEoBd3p0TQAABGRJREFUeF7tne1x2zAMhjNCR8gm7QbJBs0GzgbpBukGGSUj6J9lSdZxBI/QAhbU

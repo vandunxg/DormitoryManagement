@@ -92,7 +92,7 @@
             this.bunifuPanel1.BackgroundColor = System.Drawing.Color.Transparent;
             this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
             this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel1.BorderColor = System.Drawing.Color.White;
             this.bunifuPanel1.BorderRadius = 3;
             this.bunifuPanel1.BorderThickness = 1;
             this.bunifuPanel1.Controls.Add(this.lbl_BillID);
@@ -283,8 +283,8 @@
             stateProperties13.ForeColor = System.Drawing.Color.Empty;
             stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txt_StudentID.OnActiveState = stateProperties13;
-            stateProperties14.BorderColor = System.Drawing.Color.White;
-            stateProperties14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            stateProperties14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             stateProperties14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             stateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray;
             this.txt_StudentID.OnDisabledState = stateProperties14;
@@ -373,8 +373,8 @@
             stateProperties9.ForeColor = System.Drawing.Color.Empty;
             stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txt_RoomID.OnActiveState = stateProperties9;
-            stateProperties10.BorderColor = System.Drawing.Color.White;
-            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
             this.txt_RoomID.OnDisabledState = stateProperties10;
@@ -417,9 +417,9 @@
             this.cmb_Months.BorderRadius = 1;
             this.cmb_Months.Color = System.Drawing.Color.Transparent;
             this.cmb_Months.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
-            this.cmb_Months.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.cmb_Months.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.cmb_Months.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.cmb_Months.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.cmb_Months.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.cmb_Months.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.cmb_Months.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.cmb_Months.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
             this.cmb_Months.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
@@ -475,9 +475,9 @@
             this.cmb_Years.BorderRadius = 1;
             this.cmb_Years.Color = System.Drawing.Color.Transparent;
             this.cmb_Years.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
-            this.cmb_Years.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.cmb_Years.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.cmb_Years.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.cmb_Years.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.cmb_Years.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.cmb_Years.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.cmb_Years.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.cmb_Years.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
             this.cmb_Years.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
@@ -579,8 +579,8 @@
             stateProperties5.ForeColor = System.Drawing.Color.Empty;
             stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txt_StaffID.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.White;
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
             this.txt_StaffID.OnDisabledState = stateProperties6;
@@ -654,8 +654,8 @@
             stateProperties1.ForeColor = System.Drawing.Color.Empty;
             stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txt_TotalMoney.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.White;
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
             this.txt_TotalMoney.OnDisabledState = stateProperties2;
@@ -767,15 +767,16 @@
             // 
             // date_BillCreation
             // 
-            this.date_BillCreation.BackColor = System.Drawing.Color.White;
+            this.date_BillCreation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.date_BillCreation.BorderRadius = 15;
-            this.date_BillCreation.Color = System.Drawing.Color.Transparent;
+            this.date_BillCreation.Color = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.date_BillCreation.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
             this.date_BillCreation.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
-            this.date_BillCreation.DisabledColor = System.Drawing.Color.Gray;
+            this.date_BillCreation.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.date_BillCreation.DisplayWeekNumbers = false;
             this.date_BillCreation.DPHeight = 0;
             this.date_BillCreation.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.date_BillCreation.Enabled = false;
             this.date_BillCreation.FillDatePicker = false;
             this.date_BillCreation.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_BillCreation.ForeColor = System.Drawing.Color.Black;

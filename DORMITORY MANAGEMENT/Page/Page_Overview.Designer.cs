@@ -189,7 +189,7 @@
             this.cardShowInfo_Electricity.TextLabel = null;
             this.cardShowInfo_Electricity.Load += new System.EventHandler(this.cardShowInfo_Electricity_Load);
             // 
-            // OverviewPage
+            // Page_Overview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -200,7 +200,7 @@
             this.Controls.Add(this.cardShowInfor_total);
             this.Controls.Add(this.cardShowInfo_water);
             this.Controls.Add(this.cardShowInfo_Electricity);
-            this.Name = "OverviewPage";
+            this.Name = "Page_Overview";
             this.Size = new System.Drawing.Size(1138, 800);
             this.Load += new System.EventHandler(this.OverviewPage_Load);
             this.ResumeLayout(false);

@@ -565,7 +565,7 @@
             this.btn_Refresh.UseDefaultRadiusAndThickness = true;
             this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             // 
-            // Bills
+            // Page_BillManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -578,7 +578,7 @@
             this.Controls.Add(this.cmb_BillState);
             this.Controls.Add(this.dgv_Bills);
             this.Controls.Add(this.btn_AddNewBill);
-            this.Name = "Bills";
+            this.Name = "Page_BillManagement";
             this.Size = new System.Drawing.Size(1138, 800);
             this.Load += new System.EventHandler(this.Bills_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Bills)).EndInit();

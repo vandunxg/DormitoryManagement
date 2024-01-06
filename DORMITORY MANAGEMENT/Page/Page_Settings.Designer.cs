@@ -238,7 +238,7 @@
             this.txt_StaffSalary.BackColor = System.Drawing.Color.Transparent;
             this.txt_StaffSalary.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_StaffSalary.BackgroundImage")));
             this.txt_StaffSalary.BorderColorActive = System.Drawing.Color.White;
-            this.txt_StaffSalary.BorderColorDisabled = System.Drawing.Color.White;
+            this.txt_StaffSalary.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.txt_StaffSalary.BorderColorHover = System.Drawing.Color.White;
             this.txt_StaffSalary.BorderColorIdle = System.Drawing.Color.White;
             this.txt_StaffSalary.BorderRadius = 10;
@@ -267,8 +267,8 @@
             stateProperties1.ForeColor = System.Drawing.Color.Empty;
             stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txt_StaffSalary.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.White;
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
             this.txt_StaffSalary.OnDisabledState = stateProperties2;
@@ -292,7 +292,7 @@
             this.txt_StaffSalary.SelectionLength = 0;
             this.txt_StaffSalary.SelectionStart = 0;
             this.txt_StaffSalary.ShortcutsEnabled = true;
-            this.txt_StaffSalary.Size = new System.Drawing.Size(300, 41);
+            this.txt_StaffSalary.Size = new System.Drawing.Size(300, 50);
             this.txt_StaffSalary.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txt_StaffSalary.TabIndex = 15;
             this.txt_StaffSalary.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -382,7 +382,7 @@
             this.txt_StaffAddress.SelectionLength = 0;
             this.txt_StaffAddress.SelectionStart = 0;
             this.txt_StaffAddress.ShortcutsEnabled = true;
-            this.txt_StaffAddress.Size = new System.Drawing.Size(300, 41);
+            this.txt_StaffAddress.Size = new System.Drawing.Size(300, 50);
             this.txt_StaffAddress.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txt_StaffAddress.TabIndex = 13;
             this.txt_StaffAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -472,7 +472,7 @@
             this.txt_StaffPersonalID.SelectionLength = 0;
             this.txt_StaffPersonalID.SelectionStart = 0;
             this.txt_StaffPersonalID.ShortcutsEnabled = true;
-            this.txt_StaffPersonalID.Size = new System.Drawing.Size(300, 41);
+            this.txt_StaffPersonalID.Size = new System.Drawing.Size(300, 50);
             this.txt_StaffPersonalID.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txt_StaffPersonalID.TabIndex = 11;
             this.txt_StaffPersonalID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -563,7 +563,7 @@
             this.txt_StaffPhone.SelectionLength = 0;
             this.txt_StaffPhone.SelectionStart = 0;
             this.txt_StaffPhone.ShortcutsEnabled = true;
-            this.txt_StaffPhone.Size = new System.Drawing.Size(300, 41);
+            this.txt_StaffPhone.Size = new System.Drawing.Size(300, 50);
             this.txt_StaffPhone.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txt_StaffPhone.TabIndex = 9;
             this.txt_StaffPhone.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -654,7 +654,7 @@
             this.txt_StaffName.SelectionLength = 0;
             this.txt_StaffName.SelectionStart = 0;
             this.txt_StaffName.ShortcutsEnabled = true;
-            this.txt_StaffName.Size = new System.Drawing.Size(300, 41);
+            this.txt_StaffName.Size = new System.Drawing.Size(300, 50);
             this.txt_StaffName.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txt_StaffName.TabIndex = 7;
             this.txt_StaffName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -691,7 +691,7 @@
             this.txt_StaffID.BackColor = System.Drawing.Color.Transparent;
             this.txt_StaffID.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_StaffID.BackgroundImage")));
             this.txt_StaffID.BorderColorActive = System.Drawing.Color.White;
-            this.txt_StaffID.BorderColorDisabled = System.Drawing.Color.White;
+            this.txt_StaffID.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.txt_StaffID.BorderColorHover = System.Drawing.Color.White;
             this.txt_StaffID.BorderColorIdle = System.Drawing.Color.White;
             this.txt_StaffID.BorderRadius = 10;
@@ -720,8 +720,8 @@
             stateProperties21.ForeColor = System.Drawing.Color.Empty;
             stateProperties21.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txt_StaffID.OnActiveState = stateProperties21;
-            stateProperties22.BorderColor = System.Drawing.Color.White;
-            stateProperties22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties22.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            stateProperties22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             stateProperties22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             stateProperties22.PlaceholderForeColor = System.Drawing.Color.DarkGray;
             this.txt_StaffID.OnDisabledState = stateProperties22;
@@ -745,7 +745,7 @@
             this.txt_StaffID.SelectionLength = 0;
             this.txt_StaffID.SelectionStart = 0;
             this.txt_StaffID.ShortcutsEnabled = true;
-            this.txt_StaffID.Size = new System.Drawing.Size(300, 41);
+            this.txt_StaffID.Size = new System.Drawing.Size(300, 50);
             this.txt_StaffID.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txt_StaffID.TabIndex = 5;
             this.txt_StaffID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -948,7 +948,7 @@
             this.txt_RetypeNewPassword.SelectionLength = 0;
             this.txt_RetypeNewPassword.SelectionStart = 0;
             this.txt_RetypeNewPassword.ShortcutsEnabled = true;
-            this.txt_RetypeNewPassword.Size = new System.Drawing.Size(300, 41);
+            this.txt_RetypeNewPassword.Size = new System.Drawing.Size(300, 50);
             this.txt_RetypeNewPassword.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txt_RetypeNewPassword.TabIndex = 135;
             this.txt_RetypeNewPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1038,7 +1038,7 @@
             this.txt_NewPassword.SelectionLength = 0;
             this.txt_NewPassword.SelectionStart = 0;
             this.txt_NewPassword.ShortcutsEnabled = true;
-            this.txt_NewPassword.Size = new System.Drawing.Size(300, 41);
+            this.txt_NewPassword.Size = new System.Drawing.Size(300, 50);
             this.txt_NewPassword.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txt_NewPassword.TabIndex = 133;
             this.txt_NewPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1128,7 +1128,7 @@
             this.txt_StaffEmail.SelectionLength = 0;
             this.txt_StaffEmail.SelectionStart = 0;
             this.txt_StaffEmail.ShortcutsEnabled = true;
-            this.txt_StaffEmail.Size = new System.Drawing.Size(300, 41);
+            this.txt_StaffEmail.Size = new System.Drawing.Size(300, 50);
             this.txt_StaffEmail.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txt_StaffEmail.TabIndex = 131;
             this.txt_StaffEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;

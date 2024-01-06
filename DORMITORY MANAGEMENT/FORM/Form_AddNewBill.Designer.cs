@@ -608,7 +608,7 @@
             this.txt_StaffID.BackColor = System.Drawing.Color.Transparent;
             this.txt_StaffID.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_StaffID.BackgroundImage")));
             this.txt_StaffID.BorderColorActive = System.Drawing.Color.White;
-            this.txt_StaffID.BorderColorDisabled = System.Drawing.Color.White;
+            this.txt_StaffID.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.txt_StaffID.BorderColorHover = System.Drawing.Color.White;
             this.txt_StaffID.BorderColorIdle = System.Drawing.Color.White;
             this.txt_StaffID.BorderRadius = 10;
@@ -617,6 +617,7 @@
             this.txt_StaffID.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_StaffID.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
             this.txt_StaffID.DefaultText = "";
+            this.txt_StaffID.Enabled = false;
             this.txt_StaffID.FillColor = System.Drawing.Color.White;
             this.txt_StaffID.HideSelection = true;
             this.txt_StaffID.IconLeft = null;
@@ -636,8 +637,8 @@
             stateProperties1.ForeColor = System.Drawing.Color.Empty;
             stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txt_StaffID.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.White;
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
             this.txt_StaffID.OnDisabledState = stateProperties2;

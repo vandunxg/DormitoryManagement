@@ -65,6 +65,18 @@ namespace DORMITORY_MANAGEMENT
         }
 
         #region Events
+        private void txt_DepositPrice_TextChanged(object sender, EventArgs e)
+        {
+            txt_TotalMoney.Text = string.Empty;
+            long CalTotalMoney = (long.Parse(txt_RoomPrice.Text) * long.Parse(cmb_DateCheckOut.SelectedValue.ToString())) - long.Parse(txt_DepositPrice.Text);
+            txt_TotalMoney.Text = CalTotalMoney.ToString();
+        }
+
+        private void lbl_ContractID_Click(object sender, EventArgs e)
+        {
+
+        }
+    
         private void cmb_Areas_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cmb_Areas.SelectedIndex != -1)
@@ -149,19 +161,7 @@ namespace DORMITORY_MANAGEMENT
             
         }
 
-
         #endregion
-
-        private void txt_DepositPrice_TextChanged(object sender, EventArgs e)
-        {
-            txt_TotalMoney.Text = string.Empty;
-            long CalTotalMoney = (long.Parse(txt_RoomPrice.Text) * long.Parse(cmb_DateCheckOut.SelectedValue.ToString())) - long.Parse(txt_DepositPrice.Text);
-            txt_TotalMoney.Text = CalTotalMoney.ToString();
-        }
-
-        private void lbl_ContractID_Click(object sender, EventArgs e)
-        {
-
-        }
     }
+
 }

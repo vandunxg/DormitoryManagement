@@ -860,7 +860,7 @@
             this.bunifuElipse9.ElipseRadius = 10;
             this.bunifuElipse9.TargetControl = this.cmb_SearchYears;
             // 
-            // StudentBills
+            // Page_StudentsBill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -869,7 +869,7 @@
             this.Controls.Add(this.bunifuPanel3);
             this.Controls.Add(this.bunifuGroupBox1);
             this.Controls.Add(this.btn_Refresh);
-            this.Name = "StudentBills";
+            this.Name = "Page_StudentsBill";
             this.Size = new System.Drawing.Size(1138, 800);
             this.bunifuGroupBox1.ResumeLayout(false);
             this.bunifuPanel3.ResumeLayout(false);
