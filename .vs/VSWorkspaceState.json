@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\DORMITORY MANAGEMENT"
+    "\\DORMITORY MANAGEMENT",
+    "\\DORMITORY MANAGEMENT\\FORM",
+    "\\DORMITORY MANAGEMENT\\Resources"
   ],
-  "SelectedNode": "\\DORMITORY MANAGEMENT\\Form1.cs",
+  "SelectedNode": "\\DORMITORY MANAGEMENT\\FORM\\Form_ContractDetail.cs",
   "PreviewInSolutionExplorer": false
 }

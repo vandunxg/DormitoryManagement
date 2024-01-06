@@ -1190,6 +1190,7 @@
             this.txt_DepositPrice.TextPlaceholder = "Tiền cọc";
             this.txt_DepositPrice.UseSystemPasswordChar = false;
             this.txt_DepositPrice.WordWrap = true;
+            this.txt_DepositPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_DepositPrice_KeyPress);
             // 
             // bunifuElipse9
             // 

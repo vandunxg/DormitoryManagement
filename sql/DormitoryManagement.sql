@@ -1,9 +1,9 @@
 -- TẠO DATABASE
-CREATE DATABASE DB002;
+CREATE DATABASE BD8888;
 GO
 
 -- CHỌN DATABASE 
-USE DB002;
+USE BD8888;
 GO
 -- BẢNG NHÂN VIÊN
 CREATE TABLE Staffs(
@@ -325,7 +325,16 @@ INSERT INTO Rooms(RoomName, RoomStatus, AreaID, RoomTypeID)
 VALUES
 ('A101', N'Hoạt động', '1', '1'),
 ('A102', N'Hoạt động', '1', '1'),
-('A103', N'Hoạt động', '1', '1')
+('A103', N'Hoạt động', '1', '1'),
+('A201', N'Hoạt động', '1', '1'),
+('A202', N'Hoạt động', '1', '1'),
+('A203', N'Hoạt động', '1', '1'),
+('B101', N'Hoạt động', '2', '2'),
+('B102', N'Hoạt động', '2', '2'),
+('B103', N'Hoạt động', '2', '2'),
+('B201', N'Hoạt động', '2', '2'),
+('B202', N'Hoạt động', '2', '2'),
+('B203', N'Hoạt động', '2', '2')
 GO
 
 --INSERT INTO Services
@@ -339,27 +348,52 @@ GO
 -- INSERT INTO USAGES
 INSERT INTO Usages(ServiceID, UsageQuantity, RoomID, UsageMonth, UsageYear)
 VALUES
-('1', '120', '10002', '12', '2023'),
-('2', '120', '10002', '12', '2023'),
-('3', '1', '10002', '12', '2023'),
-('4', '1', '10002', '12', '2023')
+('1', '120', '10001', '1', '2024'),
+('2', '120', '10001', '1', '2024'),
+('3', '1', '10001', '1', '2024'),
+('4', '1', '10001', '1', '2024'),
+('1', '120', '10002', '1', '2024'),
+('2', '150', '10002', '1', '2024'),
+('3', '1', '10002', '1', '2024'),
+('4', '1', '10002', '1', '2024'),
+('1', '111', '10003', '1', '2024'),
+('2', '112', '10003', '1', '2024'),
+('3', '1', '10003', '1', '2024'),
+('4', '1', '10003', '1', '2024')
 GO
 
 --INSERT INTO Staffs
 INSERT INTO Staffs(StaffName, StaffPhone, StaffEmail, StaffAddress, StaffPersonalID, StaffSalary)
 VALUES
-(N'Minh Thư', '0835595678', 'minhthu@gmail.com', N'Thanh Hoá', '038204113411', 250000);
+(N'Minh Thư', '0835595678', 'minhthu@gmail.com', N'Thanh Hoá', '038204113411', 2500000),
+(N'Trịnh Hạnh', '0989898989', 'trinhhanh@gmail.com', N'Chương Mỹ, Hà Nội', '038204000000', 3500000),
+(N'Quang Huy', '0989899999', 'quanghuy@gmail.com', N'Dubai, Hà Nội', '038204009999', 1500000),
+(N'Hoàng Văn Quân', '0989898888', 'hoangquan@gmail.com', N'Nhà Tù Hoả Lò, Hà Nội', '038204001111', 5000000)
 GO
 
 --INSERT INTO Students
 INSERT INTO Students(StudentID, ClassID, StudentName, StudentGender, StudentDOB, StudentPersonalID, StudentEmail, StudentPhone, StudentAddress, StudentLived)
 VALUES
-('73DCTT22428', '73DCTT22', N'Nguyễn Văn Dũng', 'Nam', '2004-07-23', '038204004400', N'vandunxg@gmail.com', '0835595675', N'Hoằng Hoá, Thanh Hoá', 1);
+('73DCTT22428', '73DCTT21', N'Nguyễn Văn Dũng', 'Nam', '2004-07-23', '038204004400', N'vandunxg@gmail.com', '0835595675', N'Hoằng Hoá, Thanh Hoá', 1),
+('73DCTT22421', '73DCTT22', N'Nguyễn Thị Mai', N'Nữ', '2002-09-15', '038204001111', N'thimai@gmail.com', '0835591111', N'Chương Mỹ, Hà Nội', 0),
+('73DCTT22422', '73DCTT23', N'Trần Văn Hùng', 'Nam', '2003-04-28', '038204002222', N'vandung@gmail.com', '0835598888', N'Chương Mỹ, Hà Nội', 0),
+('73DCTT22423', '73DCHT24', N'Lê Thị Hồng', N'Nữ', '2004-11-03', '038204003333', N'thihong@gmail.com', '0835597777', N'Chương Mỹ, Hà Nội', 0),
+('73DCTT22424', '73DCQT22', N'Phạm Minh Quân', 'Nam', '2005-06-19', '038204004444', N'minhquan@gmail.com', '0835592121', N'Nhà Tù Hoả Lò, Hà Nội', 0),
+('73DCTT22425', '73DCQT22', N'Võ Thị Trang', N'Nữ', '2002-12-08', '038204004444', N'thitrang@gmail.com', '0835592222', N'Nhà Tù Hoả Lò, Hà Nội', 0),
+('73DCTT22426', '73DCQM22', N'Hoàng Đức Anh', 'Nam', '2003-08-22', '038204004466', N'ducanh@gmail.com', '0835592112', N'Nhà Tù Hoả Lò, Hà Nội', 1),
+('73DCTT22427', '73DCQM22', N'Bùi Thị Linh', N'Nữ', '2004-02-14', '038204004412', N'thilinh@gmail.com', '0835591221', N'Nhà Tù Hoả Lò, Hà Nội', 1),
+('73DCTT22411', '73DCTT21', N'Đặng Văn Tuấn', 'Nam', '2005-01-07', '038204007776', N'vantuan@gmail.com', '0835595212', N'Cà Mau', 1),
+('73DCTT22429', '73DCTT21', N'Ngô Thị Hoa', N'Nữ', '2002-05-31', '038204008888', N'thihoa@gmail.com', '0835595622', N'Cà Mau', 1),
+('73DCTT22432', '73DCTT21', N'Trịnh Minh Tâm', N'Nữ', '2003-10-12', '038204009999', N'minhtam@gmail.com', '0835555555', N'Cà Mau', 0)
 GO
 
 INSERT INTO Accounts(StaffEmail, AccountPassword, StaffID)
 VALUES
-('minhthu@gmail.com', 'dung2004', '10001')
+('minhthu@gmail.com', 'dung2004', '10000'),
+('trinhhanh@gmail.com', 'dung2004', '10001'),
+('quanghuy@gmail.com', 'dung2004', '10002'),
+('hoangquan@gmail.com', 'dung2004', '10003')
+GO
 -----------------------------------------------------------------------------------------------------------------------------------------
 GO
 
@@ -1267,3 +1301,20 @@ BEGIN
 END;
 GO
 
+CREATE PROCEDURE GetTotalMoney
+AS
+BEGIN
+    DECLARE @CurrentMonth INT = MONTH(GETDATE());
+    DECLARE @CurrentYear INT = YEAR(GETDATE());
+
+    SELECT SUM(BillTotalMoney) AS TotalPaidAmount
+    FROM StudentBills
+    WHERE BillPaid = 1
+          AND BillMonth = @CurrentMonth
+          AND BillYear = @CurrentYear;
+END;
+GO
+
+----------------------------------------------------------------------
+-- github : @vandunxg
+-- Author : @vandunxg

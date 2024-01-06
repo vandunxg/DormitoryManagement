@@ -128,6 +128,7 @@ namespace DORMITORY_MANAGEMENT
 
                 if (StaffID.Length > 20)
                 {
+                    
                     MessageBox.Show("Mã nhân viên quá dài!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }

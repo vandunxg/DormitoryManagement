@@ -19,21 +19,7 @@ namespace DORMITORY_MANAGEMENT
         #endregion
 
         #region Events  
-        private void cardShowOverview_totalRoom_Load(object sender, EventArgs e)
-        {
-
-
-        }
-
-        private void cardShowOverview_payBill_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cardShowOverview_totalRoom_Load_1(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void btn_Refresh_Click(object sender, EventArgs e)
         {
@@ -65,12 +51,12 @@ namespace DORMITORY_MANAGEMENT
             }
             cardShowInfo_water.setAllValue($"Nước tháng {Months}", WaterMoney);
 
-            GetData = DataProvider.Instance.ExcuteQuery("CalTotalMoneyAllRoom @Months , @Years ", new object[] { Months, Years });
+            GetData = DataProvider.Instance.ExcuteQuery("GetTotalMoney");
             string TotalMoney = "0đ";
 
             if (GetData.Rows.Count > 0)
             {
-                TotalMoney = GetData.Rows[0]["TotalMoney"].ToString();
+                TotalMoney = GetData.Rows[0]["TotalPaidAmount"].ToString();
             }
 
             cardShowInfor_total.setAllValue($"Đã thu", TotalMoney);
@@ -78,11 +64,11 @@ namespace DORMITORY_MANAGEMENT
             int TotalRooms = int.Parse(DataProvider.Instance.ExcuteQuery("CountRooms").Rows[0]["AmountRoom"].ToString());
             int RoomsActive = int.Parse(DataProvider.Instance.ExcuteQuery("CountRoomsActive").Rows[0]["AmountRoom"].ToString());
 
-            int TotalBill = int.Parse(DataProvider.Instance.ExcuteQuery("CountBills").Rows[0]["AmountBills"].ToString());
-            int BillPaid = int.Parse(DataProvider.Instance.ExcuteQuery("CountBillsPaid").Rows[0]["AmountBills"].ToString());
+            int TotalBill = int.Parse(DataProvider.Instance.ExcuteQuery("SELECT COUNT(BillID) AS NumofBills FROM StudentBills").Rows[0]["NumofBills"].ToString());
+            int BillPaid = int.Parse(DataProvider.Instance.ExcuteQuery("SELECT COUNT(BillID) AS NumofBills FROM StudentBills WHERE BillPaid = @BillPaid", new object[] { 1 }).Rows[0]["NumofBills"].ToString());
 
             cardShowOverview_totalRoom.setAllValue(TotalRooms, TotalRooms - RoomsActive, "Thông tin phòng", "Còn trống", "Đã đầy");
-            cardShowOverview_payBill.setAllValue(TotalBill, BillPaid, "Phòng đã thanh toán tiền", "Chưa thanh toán", "Đã thanh toán");
+            cardShowOverview_payBill.setAllValue(TotalBill, BillPaid, "Sinh viên đã thanh toán tiền", "Chưa thanh toán", "Đã thanh toán");
         }
 
         private void cardShowInfo_Electricity_Load(object sender, EventArgs e)

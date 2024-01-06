@@ -229,6 +229,14 @@ namespace DORMITORY_MANAGEMENT
             }
         }
 
+        private void txt_DepositPrice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Loại bỏ ký tự nếu không phải là số
+            }
+        }
+
         #endregion
 
         #region Methods
@@ -261,8 +269,9 @@ namespace DORMITORY_MANAGEMENT
 
             return Math.Abs(monthsApart);
         }
+
         #endregion
 
-
+        
     }
 }

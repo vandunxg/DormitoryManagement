@@ -59,7 +59,7 @@ namespace DORMITORY_MANAGEMENT
 
                     if(CheckDate.Date > DateTime.Now.Date)
                     {
-                        MessageBox.Show("Hợp đồng vẫn còn hạn");
+                        MessageBox.Show("Hợp đồng vẫn còn hiệu lực", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
                     else
@@ -72,7 +72,7 @@ namespace DORMITORY_MANAGEMENT
 
                         if(CheckStudentDate.Date > DateTime.Now.Date)
                         {
-                            MessageBox.Show("Sinh viên đang có hợp đồng còn hạn");
+                            MessageBox.Show("Sinh viên này đang có hợp đồng còn hiệu lực" , "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             return;
                         }
 
@@ -80,13 +80,13 @@ namespace DORMITORY_MANAGEMENT
 
                         if(CheckStatus > 0)
                         {
-                            MessageBox.Show("Thành công");
+                            MessageBox.Show("Gia hạn thành công", "Thông báoo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             btn_Refresh_Click(sender, e);
                             return;
                         }
                         else
                         {
-                            MessageBox.Show("Lỗi");
+                            MessageBox.Show("Gia hạn không thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             return;
                         }
 
@@ -96,7 +96,7 @@ namespace DORMITORY_MANAGEMENT
                 }
                 else
                 {
-                    MessageBox.Show("Không tìm thấy hợp đồng");
+                    MessageBox.Show("Không tìm thấy hợp đồng trên hệ thông", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
@@ -105,7 +105,7 @@ namespace DORMITORY_MANAGEMENT
             }
             else
             {
-                MessageBox.Show("Vui lòng điền đủ");
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         #endregion

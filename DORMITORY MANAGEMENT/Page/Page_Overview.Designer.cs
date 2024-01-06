@@ -141,7 +141,6 @@
             this.cardShowOverview_payBill.SubValue = 0;
             this.cardShowOverview_payBill.TabIndex = 73;
             this.cardShowOverview_payBill.Total = 0;
-            this.cardShowOverview_payBill.Load += new System.EventHandler(this.cardShowOverview_payBill_Load);
             // 
             // cardShowOverview_totalRoom
             // 
@@ -156,7 +155,6 @@
             this.cardShowOverview_totalRoom.SubValue = 0;
             this.cardShowOverview_totalRoom.TabIndex = 72;
             this.cardShowOverview_totalRoom.Total = 0;
-            this.cardShowOverview_totalRoom.Load += new System.EventHandler(this.cardShowOverview_totalRoom_Load_1);
             // 
             // cardShowInfor_total
             // 

@@ -138,8 +138,14 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuSeparator">
       <HintPath>..\..\DORMITORY MANAGEMENT\DORMITORY MANAGEMENT\Resources\Bunifu UI\Bunifu.UI.WinForms.BunifuSeparator.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuShapes">
+      <HintPath>..\..\DORMITORY MANAGEMENT\DORMITORY MANAGEMENT\Resources\Bunifu UI\Bunifu.UI.WinForms.BunifuShapes.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuSlider">
       <HintPath>..\..\DORMITORY MANAGEMENT\DORMITORY MANAGEMENT\Resources\Bunifu UI\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSnackbar">
+      <HintPath>..\..\DORMITORY MANAGEMENT\DORMITORY MANAGEMENT\Resources\Bunifu UI\Bunifu.UI.WinForms.BunifuSnackbar.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuTextBox">
       <HintPath>Resources\Bunifu UI\Bunifu.UI.WinForms.BunifuTextBox.dll</HintPath>
@@ -149,6 +155,9 @@
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuToolTip">
       <HintPath>..\..\DORMITORY MANAGEMENT\DORMITORY MANAGEMENT\Resources\Bunifu UI\Bunifu.UI.WinForms.BunifuToolTip.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTransition">
+      <HintPath>..\..\DORMITORY MANAGEMENT\DORMITORY MANAGEMENT\Resources\Bunifu UI\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuUserControl">
       <HintPath>..\..\..\..\..\Downloads\Compressed\BunifuCrackV5-main\BunifuCrackV5-main\Bunifu.UI.WinForms.BunifuUserControl.dll</HintPath>
@@ -175,6 +184,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Security" />
     <Reference Include="System.Threading.Tasks" />
     <Reference Include="System.Web.Extensions" />
@@ -578,8 +588,6 @@
   <ItemGroup>
     <Content Include="nem-%28xem%29.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="MessageBox\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

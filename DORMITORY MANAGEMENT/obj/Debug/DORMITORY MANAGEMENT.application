@@ -7,14 +7,14 @@
     <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="DORMITORY MANAGEMENT.exe.manifest" size="26861">
+    <dependentAssembly dependencyType="install" codebase="DORMITORY MANAGEMENT.exe.manifest" size="28982">
       <assemblyIdentity name="DORMITORY MANAGEMENT.exe" version="1.0.0.4" publicKeyToken="0000000000000000" language="vi" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>4Pa5xTaPcS5CgpDYVBuhTmnmhU4QuwO3+MLCbhrgg9w=</dsig:DigestValue>
+        <dsig:DigestValue>2m3NacPpxmNc4tdkkL3qL1s9tVB/kBAhcW+y9g4VvYw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
