@@ -133,9 +133,15 @@ namespace DORMITORY_MANAGEMENT
                     return;
                 }
 
-                if (DataProvider.Instance.ExcuteQuery("SELECT * FROM Staffs WHERE StaffID = @StaffID ", new object[] { StaffID }).Rows.Count < 1)
+                if(DataProvider.Instance.ExcuteQuery("ChecKBill @RoomID , @BillMonth , @BillYear ", new object[] {RoomID, Months, Years}).Rows.Count > 0)
                 {
-                    MessageBox.Show("Không tìm thấy mã nhân viên trong hệ thống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Đã tồn tại 1 hoá đơn trong tháng này!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if(Months > DateTime.Now.Month || Years > DateTime.Now.Year)
+                {
+                    MessageBox.Show("Thời gian không thể lớn hơn thời điểm hiện tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 

@@ -197,6 +197,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgv_ContractsOutDate.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_ContractsOutDate.ColumnHeadersHeight = 40;
+            this.dgv_ContractsOutDate.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgv_ContractsOutDate.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.dgv_ContractsOutDate.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.dgv_ContractsOutDate.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;

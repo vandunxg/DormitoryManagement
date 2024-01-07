@@ -55,10 +55,10 @@
             this.UsageQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TotalMoney = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bunifuElipse5 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse6 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.cardShowInfo_Total = new DORMITORY_MANAGEMENT.Card_ShowInfo();
             this.cardShowInfo_Water = new DORMITORY_MANAGEMENT.Card_ShowInfo();
             this.cardShowInfo_Electricity = new DORMITORY_MANAGEMENT.Card_ShowInfo();
-            this.bunifuElipse6 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Students)).BeginInit();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_UsageService)).BeginInit();
@@ -501,6 +501,11 @@
             this.bunifuElipse5.ElipseRadius = 8;
             this.bunifuElipse5.TargetControl = this.dgv_UsageService;
             // 
+            // bunifuElipse6
+            // 
+            this.bunifuElipse6.ElipseRadius = 10;
+            this.bunifuElipse6.TargetControl = this;
+            // 
             // cardShowInfo_Total
             // 
             this.cardShowInfo_Total.BackColor = System.Drawing.Color.White;
@@ -530,11 +535,6 @@
             this.cardShowInfo_Electricity.Size = new System.Drawing.Size(341, 144);
             this.cardShowInfo_Electricity.TabIndex = 1;
             this.cardShowInfo_Electricity.TextLabel = null;
-            // 
-            // bunifuElipse6
-            // 
-            this.bunifuElipse6.ElipseRadius = 10;
-            this.bunifuElipse6.TargetControl = this;
             // 
             // Form_StudentsRoom
             // 

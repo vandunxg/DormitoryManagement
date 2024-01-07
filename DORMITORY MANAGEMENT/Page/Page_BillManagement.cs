@@ -17,9 +17,6 @@ namespace DORMITORY_MANAGEMENT
         {
             dgv_Bills.DataSource = DataProvider.Instance.ExcuteQuery("GetBills");
 
-            cmb_BillState.SelectedIndex = -1;
-            cmb_BillState.Text = "Tình trạng";
-
             txt_RoomID.Text = string.Empty;
         }
 

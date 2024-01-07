@@ -67,7 +67,7 @@ namespace DORMITORY_MANAGEMENT
 
             txt_StaffID.Text = StaffID;
 
-            cmb_BillState.SelectedIndex = BillPaid;
+           
 
 
             dgv_RoomServices.DataSource = DataProvider.Instance.ExcuteQuery("GetServicesToBill @RoomID , @Months , @Years ", new object[] { RoomID, Months, Years });
@@ -119,23 +119,15 @@ namespace DORMITORY_MANAGEMENT
 
         private void btn_SavedBills_Click(object sender, EventArgs e)
         {
-            if (cmb_Rooms.SelectedIndex != -1 && cmb_Months.SelectedIndex != -1 && cmb_Years.SelectedIndex != -1 && cmb_BillState.SelectedIndex != -1 && txt_StaffID.Text != string.Empty)
+            if (cmb_Rooms.SelectedIndex != -1 && cmb_Months.SelectedIndex != -1 && cmb_Years.SelectedIndex != -1 && txt_StaffID.Text != string.Empty)
             {
                 int RoomID = int.Parse(cmb_Rooms.SelectedValue.ToString());
                 int StaffID = int.Parse(txt_StaffID.Text.Trim());
                 int BillID = int.Parse(lbl_BillID.Text);
                 int Months = int.Parse(cmb_Months.SelectedValue.ToString());
                 int Years = int.Parse(cmb_Years.SelectedValue.ToString());
-                int BillState;
-                if (cmb_BillState.SelectedIndex == 0)
-                {
-                    BillState = 1;
-                }
-                else
-                {
-                    BillState = 0;
-                }
-
+                int BillState = 0;
+                
 
 
                 if (DataProvider.Instance.ExcuteQuery("SELECT * FROM Staffs WHERE StaffID = @StaffID ", new object[] { StaffID }).Rows.Count < 1)

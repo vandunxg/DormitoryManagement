@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Page_Statistics));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.lbl_NumberofStudents = new Bunifu.UI.WinForms.BunifuLabel();
@@ -55,12 +55,13 @@
             this.btn_Refresh = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.card_Empty1 = new DORMITORY_MANAGEMENT.Card_Empty();
             this.card_Empty2 = new DORMITORY_MANAGEMENT.Card_Empty();
-            this.card_Empty3 = new DORMITORY_MANAGEMENT.Card_Empty();
+            this.CarđebtBills = new DORMITORY_MANAGEMENT.Card_Empty();
             this.card_Empty4 = new DORMITORY_MANAGEMENT.Card_Empty();
             this.card_Empty5 = new DORMITORY_MANAGEMENT.Card_Empty();
             this.card_Empty6 = new DORMITORY_MANAGEMENT.Card_Empty();
             this.card_Empty7 = new DORMITORY_MANAGEMENT.Card_Empty();
             this.card_Empty8 = new DORMITORY_MANAGEMENT.Card_Empty();
+            this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox3)).BeginInit();
@@ -142,6 +143,7 @@
             this.lbl_NumberofRooms.Text = "50";
             this.lbl_NumberofRooms.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lbl_NumberofRooms.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lbl_NumberofRooms.Click += new System.EventHandler(this.card_Empty2_Click);
             // 
             // bunifuLabel4
             // 
@@ -160,6 +162,7 @@
             this.bunifuLabel4.Text = "Số phòng";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuLabel4.Click += new System.EventHandler(this.card_Empty2_Click);
             // 
             // bunifuPictureBox2
             // 
@@ -177,6 +180,7 @@
             this.bunifuPictureBox2.TabIndex = 5;
             this.bunifuPictureBox2.TabStop = false;
             this.bunifuPictureBox2.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.bunifuPictureBox2.Click += new System.EventHandler(this.card_Empty2_Click);
             // 
             // lbl_NumberofPaid
             // 
@@ -194,7 +198,7 @@
             this.lbl_NumberofPaid.Text = "50";
             this.lbl_NumberofPaid.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl_NumberofPaid.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.lbl_NumberofPaid.Click += new System.EventHandler(this.lbl_NumberofPaid_Click);
+            this.lbl_NumberofPaid.Click += new System.EventHandler(this.card_Empty4_Click_1);
             // 
             // bunifuLabel6
             // 
@@ -213,7 +217,7 @@
             this.bunifuLabel6.Text = "Hoá đơn đã thu";
             this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuLabel6.Click += new System.EventHandler(this.bunifuLabel6_Click);
+            this.bunifuLabel6.Click += new System.EventHandler(this.card_Empty4_Click_1);
             // 
             // bunifuPictureBox3
             // 
@@ -231,7 +235,7 @@
             this.bunifuPictureBox3.TabIndex = 9;
             this.bunifuPictureBox3.TabStop = false;
             this.bunifuPictureBox3.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
-            this.bunifuPictureBox3.Click += new System.EventHandler(this.bunifuPictureBox3_Click);
+            this.bunifuPictureBox3.Click += new System.EventHandler(this.card_Empty4_Click_1);
             // 
             // lbl_NumberofNonPaid
             // 
@@ -292,9 +296,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(618, 79);
+            this.pictureBox1.Location = new System.Drawing.Point(636, 131);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(473, 428);
+            this.pictureBox1.Size = new System.Drawing.Size(435, 368);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
@@ -362,7 +366,7 @@
             this.lbl_EmptyRoom.CursorType = null;
             this.lbl_EmptyRoom.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold);
             this.lbl_EmptyRoom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.lbl_EmptyRoom.Location = new System.Drawing.Point(531, 651);
+            this.lbl_EmptyRoom.Location = new System.Drawing.Point(522, 651);
             this.lbl_EmptyRoom.Name = "lbl_EmptyRoom";
             this.lbl_EmptyRoom.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lbl_EmptyRoom.Size = new System.Drawing.Size(15, 37);
@@ -370,6 +374,7 @@
             this.lbl_EmptyRoom.Text = "0";
             this.lbl_EmptyRoom.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lbl_EmptyRoom.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lbl_EmptyRoom.Click += new System.EventHandler(this.bunifuPictureBox6_Click);
             // 
             // bunifuLabel8
             // 
@@ -380,7 +385,7 @@
             this.bunifuLabel8.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel8.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.bunifuLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(174)))), ((int)(((byte)(208)))));
-            this.bunifuLabel8.Location = new System.Drawing.Point(531, 617);
+            this.bunifuLabel8.Location = new System.Drawing.Point(522, 617);
             this.bunifuLabel8.Name = "bunifuLabel8";
             this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel8.Size = new System.Drawing.Size(111, 28);
@@ -388,6 +393,7 @@
             this.bunifuLabel8.Text = "Phòng trống";
             this.bunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel8.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuLabel8.Click += new System.EventHandler(this.bunifuPictureBox6_Click);
             // 
             // bunifuPictureBox6
             // 
@@ -398,13 +404,14 @@
             this.bunifuPictureBox6.BorderRadius = 0;
             this.bunifuPictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox6.Image")));
             this.bunifuPictureBox6.IsCircle = false;
-            this.bunifuPictureBox6.Location = new System.Drawing.Point(444, 617);
+            this.bunifuPictureBox6.Location = new System.Drawing.Point(435, 617);
             this.bunifuPictureBox6.Name = "bunifuPictureBox6";
             this.bunifuPictureBox6.Size = new System.Drawing.Size(70, 70);
             this.bunifuPictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox6.TabIndex = 47;
             this.bunifuPictureBox6.TabStop = false;
             this.bunifuPictureBox6.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.bunifuPictureBox6.Click += new System.EventHandler(this.bunifuPictureBox6_Click);
             // 
             // lbl_FixedRoom
             // 
@@ -422,6 +429,7 @@
             this.lbl_FixedRoom.Text = "0";
             this.lbl_FixedRoom.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lbl_FixedRoom.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lbl_FixedRoom.Click += new System.EventHandler(this.card_Empty7_Click);
             // 
             // bunifuLabel12
             // 
@@ -440,6 +448,7 @@
             this.bunifuLabel12.Text = "Phòng bảo trì";
             this.bunifuLabel12.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel12.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuLabel12.Click += new System.EventHandler(this.card_Empty7_Click);
             // 
             // bunifuPictureBox7
             // 
@@ -457,6 +466,7 @@
             this.bunifuPictureBox7.TabIndex = 51;
             this.bunifuPictureBox7.TabStop = false;
             this.bunifuPictureBox7.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.bunifuPictureBox7.Click += new System.EventHandler(this.card_Empty7_Click);
             // 
             // btn_Refresh
             // 
@@ -477,11 +487,11 @@
             this.btn_Refresh.ColorContrastOnClick = 45;
             this.btn_Refresh.ColorContrastOnHover = 45;
             this.btn_Refresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btn_Refresh.CustomizableEdges = borderEdges1;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btn_Refresh.CustomizableEdges = borderEdges2;
             this.btn_Refresh.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Refresh.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Refresh.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -555,6 +565,7 @@
             this.card_Empty1.Name = "card_Empty1";
             this.card_Empty1.Size = new System.Drawing.Size(203, 205);
             this.card_Empty1.TabIndex = 86;
+            this.card_Empty1.Click += new System.EventHandler(this.card_Empty2_Click);
             // 
             // card_Empty2
             // 
@@ -563,14 +574,16 @@
             this.card_Empty2.Name = "card_Empty2";
             this.card_Empty2.Size = new System.Drawing.Size(203, 205);
             this.card_Empty2.TabIndex = 87;
+            this.card_Empty2.Click += new System.EventHandler(this.card_Empty2_Click);
             // 
-            // card_Empty3
+            // CarđebtBills
             // 
-            this.card_Empty3.BackColor = System.Drawing.Color.White;
-            this.card_Empty3.Location = new System.Drawing.Point(30, 318);
-            this.card_Empty3.Name = "card_Empty3";
-            this.card_Empty3.Size = new System.Drawing.Size(203, 205);
-            this.card_Empty3.TabIndex = 88;
+            this.CarđebtBills.BackColor = System.Drawing.Color.White;
+            this.CarđebtBills.Location = new System.Drawing.Point(30, 318);
+            this.CarđebtBills.Name = "CarđebtBills";
+            this.CarđebtBills.Size = new System.Drawing.Size(203, 205);
+            this.CarđebtBills.TabIndex = 88;
+            this.CarđebtBills.Click += new System.EventHandler(this.CarđebtBills_Click);
             // 
             // card_Empty4
             // 
@@ -579,6 +592,7 @@
             this.card_Empty4.Name = "card_Empty4";
             this.card_Empty4.Size = new System.Drawing.Size(203, 205);
             this.card_Empty4.TabIndex = 89;
+            this.card_Empty4.Click += new System.EventHandler(this.card_Empty4_Click_1);
             // 
             // card_Empty5
             // 
@@ -587,6 +601,7 @@
             this.card_Empty5.Name = "card_Empty5";
             this.card_Empty5.Size = new System.Drawing.Size(309, 164);
             this.card_Empty5.TabIndex = 90;
+            this.card_Empty5.Click += new System.EventHandler(this.card_Empty5_Click);
             // 
             // card_Empty6
             // 
@@ -595,6 +610,7 @@
             this.card_Empty6.Name = "card_Empty6";
             this.card_Empty6.Size = new System.Drawing.Size(309, 164);
             this.card_Empty6.TabIndex = 91;
+            this.card_Empty6.Click += new System.EventHandler(this.bunifuPictureBox6_Click);
             // 
             // card_Empty7
             // 
@@ -603,6 +619,7 @@
             this.card_Empty7.Name = "card_Empty7";
             this.card_Empty7.Size = new System.Drawing.Size(309, 164);
             this.card_Empty7.TabIndex = 92;
+            this.card_Empty7.Click += new System.EventHandler(this.card_Empty7_Click);
             // 
             // card_Empty8
             // 
@@ -612,11 +629,30 @@
             this.card_Empty8.Size = new System.Drawing.Size(493, 463);
             this.card_Empty8.TabIndex = 93;
             // 
+            // bunifuLabel2
+            // 
+            this.bunifuLabel2.AllowParentOverrides = false;
+            this.bunifuLabel2.AutoEllipsis = false;
+            this.bunifuLabel2.BackColor = System.Drawing.Color.White;
+            this.bunifuLabel2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(174)))), ((int)(((byte)(208)))));
+            this.bunifuLabel2.Location = new System.Drawing.Point(636, 82);
+            this.bunifuLabel2.Name = "bunifuLabel2";
+            this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel2.Size = new System.Drawing.Size(188, 28);
+            this.bunifuLabel2.TabIndex = 94;
+            this.bunifuLabel2.Text = "Thống kê doanh thu";
+            this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // Page_Statistics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.Controls.Add(this.bunifuLabel2);
             this.Controls.Add(this.btn_Refresh);
             this.Controls.Add(this.lbl_FixedRoom);
             this.Controls.Add(this.bunifuLabel12);
@@ -642,7 +678,7 @@
             this.Controls.Add(this.bunifuPictureBox1);
             this.Controls.Add(this.card_Empty1);
             this.Controls.Add(this.card_Empty2);
-            this.Controls.Add(this.card_Empty3);
+            this.Controls.Add(this.CarđebtBills);
             this.Controls.Add(this.card_Empty4);
             this.Controls.Add(this.card_Empty5);
             this.Controls.Add(this.card_Empty6);
@@ -698,11 +734,12 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_Refresh;
         private Card_Empty card_Empty1;
         private Card_Empty card_Empty2;
-        private Card_Empty card_Empty3;
+        private Card_Empty CarđebtBills;
         private Card_Empty card_Empty4;
         private Card_Empty card_Empty5;
         private Card_Empty card_Empty6;
         private Card_Empty card_Empty7;
         private Card_Empty card_Empty8;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
     }
 }

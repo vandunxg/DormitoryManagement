@@ -3,8 +3,7 @@ CREATE DATABASE BD8888;
 GO
 
 -- CHỌN DATABASE 
-USE BD8888;
-GO
+
 -- BẢNG NHÂN VIÊN
 CREATE TABLE Staffs(
 	StaffID INT IDENTITY(10000,1) PRIMARY KEY NOT NULL,
@@ -892,9 +891,21 @@ BEGIN
 		BillMonth AS N'Tháng',
 		BillYear AS N'Năm',
 		BillCreationDate AS N'Ngày tạo',
-		StaffID AS N'Mã nhân viên',
-		BillPaid AS N'Tình trạng'
+		StaffID AS N'Mã nhân viên'
 	FROM Bills
+END;
+GO
+
+CREATE PROC ChecKBill
+@RoomID INT, @BillMonth INT, @BillYear INT
+AS
+BEGIN
+	SELECT
+		*
+	FROM Bills
+	WHERE RoomID = @RoomID 
+	AND BillMonth = @BillMonth 
+	AND BillYear = @BillYear
 END;
 GO
 

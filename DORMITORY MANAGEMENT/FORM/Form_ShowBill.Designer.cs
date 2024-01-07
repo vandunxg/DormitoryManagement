@@ -71,8 +71,6 @@
             this.bunifuElipse8 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.btn_SavedBills = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_DeleteBills = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.cmb_BillState = new Bunifu.UI.WinForms.BunifuDropdown();
             this.bunifuElipse9 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.txt_TotalMoney = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -233,7 +231,7 @@
             this.bunifuLabel5.AutoEllipsis = false;
             this.bunifuLabel5.CursorType = null;
             this.bunifuLabel5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel5.Location = new System.Drawing.Point(392, 161);
+            this.bunifuLabel5.Location = new System.Drawing.Point(392, 148);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel5.Size = new System.Drawing.Size(32, 20);
@@ -276,7 +274,7 @@
             this.cmb_Years.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.cmb_Years.ItemHighLightForeColor = System.Drawing.Color.White;
             this.cmb_Years.ItemTopMargin = 3;
-            this.cmb_Years.Location = new System.Drawing.Point(392, 187);
+            this.cmb_Years.Location = new System.Drawing.Point(392, 174);
             this.cmb_Years.Name = "cmb_Years";
             this.cmb_Years.Size = new System.Drawing.Size(300, 46);
             this.cmb_Years.TabIndex = 125;
@@ -347,7 +345,7 @@
             this.bunifuLabel13.AutoEllipsis = false;
             this.bunifuLabel13.CursorType = null;
             this.bunifuLabel13.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel13.Location = new System.Drawing.Point(392, 255);
+            this.bunifuLabel13.Location = new System.Drawing.Point(392, 236);
             this.bunifuLabel13.Name = "bunifuLabel13";
             this.bunifuLabel13.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel13.Size = new System.Drawing.Size(88, 20);
@@ -384,7 +382,7 @@
             this.txt_StaffID.IconRight = null;
             this.txt_StaffID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_StaffID.Lines = new string[0];
-            this.txt_StaffID.Location = new System.Drawing.Point(392, 281);
+            this.txt_StaffID.Location = new System.Drawing.Point(392, 262);
             this.txt_StaffID.MaxLength = 32767;
             this.txt_StaffID.MinimumSize = new System.Drawing.Size(1, 1);
             this.txt_StaffID.Modified = false;
@@ -438,7 +436,7 @@
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.CursorType = null;
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel1.Location = new System.Drawing.Point(12, 256);
+            this.bunifuLabel1.Location = new System.Drawing.Point(12, 237);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(42, 20);
@@ -481,7 +479,7 @@
             this.cmb_Rooms.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.cmb_Rooms.ItemHighLightForeColor = System.Drawing.Color.White;
             this.cmb_Rooms.ItemTopMargin = 3;
-            this.cmb_Rooms.Location = new System.Drawing.Point(12, 282);
+            this.cmb_Rooms.Location = new System.Drawing.Point(12, 263);
             this.cmb_Rooms.Name = "cmb_Rooms";
             this.cmb_Rooms.Size = new System.Drawing.Size(300, 46);
             this.cmb_Rooms.TabIndex = 119;
@@ -495,7 +493,7 @@
             this.bunifuLabel6.AutoEllipsis = false;
             this.bunifuLabel6.CursorType = null;
             this.bunifuLabel6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel6.Location = new System.Drawing.Point(12, 161);
+            this.bunifuLabel6.Location = new System.Drawing.Point(12, 148);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel6.Size = new System.Drawing.Size(75, 20);
@@ -538,7 +536,7 @@
             this.cmb_RoomTypes.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.cmb_RoomTypes.ItemHighLightForeColor = System.Drawing.Color.White;
             this.cmb_RoomTypes.ItemTopMargin = 3;
-            this.cmb_RoomTypes.Location = new System.Drawing.Point(12, 187);
+            this.cmb_RoomTypes.Location = new System.Drawing.Point(12, 174);
             this.cmb_RoomTypes.Name = "cmb_RoomTypes";
             this.cmb_RoomTypes.Size = new System.Drawing.Size(300, 46);
             this.cmb_RoomTypes.TabIndex = 117;
@@ -689,7 +687,7 @@
             this.dgv_RoomServices.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.dgv_RoomServices.HeaderBgColor = System.Drawing.Color.Empty;
             this.dgv_RoomServices.HeaderForeColor = System.Drawing.Color.White;
-            this.dgv_RoomServices.Location = new System.Drawing.Point(12, 435);
+            this.dgv_RoomServices.Location = new System.Drawing.Point(12, 415);
             this.dgv_RoomServices.Name = "dgv_RoomServices";
             this.dgv_RoomServices.ReadOnly = true;
             this.dgv_RoomServices.RowHeadersVisible = false;
@@ -697,7 +695,7 @@
             this.dgv_RoomServices.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgv_RoomServices.RowTemplate.Height = 40;
             this.dgv_RoomServices.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_RoomServices.Size = new System.Drawing.Size(680, 238);
+            this.dgv_RoomServices.Size = new System.Drawing.Size(680, 283);
             this.dgv_RoomServices.TabIndex = 127;
             this.dgv_RoomServices.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
@@ -753,7 +751,7 @@
             this.btn_SavedBills.IdleIconLeftImage = null;
             this.btn_SavedBills.IdleIconRightImage = null;
             this.btn_SavedBills.IndicateFocus = false;
-            this.btn_SavedBills.Location = new System.Drawing.Point(461, 704);
+            this.btn_SavedBills.Location = new System.Drawing.Point(461, 711);
             this.btn_SavedBills.Name = "btn_SavedBills";
             this.btn_SavedBills.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btn_SavedBills.OnDisabledState.BorderRadius = 45;
@@ -843,7 +841,7 @@
             this.btn_DeleteBills.IdleIconLeftImage = null;
             this.btn_DeleteBills.IdleIconRightImage = null;
             this.btn_DeleteBills.IndicateFocus = false;
-            this.btn_DeleteBills.Location = new System.Drawing.Point(592, 704);
+            this.btn_DeleteBills.Location = new System.Drawing.Point(592, 711);
             this.btn_DeleteBills.Name = "btn_DeleteBills";
             this.btn_DeleteBills.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btn_DeleteBills.OnDisabledState.BorderRadius = 45;
@@ -886,70 +884,10 @@
             this.btn_DeleteBills.UseDefaultRadiusAndThickness = true;
             this.btn_DeleteBills.Click += new System.EventHandler(this.btn_DeleteBills_Click);
             // 
-            // bunifuLabel2
-            // 
-            this.bunifuLabel2.AllowParentOverrides = false;
-            this.bunifuLabel2.AutoEllipsis = false;
-            this.bunifuLabel2.CursorType = null;
-            this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel2.Location = new System.Drawing.Point(12, 342);
-            this.bunifuLabel2.Name = "bunifuLabel2";
-            this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(67, 20);
-            this.bunifuLabel2.TabIndex = 132;
-            this.bunifuLabel2.Text = "Tình trạng";
-            this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // cmb_BillState
-            // 
-            this.cmb_BillState.BackColor = System.Drawing.Color.Transparent;
-            this.cmb_BillState.BackgroundColor = System.Drawing.Color.White;
-            this.cmb_BillState.BorderColor = System.Drawing.Color.Transparent;
-            this.cmb_BillState.BorderRadius = 1;
-            this.cmb_BillState.Color = System.Drawing.Color.Transparent;
-            this.cmb_BillState.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
-            this.cmb_BillState.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.cmb_BillState.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.cmb_BillState.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.cmb_BillState.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.cmb_BillState.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
-            this.cmb_BillState.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmb_BillState.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
-            this.cmb_BillState.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmb_BillState.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.cmb_BillState.FillDropDown = true;
-            this.cmb_BillState.FillIndicator = false;
-            this.cmb_BillState.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmb_BillState.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_BillState.ForeColor = System.Drawing.Color.Black;
-            this.cmb_BillState.FormattingEnabled = true;
-            this.cmb_BillState.Icon = null;
-            this.cmb_BillState.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.cmb_BillState.IndicatorColor = System.Drawing.Color.Gray;
-            this.cmb_BillState.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.cmb_BillState.ItemBackColor = System.Drawing.Color.White;
-            this.cmb_BillState.ItemBorderColor = System.Drawing.Color.White;
-            this.cmb_BillState.ItemForeColor = System.Drawing.Color.Black;
-            this.cmb_BillState.ItemHeight = 40;
-            this.cmb_BillState.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
-            this.cmb_BillState.ItemHighLightForeColor = System.Drawing.Color.White;
-            this.cmb_BillState.Items.AddRange(new object[] {
-            "Đã thanh toán",
-            "Chưa thanh toán"});
-            this.cmb_BillState.ItemTopMargin = 3;
-            this.cmb_BillState.Location = new System.Drawing.Point(12, 368);
-            this.cmb_BillState.Name = "cmb_BillState";
-            this.cmb_BillState.Size = new System.Drawing.Size(300, 46);
-            this.cmb_BillState.TabIndex = 131;
-            this.cmb_BillState.Text = "Tình trạng";
-            this.cmb_BillState.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.cmb_BillState.TextLeftMargin = 5;
-            // 
             // bunifuElipse9
             // 
             this.bunifuElipse9.ElipseRadius = 10;
-            this.bunifuElipse9.TargetControl = this.cmb_BillState;
+            this.bunifuElipse9.TargetControl = this;
             // 
             // bunifuLabel3
             // 
@@ -957,7 +895,7 @@
             this.bunifuLabel3.AutoEllipsis = false;
             this.bunifuLabel3.CursorType = null;
             this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel3.Location = new System.Drawing.Point(392, 338);
+            this.bunifuLabel3.Location = new System.Drawing.Point(12, 321);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel3.Size = new System.Drawing.Size(63, 20);
@@ -994,7 +932,7 @@
             this.txt_TotalMoney.IconRight = null;
             this.txt_TotalMoney.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_TotalMoney.Lines = new string[0];
-            this.txt_TotalMoney.Location = new System.Drawing.Point(392, 364);
+            this.txt_TotalMoney.Location = new System.Drawing.Point(12, 347);
             this.txt_TotalMoney.MaxLength = 32767;
             this.txt_TotalMoney.MinimumSize = new System.Drawing.Size(1, 1);
             this.txt_TotalMoney.Modified = false;
@@ -1048,8 +986,6 @@
             this.ClientSize = new System.Drawing.Size(709, 775);
             this.Controls.Add(this.bunifuLabel3);
             this.Controls.Add(this.txt_TotalMoney);
-            this.Controls.Add(this.bunifuLabel2);
-            this.Controls.Add(this.cmb_BillState);
             this.Controls.Add(this.btn_SavedBills);
             this.Controls.Add(this.btn_DeleteBills);
             this.Controls.Add(this.dgv_RoomServices);
@@ -1108,8 +1044,6 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse8;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
         private Bunifu.UI.WinForms.BunifuTextBox txt_TotalMoney;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
-        private Bunifu.UI.WinForms.BunifuDropdown cmb_BillState;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_SavedBills;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_DeleteBills;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse9;

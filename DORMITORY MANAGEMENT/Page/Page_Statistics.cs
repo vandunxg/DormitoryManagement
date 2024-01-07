@@ -36,39 +36,42 @@ namespace DORMITORY_MANAGEMENT
         #endregion
 
         #region Events
-        
+
+        private void CarđebtBills_Click(object sender, EventArgs e)
+        {
+            Form_DebtBills form_DebtBills = new Form_DebtBills();
+            form_DebtBills.ShowDialog();
+        }
 
         private void bunifuPictureBox1_Click(object sender, EventArgs e)
         {
-            
+            card_Empty1_Load(sender, e);
 
         }
 
         private void bunifuLabel1_Click(object sender, EventArgs e)
         {
-            
+            card_Empty1_Load(sender, e);
         }
 
         private void lbl_NumberofStudents_Click(object sender, EventArgs e)
         {
-            
+            card_Empty1_Load(sender, e);
         }
-
-        
 
         private void bunifuPictureBox5_Click(object sender, EventArgs e)
         {
-            
+            CarđebtBills_Click(sender, e);
         }
 
         private void lbl_NumberofNonPaid_Click(object sender, EventArgs e)
         {
-            
+            CarđebtBills_Click(sender, e);
         }
 
         private void bunifuLabel10_Click(object sender, EventArgs e)
         {
-            
+            CarđebtBills_Click(sender, e);
         }
 
         private void btn_Refresh_Click(object sender, EventArgs e)
@@ -76,42 +79,76 @@ namespace DORMITORY_MANAGEMENT
             LoadData();
         }
 
-        
-
         private void bunifuPictureBox3_Click(object sender, EventArgs e)
         {
-           
+            card_Empty4_Click(sender, e);
         }
 
         private void bunifuLabel6_Click(object sender, EventArgs e)
         {
-            
+            card_Empty4_Click(sender, e);
         }
 
         private void lbl_NumberofPaid_Click(object sender, EventArgs e)
         {
-            
+            card_Empty4_Click(sender, e);
         }
-
-        
 
         private void lbl_name_Click(object sender, EventArgs e)
         {
-            
+            card_Empty5_Click(sender, e);
         }
 
         private void bunifuPictureBox4_Click(object sender, EventArgs e)
         {
-            
+            card_Empty5_Click(sender, e);
         }
 
         private void lbl_ContractsOutDate_Click(object sender, EventArgs e)
         {
+            card_Empty5_Click(sender, e);
+        }
+
+        private void card_Empty4_Click(object sender, EventArgs e)
+        {
+            Form_PaidBill form_PaidBill = new Form_PaidBill();
+            form_PaidBill.ShowDialog();
+        }
+
+        private void card_Empty5_Click(object sender, EventArgs e)
+        {
+            Form_ContractsOutDate form_ContractsOutDate = new Form_ContractsOutDate();
+            form_ContractsOutDate.ShowDialog();
+        }
+
+        private void card_Empty1_Load(object sender, EventArgs e)
+        {
             
+        }
+
+        private void card_Empty2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Tính năng đang cập nhật", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void card_Empty4_Click_1(object sender, EventArgs e)
+        {
+            Form_PaidBill form_PaidBill1 = new Form_PaidBill();
+            form_PaidBill1.ShowDialog();
+        }
+
+        private void bunifuPictureBox6_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Tính năng đang cập nhật", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void card_Empty7_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Tính năng đang cập nhật", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         #endregion
 
-        
+
     }
 }
