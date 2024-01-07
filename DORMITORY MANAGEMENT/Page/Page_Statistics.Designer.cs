@@ -302,6 +302,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.card_Empty8_Click);
             // 
             // bunifuPictureBox4
             // 
@@ -628,6 +629,7 @@
             this.card_Empty8.Name = "card_Empty8";
             this.card_Empty8.Size = new System.Drawing.Size(493, 463);
             this.card_Empty8.TabIndex = 93;
+            this.card_Empty8.Click += new System.EventHandler(this.card_Empty8_Click);
             // 
             // bunifuLabel2
             // 
@@ -646,6 +648,7 @@
             this.bunifuLabel2.Text = "Thống kê doanh thu";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuLabel2.Click += new System.EventHandler(this.card_Empty8_Click);
             // 
             // Page_Statistics
             // 

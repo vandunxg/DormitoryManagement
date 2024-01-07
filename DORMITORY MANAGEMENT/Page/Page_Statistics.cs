@@ -147,8 +147,14 @@ namespace DORMITORY_MANAGEMENT
             MessageBox.Show("Tính năng đang cập nhật", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        private void card_Empty8_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Tính năng đang cập nhật", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
         #endregion
 
 
+    }
     }
 }
