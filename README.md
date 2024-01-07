@@ -57,9 +57,11 @@
 - Quản lý học sinh, sinh viên đăng ký kí túc xá
 - Quản lý các phòng ký túc xá
 - Quản lý hợp đồng của sinh viên đăng ký kí túc xá
+- Gia hạn hợp đồng
 - Quản lý các dịch vụ mà các phòng đã sử dụng tháng vừa qua
 - Quản lý các dịch vụ kí túc xá cung cấp
 - Quản lý hoá đơn thanh toán dịch vụ
+- Thống kê sinh viên, phòng, hợp đồng kí túc xá
 - Quản lý thông tin tài khoản của nhân viên
 
 
@@ -81,14 +83,17 @@ clone https://github.com/vandunxg/DormitoryManagement
 
 cd DormitoryManagement
 ```
+Lưu ý : Setup Scale màn hình ở mức 125 để phù hợp với tỉ lệ khung hình của project. Cách Setup : 
+```bash
+Settings -> System -> Display -> Scale -> Scale Custom : 125 -> Enter -> Restart 
+```
 Mở project với Visual Studio 2022
 
-Setup SQL cho project
+Setup SQL cho project (Run script DormitoryManagement.sql)
 
 Debug project
 
 Run project
-
 
 ## :compass: Roadmap
 
