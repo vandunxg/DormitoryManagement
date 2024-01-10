@@ -106,7 +106,7 @@ namespace DORMITORY_MANAGEMENT
                 }
 
                 // check định dạng email
-                if (StudentEmail.Length > 50 && studentsDAO.Instance.checkValidEmail(StudentEmail) == false)
+                if (StudentEmail.Length > 50 || Account.Instance.checkValidEmail(StudentEmail) == false)
                 {
                     MessageBox.Show("Email không đúng định dạng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;

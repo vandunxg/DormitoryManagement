@@ -120,10 +120,31 @@
   <metadata name="bunifuElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btn_ExportExcel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAKQAAAAyCAYAAADSinAfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOKSURBVHhe7Z09aBRBGIavtLS0TGlpaaelSG42jWAjWKYR
+        FCy0u0I7wS6FnVUKa8EqQXdmrxDc2YtgdzYGQfN3+ZGQFPq9s3NqcpOwubv9IXk/eDjudnZ2Q17e+dnv
+        vmtNI6K0O6Osno8y04l6+o3KTArk/W9y/hj+f5U1b+V9R9n4yWzPXPVyqCeiVF+LrHkmN9QXMe7I6567
+        YTv6B5DzTnIYWT2Q//2q6pkFaMPLpPyAG8pNLKlMb8kNHI7eHLnQWC0OqrfcCFmmMKN0+XK7Z16JG27S
+        BUkRnGnJFO725+UrXkbTiXx41j/klY5IzgbMy+o11UvueDlNFrMr5p644lqU6fAFCSmAuOX63Kf4qZfV
+        eCGdvJDONo53Tsg4iJ4GKtXvbnxdvuQlVjxk5bTg5gCBjgkZm1QftG383susWGCYlpPpjKQcbLwNw/Ny
+        Oz3aWXxdTvo50gkh02UDxudlFw4sz6Xhdy5gSBW4xfJpe5XYZ+TWDqkUq794+R0NKDXf3gmcREhJuIVz
+        aua8DP+FHFziExhSE30vwzywkJnLzGagISGlM+KSypqXnDuSOkEqm5ejDNfWrIYaEVIZNtl2T3CQWOly
+        2UKNCKkITBnb9sMtWV3HD1Vm9kONCKkM5FH2zIKsrvXrYANCKkWLKE2X2z2kSfRlQaO/BA4QUjHOIQcY
+        splIQRoDhuzgAULqgIIkjYKCJI2CgiSNAo8NB0zIJU0BDtk//iEhdaAy/QsO2aVDkkZgzWoLpS74pIY0
+        AdQDwpDdOX6AkMqBKYo5ItvnpiiT2eKkVmT+uBOl+r5L0MVkMtSIkMqwZh8V9pwgOY8kdePmj8PAF2zc
+        F20CDQmpgD1l9byXYx7yIfcjSQ1oVLBYH6mIRpcktdAzu5GNH3sZHg1pwOxxUiEnuOMwWE6FVIkbkUNl
+        VP4PafRIRMl9SVIqbYutxmTRy+70QMP8hHBnhExO8rFwaWc0xAlMuiDloL/93QQvGjhBZcmKDN8H4U4J
+        GQeIsTvjZXa2gFOiaj63g8ikYAoIgzuzM4ZC2fg5y/WR8cD3rVE7KlksPGcsEigEFOVV0rY5tySFSM0u
+        9hmVNXdzFZUQYr0P3EVYoIqcALQh0zwZUePOVF3xpHCr8LxqWoq0Ibk4fp44eHPkPDMcKd0rfp4a9KGN
+        qcwVxwlcGImVqIDqBMrSLBcHawbelLoyas5P/quvrdYf0E7NIdPiVO8AAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="bunifuLabel7.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="txt_DepositPrice.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAASwAAAAyCAYAAADm1uYqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8

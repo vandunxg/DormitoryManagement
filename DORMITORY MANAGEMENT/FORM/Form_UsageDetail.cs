@@ -110,6 +110,17 @@ namespace DORMITORY_MANAGEMENT
             int Months = int.Parse(cmb_Months.SelectedValue.ToString());
             int Years = int.Parse(cmb_Years.SelectedValue.ToString());
 
+            if (Months > DateTime.Now.Month && Years == DateTime.Now.Year)
+            {
+                MessageBox.Show("Thời gian không thể lớn hơn thời điểm hiện tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (Years > DateTime.Now.Year)
+            {
+                MessageBox.Show("Thời gian không thể lớn hơn thời điểm hiện tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             DialogResult resultNotify = MessageBox.Show("Bạn có chắc chắn sửa thông tin này chứ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
             if (resultNotify == DialogResult.Yes)

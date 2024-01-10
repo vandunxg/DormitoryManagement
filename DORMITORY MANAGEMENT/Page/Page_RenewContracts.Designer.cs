@@ -43,6 +43,7 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuLabel13 = new Bunifu.UI.WinForms.BunifuLabel();
             this.txt_ContractID = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -55,6 +56,7 @@
             this.txt_showMainNameofPage = new Bunifu.UI.WinForms.BunifuLabel();
             this.btn_Refresh = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.txt_StaffID = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.btn_ExportExcel = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ContractsOutDate)).BeginInit();
             this.SuspendLayout();
             // 
@@ -384,7 +386,7 @@
             this.dgv_ContractsOutDate.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgv_ContractsOutDate.RowTemplate.Height = 40;
             this.dgv_ContractsOutDate.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_ContractsOutDate.Size = new System.Drawing.Size(1092, 563);
+            this.dgv_ContractsOutDate.Size = new System.Drawing.Size(1092, 516);
             this.dgv_ContractsOutDate.TabIndex = 63;
             this.dgv_ContractsOutDate.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
@@ -513,6 +515,7 @@
             this.txt_StaffID.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_StaffID.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
             this.txt_StaffID.DefaultText = "";
+            this.txt_StaffID.Enabled = false;
             this.txt_StaffID.FillColor = System.Drawing.Color.White;
             this.txt_StaffID.HideSelection = true;
             this.txt_StaffID.IconLeft = null;
@@ -532,8 +535,8 @@
             stateProperties5.ForeColor = System.Drawing.Color.Empty;
             stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txt_StaffID.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.White;
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
             this.txt_StaffID.OnDisabledState = stateProperties6;
@@ -568,11 +571,102 @@
             this.txt_StaffID.UseSystemPasswordChar = false;
             this.txt_StaffID.WordWrap = true;
             // 
+            // btn_ExportExcel
+            // 
+            this.btn_ExportExcel.AllowAnimations = true;
+            this.btn_ExportExcel.AllowMouseEffects = true;
+            this.btn_ExportExcel.AllowToggling = false;
+            this.btn_ExportExcel.AnimationSpeed = 200;
+            this.btn_ExportExcel.AutoGenerateColors = false;
+            this.btn_ExportExcel.AutoRoundBorders = false;
+            this.btn_ExportExcel.AutoSizeLeftIcon = true;
+            this.btn_ExportExcel.AutoSizeRightIcon = true;
+            this.btn_ExportExcel.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ExportExcel.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(209)))), ((int)(((byte)(197)))));
+            this.btn_ExportExcel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_ExportExcel.BackgroundImage")));
+            this.btn_ExportExcel.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_ExportExcel.ButtonText = "Xuất Excel";
+            this.btn_ExportExcel.ButtonTextMarginLeft = 0;
+            this.btn_ExportExcel.ColorContrastOnClick = 45;
+            this.btn_ExportExcel.ColorContrastOnHover = 45;
+            this.btn_ExportExcel.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btn_ExportExcel.CustomizableEdges = borderEdges3;
+            this.btn_ExportExcel.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_ExportExcel.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btn_ExportExcel.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btn_ExportExcel.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btn_ExportExcel.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btn_ExportExcel.Font = new System.Drawing.Font("Segoe UI Semibold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ExportExcel.ForeColor = System.Drawing.Color.White;
+            this.btn_ExportExcel.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_ExportExcel.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_ExportExcel.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btn_ExportExcel.IconMarginLeft = 11;
+            this.btn_ExportExcel.IconPadding = 10;
+            this.btn_ExportExcel.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_ExportExcel.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_ExportExcel.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btn_ExportExcel.IconSize = 25;
+            this.btn_ExportExcel.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(209)))), ((int)(((byte)(197)))));
+            this.btn_ExportExcel.IdleBorderRadius = 45;
+            this.btn_ExportExcel.IdleBorderThickness = 1;
+            this.btn_ExportExcel.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(209)))), ((int)(((byte)(197)))));
+            this.btn_ExportExcel.IdleIconLeftImage = null;
+            this.btn_ExportExcel.IdleIconRightImage = null;
+            this.btn_ExportExcel.IndicateFocus = false;
+            this.btn_ExportExcel.Location = new System.Drawing.Point(945, 740);
+            this.btn_ExportExcel.Name = "btn_ExportExcel";
+            this.btn_ExportExcel.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btn_ExportExcel.OnDisabledState.BorderRadius = 45;
+            this.btn_ExportExcel.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_ExportExcel.OnDisabledState.BorderThickness = 1;
+            this.btn_ExportExcel.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btn_ExportExcel.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btn_ExportExcel.OnDisabledState.IconLeftImage = null;
+            this.btn_ExportExcel.OnDisabledState.IconRightImage = null;
+            this.btn_ExportExcel.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(181)))), ((int)(((byte)(116)))));
+            this.btn_ExportExcel.onHoverState.BorderRadius = 45;
+            this.btn_ExportExcel.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_ExportExcel.onHoverState.BorderThickness = 1;
+            this.btn_ExportExcel.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(181)))), ((int)(((byte)(116)))));
+            this.btn_ExportExcel.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_ExportExcel.onHoverState.IconLeftImage = null;
+            this.btn_ExportExcel.onHoverState.IconRightImage = null;
+            this.btn_ExportExcel.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(209)))), ((int)(((byte)(197)))));
+            this.btn_ExportExcel.OnIdleState.BorderRadius = 45;
+            this.btn_ExportExcel.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_ExportExcel.OnIdleState.BorderThickness = 1;
+            this.btn_ExportExcel.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(209)))), ((int)(((byte)(197)))));
+            this.btn_ExportExcel.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btn_ExportExcel.OnIdleState.IconLeftImage = null;
+            this.btn_ExportExcel.OnIdleState.IconRightImage = null;
+            this.btn_ExportExcel.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(181)))), ((int)(((byte)(116)))));
+            this.btn_ExportExcel.OnPressedState.BorderRadius = 45;
+            this.btn_ExportExcel.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_ExportExcel.OnPressedState.BorderThickness = 1;
+            this.btn_ExportExcel.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(181)))), ((int)(((byte)(116)))));
+            this.btn_ExportExcel.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btn_ExportExcel.OnPressedState.IconLeftImage = null;
+            this.btn_ExportExcel.OnPressedState.IconRightImage = null;
+            this.btn_ExportExcel.Size = new System.Drawing.Size(164, 50);
+            this.btn_ExportExcel.TabIndex = 133;
+            this.btn_ExportExcel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_ExportExcel.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_ExportExcel.TextMarginLeft = 0;
+            this.btn_ExportExcel.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btn_ExportExcel.UseDefaultRadiusAndThickness = true;
+            this.btn_ExportExcel.Click += new System.EventHandler(this.btn_ExportExcel_Click);
+            // 
             // Page_RenewContracts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.Controls.Add(this.btn_ExportExcel);
             this.Controls.Add(this.txt_StaffID);
             this.Controls.Add(this.btn_Refresh);
             this.Controls.Add(this.txt_showMainNameofPage);
@@ -605,5 +699,6 @@
         private Bunifu.UI.WinForms.BunifuLabel txt_showMainNameofPage;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_Refresh;
         private Bunifu.UI.WinForms.BunifuTextBox txt_StaffID;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_ExportExcel;
     }
 }

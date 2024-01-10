@@ -1,9 +1,9 @@
 -- TẠO DATABASE
-CREATE DATABASE DormitoryManagement;
+CREATE DATABASE DormitoryManagement1;
 GO
 
 -- CHỌN DATABASE 
-USE DormitoryManagement;
+USE DormitoryManagement1;
 GO
 
 -- BẢNG NHÂN VIÊN
@@ -346,22 +346,6 @@ VALUES
 ( N'Internet', 1000000, N'Tháng'),
 ( N'Vệ sinh', 1000000, N'Tháng');
 GO
--- INSERT INTO USAGES
-INSERT INTO Usages(ServiceID, UsageQuantity, RoomID, UsageMonth, UsageYear)
-VALUES
-('1', '120', '10001', '1', '2024'),
-('2', '120', '10001', '1', '2024'),
-('3', '1', '10001', '1', '2024'),
-('4', '1', '10001', '1', '2024'),
-('1', '120', '10002', '1', '2024'),
-('2', '150', '10002', '1', '2024'),
-('3', '1', '10002', '1', '2024'),
-('4', '1', '10002', '1', '2024'),
-('1', '111', '10003', '1', '2024'),
-('2', '112', '10003', '1', '2024'),
-('3', '1', '10003', '1', '2024'),
-('4', '1', '10003', '1', '2024')
-GO
 
 --INSERT INTO Staffs
 INSERT INTO Staffs(StaffName, StaffPhone, StaffEmail, StaffAddress, StaffPersonalID, StaffSalary)
@@ -391,28 +375,27 @@ GO
 INSERT INTO Accounts(StaffEmail, AccountPassword, StaffID)
 VALUES
 ('minhthu@gmail.com', 'dung2004', '10000'),
-('trinhhanh@gmail.com', 'dung2004', '10001'),
-('quanghuy@gmail.com', 'dung2004', '10002'),
-('hoangquan@gmail.com', 'dung2004', '10003')
+('trinhhanh@gmail.com', 'hanh2004', '10001'),
+('quanghuy@gmail.com', 'huy2004', '10002'),
+('hoangquan@gmail.com', 'quan2004', '10003')
 GO
 -----------------------------------------------------------------------------------------------------------------------------------------
-GO
 
 -- Get Data Students
 CREATE PROC GetStudents
 AS
 BEGIN
 	SELECT 
-	StudentID AS N'Mã SV',
-	StudentName AS N'Họ tên',
-	StudentDOB AS N'Ngày sinh',
-	StudentAddress AS N'Địa chỉ',
-	StudentGender AS N'Giới tính',
-	StudentPhone AS N'SĐT',
-	StudentEmail AS N'Email',
-	StudentPersonalID AS 'CCCD',
-	ClassID AS N'Lớp',
-	StudentLived AS 'Từng ở'
+		StudentID AS N'Mã SV',
+		StudentName AS N'Họ tên',
+		StudentDOB AS N'Ngày sinh',
+		StudentAddress AS N'Địa chỉ',
+		StudentGender AS N'Giới tính',
+		StudentPhone AS N'SĐT',
+		StudentEmail AS N'Email',
+		StudentPersonalID AS 'CCCD',
+		ClassID AS N'Lớp',
+		StudentLived AS 'Từng ở'
 	FROM dbo.Students
 END;
 GO
@@ -422,7 +405,18 @@ CREATE PROC SearchStudents
 @StudentID NVARCHAR(20)
 AS
 BEGIN
-	SELECT * FROM Students
+	SELECT
+		StudentID AS N'Mã SV',
+		StudentName AS N'Họ tên',
+		StudentDOB AS N'Ngày sinh',
+		StudentAddress AS N'Địa chỉ',
+		StudentGender AS N'Giới tính',
+		StudentPhone AS N'SĐT',
+		StudentEmail AS N'Email',
+		StudentPersonalID AS 'CCCD',
+		ClassID AS N'Lớp',
+		StudentLived AS 'Từng ở' 
+	FROM Students
 	WHERE Students.StudentID = @StudentID;
 END;
 GO
@@ -752,18 +746,15 @@ AS
 BEGIN
     -- Truy vấn của bạn với CASE
     SELECT
-        Contracts.ContractID,
-        Contracts.StudentID,
-        Contracts.StaffID,
-		Rooms.RoomName,
-        Contracts.CheckInDate,
-        Contracts.CheckOutDate,
-        CASE
-            WHEN Contracts.ContractState = 1 THEN N'Còn hiệu lực'
-            WHEN Contracts.ContractState = 0 THEN N'Hết hiệu lực'
-        END AS ContractState, -- Thêm CASE cho ContractState
-        Areas.AreaName,
-        RoomTypes.RoomTypeName
+        Contracts.ContractID AS N'Mã HĐ',
+        Contracts.StudentID AS N'Mã SV',
+        Contracts.StaffID AS N'Mã NV',
+		Areas.AreaName AS N'Khu',
+		RoomTypes.RoomTypeName AS N'Loại phòng',
+		Rooms.RoomName AS N'Phòng',
+        Contracts.CheckInDate AS N'Ngày tạo HĐ',
+        Contracts.CheckOutDate AS N'Ngày hết hạn',
+        Contracts.ContractDeposit AS N'Tiền cọc'
     FROM
         Contracts
 	INNER JOIN
@@ -817,6 +808,7 @@ BEGIN
         Services ON Services.ServiceID = Usages.ServiceID;
 END;
 GO
+
 
 CREATE PROCEDURE SearchUsageDetails
 @RoomID NVARCHAR(20), @Months INT , @Years INT
@@ -999,7 +991,7 @@ CREATE PROC CalTotalMoneyBill
     @Years INT
 AS
 BEGIN
-    DECLARE @TotalMoney INT;
+    DECLARE @TotalMoney INT = 0;
 	SELECT
 	@TotalMoney = ISNULL(@TotalMoney, 0) + Usages.UsageQuantity * Services.ServicePrice
     
@@ -1350,6 +1342,37 @@ BEGIN
           AND BillYear = @CurrentYear;
 END;
 GO
+
+CREATE PROC UpdateBills
+@BillID INT, @RoomID INT, @Months INT, @Years INT
+AS
+BEGIN
+	UPDATE Bills
+	SET
+		RoomID = @RoomID, 
+		BillMonth = @Months,
+		BillYear = @Years
+	WHERE BillID = @BillID
+END;
+GO
+
+CREATE PROC CheckDuplicateUsage
+@RoomID INT, @Months INT, @Years INT, @ServiceID INT 
+AS
+BEGIN
+	SELECT *
+	FROM Usages
+	WHERE
+		RoomID = @RoomID
+		AND UsageMonth = @Months
+		AND UsageYear = @Years
+		AND ServiceID = @ServiceID
+END;
+GO
+
+
+
+
 ------------------------------------------------------------
 -- github : @vandunxg
 -- Author : @vandunxg

@@ -460,6 +460,27 @@
   <metadata name="bunifuElipse2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>162, 17</value>
   </metadata>
+  <data name="btn_ExportExcel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJsAAAAyCAYAAABLcqmqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOFSURBVHhe7Z09bNNAGIYzMjIydmRkZIMRoebcBYkFibEL
+        EkgMsGWADYmtAxtTB2Ykplbgu2RAwucUqVtYqJBK/9IfVLUDfO/5QmlyjZzkHNT2/aRHUeLz2ZFfvffj
+        8+dajEiy1oyyej7JTSNp63cqNxmQ77/J+aJ37ZQ17+V7Q9n02WzbXPeX+v9EkukbiTUv5IQ6IrQ9+Txw
+        J2wH/wA5zzSPE6u7cl3XVNss4Lp7CVQfcDE5iSWV6x05gePBkyMXFqvF+fSOa7WqFF2SLV+tt80bcbFt
+        uhdxZiNdprtfl695icSJosnU6/JJJyMnwHSs3lDt5j0vlclidsU8EDfbSHIdPiC59IjLbc59SZ97yYwX
+        UskrqWyrv3JC+hGtdFWmP9z6tnzFy6d8yChkwbXLgYoJCZLpo7pNP3oJlQs0nbIzHY2Mjk13YVReSsOj
+        nqc3ZaefA5UQUp4tGJaXVDgwjJWCPzgYIJPiBpXD5uIwj8bpDRINq1e9tE4HVFhMcQR2ImQM3AAzM3Ne
+        YichG5d4Z4BUQMdLrAgMCuZysx0oSMhEDLibsuY1+2qkKrBcyUtNmlBr1kKFCImCbe66OwtYGOfWK4UK
+        ERIBdNHq9tMdGYWmj1VuDkOFCIkC1sG1zYKMQvXbYAFCoqFFcKbFKQ8yLToyONCrgQ2ERMQ5WxfNKG+6
+        k6mAZjS4gZDYUGxkalBsZGpQbGRq4FZVl4slyTSAs3X6fyQkNirXv+BsLTobqRxr1mp4hJ53EEjVID8I
+        mtFG/wZCogIzE1PDqo/bojqu0iWVIf21vSTTD93iSXTeQoUIiYI1h8iC5cTGfhupEtdf6wUeSHAPJgQK
+        EjIhB8rqeS+1IuRHzreRyGg8Gb85kNmI7kai0zb7iU2feomdDinAVbskEme4Wi+YgoHEwrWSodQL/4YU
+        eiKC47wbGZu6xVRac9FLanigYLFDuDJChtP8XDrdKQpiB96gJ6Ojv/+dwC0b2EHlzRVpUo/ClRLSD4TW
+        mvESGi3gcMgAzSkRMgx0uWBMIztaKJRNXzKlFhkEz4MiT0xzsXQfrUwgMUhSZDvaZV+OJJnZxzyasuZ+
+        oZAKQizzkTsIk9FcSnDdpVslrVzaiOpmZ4UbrRbZjzIsH5GD4xWQwZMj55Ve6+U+8XpP0MF1j9I3Gydw
+        YCyMQ3ZBJz6mc7gYWNP1ZtKSlmx+8rfv1Wp/AJKIuA4TSIHaAAAAAElFTkSuQmCC
+</value>
+  </data>
   <metadata name="bunifuElipse3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>307, 17</value>
   </metadata>

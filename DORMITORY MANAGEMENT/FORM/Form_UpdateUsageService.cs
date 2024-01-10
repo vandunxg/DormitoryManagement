@@ -36,24 +36,9 @@ namespace DORMITORY_MANAGEMENT
         #region Events
         private void btn_exit_Click(object sender, EventArgs e)
         {
-            if (cmb_Rooms.SelectedIndex != -1 || cmb_Months.SelectedIndex != -1 || cmb_Years.SelectedIndex != -1
-                && cmb_Services.SelectedIndex != -1 || txt_ServiceQuantity.Text != string.Empty)
-            {
-                DialogResult CheckNoti = MessageBox.Show("Bạn muốn đóng cửa sổ", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-                if (CheckNoti == DialogResult.Yes)
-                {
-                    this.Close();
-                }
-                else
-                {
-                    return;
-                }
-            }
-            else
-            {
+            
                 this.Close();
-            }
+            
         }
 
         private void AddServices_Load(object sender, EventArgs e)
@@ -108,6 +93,24 @@ namespace DORMITORY_MANAGEMENT
                 int Months = int.Parse(cmb_Months.SelectedValue.ToString());
                 int Years = int.Parse(cmb_Years.SelectedValue.ToString());
                 int Quantity = int.Parse(txt_ServiceQuantity.Text);
+
+                if (Months > DateTime.Now.Month && Years == DateTime.Now.Year)
+                {
+                    MessageBox.Show("Thời gian không thể lớn hơn thời điểm hiện tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (Years > DateTime.Now.Year)
+                {
+                    MessageBox.Show("Thời gian không thể lớn hơn thời điểm hiện tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (DataProvider.Instance.ExcuteQuery("CheckDuplicateUsage @RoomID , @Months , @Years , @ServiceID ", new object[] { RoomID, Months, Years, ServiceID }).Rows.Count > 0)
+                {
+                    MessageBox.Show("Dịch vụ đã được thêm trước đó!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
 
                 string query = "InsertUsages @RoomID , @ServiceID , @Months , @Years , @UsageQuantity ;";
                 int checkStatusInsertData = DataProvider.Instance.ExecuteNonQuery(query, new object[] { RoomID, ServiceID, Months, Years, Quantity });
