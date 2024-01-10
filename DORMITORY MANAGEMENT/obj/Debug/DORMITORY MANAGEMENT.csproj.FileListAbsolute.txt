@@ -86,24 +86,14 @@ C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\bin
 C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
 C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
 C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
-C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
 C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll
 C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
-C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuPages.dll
 C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
-C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll
-C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.dll
-C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll
 C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuTextBox.dll
 C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.dll
-C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
 C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY MANAGEMENT.csproj.AssemblyReference.cache
-C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.addStudents.resources
-C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Admin_Dashboard.resources
 C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.loginPage.resources
 C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.forgotPasswordPage.resources
-C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.ManageRoomControl.resources
-C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.OverviewPage.resources
 C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Properties.Resources.resources
 C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY MANAGEMENT.csproj.GenerateResource.cache
 C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY MANAGEMENT.exe.licenses
@@ -111,29 +101,10 @@ C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj
 C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY MANAGEMENT.csproj.CopyComplete
 C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY MANAGEMENT.exe
 C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY MANAGEMENT.pdb
-C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.cardShowInfo.resources
-C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.cardShowOverview.resources
-C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.addNewRoom.resources
 C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.dll
-C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.cardRoom.resources
 C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuRating.dll
-C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.RoomStudentManager.resources
 C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\Bunifu.Dataviz.WinForms.dll
-C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
-C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.NewServices.resources
-C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.ShowServicesDetail.resources
 C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.ManageServiceControl.resources
-C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.ContractDetail.resources
-C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.AddServices.resources
-C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Page.StudentInformations.resources
-C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.ShowServices.resources
-C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.UsageDetails.resources
-C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Services.resources
-C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.ContractsPage.resources
-C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Bills.resources
-C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.AddNewBill.resources
-C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.ShowBills.resources
-C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Settings.resources
 C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY MANAGEMENT.csproj.ResolveComReference.cache
 C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\EPPlus.dll
 C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\EPPlus.Interfaces.dll
@@ -226,3 +197,35 @@ C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debu
 C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY MANAGEMENT.pdb
 C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.dll
 C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Form_SaleStatistics.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Card_Empty.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Form_ContractsOutDate.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Form_DebtBills.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Form_PaidBill.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Form_ShowStudents.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Form_AddNewBill.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Form_ShowBill.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Form_StudentsBill.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Form_SaleStatistics.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Page_Statistics.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Page_StudentsBill.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Page_Settings.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Page_BillManagement.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Form_AddNewService.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Form_ServiceDetail.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Form_ContractDetail.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Form_UpdateUsageService.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Form_RoomManagement.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Form_StudentsRoom.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Page.Form_Students.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Card_ShowServices.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Form_UsageDetail.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Page_ServicesUsage.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Page_AddNewStudents.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.AdminDashboard.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Card_ShowRoom.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Card_ShowInfo.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Card_ShowOverview.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Page_AddNewContract.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Page_RoomManagement.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Page_Overview.resources
+C:\Users\vandunxg\Documents\CODE\C#\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Page_RenewContracts.resources

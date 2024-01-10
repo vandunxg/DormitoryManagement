@@ -1,9 +1,9 @@
 -- TẠO DATABASE
-CREATE DATABASE BD8888;
+CREATE DATABASE DormitoryManagement;
 GO
 
 -- CHỌN DATABASE 
-USE BD8888;
+USE DormitoryManagement;
 GO
 
 -- BẢNG NHÂN VIÊN

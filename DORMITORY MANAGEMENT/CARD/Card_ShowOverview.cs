@@ -89,8 +89,16 @@ namespace DORMITORY_MANAGEMENT
 
         public void setAllValue(int total, int progressValue, string nameCard, string nameSubValue, string nameProgressValue)
         {
-            Gauge.Value = progressValue;
-            Gauge.Maximum = total;
+            if(total == 0)
+            {
+                Gauge.Value = 0;
+                Gauge.Maximum = 10;
+            }
+            else
+            {
+                Gauge.Value = progressValue;
+                Gauge.Maximum = total;
+            }
             this.ProgressValue = progressValue;
             this.NameCard = nameCard;
             this.SubValue = total - ProgressValue;
