@@ -1108,9 +1108,23 @@ GO
 CREATE PROCEDURE CountRoomsActive
 AS
 BEGIN
-    SELECT COUNT(RoomID) AS "AmountRoom" 
-	FROM Rooms
-	WHERE RoomStatus = N'Hoạt động'
+SELECT
+        Rooms.RoomID,
+        Rooms.RoomName
+    FROM
+        Rooms
+    JOIN
+        Areas ON Rooms.AreaID = Areas.AreaID
+    JOIN
+        RoomTypes ON Rooms.RoomTypeID = RoomTypes.RoomTypeID
+    LEFT JOIN
+        Contracts ON Rooms.RoomID = Contracts.RoomID
+    WHERE
+        Rooms.RoomStatus = N'Hoạt động'
+    GROUP BY
+        Rooms.RoomID, Rooms.RoomName, Rooms.RoomStatus, Rooms.AreaID, Rooms.RoomTypeID, Areas.AreaName, RoomTypes.RoomCapacity
+    HAVING
+        COUNT(Contracts.ContractID) < RoomTypes.RoomCapacity
 END;
 GO
 
@@ -1336,7 +1350,6 @@ BEGIN
           AND BillYear = @CurrentYear;
 END;
 GO
-
-----------------------------------------------------------------------
+------------------------------------------------------------
 -- github : @vandunxg
 -- Author : @vandunxg

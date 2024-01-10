@@ -62,7 +62,7 @@ namespace DORMITORY_MANAGEMENT
             cardShowInfor_total.setAllValue($"Đã thu", TotalMoney);
 
             int TotalRooms = int.Parse(DataProvider.Instance.ExcuteQuery("CountRooms").Rows[0]["AmountRoom"].ToString());
-            int RoomsActive = int.Parse(DataProvider.Instance.ExcuteQuery("CountRoomsActive").Rows[0]["AmountRoom"].ToString());
+            int RoomsActive = DataProvider.Instance.ExcuteQuery("CountRoomsActive").Rows.Count;
 
             int TotalBill = int.Parse(DataProvider.Instance.ExcuteQuery("SELECT COUNT(BillID) AS NumofBills FROM StudentBills").Rows[0]["NumofBills"].ToString());
             int BillPaid = int.Parse(DataProvider.Instance.ExcuteQuery("SELECT COUNT(BillID) AS NumofBills FROM StudentBills WHERE BillPaid = @BillPaid", new object[] { 1 }).Rows[0]["NumofBills"].ToString());
