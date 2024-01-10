@@ -415,14 +415,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DORMITORY MANAGEMENT.exe" size="4602824">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DORMITORY MANAGEMENT.exe" size="4603336">
       <assemblyIdentity name="DORMITORY MANAGEMENT" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>9EBRBF/nnbuNoeA/5mkERGxuTzbsnDg3NOp1TqUaoJ4=</dsig:DigestValue>
+        <dsig:DigestValue>I6lv8iyfozzkkHKnSXC9h+umlCJ9GMcI51QQiEQ9Bfc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

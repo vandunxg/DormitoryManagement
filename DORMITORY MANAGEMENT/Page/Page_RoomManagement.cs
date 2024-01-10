@@ -138,7 +138,7 @@ namespace DORMITORY_MANAGEMENT
             {
                 Card_ShowRoom cardRoom = new Card_ShowRoom();
                 cardRoom.Click += cardRoom_Click;
-                cardRoom.setAllValue(room.RoomID, int.Parse(room.RoomCapacity), int.Parse(room.RoomStudents), room.RoomType);
+                cardRoom.setAllValue(room.RoomID, int.Parse(room.RoomCapacity), int.Parse(room.RoomStudents), room.RoomType, room.RoomStatus);
                 flowLayoutRoom.Controls.Add(cardRoom);
             }
         }
@@ -164,7 +164,7 @@ namespace DORMITORY_MANAGEMENT
             {
                 Card_ShowRoom cardRoom = new Card_ShowRoom();
                 cardRoom.Click += cardRoom_Click;
-                cardRoom.setAllValue(room.RoomID, int.Parse(room.RoomCapacity), int.Parse(room.RoomStudents), room.RoomType);
+                cardRoom.setAllValue(room.RoomID, int.Parse(room.RoomCapacity), int.Parse(room.RoomStudents), room.RoomType, room.RoomStatus);
                 flowLayoutRoom.Controls.Add(cardRoom);
             }
         }

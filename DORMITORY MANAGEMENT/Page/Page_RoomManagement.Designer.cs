@@ -173,7 +173,7 @@
             this.btn_deleteInput.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_deleteInput.IdleIconLeftImage")));
             this.btn_deleteInput.IdleIconRightImage = null;
             this.btn_deleteInput.IndicateFocus = false;
-            this.btn_deleteInput.Location = new System.Drawing.Point(976, 29);
+            this.btn_deleteInput.Location = new System.Drawing.Point(999, 29);
             this.btn_deleteInput.Name = "btn_deleteInput";
             this.btn_deleteInput.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_deleteInput.OnDisabledState.BorderRadius = 45;
@@ -263,7 +263,7 @@
             this.btn_search.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_search.IdleIconLeftImage")));
             this.btn_search.IdleIconRightImage = null;
             this.btn_search.IndicateFocus = false;
-            this.btn_search.Location = new System.Drawing.Point(791, 29);
+            this.btn_search.Location = new System.Drawing.Point(814, 29);
             this.btn_search.Name = "btn_search";
             this.btn_search.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_search.OnDisabledState.BorderRadius = 45;
@@ -519,7 +519,7 @@
             this.btn_manageRoom.IdleIconLeftImage = null;
             this.btn_manageRoom.IdleIconRightImage = null;
             this.btn_manageRoom.IndicateFocus = false;
-            this.btn_manageRoom.Location = new System.Drawing.Point(891, 150);
+            this.btn_manageRoom.Location = new System.Drawing.Point(914, 150);
             this.btn_manageRoom.Name = "btn_manageRoom";
             this.btn_manageRoom.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_manageRoom.OnDisabledState.BorderRadius = 45;

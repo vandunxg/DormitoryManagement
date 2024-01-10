@@ -98,7 +98,7 @@ namespace DORMITORY_MANAGEMENT
 
         #region Method
 
-        public void setAllValue(string RoomID, int total, int value, string roomRating)
+        public void setAllValue(string RoomID, int total, int value, string roomRating, string RoomStatus)
         {
             this.ProgressValue = value;
             this.Total = total;
@@ -107,6 +107,14 @@ namespace DORMITORY_MANAGEMENT
             this.RoomRate = int.Parse(roomRating);
 
             if (value == total)
+            {
+                lbl_nameMainValue.ForeColor = Color.Black;
+                lbl_nameSubValue.ForeColor = Color.Black;
+                this.BackColor = Color.FromArgb(223, 107, 115);
+                lbl_nameMainValue.ForeColor = lbl_nameSubValue.ForeColor = lbl_RoomID.ForeColor = lbl_subValue.ForeColor = lbl_value.ForeColor = Color.White;
+            }
+
+            if (RoomStatus == "Bảo trì")
             {
                 lbl_nameMainValue.ForeColor = Color.Black;
                 lbl_nameSubValue.ForeColor = Color.Black;

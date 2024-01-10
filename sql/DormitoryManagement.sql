@@ -687,12 +687,15 @@ BEGIN
         RoomTypes ON Rooms.RoomTypeID = RoomTypes.RoomTypeID AND RoomTypes.RoomTypeID = @RoomTypeID
     LEFT JOIN
         Contracts ON Rooms.RoomID = Contracts.RoomID
+    WHERE
+        Rooms.RoomStatus = N'Hoạt động'
     GROUP BY
         Rooms.RoomID, Rooms.RoomName, Rooms.RoomStatus, Rooms.AreaID, Rooms.RoomTypeID, Areas.AreaName, RoomTypes.RoomCapacity
     HAVING
         COUNT(Contracts.ContractID) < RoomTypes.RoomCapacity;
 END;
-GO	
+GO
+
 
 -- INSERT INTO Contracts
 CREATE PROC InsertDataContracts
