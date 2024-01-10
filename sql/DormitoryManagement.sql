@@ -3,6 +3,8 @@ CREATE DATABASE BD8888;
 GO
 
 -- CHỌN DATABASE 
+USE BD8888;
+GO
 
 -- BẢNG NHÂN VIÊN
 CREATE TABLE Staffs(
@@ -622,11 +624,17 @@ CREATE PROCEDURE GetStudentsInRoom
     @RoomID NVARCHAR(20)
 AS 
 BEGIN
-    SELECT Students.StudentName, Students.StudentID
-    FROM Students
-    INNER JOIN Contracts ON Students.StudentID = Contracts.StudentID
-    INNER JOIN Rooms ON Contracts.RoomID = Rooms.RoomID
-    WHERE Contracts.RoomID = @RoomID;
+    SELECT 
+        Students.StudentName AS N'Họ và tên', 
+        Students.StudentID AS N'Mã sinh viên'
+    FROM 
+        Students
+    INNER JOIN 
+        Contracts ON Students.StudentID = Contracts.StudentID
+    INNER JOIN 
+        Rooms ON Contracts.RoomID = Rooms.RoomID
+    WHERE 
+        Contracts.RoomID = @RoomID;
 END;
 GO
 

@@ -163,6 +163,18 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Bunifu.UI.WinForms.BunifuGauge.dll" size="75968">
+      <assemblyIdentity name="Bunifu.UI.WinForms.BunifuGauge" version="5.0.7.0" publicKeyToken="E8E24CCD28363FE9" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>NDWVoximHADXol2wHwNBKq/wd7F4FZeixUDv8FTCbfw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Bunifu.UI.WinForms.BunifuGradientPanel.dll" size="61632">
       <assemblyIdentity name="Bunifu.UI.WinForms.BunifuGradientPanel" version="5.0.7.0" publicKeyToken="E8E24CCD28363FE9" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -403,14 +415,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DORMITORY MANAGEMENT.exe" size="4590024">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DORMITORY MANAGEMENT.exe" size="4602824">
       <assemblyIdentity name="DORMITORY MANAGEMENT" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>FOaHtOPclzF6RFIa/f+mq7toiGWQBfs2okUXw12Bnjg=</dsig:DigestValue>
+        <dsig:DigestValue>9EBRBF/nnbuNoeA/5mkERGxuTzbsnDg3NOp1TqUaoJ4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -89,15 +89,8 @@ namespace DORMITORY_MANAGEMENT
                 int Years = int.Parse(dgv_Bills.Rows[e.RowIndex].Cells[3].Value.ToString());
                 string StaffID = dgv_Bills.Rows[e.RowIndex].Cells[5].Value.ToString();
                 int BillPaid;
-                if (dgv_Bills.Rows[e.RowIndex].Cells[6].Value.ToString() == "True")
-                {
-                    BillPaid = 0;
-                }
-                else
-                {
-                    BillPaid = 1;
-                }
-                Form_ShowBill showBills = new Form_ShowBill(BillID, AreaName, RoomTypeName, RoomID, RoomName, Months, Years, StaffID, BillPaid);
+                
+                Form_ShowBill showBills = new Form_ShowBill(BillID, AreaName, RoomTypeName, RoomID, RoomName, Months, Years, StaffID, 0);
                 showBills.ShowDialog();
             }
         }

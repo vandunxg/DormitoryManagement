@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Page_Statistics));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.lbl_NumberofStudents = new Bunifu.UI.WinForms.BunifuLabel();
@@ -135,7 +135,7 @@
             this.lbl_NumberofRooms.CursorType = null;
             this.lbl_NumberofRooms.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lbl_NumberofRooms.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.lbl_NumberofRooms.Location = new System.Drawing.Point(406, 193);
+            this.lbl_NumberofRooms.Location = new System.Drawing.Point(403, 193);
             this.lbl_NumberofRooms.Name = "lbl_NumberofRooms";
             this.lbl_NumberofRooms.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lbl_NumberofRooms.Size = new System.Drawing.Size(22, 28);
@@ -190,7 +190,7 @@
             this.lbl_NumberofPaid.CursorType = null;
             this.lbl_NumberofPaid.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lbl_NumberofPaid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.lbl_NumberofPaid.Location = new System.Drawing.Point(406, 453);
+            this.lbl_NumberofPaid.Location = new System.Drawing.Point(404, 453);
             this.lbl_NumberofPaid.Name = "lbl_NumberofPaid";
             this.lbl_NumberofPaid.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lbl_NumberofPaid.Size = new System.Drawing.Size(22, 29);
@@ -245,7 +245,7 @@
             this.lbl_NumberofNonPaid.CursorType = null;
             this.lbl_NumberofNonPaid.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lbl_NumberofNonPaid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.lbl_NumberofNonPaid.Location = new System.Drawing.Point(115, 453);
+            this.lbl_NumberofNonPaid.Location = new System.Drawing.Point(114, 453);
             this.lbl_NumberofNonPaid.Name = "lbl_NumberofNonPaid";
             this.lbl_NumberofNonPaid.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lbl_NumberofNonPaid.Size = new System.Drawing.Size(22, 29);
@@ -488,11 +488,11 @@
             this.btn_Refresh.ColorContrastOnClick = 45;
             this.btn_Refresh.ColorContrastOnHover = 45;
             this.btn_Refresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btn_Refresh.CustomizableEdges = borderEdges2;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btn_Refresh.CustomizableEdges = borderEdges1;
             this.btn_Refresh.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Refresh.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Refresh.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));

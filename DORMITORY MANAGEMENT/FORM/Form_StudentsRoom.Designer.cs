@@ -41,8 +41,6 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.lbl_RoomID = new Bunifu.UI.WinForms.BunifuLabel();
             this.dgv_Students = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.StudentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -110,9 +108,6 @@
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgv_Students.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgv_Students.ColumnHeadersHeight = 40;
-            this.dgv_Students.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.StudentName,
-            this.StudentID});
             this.dgv_Students.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.dgv_Students.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.dgv_Students.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
@@ -155,22 +150,6 @@
             this.dgv_Students.Size = new System.Drawing.Size(522, 425);
             this.dgv_Students.TabIndex = 0;
             this.dgv_Students.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
-            // 
-            // StudentName
-            // 
-            this.StudentName.DataPropertyName = "StudentName";
-            this.StudentName.HeaderText = "Họ và Tên";
-            this.StudentName.MinimumWidth = 6;
-            this.StudentName.Name = "StudentName";
-            this.StudentName.ReadOnly = true;
-            // 
-            // StudentID
-            // 
-            this.StudentID.DataPropertyName = "StudentID";
-            this.StudentID.HeaderText = "Mã SV";
-            this.StudentID.MinimumWidth = 6;
-            this.StudentID.Name = "StudentID";
-            this.StudentID.ReadOnly = true;
             // 
             // bunifuElipse2
             // 
@@ -574,8 +553,6 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_exit;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StudentName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StudentID;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_addRoom;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse3;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse4;

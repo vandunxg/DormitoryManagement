@@ -138,5 +138,11 @@ namespace DORMITORY_MANAGEMENT
 
         #endregion
 
+        private void btn_Logout_Click(object sender, EventArgs e)
+        {
+            loginPage loginPage = new loginPage();
+            loginPage.Visible = true;
+            this.Visible = false;
+        }
     }
 }

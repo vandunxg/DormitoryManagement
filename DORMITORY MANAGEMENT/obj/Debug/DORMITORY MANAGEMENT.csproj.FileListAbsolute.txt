@@ -224,3 +224,5 @@ C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debu
 C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY MANAGEMENT.csproj.CopyComplete
 C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY MANAGEMENT.exe
 C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY MANAGEMENT.pdb
+C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.dll
+C:\Users\vandunxg\source\repos\DormitoryManagement\DORMITORY MANAGEMENT\obj\Debug\DORMITORY_MANAGEMENT.Form_SaleStatistics.resources

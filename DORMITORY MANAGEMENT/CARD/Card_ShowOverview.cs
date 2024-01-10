@@ -29,8 +29,6 @@ namespace DORMITORY_MANAGEMENT
             set
             {
                 progressValue = value;
-                CircleProgress.Value = progressValue;
-                lbl_mainValue.Text = progressValue.ToString();
             }
 
         }
@@ -41,7 +39,6 @@ namespace DORMITORY_MANAGEMENT
             set
             {
                 subValue = value;
-                lbl_subValue.Text = subValue.ToString();
             }
         }
         public string NameCard
@@ -85,10 +82,15 @@ namespace DORMITORY_MANAGEMENT
 
         #region Method  
 
+        public void SetWarininMark(int value)
+        {
+            Gauge.WarningMark = value;
+        }
+
         public void setAllValue(int total, int progressValue, string nameCard, string nameSubValue, string nameProgressValue)
         {
-            CircleProgress.Maximum = total;
-            //CircleProgress.Name = nameCard;
+            Gauge.Value = progressValue;
+            Gauge.Maximum = total;
             this.ProgressValue = progressValue;
             this.NameCard = nameCard;
             this.SubValue = total - ProgressValue;
@@ -97,12 +99,10 @@ namespace DORMITORY_MANAGEMENT
 
         }
 
+
         #endregion
 
-        private void cardShowOverview_Load(object sender, System.EventArgs e)
-        {
-
-        }
+        
     }
 
 
